@@ -1,0 +1,51 @@
+# ---- OS / Editor ----
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+*.iml
+
+# ---- Environment / Secrets ----
+.env
+.env.*
+*.pem
+*.key
+credentials
+secrets.json
+
+# ---- Logs & temp ----
+*.log
+logs/
+tmp/
+temp/
+build.log
+
+# ---- Node ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+.next/
+coverage/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# ---- Java / Brazil ----
+target/
+*.class
+
+# ---- Misc ----
+*.bak
+.cache/
