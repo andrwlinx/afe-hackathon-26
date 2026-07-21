@@ -244,7 +244,7 @@ export function GraphView({ path }: { path: GraphPath }) {
       | undefined;
     if (!controls) return;
     controls.autoRotate = true;
-    controls.autoRotateSpeed = 0.55;
+    controls.autoRotateSpeed = 1.8;
     const stopSpin = () => {
       controls.autoRotate = false;
     };
