@@ -1,6 +1,88 @@
-# AFE Hackathon 2026
+# RampPath
 
-A hackathon project for the **Amazon Future Engineers (AFE) Scholarship**, built to help the next round of interns get up to speed faster and make their onboarding smoother.
+RampPath is an evidence-backed engineering knowledge graph for new interns. It
+connects ownership, permissions, packages, pipelines, deployment accounts, and
+approvers so an intern can answer:
+
+- Who owns this?
+- Can I access this?
+- Which role should I request, and from whom?
+- Where does this package deploy?
+
+The natural-language layer only selects a supported graph traversal. Every
+claim comes from a displayed path with source, confidence, and observation
+time. Missing data is reported as **not confirmed**, never as an authorization
+denial.
+
+## Run locally
+
+Requirements: Node.js 20 or newer.
+
+```bash
+npm install
+npm run dev
+```
+
+Open <http://127.0.0.1:5173>. The API runs at
+<http://127.0.0.1:3001>.
+
+```bash
+npm test
+npm run build
+```
+
+## Demo questions
+
+1. `Who owns AtlasRegionContext?`
+2. `Can I edit supported locations in prod?`
+3. `What access should I request to edit supported locations in prod?`
+4. `Where does AtlasRegionContext deploy?`
+
+The committed graph is synthetic and safe for the public repository.
+
+## Private snapshots
+
+Do not commit internal entities, account IDs, URLs, aliases, or relationships.
+Place an equivalent validated graph file under `data/private/`, then start the
+server with its path:
+
+```bash
+GRAPH_DATA_FILE=data/private/graph.json npm run dev
+```
+
+`data/private/` is gitignored. Credentials and Midway cookies stay server-side;
+the browser only receives the graph selected for the running demo.
+
+## MCP
+
+Start the stdio server:
+
+```bash
+npm run mcp
+```
+
+It exposes four read-only tools:
+
+- `resolve_owner`
+- `check_access`
+- `plan_access_request`
+- `trace_deployment`
+
+The MCP and HTTP interfaces use the same deterministic `QueryEngine`.
+
+## Architecture
+
+```text
+JSON snapshot -> Zod validation -> in-memory graph -> deterministic queries
+                                             |-> Express API -> React/Cytoscape
+                                             `-> MCP stdio tools
+```
+
+- `src/shared`: graph contracts and query response types
+- `src/server`: loader, indexes, traversal engine, API, and MCP server
+- `src/client`: intern-focused query and evidence interface
+- `data/public`: sanitized demonstration graph
+- `tests`: graph integrity, disclosure safety, query behavior, and API coverage
 
 ## Team
 
@@ -9,50 +91,4 @@ A hackathon project for the **Amazon Future Engineers (AFE) Scholarship**, built
 - Jacob Ryabinky
 - Andrew Lin
 
-## Pay it Forward
-
-The purpose of this project is to make life easier for future AFE interns — everything we build here is meant to be handed off and reused by the interns who come after us.
-
-## Repository
-
-- **GitHub:** https://github.com/avamartoma/afe-hackathon-26
-
-## Getting Started
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/avamartoma/afe-hackathon-26.git
-   cd afe-hackathon-26
-   ```
-2. Check out your personal branch (see below).
-3. Read [`handover.md`](./handover.md) **before you start** and update it **every time you push**.
-
-## Branches
-
-Each team member has their own working branch to avoid stepping on each other's work:
-
-| Person          | Branch            |
-|-----------------|-------------------|
-| Ava Martoma     | `ava`             |
-| Daniel Lee      | `daniel`          |
-| Jacob Ryabinky  | `jacob`           |
-| Andrew Lin      | `andrew`          |
-
-Switch to your branch:
-```bash
-git checkout ava   # replace with your name
-```
-
-Work on your branch, then open a Pull Request into `main` when your piece is ready.
-
-## Workflow Rules
-
-1. **Never push directly to `main`.** Work on your own branch and merge via Pull Request.
-2. **Update `handover.md` every time you push** — log what you changed. This is how we avoid merge conflicts.
-3. Pull the latest `main` before starting new work: `git pull origin main`.
-4. Keep commits small and descriptive.
-
-## Hackathon Submission
-
-See [`handover.md`](./handover.md) for the submission checklist and details.
-Submissions close **July 21st at 12:00 PM PST**.
+Submission deadline: July 21, 2026 at 12:00 PM Pacific.
