@@ -27,12 +27,16 @@ const GraphView = lazy(() =>
 
 const examples = [
   {
+    label: "Find a package owner",
+    question: "Who owns OrbitGndsysCDK?"
+  },
+  {
     label: "Find the right person",
     question: "Who knows about AtlasRegionContext?"
   },
   {
-    label: "Find an owner",
-    question: "Who owns AtlasRegionContext?"
+    label: "Find bindle experts",
+    question: "Who knows about PaymentsCDK?"
   },
   {
     label: "Check my access",
@@ -340,7 +344,7 @@ export function App() {
                                 {alias ? (
                                   <span className="expert-alias">
                                     {" "}
-                                    ({alias})
+                                    {alias}@
                                   </span>
                                 ) : null}
                               </strong>

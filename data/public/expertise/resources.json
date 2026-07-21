@@ -1,9 +1,9 @@
 [
   {
-    "id": "service:payments-ledger",
-    "type": "service",
-    "name": "PaymentLedger",
-    "description": "Payment ledger service owned by Payments Platform.",
+    "id": "bindle:payments-ledger",
+    "type": "bindle",
+    "name": "PaymentsLedgerBindle",
+    "description": "Payment ledger ownership bindle owned by Payments Platform.",
     "tags": [
       "payments",
       "transactions",
@@ -15,10 +15,10 @@
     ]
   },
   {
-    "id": "pipeline:payments-refund",
-    "type": "pipeline",
-    "name": "PaymentsRefundPipeline",
-    "description": "Payment refund deployment pipeline owned by Payments Platform.",
+    "id": "package:payments-refund",
+    "type": "package",
+    "name": "PaymentRefund",
+    "description": "Payment refund package owned by Payments Platform.",
     "tags": [
       "payments",
       "transactions",
@@ -30,10 +30,10 @@
     ]
   },
   {
-    "id": "package:payments-invoice",
-    "type": "package",
-    "name": "PaymentInvoice",
-    "description": "Payment invoice package owned by Payments Platform.",
+    "id": "bindle:payments-invoice",
+    "type": "bindle",
+    "name": "PaymentsInvoiceBindle",
+    "description": "Payment invoice ownership bindle owned by Payments Platform.",
     "tags": [
       "payments",
       "transactions",
@@ -75,10 +75,10 @@
     ]
   },
   {
-    "id": "pipeline:payments-chargeback",
-    "type": "pipeline",
-    "name": "PaymentsChargebackPipeline",
-    "description": "Payment chargeback deployment pipeline owned by Payments Platform.",
+    "id": "service:payments-chargeback",
+    "type": "service",
+    "name": "PaymentChargeback",
+    "description": "Payment chargeback service owned by Payments Platform.",
     "tags": [
       "payments",
       "transactions",
@@ -90,10 +90,26 @@
     ]
   },
   {
-    "id": "service:search-indexer",
-    "type": "service",
+    "id": "package:payments-cdk",
+    "type": "package",
+    "name": "PaymentsCDK",
+    "description": "CDK infrastructure definitions and deployment stacks for Payments Platform.",
+    "tags": [
+      "payments",
+      "transactions",
+      "billing",
+      "cdk",
+      "infrastructure"
+    ],
+    "aliases": [
+      "payments-cdk"
+    ]
+  },
+  {
+    "id": "package:search-indexer",
+    "type": "package",
     "name": "SearchIndexer",
-    "description": "Search indexer service owned by Search Experience.",
+    "description": "Search indexer package owned by Search Experience.",
     "tags": [
       "search",
       "ranking",
@@ -105,10 +121,10 @@
     ]
   },
   {
-    "id": "bindle:search-query-parser",
-    "type": "bindle",
-    "name": "SearchQueryParserBindle",
-    "description": "Search query parser ownership bindle owned by Search Experience.",
+    "id": "package:search-query-parser",
+    "type": "package",
+    "name": "SearchQueryParser",
+    "description": "Search query parser package owned by Search Experience.",
     "tags": [
       "search",
       "ranking",
@@ -135,10 +151,10 @@
     ]
   },
   {
-    "id": "pipeline:search-autocomplete",
-    "type": "pipeline",
-    "name": "SearchAutocompletePipeline",
-    "description": "Search autocomplete deployment pipeline owned by Search Experience.",
+    "id": "bindle:search-autocomplete",
+    "type": "bindle",
+    "name": "SearchAutocompleteBindle",
+    "description": "Search autocomplete ownership bindle owned by Search Experience.",
     "tags": [
       "search",
       "ranking",
@@ -150,10 +166,10 @@
     ]
   },
   {
-    "id": "package:search-spellcheck",
-    "type": "package",
+    "id": "service:search-spellcheck",
+    "type": "service",
     "name": "SearchSpellcheck",
-    "description": "Search spellcheck package owned by Search Experience.",
+    "description": "Search spellcheck service owned by Search Experience.",
     "tags": [
       "search",
       "ranking",
@@ -165,10 +181,10 @@
     ]
   },
   {
-    "id": "bindle:search-synonyms",
-    "type": "bindle",
-    "name": "SearchSynonymsBindle",
-    "description": "Search synonyms ownership bindle owned by Search Experience.",
+    "id": "package:search-synonyms",
+    "type": "package",
+    "name": "SearchSynonyms",
+    "description": "Search synonyms package owned by Search Experience.",
     "tags": [
       "search",
       "ranking",
@@ -180,10 +196,26 @@
     ]
   },
   {
-    "id": "bindle:catalog-item-master",
-    "type": "bindle",
-    "name": "CatalogItemMasterBindle",
-    "description": "Catalog item master ownership bindle owned by Catalog Services.",
+    "id": "package:search-cdk",
+    "type": "package",
+    "name": "SearchCDK",
+    "description": "CDK infrastructure definitions and deployment stacks for Search Experience.",
+    "tags": [
+      "search",
+      "ranking",
+      "relevance",
+      "cdk",
+      "infrastructure"
+    ],
+    "aliases": [
+      "search-cdk"
+    ]
+  },
+  {
+    "id": "pipeline:catalog-item-master",
+    "type": "pipeline",
+    "name": "CatalogItemMasterPipeline",
+    "description": "Catalog item master deployment pipeline owned by Catalog Services.",
     "tags": [
       "catalog",
       "listings",
@@ -210,10 +242,10 @@
     ]
   },
   {
-    "id": "bindle:catalog-attributes",
-    "type": "bindle",
-    "name": "CatalogAttributesBindle",
-    "description": "Catalog attributes ownership bindle owned by Catalog Services.",
+    "id": "package:catalog-attributes",
+    "type": "package",
+    "name": "CatalogAttributes",
+    "description": "Catalog attributes package owned by Catalog Services.",
     "tags": [
       "catalog",
       "listings",
@@ -225,10 +257,10 @@
     ]
   },
   {
-    "id": "pipeline:catalog-images",
-    "type": "pipeline",
-    "name": "CatalogImagesPipeline",
-    "description": "Catalog images deployment pipeline owned by Catalog Services.",
+    "id": "service:catalog-images",
+    "type": "service",
+    "name": "CatalogImages",
+    "description": "Catalog images service owned by Catalog Services.",
     "tags": [
       "catalog",
       "listings",
@@ -240,10 +272,10 @@
     ]
   },
   {
-    "id": "bindle:catalog-variations",
-    "type": "bindle",
-    "name": "CatalogVariationsBindle",
-    "description": "Catalog variations ownership bindle owned by Catalog Services.",
+    "id": "pipeline:catalog-variations",
+    "type": "pipeline",
+    "name": "CatalogVariationsPipeline",
+    "description": "Catalog variations deployment pipeline owned by Catalog Services.",
     "tags": [
       "catalog",
       "listings",
@@ -255,10 +287,10 @@
     ]
   },
   {
-    "id": "service:catalog-dedupe",
-    "type": "service",
+    "id": "package:catalog-dedupe",
+    "type": "package",
     "name": "CatalogDedupe",
-    "description": "Catalog dedupe service owned by Catalog Services.",
+    "description": "Catalog dedupe package owned by Catalog Services.",
     "tags": [
       "catalog",
       "listings",
@@ -270,10 +302,26 @@
     ]
   },
   {
-    "id": "package:fulfillment-pick-route",
+    "id": "package:catalog-cdk",
     "type": "package",
-    "name": "FulfillmentPickRoute",
-    "description": "Fulfillment pick route package owned by Fulfillment Tech.",
+    "name": "CatalogCDK",
+    "description": "CDK infrastructure definitions and deployment stacks for Catalog Services.",
+    "tags": [
+      "catalog",
+      "listings",
+      "products",
+      "cdk",
+      "infrastructure"
+    ],
+    "aliases": [
+      "catalog-cdk"
+    ]
+  },
+  {
+    "id": "bindle:fulfillment-pick-route",
+    "type": "bindle",
+    "name": "FulfillmentPickRouteBindle",
+    "description": "Fulfillment pick route ownership bindle owned by Fulfillment Tech.",
     "tags": [
       "fulfillment",
       "warehouse",
@@ -285,10 +333,10 @@
     ]
   },
   {
-    "id": "package:fulfillment-inventory",
-    "type": "package",
-    "name": "FulfillmentInventory",
-    "description": "Fulfillment inventory package owned by Fulfillment Tech.",
+    "id": "pipeline:fulfillment-inventory",
+    "type": "pipeline",
+    "name": "FulfillmentInventoryPipeline",
+    "description": "Fulfillment inventory deployment pipeline owned by Fulfillment Tech.",
     "tags": [
       "fulfillment",
       "warehouse",
@@ -315,10 +363,10 @@
     ]
   },
   {
-    "id": "bindle:fulfillment-wave-planner",
-    "type": "bindle",
-    "name": "FulfillmentWavePlannerBindle",
-    "description": "Fulfillment wave planner ownership bindle owned by Fulfillment Tech.",
+    "id": "package:fulfillment-wave-planner",
+    "type": "package",
+    "name": "FulfillmentWavePlanner",
+    "description": "Fulfillment wave planner package owned by Fulfillment Tech.",
     "tags": [
       "fulfillment",
       "warehouse",
@@ -330,10 +378,10 @@
     ]
   },
   {
-    "id": "service:fulfillment-packing",
-    "type": "service",
+    "id": "package:fulfillment-packing",
+    "type": "package",
     "name": "FulfillmentPacking",
-    "description": "Fulfillment packing service owned by Fulfillment Tech.",
+    "description": "Fulfillment packing package owned by Fulfillment Tech.",
     "tags": [
       "fulfillment",
       "warehouse",
@@ -345,10 +393,10 @@
     ]
   },
   {
-    "id": "package:fulfillment-manifest",
-    "type": "package",
-    "name": "FulfillmentManifest",
-    "description": "Fulfillment manifest package owned by Fulfillment Tech.",
+    "id": "pipeline:fulfillment-manifest",
+    "type": "pipeline",
+    "name": "FulfillmentManifestPipeline",
+    "description": "Fulfillment manifest deployment pipeline owned by Fulfillment Tech.",
     "tags": [
       "fulfillment",
       "warehouse",
@@ -360,10 +408,26 @@
     ]
   },
   {
-    "id": "pipeline:identity-signin",
-    "type": "pipeline",
-    "name": "IdentitySigninPipeline",
-    "description": "Identity signin deployment pipeline owned by Identity & Access.",
+    "id": "package:fulfillment-cdk",
+    "type": "package",
+    "name": "FulfillmentCDK",
+    "description": "CDK infrastructure definitions and deployment stacks for Fulfillment Tech.",
+    "tags": [
+      "fulfillment",
+      "warehouse",
+      "logistics",
+      "cdk",
+      "infrastructure"
+    ],
+    "aliases": [
+      "fulfillment-cdk"
+    ]
+  },
+  {
+    "id": "service:identity-signin",
+    "type": "service",
+    "name": "IdentitySignin",
+    "description": "Identity signin service owned by Identity & Access.",
     "tags": [
       "identity",
       "auth",
@@ -375,10 +439,10 @@
     ]
   },
   {
-    "id": "package:identity-tokens",
-    "type": "package",
-    "name": "IdentityTokens",
-    "description": "Identity tokens package owned by Identity & Access.",
+    "id": "bindle:identity-tokens",
+    "type": "bindle",
+    "name": "IdentityTokensBindle",
+    "description": "Identity tokens ownership bindle owned by Identity & Access.",
     "tags": [
       "identity",
       "auth",
@@ -390,10 +454,10 @@
     ]
   },
   {
-    "id": "package:identity-sessions",
-    "type": "package",
-    "name": "IdentitySessions",
-    "description": "Identity sessions package owned by Identity & Access.",
+    "id": "bindle:identity-sessions",
+    "type": "bindle",
+    "name": "IdentitySessionsBindle",
+    "description": "Identity sessions ownership bindle owned by Identity & Access.",
     "tags": [
       "identity",
       "auth",
@@ -405,10 +469,10 @@
     ]
   },
   {
-    "id": "service:identity-mfa",
-    "type": "service",
-    "name": "IdentityMfa",
-    "description": "Identity mfa service owned by Identity & Access.",
+    "id": "bindle:identity-mfa",
+    "type": "bindle",
+    "name": "IdentityMfaBindle",
+    "description": "Identity mfa ownership bindle owned by Identity & Access.",
     "tags": [
       "identity",
       "auth",
@@ -420,10 +484,10 @@
     ]
   },
   {
-    "id": "pipeline:identity-permissions",
-    "type": "pipeline",
-    "name": "IdentityPermissionsPipeline",
-    "description": "Identity permissions deployment pipeline owned by Identity & Access.",
+    "id": "service:identity-permissions",
+    "type": "service",
+    "name": "IdentityPermissions",
+    "description": "Identity permissions service owned by Identity & Access.",
     "tags": [
       "identity",
       "auth",
@@ -435,10 +499,10 @@
     ]
   },
   {
-    "id": "package:identity-audit-log",
-    "type": "package",
+    "id": "service:identity-audit-log",
+    "type": "service",
     "name": "IdentityAuditLog",
-    "description": "Identity audit log package owned by Identity & Access.",
+    "description": "Identity audit log service owned by Identity & Access.",
     "tags": [
       "identity",
       "auth",
@@ -447,6 +511,22 @@
     ],
     "aliases": [
       "identity-audit-log"
+    ]
+  },
+  {
+    "id": "package:identity-cdk",
+    "type": "package",
+    "name": "IdentityCDK",
+    "description": "CDK infrastructure definitions and deployment stacks for Identity & Access.",
+    "tags": [
+      "identity",
+      "auth",
+      "security",
+      "cdk",
+      "infrastructure"
+    ],
+    "aliases": [
+      "identity-cdk"
     ]
   },
   {
@@ -495,10 +575,10 @@
     ]
   },
   {
-    "id": "package:notifications-digest",
-    "type": "package",
-    "name": "NotificationDigest",
-    "description": "Notification digest package owned by Notifications Hub.",
+    "id": "bindle:notifications-digest",
+    "type": "bindle",
+    "name": "NotificationsDigestBindle",
+    "description": "Notification digest ownership bindle owned by Notifications Hub.",
     "tags": [
       "notifications",
       "messaging",
@@ -525,10 +605,10 @@
     ]
   },
   {
-    "id": "pipeline:notifications-bounce-handler",
-    "type": "pipeline",
-    "name": "NotificationsBounceHandlerPipeline",
-    "description": "Notification bounce handler deployment pipeline owned by Notifications Hub.",
+    "id": "package:notifications-bounce-handler",
+    "type": "package",
+    "name": "NotificationBounceHandler",
+    "description": "Notification bounce handler package owned by Notifications Hub.",
     "tags": [
       "notifications",
       "messaging",
@@ -537,6 +617,22 @@
     ],
     "aliases": [
       "notifications-bounce-handler"
+    ]
+  },
+  {
+    "id": "package:notifications-cdk",
+    "type": "package",
+    "name": "NotificationsCDK",
+    "description": "CDK infrastructure definitions and deployment stacks for Notifications Hub.",
+    "tags": [
+      "notifications",
+      "messaging",
+      "email",
+      "cdk",
+      "infrastructure"
+    ],
+    "aliases": [
+      "notifications-cdk"
     ]
   },
   {
@@ -570,10 +666,10 @@
     ]
   },
   {
-    "id": "bindle:analytics-dashboards",
-    "type": "bindle",
-    "name": "AnalyticsDashboardsBindle",
-    "description": "Analytics dashboards ownership bindle owned by Analytics Insights.",
+    "id": "package:analytics-dashboards",
+    "type": "package",
+    "name": "AnalyticsDashboards",
+    "description": "Analytics dashboards package owned by Analytics Insights.",
     "tags": [
       "analytics",
       "metrics",
@@ -585,10 +681,10 @@
     ]
   },
   {
-    "id": "bindle:analytics-funnels",
-    "type": "bindle",
-    "name": "AnalyticsFunnelsBindle",
-    "description": "Analytics funnels ownership bindle owned by Analytics Insights.",
+    "id": "package:analytics-funnels",
+    "type": "package",
+    "name": "AnalyticsFunnels",
+    "description": "Analytics funnels package owned by Analytics Insights.",
     "tags": [
       "analytics",
       "metrics",
@@ -615,10 +711,10 @@
     ]
   },
   {
-    "id": "service:analytics-exports",
-    "type": "service",
+    "id": "package:analytics-exports",
+    "type": "package",
     "name": "AnalyticsExports",
-    "description": "Analytics exports service owned by Analytics Insights.",
+    "description": "Analytics exports package owned by Analytics Insights.",
     "tags": [
       "analytics",
       "metrics",
@@ -630,10 +726,26 @@
     ]
   },
   {
-    "id": "bindle:delivery-promise-engine",
-    "type": "bindle",
-    "name": "DeliveryPromiseEngineBindle",
-    "description": "Delivery promise engine ownership bindle owned by Delivery Estimates.",
+    "id": "package:analytics-cdk",
+    "type": "package",
+    "name": "AnalyticsCDK",
+    "description": "CDK infrastructure definitions and deployment stacks for Analytics Insights.",
+    "tags": [
+      "analytics",
+      "metrics",
+      "reporting",
+      "cdk",
+      "infrastructure"
+    ],
+    "aliases": [
+      "analytics-cdk"
+    ]
+  },
+  {
+    "id": "package:delivery-promise-engine",
+    "type": "package",
+    "name": "DeliveryPromiseEngine",
+    "description": "Delivery promise engine package owned by Delivery Estimates.",
     "tags": [
       "delivery",
       "promise",
@@ -645,10 +757,10 @@
     ]
   },
   {
-    "id": "pipeline:delivery-carrier-feed",
-    "type": "pipeline",
-    "name": "DeliveryCarrierFeedPipeline",
-    "description": "Delivery carrier feed deployment pipeline owned by Delivery Estimates.",
+    "id": "service:delivery-carrier-feed",
+    "type": "service",
+    "name": "DeliveryCarrierFeed",
+    "description": "Delivery carrier feed service owned by Delivery Estimates.",
     "tags": [
       "delivery",
       "promise",
@@ -660,10 +772,10 @@
     ]
   },
   {
-    "id": "package:delivery-zones",
-    "type": "package",
-    "name": "DeliveryZones",
-    "description": "Delivery zones package owned by Delivery Estimates.",
+    "id": "pipeline:delivery-zones",
+    "type": "pipeline",
+    "name": "DeliveryZonesPipeline",
+    "description": "Delivery zones deployment pipeline owned by Delivery Estimates.",
     "tags": [
       "delivery",
       "promise",
@@ -675,10 +787,10 @@
     ]
   },
   {
-    "id": "bindle:delivery-cutoffs",
-    "type": "bindle",
-    "name": "DeliveryCutoffsBindle",
-    "description": "Delivery cutoffs ownership bindle owned by Delivery Estimates.",
+    "id": "package:delivery-cutoffs",
+    "type": "package",
+    "name": "DeliveryCutoffs",
+    "description": "Delivery cutoffs package owned by Delivery Estimates.",
     "tags": [
       "delivery",
       "promise",
@@ -720,10 +832,26 @@
     ]
   },
   {
-    "id": "service:ads-click-tracker",
-    "type": "service",
+    "id": "package:delivery-cdk",
+    "type": "package",
+    "name": "DeliveryCDK",
+    "description": "CDK infrastructure definitions and deployment stacks for Delivery Estimates.",
+    "tags": [
+      "delivery",
+      "promise",
+      "shipping",
+      "cdk",
+      "infrastructure"
+    ],
+    "aliases": [
+      "delivery-cdk"
+    ]
+  },
+  {
+    "id": "package:ads-click-tracker",
+    "type": "package",
     "name": "AdsClickTracker",
-    "description": "Ads click tracker service owned by Ads Measurement.",
+    "description": "Ads click tracker package owned by Ads Measurement.",
     "tags": [
       "ads",
       "attribution",
@@ -735,10 +863,10 @@
     ]
   },
   {
-    "id": "bindle:ads-attribution",
-    "type": "bindle",
-    "name": "AdsAttributionBindle",
-    "description": "Ads attribution ownership bindle owned by Ads Measurement.",
+    "id": "package:ads-attribution",
+    "type": "package",
+    "name": "AdsAttribution",
+    "description": "Ads attribution package owned by Ads Measurement.",
     "tags": [
       "ads",
       "attribution",
@@ -750,10 +878,10 @@
     ]
   },
   {
-    "id": "package:ads-budget-pacer",
-    "type": "package",
-    "name": "AdsBudgetPacer",
-    "description": "Ads budget pacer package owned by Ads Measurement.",
+    "id": "pipeline:ads-budget-pacer",
+    "type": "pipeline",
+    "name": "AdsBudgetPacerPipeline",
+    "description": "Ads budget pacer deployment pipeline owned by Ads Measurement.",
     "tags": [
       "ads",
       "attribution",
@@ -765,10 +893,10 @@
     ]
   },
   {
-    "id": "package:ads-auctions",
-    "type": "package",
-    "name": "AdsAuctions",
-    "description": "Ads auctions package owned by Ads Measurement.",
+    "id": "pipeline:ads-auctions",
+    "type": "pipeline",
+    "name": "AdsAuctionsPipeline",
+    "description": "Ads auctions deployment pipeline owned by Ads Measurement.",
     "tags": [
       "ads",
       "attribution",
@@ -780,10 +908,10 @@
     ]
   },
   {
-    "id": "service:ads-reporting-api",
-    "type": "service",
+    "id": "package:ads-reporting-api",
+    "type": "package",
     "name": "AdsReportingApi",
-    "description": "Ads reporting api service owned by Ads Measurement.",
+    "description": "Ads reporting api package owned by Ads Measurement.",
     "tags": [
       "ads",
       "attribution",
@@ -795,10 +923,10 @@
     ]
   },
   {
-    "id": "package:ads-fraud-filter",
-    "type": "package",
-    "name": "AdsFraudFilter",
-    "description": "Ads fraud filter package owned by Ads Measurement.",
+    "id": "bindle:ads-fraud-filter",
+    "type": "bindle",
+    "name": "AdsFraudFilterBindle",
+    "description": "Ads fraud filter ownership bindle owned by Ads Measurement.",
     "tags": [
       "ads",
       "attribution",
@@ -807,6 +935,22 @@
     ],
     "aliases": [
       "ads-fraud-filter"
+    ]
+  },
+  {
+    "id": "package:ads-cdk",
+    "type": "package",
+    "name": "AdsCDK",
+    "description": "CDK infrastructure definitions and deployment stacks for Ads Measurement.",
+    "tags": [
+      "ads",
+      "attribution",
+      "campaigns",
+      "cdk",
+      "infrastructure"
+    ],
+    "aliases": [
+      "ads-cdk"
     ]
   },
   {
@@ -825,10 +969,10 @@
     ]
   },
   {
-    "id": "service:onboarding-mentor-match",
-    "type": "service",
+    "id": "package:onboarding-mentor-match",
+    "type": "package",
     "name": "OnboardingMentorMatch",
-    "description": "Onboarding mentor match service owned by Onboarding Tools.",
+    "description": "Onboarding mentor match package owned by Onboarding Tools.",
     "tags": [
       "onboarding",
       "interns",
@@ -840,10 +984,10 @@
     ]
   },
   {
-    "id": "pipeline:onboarding-starter-tasks",
-    "type": "pipeline",
-    "name": "OnboardingStarterTasksPipeline",
-    "description": "Onboarding starter tasks deployment pipeline owned by Onboarding Tools.",
+    "id": "service:onboarding-starter-tasks",
+    "type": "service",
+    "name": "OnboardingStarterTasks",
+    "description": "Onboarding starter tasks service owned by Onboarding Tools.",
     "tags": [
       "onboarding",
       "interns",
@@ -855,10 +999,10 @@
     ]
   },
   {
-    "id": "package:onboarding-wiki-sync",
-    "type": "package",
-    "name": "OnboardingWikiSync",
-    "description": "Onboarding wiki sync package owned by Onboarding Tools.",
+    "id": "pipeline:onboarding-wiki-sync",
+    "type": "pipeline",
+    "name": "OnboardingWikiSyncPipeline",
+    "description": "Onboarding wiki sync deployment pipeline owned by Onboarding Tools.",
     "tags": [
       "onboarding",
       "interns",
@@ -870,10 +1014,10 @@
     ]
   },
   {
-    "id": "package:onboarding-checklists",
-    "type": "package",
-    "name": "OnboardingChecklists",
-    "description": "Onboarding checklists package owned by Onboarding Tools.",
+    "id": "bindle:onboarding-checklists",
+    "type": "bindle",
+    "name": "OnboardingChecklistsBindle",
+    "description": "Onboarding checklists ownership bindle owned by Onboarding Tools.",
     "tags": [
       "onboarding",
       "interns",
@@ -897,6 +1041,128 @@
     ],
     "aliases": [
       "onboarding-badges"
+    ]
+  },
+  {
+    "id": "package:onboarding-cdk",
+    "type": "package",
+    "name": "OnboardingCDK",
+    "description": "CDK infrastructure definitions and deployment stacks for Onboarding Tools.",
+    "tags": [
+      "onboarding",
+      "interns",
+      "devtools",
+      "cdk",
+      "infrastructure"
+    ],
+    "aliases": [
+      "onboarding-cdk"
+    ]
+  },
+  {
+    "id": "bindle:orbit-gndsys-telemetry",
+    "type": "bindle",
+    "name": "OrbitGndsysTelemetryBindle",
+    "description": "OrbitGndsys telemetry ownership bindle owned by Orbit Ground Systems.",
+    "tags": [
+      "orbit",
+      "ground-systems",
+      "satellite",
+      "telemetry"
+    ],
+    "aliases": [
+      "orbit-gndsys-telemetry"
+    ]
+  },
+  {
+    "id": "package:orbit-gndsys-scheduler",
+    "type": "package",
+    "name": "OrbitGndsysScheduler",
+    "description": "OrbitGndsys scheduler package owned by Orbit Ground Systems.",
+    "tags": [
+      "orbit",
+      "ground-systems",
+      "satellite",
+      "scheduler"
+    ],
+    "aliases": [
+      "orbit-gndsys-scheduler"
+    ]
+  },
+  {
+    "id": "bindle:orbit-gndsys-antenna-control",
+    "type": "bindle",
+    "name": "OrbitGndsysAntennaControlBindle",
+    "description": "OrbitGndsys antenna control ownership bindle owned by Orbit Ground Systems.",
+    "tags": [
+      "orbit",
+      "ground-systems",
+      "satellite",
+      "antenna control"
+    ],
+    "aliases": [
+      "orbit-gndsys-antenna-control"
+    ]
+  },
+  {
+    "id": "service:orbit-gndsys-downlink",
+    "type": "service",
+    "name": "OrbitGndsysDownlink",
+    "description": "OrbitGndsys downlink service owned by Orbit Ground Systems.",
+    "tags": [
+      "orbit",
+      "ground-systems",
+      "satellite",
+      "downlink"
+    ],
+    "aliases": [
+      "orbit-gndsys-downlink"
+    ]
+  },
+  {
+    "id": "package:orbit-gndsys-ops-console",
+    "type": "package",
+    "name": "OrbitGndsysOpsConsole",
+    "description": "OrbitGndsys ops console package owned by Orbit Ground Systems.",
+    "tags": [
+      "orbit",
+      "ground-systems",
+      "satellite",
+      "ops console"
+    ],
+    "aliases": [
+      "orbit-gndsys-ops-console"
+    ]
+  },
+  {
+    "id": "package:orbit-gndsys-region-config",
+    "type": "package",
+    "name": "OrbitGndsysRegionConfig",
+    "description": "OrbitGndsys region config package owned by Orbit Ground Systems.",
+    "tags": [
+      "orbit",
+      "ground-systems",
+      "satellite",
+      "region config"
+    ],
+    "aliases": [
+      "orbit-gndsys-region-config"
+    ]
+  },
+  {
+    "id": "package:orbit-gndsys-cdk",
+    "type": "package",
+    "name": "OrbitGndsysCDK",
+    "description": "CDK infrastructure definitions and deployment stacks for Orbit Ground Systems.",
+    "tags": [
+      "orbit",
+      "ground-systems",
+      "satellite",
+      "cdk",
+      "infrastructure"
+    ],
+    "aliases": [
+      "orbit-gndsys-cdk"
     ]
   }
 ]

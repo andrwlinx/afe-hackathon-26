@@ -52,7 +52,7 @@ input:focus-visible,
 select:focus-visible,
 a:focus-visible,
 summary:focus-visible {
-  outline: 3px solid rgba(228, 121, 17, 0.4);
+  outline: 3px solid rgba(46, 112, 232, 0.4);
   outline-offset: 2px;
 }
 
@@ -78,9 +78,9 @@ summary:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #232f3e;
-  color: #fff;
-  border-bottom: 3px solid #ff9900;
+  background: #fff;
+  color: #16191f;
+  border-bottom: 1px solid #e3e6ea;
 }
 
 .brand {
@@ -94,9 +94,9 @@ summary:focus-visible {
   height: 32px;
   display: grid;
   place-items: center;
-  color: #232f3e;
-  background: #ff9900;
-  border-radius: 4px;
+  color: #fff;
+  background: #1768c9;
+  border-radius: 8px;
 }
 
 .brand strong,
@@ -111,7 +111,7 @@ summary:focus-visible {
 
 .brand span {
   margin-top: 3px;
-  color: #aeb7c6;
+  color: #6b7280;
   font-size: 10px;
 }
 
@@ -119,7 +119,7 @@ summary:focus-visible {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #c6ceda;
+  color: #6b7280;
   font-size: 11px;
 }
 
@@ -132,8 +132,8 @@ summary:focus-visible {
 }
 
 .status-dot.online {
-  background: #ff9900;
-  border: 1px solid #ffd9a1;
+  background: #1b8354;
+  border: 1px solid #bfe3d0;
 }
 
 .workspace {
@@ -162,20 +162,20 @@ summary:focus-visible {
 .query-input {
   min-width: 0;
   height: 44px;
-  padding: 0 12px;
+  padding: 0 18px;
   display: flex;
   align-items: center;
   gap: 9px;
   color: #748092;
-  background: #f8fafb;
+  background: #fff;
   border: 1px solid #cbd3de;
-  border-radius: 4px;
+  border-radius: 999px;
 }
 
 .query-input:focus-within {
-  color: #c45500;
+  color: #10508c;
   background: #fff;
-  border-color: #e47911;
+  border-color: #1768c9;
 }
 
 .query-input input {
@@ -197,32 +197,32 @@ summary:focus-visible {
 .query-form select {
   width: 100%;
   height: 44px;
-  padding: 0 32px 0 12px;
+  padding: 0 32px 0 16px;
   color: #4f5d70;
   background: #fff;
   border: 1px solid #cbd3de;
-  border-radius: 4px;
+  border-radius: 999px;
   font-size: 12px;
 }
 
 .primary-button {
   height: 44px;
-  padding: 0 16px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  color: #0f1111;
-  background: #ff9900;
+  color: #fff;
+  background: #2e70e8;
   border: 0;
-  border-radius: 2px 6px 6px 2px;
+  border-radius: 999px;
   font-size: 13px;
   font-weight: 700;
   white-space: nowrap;
 }
 
 .primary-button:hover {
-  background: #e47911;
+  background: #1768c9;
 }
 
 .primary-button:disabled {
@@ -295,7 +295,7 @@ summary:focus-visible {
   display: flex;
   align-items: center;
   gap: 7px;
-  color: #c45500;
+  color: #10508c;
   background: #fff;
   border: 1px solid #bac4cf;
   border-radius: 2px 6px 6px 2px;
@@ -322,7 +322,7 @@ summary:focus-visible {
 }
 
 .answer-summary.status-confirmed {
-  border-top-color: #e47911;
+  border-top-color: #1768c9;
 }
 
 .answer-summary.status-action-needed {
@@ -341,7 +341,7 @@ summary:focus-visible {
   display: flex;
   align-items: center;
   gap: 7px;
-  color: #e47911;
+  color: #1768c9;
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
@@ -379,7 +379,7 @@ summary:focus-visible {
   gap: 11px;
   color: #334155;
   background: #f0f7f5;
-  border-left: 3px solid #e47911;
+  border-left: 3px solid #1768c9;
 }
 
 .status-action-needed .next-action {
@@ -407,7 +407,7 @@ summary:focus-visible {
 
 .answer-confidence {
   min-height: 56px;
-  color: #e47911;
+  color: #1768c9;
   font-size: 12px;
   font-weight: 700;
 }
@@ -692,8 +692,8 @@ summary:focus-visible {
 
 .path-navigator button.selected > span {
   color: #fff;
-  background: #e47911;
-  border-color: #e47911;
+  background: #1768c9;
+  border-color: #1768c9;
 }
 
 .expert-list {
@@ -713,7 +713,7 @@ summary:focus-visible {
 
 .expert-summary {
   display: grid;
-  grid-template-columns: 28px 40px minmax(160px, 0.75fr) minmax(220px, 1.25fr) 58px;
+  grid-template-columns: 28px 42px minmax(160px, 0.75fr) minmax(220px, 1.25fr) 58px;
   align-items: center;
   gap: 12px;
 }
@@ -731,14 +731,14 @@ summary:focus-visible {
 }
 
 .expert-badge {
-  width: 40px;
-  height: 46px;
+  width: 42px;
+  height: 42px;
   display: grid;
   place-items: center;
-  color: #fff;
-  background: #232f3e;
-  border-radius: 4px;
-  border-bottom: 3px solid #ff9900;
+  color: #1768c9;
+  background: #e8f1fd;
+  border: 1px solid #bcd7f7;
+  border-radius: 50%;
   font-family: "IBM Plex Sans Condensed", ui-sans-serif, system-ui, sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -759,7 +759,7 @@ summary:focus-visible {
 
 .expert-identity strong {
   overflow: hidden;
-  color: #0066c0;
+  color: #1768c9;
   font-size: 13px;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -801,8 +801,8 @@ summary:focus-visible {
   display: grid;
   align-content: center;
   text-align: center;
-  color: #c45500;
-  background: #fdf0e2;
+  color: #10508c;
+  background: #e8f1fd;
   border-radius: 4px;
 }
 
@@ -902,7 +902,7 @@ summary:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  color: #c45500;
+  color: #10508c;
   font-size: 10px;
   font-weight: 700;
   text-decoration: none;
@@ -955,7 +955,7 @@ summary:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  color: #c45500;
+  color: #10508c;
   background: #e9f5f2;
   border-radius: 4px;
   font-size: 9px;
@@ -1035,7 +1035,7 @@ summary:focus-visible {
 }
 
 .icon-button:hover {
-  color: #c45500;
+  color: #10508c;
   border-color: #9fbab5;
 }
 
@@ -1045,7 +1045,7 @@ summary:focus-visible {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #e47911;
+  color: #1768c9;
 }
 
 .confidence-panel span,
@@ -1236,7 +1236,7 @@ summary:focus-visible {
 
   .expert-badge {
     width: 36px;
-    height: 42px;
+    height: 36px;
     font-size: 12px;
   }
 
@@ -1277,5 +1277,30 @@ summary:focus-visible {
   *::after {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* ---- A-to-Z Phone Tool theme: rounded cards ---- */
+.expert-list,
+.evidence-panel,
+.draft-panel,
+.confidence-panel,
+.answer-summary {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.expert-row:first-child {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+@media (max-width: 680px) {
+  .expert-list,
+  .evidence-panel,
+  .draft-panel,
+  .confidence-panel,
+  .answer-summary {
+    border-radius: 0;
   }
 }

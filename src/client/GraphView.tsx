@@ -54,7 +54,7 @@ function createNodeObject(
     ? "#f7fafc"
     : node.status === "missing"
       ? "#c53f3f"
-      : "#e47911";
+      : "#1768c9";
   return new Mesh(
     new SphereGeometry(radius, 20, 16),
     new MeshLambertMaterial({ color })

@@ -140,6 +140,13 @@ const TEAMS = [
     noun: "Onboarding",
     tags: ["onboarding", "interns", "devtools"],
     concepts: ["ramp-tracker", "mentor-match", "starter-tasks", "wiki-sync", "checklists", "badges"]
+  },
+  {
+    name: "Orbit Ground Systems",
+    slug: "orbit-gndsys",
+    noun: "OrbitGndsys",
+    tags: ["orbit", "ground-systems", "satellite"],
+    concepts: ["telemetry", "scheduler", "antenna-control", "downlink", "ops-console", "region-config"]
   }
 ];
 
@@ -238,6 +245,16 @@ for (const team of TEAMS) {
       aliases: [slug]
     });
   }
+  // Every team gets a Brazil-style CDK infrastructure package
+  // (e.g. PaymentsCDK, OrbitGndsysCDK) so ownership queries feel real.
+  list.push({
+    id: `package:${team.slug}-cdk`,
+    type: "package",
+    name: `${titleCase(team.slug)}CDK`,
+    description: `CDK infrastructure definitions and deployment stacks for ${team.name}.`,
+    tags: [...team.tags, "cdk", "infrastructure"],
+    aliases: [`${team.slug}-cdk`]
+  });
   teamResources.set(team.slug, list);
   resources.push(...list);
 }
