@@ -1,21 +1,159 @@
 # RampPath
 
-RampPath is an evidence-backed engineering knowledge graph for new interns. It
-connects ownership, permissions, packages, pipelines, deployment accounts, and
-approvers so an intern can answer:
+**The shortest path from "I'm blocked" to "I know exactly who to ask."**
 
-- Who should I ask about this system?
-- Who owns this?
-- Can I access this?
-- Which role should I request, and from whom?
-- Where does this package deploy?
+It is day three of an internship. You need to change a production setting, but
+the package name does not match the owning team, the account is governed by a
+Bindle you have never seen, and the role you need is documented somewhere you
+cannot find.
 
-The natural-language layer only selects a supported graph traversal. Every
-claim comes from a displayed path with source, confidence, and observation
-time. Missing data is reported as **not confirmed**, never as an authorization
-denial.
+The answer exists. It is just spread across people, packages, pipelines,
+permissions, accounts, and stale pages.
 
-## Run locally
+Every engineering organization is a graph that new builders cannot see.
+**RampPath makes that graph queryable.**
+
+![RampPath showing an evidence-backed path and ranked contacts](docs/ramp-path-demo.png)
+
+## The pitch
+
+RampPath is an evidence-backed navigation layer for engineering organizations.
+An intern asks a normal question and gets three things:
+
+1. **The answer** - who owns it, where it deploys, or whether access is
+   confirmed.
+2. **The path** - the people, teams, resources, roles, and accounts that support
+   that answer.
+3. **The next action** - who to contact, what role to request, and a draft they
+   can send.
+
+Search can find documents *about* a system. RampPath answers questions whose
+answers only emerge after joining relationships:
+
+```text
+person -> team -> package
+person -> role -> account -> resource
+package -> pipeline -> stage -> account
+approver -> bindle -> account
+```
+
+That makes RampPath useful on an intern's first week and valuable anywhere
+ownership, access, and operational knowledge are fragmented.
+
+## From question to action
+
+Ask:
+
+> Can I edit supported locations in prod?
+
+RampPath does not stop at "no." It shows that the required role grants access,
+marks the missing role-assumption edge, identifies the approver, and prepares
+the request.
+
+Ask:
+
+> Who knows about AtlasRegionContext?
+
+RampPath ranks people by connected resources, relationship strength, and recent
+activity. Every score expands into a plain-language "Why this person"
+breakdown, so an intern can choose a contact with confidence.
+
+## Features
+
+### Ask in plain language
+
+The query layer recognizes five high-value onboarding intents:
+
+- Find the people who know a system
+- Resolve an owner
+- Check an access path
+- Plan an access request
+- Trace a deployment
+
+Natural language selects a supported traversal; it does not invent graph facts.
+
+### See the path in 3D
+
+The interactive Three.js graph gives every answer a visible structure:
+
+- Stable, deterministic node positions
+- Directed verified and missing connections
+- Orbit, zoom, reset, and node inspection
+- Readable labels at desktop and mobile sizes
+- Keyboard path navigation and a no-WebGL fallback
+
+### Find the right human, not just an owner field
+
+Expert search combines:
+
+```text
+keyword relevance
+x relationship weight
+x recency
+```
+
+Owners, maintainers, and contributors receive different weights. The top raw
+score is normalized to 100, while role, team, matched resources, and scoring
+evidence remain visible.
+
+### Turn missing access into a next step
+
+RampPath distinguishes **missing evidence** from an authorization denial. When
+it cannot confirm a path, it shows the exact missing edge, likely approver, and
+request text instead of making an unsupported security claim.
+
+### Keep every answer traceable
+
+Evidence includes source, confidence, mode, and observation time. Verified
+connections remain visually distinct from missing ones, and stale or absent
+data stays explicit.
+
+### Meet builders where they work
+
+The same deterministic query engine powers:
+
+- The React web application
+- A read-only HTTP API
+- Five MCP tools for coding agents and assistants
+
+## Why it is different
+
+| Existing approach | What the intern still has to do | RampPath |
+| --- | --- | --- |
+| Enterprise search | Read several pages and reconcile them | Joins relationships into one path |
+| Service catalog | Trust a manually maintained owner field | Shows ownership with source evidence |
+| Access portal | Know the right account, role, and resource first | Finds the missing role and approver |
+| Ask in chat | Guess the right room or person | Ranks contacts and explains why |
+
+RampPath does not grant permissions or replace source systems. It makes their
+relationships understandable enough for a new builder to take the next correct
+action.
+
+## How it works
+
+```text
+Validated JSON snapshots
+          |
+          v
+Typed nodes + evidence-backed edges
+          |
+          v
+In-memory graph indexes
+          |
+          +--> deterministic ownership/access/deployment traversals
+          |
+          +--> explainable expertise ranking
+                         |
+                         +--> Express API
+                         +--> MCP tools
+                         `--> React + Three.js interface
+```
+
+The current prototype uses validated snapshots and synthetic public data.
+Connector-based synchronization with live source systems is the next step, not
+a claim made by this demo.
+
+## Try the demo
 
 Requirements: Node.js 20 or newer.
 
@@ -27,12 +165,7 @@ npm run dev
 Open <http://127.0.0.1:5173>. The API runs at
 <http://127.0.0.1:3001>.
 
-```bash
-npm test
-npm run build
-```
-
-## Demo questions
+Start with:
 
 1. `Who knows about AtlasRegionContext?`
 2. `Who owns AtlasRegionContext?`
@@ -40,45 +173,36 @@ npm run build
 4. `What access should I request to edit supported locations in prod?`
 5. `Where does AtlasRegionContext deploy?`
 
-The committed graph is synthetic and safe for the public repository.
+## Data and safety
 
-## Synthetic expertise data
+The committed graph is fictional and safe for a public repository. Do not
+commit internal entities, account IDs, URLs, aliases, or relationships.
 
-Ranked people search reads three optional files:
-
-- `data/public/expertise/people.json`
-- `data/public/expertise/resources.json`
-- `data/public/expertise/relationships.json`
-
-Copy the adjacent `*.example.json` files to start. The complete contract and
-privacy rules are in
-[`data/public/expertise/README.md`](data/public/expertise/README.md).
-When all three files are present, the server validates and merges them
-automatically. It fails loudly on partial files, missing references, duplicate
-edges, or incompatible entity IDs.
-
-For private data, keep the files outside the public directory:
-
-```bash
-EXPERTISE_DATA_DIR=data/private/expertise npm run dev
-```
-
-Expert scores combine fuzzy resource relevance, relationship weight
-(`owns=1.0`, `maintains=0.7`, `contributes-to=0.4`), and recency. The highest
-raw score is normalized to 100, and every component is displayed in the UI.
-
-## Private snapshots
-
-Do not commit internal entities, account IDs, URLs, aliases, or relationships.
-Place an equivalent validated graph file under `data/private/`, then start the
-server with its path:
+Use a private graph snapshot without exposing it to source control:
 
 ```bash
 GRAPH_DATA_FILE=data/private/graph.json npm run dev
 ```
 
-`data/private/` is gitignored. Credentials and Midway cookies stay server-side;
-the browser only receives the graph selected for the running demo.
+Optional expertise data uses three files:
+
+- `data/public/expertise/people.json`
+- `data/public/expertise/resources.json`
+- `data/public/expertise/relationships.json`
+
+Start from the adjacent `*.example.json` files. The full schema and privacy
+rules live in
+[`data/public/expertise/README.md`](data/public/expertise/README.md).
+
+For private expertise snapshots:
+
+```bash
+EXPERTISE_DATA_DIR=data/private/expertise npm run dev
+```
+
+The server rejects partial datasets, missing references, duplicate
+relationships, and incompatible IDs. `data/private/` is gitignored, and
+credentials remain server-side.
 
 ## MCP
 
@@ -96,22 +220,25 @@ It exposes five read-only tools:
 - `plan_access_request`
 - `trace_deployment`
 
-The MCP and HTTP interfaces use the same deterministic `QueryEngine`.
+## Verify
 
-## Architecture
-
-```text
-JSON snapshots -> Zod validation -> in-memory graph -> deterministic queries
-                                        |-> explainable expertise ranking
-                                             |-> Express API -> React/Cytoscape
-                                             `-> MCP stdio tools
+```bash
+npm test
+npm run build
+npm run test:e2e
 ```
 
-- `src/shared`: graph contracts and query response types
-- `src/server`: loader, indexes, traversal engine, API, and MCP server
-- `src/client`: intern-focused query and evidence interface
-- `data/public`: sanitized demonstration graph
-- `tests`: graph integrity, disclosure safety, query behavior, and API coverage
+The suite covers graph integrity, public-data safety, deterministic queries,
+expert ranking, APIs, responsive workflows, and nonblank WebGL rendering at
+1440px and 390px.
+
+## Project map
+
+- `src/shared` - graph contracts and query response types
+- `src/server` - connectors, indexes, ranking, traversal, HTTP, and MCP
+- `src/client` - query workflow, 3D graph, evidence, and ranked contacts
+- `data/public` - sanitized demonstration data
+- `tests` and `e2e` - behavior, safety, and responsive browser coverage
 
 ## Team
 
@@ -119,5 +246,3 @@ JSON snapshots -> Zod validation -> in-memory graph -> deterministic queries
 - Daniel Lee
 - Jacob Ryabinky
 - Andrew Lin
-
-Submission deadline: July 21, 2026 at 12:00 PM Pacific.

@@ -26,6 +26,7 @@ Add newest entries at the top.
 
 | Date (PST) | Person | Branch | Files / Area Changed | Summary |
 |------------|--------|--------|----------------------|---------|
+| 2026-07-21 | Andrew Lin | `andrew-ui` | README, product screenshot | Reframed the README as a startup-style product narrative: opened with the intern onboarding problem, explained the answer/path/next-action value proposition, then documented differentiators, features, architecture, safety boundaries, demo workflow, and MCP surface with a current product image. |
 | 2026-07-21 | Andrew Lin | `andrew-ui` | 3D graph renderer, search-first UI, responsive tests | Replaced Cytoscape with a lazy-loaded Three.js force-graph scene using deterministic fixed coordinates, orbit/zoom controls, directed verified and missing links, readable screen-space labels, node inspection, WebGL fallback, and keyboard path navigation. Simplified the page into a compact query band with progressive contact and evidence details; verified at 1440px and 390px. |
 | 2026-07-21 | Andrew Lin | `andrew-ui` | React UI, graph visualization, responsive E2E coverage | Reworked RampPath into a dense engineering-tool layout with IBM Plex Sans Condensed and Source Sans 3, the ink/teal visual system, full-width evidence panels, a larger accessible Cytoscape graph, and verified 1440px/390px behavior without horizontal overflow. |
 | 2026-07-21 | Andrew Lin | `andrew` | Expertise search, JSON contract, UI | Added explainable ranked people search, person cards, optional three-file synthetic data ingestion, tests, and MCP support. |
