@@ -1,0 +1,18 @@
+[
+  {
+    "id": "relationship:morgan-owns-payment-processor",
+    "personId": "person:morgan-lee",
+    "resourceId": "package:payment-event-processor",
+    "relation": "owns",
+    "lastActive": "2026-07-15",
+    "observedAt": "2026-07-20T20:00:00.000Z"
+  },
+  {
+    "id": "relationship:sam-maintains-payment-stream",
+    "personId": "person:sam-rivera",
+    "resourceId": "pipeline:payment-stream",
+    "relation": "maintains",
+    "lastActive": "2026-06-28",
+    "observedAt": "2026-07-20T20:00:00.000Z"
+  }
+]

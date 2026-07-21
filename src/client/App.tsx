@@ -7,17 +7,24 @@ import {
   CircleHelp,
   Clipboard,
   Database,
+  ExternalLink,
   Network,
   Search,
   ShieldCheck,
   Sparkles,
-  UserRoundCheck
+  UserRoundCheck,
+  UsersRound
 } from "lucide-react";
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import type { QueryResponse } from "../shared/graph.js";
 import { GraphView } from "./GraphView.js";
 
 const examples = [
+  {
+    label: "Find the right person",
+    question: "Who knows about AtlasRegionContext?",
+    icon: UsersRound
+  },
   {
     label: "Find an owner",
     question: "Who owns AtlasRegionContext?",
@@ -46,12 +53,22 @@ interface Health {
   edges: number;
   generatedAt: string;
   dataMode: "public" | "private";
+  expertiseLoaded: boolean;
 }
 
 function statusIcon(status: QueryResponse["result"]["status"]) {
   if (status === "confirmed") return CheckCircle2;
   if (status === "action-needed") return CircleAlert;
   return CircleHelp;
+}
+
+function stringAttribute(
+  attributes: Record<string, unknown>,
+  key: string
+): string | undefined {
+  return typeof attributes[key] === "string"
+    ? attributes[key]
+    : undefined;
 }
 
 export function App() {
@@ -184,7 +201,13 @@ export function App() {
           <div className="source-summary">
             <Database size={16} />
             <div>
-              <strong>{health?.dataMode === "private" ? "Private snapshot" : "Demo dataset"}</strong>
+              <strong>
+                {health?.expertiseLoaded
+                  ? "Expertise JSON loaded"
+                  : health?.dataMode === "private"
+                    ? "Private snapshot"
+                    : "Demo dataset"}
+              </strong>
               <span>
                 {health
                   ? `Observed ${new Date(health.generatedAt).toLocaleDateString()}`
@@ -246,11 +269,113 @@ export function App() {
                 ) : null}
               </section>
 
+              {response.result.experts?.length ? (
+                <section className="expert-results">
+                  <div className="expert-results-heading">
+                    <div>
+                      <span className="section-label">Ranked contacts</span>
+                      <h2>Who to ask first</h2>
+                    </div>
+                    <span className="score-key">Top score normalized to 100</span>
+                  </div>
+                  <div className="expert-grid">
+                    {response.result.experts.map((expert, index) => {
+                      const alias = stringAttribute(
+                        expert.person.attributes,
+                        "alias"
+                      );
+                      const team = stringAttribute(
+                        expert.person.attributes,
+                        "team"
+                      );
+                      const role = stringAttribute(
+                        expert.person.attributes,
+                        "role"
+                      );
+                      const profileUrl = stringAttribute(
+                        expert.person.attributes,
+                        "profileUrl"
+                      );
+
+                      return (
+                        <article className="expert-card" key={expert.person.id}>
+                          <div className="expert-card-top">
+                            <span className="expert-rank">#{index + 1}</span>
+                            <div className="expert-identity">
+                              <strong>{expert.person.label}</strong>
+                              <span>
+                                {[
+                                  alias ? `@${alias}` : null,
+                                  role ?? expert.person.description,
+                                  team
+                                ]
+                                  .filter(Boolean)
+                                  .join(" · ")}
+                              </span>
+                            </div>
+                            <div
+                              className="expert-score"
+                              aria-label={`${expert.score} percent relevance`}
+                            >
+                              <strong>{expert.score}</strong>
+                              <span>match</span>
+                            </div>
+                          </div>
+                          <div className="score-track" aria-hidden="true">
+                            <i style={{ width: `${expert.score}%` }} />
+                          </div>
+                          <div className="reason-heading">Why this person</div>
+                          <div className="reason-list">
+                            {expert.reasons.slice(0, 3).map((reason) => (
+                              <div
+                                className="reason-row"
+                                key={`${expert.person.id}-${reason.resource.id}`}
+                              >
+                                <div>
+                                  <strong>{reason.resource.label}</strong>
+                                  <span>
+                                    {reason.relation === "team-owner"
+                                      ? "owning team"
+                                      : reason.relation.replace("-", " ")}
+                                  </span>
+                                </div>
+                                <span className="reason-math">
+                                  {Math.round(reason.matchStrength * 100)}% relevance
+                                  {" · "}
+                                  {Math.round(reason.relationshipWeight * 100)}% relationship
+                                  {" · "}
+                                  {Math.round(reason.recencyFactor * 100)}% recency
+                                </span>
+                              </div>
+                            ))}
+                          </div>
+                          {profileUrl ? (
+                            <a
+                              className="profile-link"
+                              href={profileUrl}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              Open profile
+                              <ExternalLink size={14} />
+                            </a>
+                          ) : null}
+                        </article>
+                      );
+                    })}
+                  </div>
+                </section>
+              ) : null}
+
               <section className="path-panel">
                 <div className="panel-heading">
                   <div>
                     <span className="section-label">Verified path</span>
-                    <h2>How RampPath reached this answer</h2>
+                    <h2>
+                      {response.result.intent === "find-experts"
+                        ? "People connected to matching resources"
+                        : "How RampPath reached this answer"}
+                    </h2>
                   </div>
                   <div className="legend">
                     <span><i className="verified-line" /> Verified</span>

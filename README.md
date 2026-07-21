@@ -4,6 +4,7 @@ RampPath is an evidence-backed engineering knowledge graph for new interns. It
 connects ownership, permissions, packages, pipelines, deployment accounts, and
 approvers so an intern can answer:
 
+- Who should I ask about this system?
 - Who owns this?
 - Can I access this?
 - Which role should I request, and from whom?
@@ -33,12 +34,38 @@ npm run build
 
 ## Demo questions
 
-1. `Who owns AtlasRegionContext?`
-2. `Can I edit supported locations in prod?`
-3. `What access should I request to edit supported locations in prod?`
-4. `Where does AtlasRegionContext deploy?`
+1. `Who knows about AtlasRegionContext?`
+2. `Who owns AtlasRegionContext?`
+3. `Can I edit supported locations in prod?`
+4. `What access should I request to edit supported locations in prod?`
+5. `Where does AtlasRegionContext deploy?`
 
 The committed graph is synthetic and safe for the public repository.
+
+## Synthetic expertise data
+
+Ranked people search reads three optional files:
+
+- `data/public/expertise/people.json`
+- `data/public/expertise/resources.json`
+- `data/public/expertise/relationships.json`
+
+Copy the adjacent `*.example.json` files to start. The complete contract and
+privacy rules are in
+[`data/public/expertise/README.md`](data/public/expertise/README.md).
+When all three files are present, the server validates and merges them
+automatically. It fails loudly on partial files, missing references, duplicate
+edges, or incompatible entity IDs.
+
+For private data, keep the files outside the public directory:
+
+```bash
+EXPERTISE_DATA_DIR=data/private/expertise npm run dev
+```
+
+Expert scores combine fuzzy resource relevance, relationship weight
+(`owns=1.0`, `maintains=0.7`, `contributes-to=0.4`), and recency. The highest
+raw score is normalized to 100, and every component is displayed in the UI.
 
 ## Private snapshots
 
@@ -61,8 +88,9 @@ Start the stdio server:
 npm run mcp
 ```
 
-It exposes four read-only tools:
+It exposes five read-only tools:
 
+- `find_experts`
 - `resolve_owner`
 - `check_access`
 - `plan_access_request`
@@ -73,7 +101,8 @@ The MCP and HTTP interfaces use the same deterministic `QueryEngine`.
 ## Architecture
 
 ```text
-JSON snapshot -> Zod validation -> in-memory graph -> deterministic queries
+JSON snapshots -> Zod validation -> in-memory graph -> deterministic queries
+                                        |-> explainable expertise ranking
                                              |-> Express API -> React/Cytoscape
                                              `-> MCP stdio tools
 ```

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "package:payment-event-processor",
+    "type": "package",
+    "name": "PaymentEventProcessor",
+    "description": "Processes payment events from a durable event stream.",
+    "tags": ["payments", "events", "stream-processing"],
+    "aliases": ["payment processor"]
+  }
+]

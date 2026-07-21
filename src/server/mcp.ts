@@ -25,6 +25,12 @@ async function main(): Promise<void> {
   };
 
   register(
+    "find_experts",
+    "Rank people connected to matching engineering resources with an explainable score.",
+    ({ topic }) => `Who knows about ${topic}?`,
+    { topic: z.string().describe("Engineering system, topic, or responsibility") }
+  );
+  register(
     "resolve_owner",
     "Find the verified owner and primary contact for an engineering entity.",
     ({ entity }) => `Who owns ${entity}?`,

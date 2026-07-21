@@ -46,6 +46,14 @@ for (const viewport of [
       )
       .toBe(true);
 
+    await page.getByRole("button", { name: /Find the right person/ }).click();
+    await expect(
+      page.getByRole("heading", { name: /Jordan Rivera is the strongest match/ })
+    ).toBeVisible();
+    await expect(page.getByText("Who to ask first", { exact: true })).toBeVisible();
+    await expect(page.getByText("Why this person", { exact: true }).first()).toBeVisible();
+    await expect(page.getByLabel("100 percent relevance")).toBeVisible();
+
     await page.screenshot({
       path: `test-results/ramp-path-${viewport.name}.png`,
       fullPage: true

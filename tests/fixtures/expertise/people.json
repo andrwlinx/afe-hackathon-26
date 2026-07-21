@@ -1,0 +1,26 @@
+[
+  {
+    "id": "person:morgan-lee",
+    "name": "Morgan Lee",
+    "alias": "morganl",
+    "team": "Payments Platform",
+    "role": "Software Development Engineer",
+    "aliases": ["Morgan"]
+  },
+  {
+    "id": "person:sam-rivera",
+    "name": "Sam Rivera",
+    "alias": "samriver",
+    "team": "Payments Platform",
+    "role": "Systems Development Engineer",
+    "aliases": ["Sam"]
+  },
+  {
+    "id": "person:taylor-kim",
+    "name": "Taylor Kim",
+    "alias": "taylork",
+    "team": "Checkout Experience",
+    "role": "Software Development Engineer",
+    "aliases": ["Taylor"]
+  }
+]
