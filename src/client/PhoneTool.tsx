@@ -14,11 +14,13 @@ import { AtoZHeader, AzBanner } from "./AtoZHeader.js";
  */
 
 const orgChart = [
-  { initials: "RC", name: "Riley Chen", alias: "rileyc", title: "VP, Technology, L10", meta: "Direct reports: 214", level: 0 },
-  { initials: "JP", name: "Jordan Parks", alias: "jparks", title: "Director, Software Development, L8", meta: "Direct reports: 62", level: 1 },
-  { initials: "CR", name: "Casey Reed", alias: "caseyr", title: "Senior Manager, Software Development, L7", meta: "Direct reports: 24", level: 2 },
-  { initials: "ML", name: "Morgan Lee", alias: "morganl", title: "Software Development Manager, L6", meta: "Direct reports: 8", level: 3 },
-  { initials: "JD", name: "Jane Doe", alias: "jdoe", title: "AFE SDE Intern, L4", meta: "2 months at Amazon", level: 4, self: true }
+  { initials: "CR", name: "Casey Reed", alias: "caseyr", title: "Senior Manager, Software Development, L7", meta: "Direct reports: 24", level: 0 },
+  { initials: "ML", name: "Morgan Lee", alias: "morganl", title: "Software Development Manager, L6", meta: "Direct reports: 6", level: 1 },
+  { initials: "AK", name: "Alex Kim", alias: "alexkim", title: "Senior SDE, L6", meta: "6 years at Amazon", level: 2 },
+  { initials: "SP", name: "Sam Patel", alias: "spatel", title: "SDE II, L5", meta: "3 years at Amazon", level: 2 },
+  { initials: "DW", name: "Dana Wolfe", alias: "dwolfe", title: "SDE II, L5", meta: "2 years at Amazon", level: 2 },
+  { initials: "TB", name: "Taylor Brooks", alias: "tbrooks", title: "SDE I, L4", meta: "1 year at Amazon", level: 2 },
+  { initials: "JD", name: "Jane Doe", alias: "jdoe", title: "AFE SDE Intern, L4", meta: "2 months at Amazon", level: 2, self: true }
 ];
 
 export function PhoneToolPage() {
@@ -102,8 +104,13 @@ export function PhoneToolPage() {
                   <span
                     className="pt-org-expand"
                     aria-hidden="true"
+                    style={
+                      person.meta.startsWith("Direct reports")
+                        ? undefined
+                        : { visibility: "hidden" }
+                    }
                   >
-                    {person.self ? "" : "+"}
+                    −
                   </span>
                   <span className="pt-org-avatar" aria-hidden="true">
                     {person.self ? (
