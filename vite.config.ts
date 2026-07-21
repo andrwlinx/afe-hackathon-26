@@ -15,7 +15,10 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          cytoscape: ["cytoscape"],
+          "three-graph": [
+            "react-force-graph-3d",
+            "three"
+          ],
           react: ["react", "react-dom"]
         }
       }
