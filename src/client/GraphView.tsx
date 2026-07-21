@@ -231,6 +231,30 @@ export function GraphView({ path }: { path: GraphPath }) {
     return () => window.cancelAnimationFrame(frame);
   }, [dimensions, graphData, reduceMotion, resetCamera]);
 
+  // Slow auto-spin on load; stops as soon as the user grabs the scene.
+  useEffect(() => {
+    if (reduceMotion || !webglAvailable || !dimensions.width) return;
+    const controls = graphRef.current?.controls() as
+      | {
+          autoRotate: boolean;
+          autoRotateSpeed: number;
+          addEventListener: (event: string, handler: () => void) => void;
+          removeEventListener: (event: string, handler: () => void) => void;
+        }
+      | undefined;
+    if (!controls) return;
+    controls.autoRotate = true;
+    controls.autoRotateSpeed = 0.55;
+    const stopSpin = () => {
+      controls.autoRotate = false;
+    };
+    controls.addEventListener("start", stopSpin);
+    return () => {
+      controls.removeEventListener("start", stopSpin);
+      controls.autoRotate = false;
+    };
+  }, [dimensions, graphData, reduceMotion, webglAvailable]);
+
   useEffect(() => {
     if (!dimensions.width || !dimensions.height || !graphData.nodes.length) {
       return;
@@ -269,6 +293,10 @@ export function GraphView({ path }: { path: GraphPath }) {
   const focusNode = useCallback(
     (node: GraphNodeObject) => {
       setSelectedId(node.id);
+      const controls = graphRef.current?.controls() as
+        | { autoRotate?: boolean }
+        | undefined;
+      if (controls) controls.autoRotate = false;
       const camera = graphRef.current?.camera();
       if (!camera) return;
       const target = new Vector3(node.fx, node.fy, node.fz);
@@ -357,6 +385,7 @@ export function GraphView({ path }: { path: GraphPath }) {
                 width={dimensions.width}
                 height={dimensions.height}
                 graphData={graphData}
+                controlType="orbit"
                 backgroundColor="#f7f8fa"
                 rendererConfig={{
                   alpha: false,
