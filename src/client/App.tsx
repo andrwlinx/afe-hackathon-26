@@ -8,7 +8,6 @@ import {
   Clipboard,
   Database,
   ExternalLink,
-  Network,
   Search
 } from "lucide-react";
 import {
@@ -19,6 +18,7 @@ import {
   useMemo,
   useState
 } from "react";
+import { AtoZHeader } from "./AtoZHeader.js";
 import type { QueryResponse } from "../shared/graph.js";
 
 const GraphView = lazy(() =>
@@ -27,24 +27,20 @@ const GraphView = lazy(() =>
 
 const examples = [
   {
-    label: "Find a package owner",
-    question: "Who owns leo common auth?"
-  },
-  {
     label: "Find the right person",
     question: "Who knows about AtlasRegionContext?"
   },
   {
-    label: "Ask about a topic",
-    question: "Who knows about ground station scheduling?"
-  },
-  {
-    label: "Find an AWS account owner",
-    question: "Who owns leo-payload-prod?"
+    label: "Find an owner",
+    question: "Who owns AtlasRegionContext?"
   },
   {
     label: "Check my access",
     question: "Can I edit supported locations in prod?"
+  },
+  {
+    label: "Plan an access request",
+    question: "What access should I request to edit supported locations in prod?"
   },
   {
     label: "Trace a deployment",
@@ -145,23 +141,17 @@ export function App() {
 
   return (
     <div className="app-shell">
-      <header className="topbar">
-        <div className="brand">
-          <div className="brand-mark">
-            <Network size={18} strokeWidth={2.3} />
+      <AtoZHeader
+        active="ramppath"
+        status={
+          <div className="system-status" title="Loaded graph status">
+            <span className={health?.ok ? "status-dot online" : "status-dot"} />
+            {health
+              ? `${health.nodes} entities · ${health.edges} connections`
+              : "Connecting"}
           </div>
-          <div>
-            <strong>RampPath</strong>
-            <span>Who owns what · Phone Tool companion</span>
-          </div>
-        </div>
-        <div className="system-status" title="Loaded graph status">
-          <span className={health?.ok ? "status-dot online" : "status-dot"} />
-          {health
-            ? `${health.nodes} entities · ${health.edges} connections`
-            : "Connecting"}
-        </div>
-      </header>
+        }
+      />
 
       <main className="workspace">
         <section className="query-band" aria-label="Ask RampPath">

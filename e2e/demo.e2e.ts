@@ -171,10 +171,10 @@ for (const viewport of [
 test("Phone Tool page links into RampPath", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 960 });
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "Phone Tool" })).toBeVisible();
+  await expect(page.getByText("Phone Tool", { exact: true })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Jane Doe" })).toBeVisible();
 
-  await page.getByRole("link", { name: /RampPath/ }).click();
+  await page.locator(".pt-ramppath-card").click();
   await expect(page).toHaveURL(/\/ramppath$/);
   await expect(page.getByText("RampPath", { exact: true })).toBeVisible();
 });

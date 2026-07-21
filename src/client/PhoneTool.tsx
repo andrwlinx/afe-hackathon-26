@@ -1,16 +1,11 @@
 import {
   ArrowRight,
-  Bell,
-  ChevronDown,
-  CircleHelp,
-  Info,
-  Menu,
   Network,
   Pencil,
-  Search,
   User,
   Volume2
 } from "lucide-react";
+import { AtoZHeader, AzBanner } from "./AtoZHeader.js";
 
 /**
  * Mock recreation of the A-to-Z Phone Tool profile page, used as the demo
@@ -28,59 +23,12 @@ const orgChart = [
 export function PhoneToolPage() {
   return (
     <div className="pt-page">
-      <header className="pt-topbar">
-        <div className="pt-topbar-left">
-          <button type="button" className="pt-icon-button" aria-label="Menu">
-            <Menu size={20} />
-          </button>
-          <span className="pt-logo">
-            amazon <em>a to z</em>
-          </span>
-        </div>
-        <div className="pt-search" role="search">
-          <span className="pt-search-topic">
-            <Search size={15} />
-            Topic: People
-            <ChevronDown size={13} />
-          </span>
-          <input placeholder="Enter a name, alias, title, country, etc." />
-        </div>
-        <div className="pt-topbar-right">
-          <button type="button" className="pt-icon-button" aria-label="Help">
-            <CircleHelp size={19} />
-          </button>
-          <button
-            type="button"
-            className="pt-icon-button"
-            aria-label="Notifications"
-          >
-            <Bell size={19} />
-          </button>
-          <span className="pt-avatar" aria-label="Your profile">
-            <img src="/profile-jane.jpeg" alt="Jane Doe" />
-          </span>
-        </div>
-      </header>
+      <AtoZHeader active="phonetool" />
 
-      <nav className="pt-subnav" aria-label="Phone Tool sections">
-        <div className="pt-subnav-left">
-          <h1>Phone Tool</h1>
-          <a href="/">Bookmarks</a>
-          <a href="/">Awards</a>
-          <a href="/">Communities</a>
-        </div>
-        <a className="pt-subnav-link" href="/">
-          Share feedback
-        </a>
-      </nav>
-
-      <div className="pt-banner">
-        <Info size={16} />
-        <span>
-          Welcome to new A to Z Phone Tool! Stay up-to-date with the latest
-          developments and roadmap on our <a href="/">A to Z Phone Tool Wiki</a>
-        </span>
-      </div>
+      <AzBanner cta={{ label: "Ask RampPath", href: "/ramppath" }}>
+        Need answers to ownership queries? Ask RampPath &ldquo;Who owns
+        AtlasRegionContext?&rdquo; or &ldquo;Who knows about telemetry?&rdquo;
+      </AzBanner>
 
       <main className="pt-content">
         <section className="pt-hero">
