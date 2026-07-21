@@ -184,7 +184,7 @@ export class QueryEngine {
       evidence: uniqueEvidence(pathEdges),
       experts,
       nextAction: `Start with ${top.person.label}; review the score breakdown before reaching out.`,
-      draftRequest: `Hi ${top.person.label}, I am ramping up and trying to learn about ${top.reasons[0]?.resource.label ?? topic}. RampPath matched you as the strongest contact based on your relationship to it. Could I ask you a few questions when you have 15 minutes?`
+      draftRequest: `Hi ${top.person.label}, I am ramping up and trying to learn about ${top.reasons[0]?.resource.label ?? topic}. Path matched you as the strongest contact based on your relationship to it. Could I ask you a few questions when you have 15 minutes?`
     };
   }
 
@@ -283,7 +283,7 @@ export class QueryEngine {
       nextAction: contact?.person
         ? `Contact ${contact.person.label} with the package name and the task you are trying to complete.`
         : `Contact ${owner.label}.`,
-      draftRequest: `Hi ${contact?.person?.label ?? owner.label}, RampPath shows that ${target.label} is owned by ${owner.label}. I have a question about it as part of my current task. Could you point me to the right person or docs?`
+      draftRequest: `Hi ${contact?.person?.label ?? owner.label}, Path shows that ${target.label} is owned by ${owner.label}. I have a question about it as part of my current task. Could you point me to the right person or docs?`
     };
   }
 
@@ -543,7 +543,7 @@ export class QueryEngine {
       status: "unknown",
       headline,
       summary:
-        "RampPath only makes claims backed by loaded graph records. Try a more specific entity name or inspect the available examples.",
+        "Path only makes claims backed by loaded graph records. Try a more specific entity name or inspect the available examples.",
       path: { nodes: node ? [node] : [], edges: [] },
       evidence: [],
       alternatives: [

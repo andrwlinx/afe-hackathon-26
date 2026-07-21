@@ -14,14 +14,14 @@ async function main(): Promise<void> {
 
   app.listen(port, host, () => {
     console.log(
-      `RampPath API listening at http://${host}:${port} (${loaded.dataset.nodes.length} nodes, ${loaded.dataset.edges.length} edges)`
+      `Path API listening at http://${host}:${port} (${loaded.dataset.nodes.length} nodes, ${loaded.dataset.edges.length} edges)`
     );
   });
 }
 
 main().catch((error: unknown) => {
   console.error(
-    `RampPath failed to start: ${error instanceof Error ? error.message : String(error)}`
+    `Path failed to start: ${error instanceof Error ? error.message : String(error)}`
   );
   process.exitCode = 1;
 });

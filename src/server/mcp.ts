@@ -8,7 +8,7 @@ import { QueryEngine } from "./query-engine.js";
 async function main(): Promise<void> {
   const loaded = await loadConfiguredGraph();
   const engine = new QueryEngine(new GraphStore(loaded.dataset));
-  const server = new McpServer({ name: "ramp-path", version: "0.1.0" });
+  const server = new McpServer({ name: "path", version: "0.1.0" });
 
   const register = (
     name: string,
@@ -69,7 +69,7 @@ async function main(): Promise<void> {
 
 main().catch((error: unknown) => {
   console.error(
-    `RampPath MCP failed to start: ${error instanceof Error ? error.message : String(error)}`
+    `Path MCP failed to start: ${error instanceof Error ? error.message : String(error)}`
   );
   process.exitCode = 1;
 });

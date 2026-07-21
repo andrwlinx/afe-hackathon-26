@@ -17,7 +17,7 @@ beforeAll(async () => {
   engine = new QueryEngine(new GraphStore(dataset));
 });
 
-describe("RampPath query engine", () => {
+describe("Path query engine", () => {
   it("ranks people connected to a matching resource", () => {
     const result = engine.query("Who knows about AtlasRegionContext?");
 

@@ -1,4 +1,4 @@
-# RampPath Demo Script
+# Path Demo Script
 
 Target length: 3-4 minutes. Record at http://127.0.0.1:5173/ (start on the
 Phone Tool page, 1440px window, hard-refresh first).
@@ -12,12 +12,12 @@ in the pipeline broke. Phone Tool tells you who people ARE, but not who owns
 what. A simple access question can span package ownership, a pipeline, an AWS
 account, a Bindle, and an approver, five systems you've never heard of."
 
-## 0:20 - RampPath lives inside Phone Tool
+## 0:20 - Path lives inside Phone Tool
 
-Point out that RampPath is a **native A-to-Z tab**, same header, same design
-language. Click **Find a resource** on the RampPath card (or the RampPath tab).
+Point out that Path is a **native A-to-Z tab**, same header, same design
+language. Click **Find a resource** on the Path card (or the Path tab).
 
-"So we built RampPath where interns already are: one click from your Phone
+"So we built Path where interns already are: one click from your Phone
 Tool profile."
 
 ## 0:35 - Find the right person
@@ -41,7 +41,7 @@ pipelines, and the owning team in one connected web.
 
 Run `Who owns metrics?`
 
-RampPath doesn't guess: it offers **clickable options** (AtlasMetricsSDK,
+Path doesn't guess: it offers **clickable options** (AtlasMetricsSDK,
 the ingest pipeline...). Click `Who owns AtlasMetricsSDK?`, owner, their
 team, and everyone who maintains or contributes to it, as a web.
 
@@ -51,7 +51,7 @@ team, and everyone who maintains or contributes to it, as a web.
 
 Run `Can I edit supported locations in prod?`
 
-Point out that RampPath does not claim a denial. It proves the resource
+Point out that Path does not claim a denial. It proves the resource
 requires `AtlasProdOperator`, shows the missing role edge (red dashed line in
 the graph), and identifies the verified approver: Priya Shah.
 

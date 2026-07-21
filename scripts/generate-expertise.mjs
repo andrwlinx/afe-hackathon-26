@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Deterministic synthetic expertise data generator for RampPath.
+ * Deterministic synthetic expertise data generator for Path.
  *
  * Models a single fictional org — "Atlas" (fictional AWS-style region services org) —
  * with ~13 teams of 7-8 people each (~100 people total). Teams own a varied

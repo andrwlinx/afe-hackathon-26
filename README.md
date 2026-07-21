@@ -1,4 +1,4 @@
-# RampPath
+# Path
 
 **The shortest path from "I'm blocked" to "I know exactly who to ask."**
 
@@ -11,13 +11,13 @@ The answer exists. It is just spread across people, packages, pipelines,
 permissions, accounts, and stale pages.
 
 Every engineering organization is a graph that new builders cannot see.
-**RampPath makes that graph queryable.**
+**Path makes that graph queryable.**
 
-![RampPath showing an evidence-backed path and ranked contacts](docs/ramp-path-demo.png)
+![Path showing an evidence-backed path and ranked contacts](docs/path-demo.png)
 
 ## The pitch
 
-RampPath is an evidence-backed navigation layer for engineering organizations.
+Path is an evidence-backed navigation layer for engineering organizations.
 An intern asks a normal question and gets three things:
 
 1. **The answer** - who owns it, where it deploys, or whether access is
@@ -27,7 +27,7 @@ An intern asks a normal question and gets three things:
 3. **The next action** - who to contact, what role to request, and a draft they
    can send.
 
-Search can find documents *about* a system. RampPath answers questions whose
+Search can find documents *about* a system. Path answers questions whose
 answers only emerge after joining relationships:
 
 ```text
@@ -37,7 +37,7 @@ package -> pipeline -> stage -> account
 approver -> bindle -> account
 ```
 
-That makes RampPath useful on an intern's first week and valuable anywhere
+That makes Path useful on an intern's first week and valuable anywhere
 ownership, access, and operational knowledge are fragmented.
 
 ## From question to action
@@ -46,7 +46,7 @@ Ask:
 
 > Can I edit supported locations in prod?
 
-RampPath does not stop at "no." It shows that the required role grants access,
+Path does not stop at "no." It shows that the required role grants access,
 marks the missing role-assumption edge, identifies the approver, and prepares
 the request.
 
@@ -54,7 +54,7 @@ Ask:
 
 > Who knows about AtlasRegionContext?
 
-RampPath ranks people by connected resources, relationship strength, and recent
+Path ranks people by connected resources, relationship strength, and recent
 activity. Every score expands into a plain-language "Why this person"
 breakdown, so an intern can choose a contact with confidence.
 
@@ -98,7 +98,7 @@ evidence remain visible.
 
 ### Turn missing access into a next step
 
-RampPath distinguishes **missing evidence** from an authorization denial. When
+Path distinguishes **missing evidence** from an authorization denial. When
 it cannot confirm a path, it shows the exact missing edge, likely approver, and
 request text instead of making an unsupported security claim.
 
@@ -118,14 +118,14 @@ The same deterministic query engine powers:
 
 ## Why it is different
 
-| Existing approach | What the intern still has to do | RampPath |
+| Existing approach | What the intern still has to do | Path |
 | --- | --- | --- |
 | Enterprise search | Read several pages and reconcile them | Joins relationships into one path |
 | Service catalog | Trust a manually maintained owner field | Shows ownership with source evidence |
 | Access portal | Know the right account, role, and resource first | Finds the missing role and approver |
 | Ask in chat | Guess the right room or person | Ranks contacts and explains why |
 
-RampPath does not grant permissions or replace source systems. It makes their
+Path does not grant permissions or replace source systems. It makes their
 relationships understandable enough for a new builder to take the next correct
 action.
 

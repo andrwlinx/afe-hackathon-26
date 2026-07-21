@@ -3,7 +3,7 @@ import { AtoZHeader, AzBanner } from "./AtoZHeader.js";
 
 /**
  * Mock recreation of the A-to-Z Phone Tool profile page, used as the demo
- * entry point: the RampPath card below shows how RampPath would surface as
+ * entry point: the Path card below shows how Path would surface as
  * an embedded Phone Tool integration. All data on this page is static.
  */
 
@@ -22,8 +22,8 @@ export function PhoneToolPage() {
     <div className="pt-page">
       <AtoZHeader active="phonetool" />
 
-      <AzBanner cta={{ label: "Ask RampPath", href: "/ramppath" }}>
-        Need answers to ownership queries? Ask RampPath &ldquo;Who owns
+      <AzBanner cta={{ label: "Ask Path", href: "/path" }}>
+        Need answers to ownership queries? Ask Path &ldquo;Who owns
         AtlasRegionContext?&rdquo; or &ldquo;Who owns metrics?&rdquo;
       </AzBanner>
 
@@ -132,9 +132,9 @@ export function PhoneToolPage() {
               </p>
             </section>
 
-            <section className="pt-card pt-ramppath-card">
-              <h3>RampPath</h3>
-              <a className="pt-button-primary pt-find-resource" href="/ramppath">
+            <section className="pt-card pt-path-card">
+              <h3>Path</h3>
+              <a className="pt-button-primary pt-find-resource" href="/path">
                 Find a resource
                 <ArrowRight size={15} />
               </a>

@@ -13,14 +13,14 @@ import type { ReactNode } from "react";
 /**
  * Shared "amazon a to z" chrome: top bar with logo, search, help/alerts,
  * profile, and the Phone Tool subnav. Used by both the mock Phone Tool
- * page (/) and RampPath (/ramppath) so RampPath reads as a native
+ * page (/) and Path (/path) so Path reads as a native
  * A-to-Z tool.
  */
 export function AtoZHeader({
   active,
   status
 }: {
-  active: "phonetool" | "ramppath";
+  active: "phonetool" | "path";
   status?: ReactNode;
 }) {
   return (
@@ -72,13 +72,13 @@ export function AtoZHeader({
             The <span>Phone Tool</span>
           </a>
           <a
-            className={`az-tab brand ${active === "ramppath" ? "active" : ""}`}
-            href="/ramppath"
+            className={`az-tab brand ${active === "path" ? "active" : ""}`}
+            href="/path"
           >
             <span className="brand-mark">
               <Network size={14} strokeWidth={2.3} />
             </span>
-            <strong>RampPath</strong>
+            <strong>Path</strong>
           </a>
           <a className="az-tab az-tab-extra" href="/">
             My Bookmarks

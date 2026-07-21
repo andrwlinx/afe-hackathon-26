@@ -8,8 +8,8 @@ for (const viewport of [
     page
   }) => {
     await page.setViewportSize(viewport);
-    await page.goto("/ramppath");
-    await expect(page.getByText("RampPath", { exact: true })).toBeVisible();
+    await page.goto("/path");
+    await expect(page.getByText("Path", { exact: true })).toBeVisible();
 
     await expect
       .poll(() =>
@@ -162,26 +162,26 @@ for (const viewport of [
       .toBe(true);
 
     await page.screenshot({
-      path: `test-results/ramp-path-3d-${viewport.name}.png`,
+      path: `test-results/path-3d-${viewport.name}.png`,
       fullPage: true
     });
   });
 }
 
-test("Phone Tool page links into RampPath", async ({ page }) => {
+test("Phone Tool page links into Path", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 960 });
   await page.goto("/");
   await expect(page.getByText("Phone Tool", { exact: true })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Jane Doe" })).toBeVisible();
 
   await page.getByRole("link", { name: /Find a resource/ }).click();
-  await expect(page).toHaveURL(/\/ramppath$/);
-  await expect(page.getByText("RampPath", { exact: true })).toBeVisible();
+  await expect(page).toHaveURL(/\/path$/);
+  await expect(page.getByText("Path", { exact: true })).toBeVisible();
 });
 
 test("plain-text ownership query offers clickable options", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 960 });
-  await page.goto("/ramppath");
+  await page.goto("/path");
 
   await page.getByLabel("What do you need to unblock?").fill("Who owns metrics?");
   await page.getByRole("button", { name: /Trace answer/ }).click();

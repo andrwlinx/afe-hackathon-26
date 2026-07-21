@@ -105,7 +105,7 @@ export function App() {
       if (!result.ok) throw new Error("Query failed");
       setResponse(await result.json());
     } catch {
-      setError("RampPath could not reach the graph service.");
+      setError("Path could not reach the graph service.");
     } finally {
       setLoading(false);
     }
@@ -134,7 +134,7 @@ export function App() {
   return (
     <div className="app-shell">
       <AtoZHeader
-        active="ramppath"
+        active="path"
         status={
           <div className="system-status" title="Loaded graph status">
             <span className={health?.ok ? "status-dot online" : "status-dot"} />
@@ -146,7 +146,7 @@ export function App() {
       />
 
       <main className="workspace">
-        <section className="query-band" aria-label="Ask RampPath">
+        <section className="query-band" aria-label="Ask Path">
           <form onSubmit={handleSubmit} className="query-form">
             <label className="sr-only" htmlFor="question">
               What do you need to unblock?
@@ -275,7 +275,7 @@ export function App() {
                     <h2>
                       {response.result.intent === "find-experts"
                         ? "People connected to matching resources"
-                        : "How RampPath reached this answer"}
+                        : "How Path reached this answer"}
                     </h2>
                   </div>
                   <span className="view-label">3D view</span>

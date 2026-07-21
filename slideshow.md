@@ -1,4 +1,4 @@
-# RampPath - Slide Deck (3 slides max)
+# Path - Slide Deck (3 slides max)
 
 > Paste each slide into your deck tool of choice. Keep it visual: slide 2
 > should be mostly the product screenshot. Speaker notes under each slide
@@ -24,7 +24,7 @@
 
 ---
 
-## Slide 2 - RampPath
+## Slide 2 - Path
 
 # Ask in plain English. Get a verified answer.
 
