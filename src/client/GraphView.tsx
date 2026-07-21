@@ -51,7 +51,7 @@ function createNodeObject(
 ): Object3D {
   const radius = compact ? 10 : 8;
   const color = selected
-    ? "#f7fafc"
+    ? "#16243c"
     : node.status === "missing"
       ? "#c53f3f"
       : "#1768c9";
@@ -357,7 +357,7 @@ export function GraphView({ path }: { path: GraphPath }) {
                 width={dimensions.width}
                 height={dimensions.height}
                 graphData={graphData}
-                backgroundColor="#151b27"
+                backgroundColor="#f7f8fa"
                 rendererConfig={{
                   alpha: false,
                   antialias: true,
@@ -380,7 +380,7 @@ export function GraphView({ path }: { path: GraphPath }) {
                 linkDirectionalArrowLength={5}
                 linkDirectionalArrowRelPos={0.84}
                 linkDirectionalArrowColor={(link) =>
-                  link.status === "missing" ? "#c53f3f" : "#b8c2cf"
+                  link.status === "missing" ? "#c53f3f" : "#7a8899"
                 }
                 onNodeClick={focusNode}
                 showPointerCursor

@@ -86,4 +86,22 @@ describe("RampPath query engine", () => {
     expect(result.status).toBe("unknown");
     expect(result.evidence).toEqual([]);
   });
+
+  it("fuzzy-resolves a plain-text mention to a single strong match", () => {
+    const result = engine.query("Who owns context cdk?");
+
+    expect(result.status).toBe("confirmed");
+    expect(result.headline).toContain("AtlasRegionContextCDK");
+    expect(result.summary).toContain('Interpreted "context cdk"');
+  });
+
+  it("offers clickable options when a plain-text mention is ambiguous", () => {
+    const result = engine.query("Who owns atlas region?");
+
+    expect(result.status).toBe("unknown");
+    expect(result.headline).toContain("Multiple resources match");
+    expect(result.alternatives).toContain("Who owns AtlasRegionContext?");
+    expect(result.alternatives).toContain("Who owns AtlasRegionContextCDK?");
+    expect(result.path.nodes.length).toBeGreaterThan(1);
+  });
 });

@@ -20,6 +20,19 @@ const entityTypes = [
   "team"
 ] as const;
 
+/** Strips question words so "Who owns orbit cdk?" becomes "orbit cdk". */
+export function extractEntityTopic(question: string): string {
+  return question
+    .toLowerCase()
+    .replace(
+      /\b(who|whom|whose|owns?|owners?|ownership|responsible|for|is|are|the|a|an|of|where|what|which|does|do|deploys?|deployed|deployment|to|about)\b/g,
+      " "
+    )
+    .replace(/[^a-z0-9-]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function uniqueNodes(nodes: Array<GraphNode | undefined>): GraphNode[] {
   return [
     ...new Map(
@@ -175,7 +188,14 @@ export class QueryEngine {
   }
 
   resolveOwner(question: string): QueryResult {
-    const target = this.graph.findBestMention(question, [...entityTypes]);
+    const resolution = this.resolveTarget(
+      question,
+      [...entityTypes],
+      (label) => `Who owns ${label}?`,
+      "resolve-owner"
+    );
+    if ("result" in resolution) return resolution.result;
+    const { target, note } = resolution;
     if (!target) {
       return this.notFound(
         "resolve-owner",
@@ -212,9 +232,11 @@ export class QueryEngine {
       intent: "resolve-owner",
       status: "confirmed",
       headline: `${target.label} is owned by ${owner.label}`,
-      summary: contact?.person
-        ? `${contact.person.label} is the primary service contact. The ownership record was observed through ${ownership.evidence.source}.`
-        : `The ownership record was observed through ${ownership.evidence.source}.`,
+      summary:
+        note +
+        (contact?.person
+          ? `${contact.person.label} is the primary service contact. The ownership record was observed through ${ownership.evidence.source}.`
+          : `The ownership record was observed through ${ownership.evidence.source}.`),
       path: {
         nodes: uniqueNodes([contact?.person, owner, target]),
         edges: pathEdges
@@ -223,6 +245,50 @@ export class QueryEngine {
       nextAction: contact?.person
         ? `Contact ${contact.person.label} with the package name and the task you are trying to complete.`
         : `Contact ${owner.label}.`
+    };
+  }
+
+  /**
+   * Resolves the entity a question refers to. Tries an exact mention first,
+   * then token-based fuzzy matching ("orbit cdk" -> OrbitGndsysCDK). When
+   * several candidates tie, returns a clickable list of options instead of
+   * guessing.
+   */
+  private resolveTarget(
+    question: string,
+    types: Parameters<GraphStore["nodes"]>[0],
+    toQuestion: (label: string) => string,
+    intent: QueryResult["intent"]
+  ):
+    | { target: GraphNode | undefined; note: string }
+    | { result: QueryResult } {
+    const exact = this.graph.findBestMention(question, types);
+    if (exact) return { target: exact, note: "" };
+
+    const topic = extractEntityTopic(question);
+    if (!topic) return { target: undefined, note: "" };
+    const candidates = this.graph.fuzzyFindMentions(topic, types);
+    if (!candidates.length) return { target: undefined, note: "" };
+
+    const [top, second] = candidates;
+    if (candidates.length === 1 || top.score > (second?.score ?? 0)) {
+      return {
+        target: top.node,
+        note: `Interpreted "${topic}" as ${top.node.label}. `
+      };
+    }
+
+    return {
+      result: {
+        intent,
+        status: "unknown",
+        headline: `Multiple resources match "${topic}"`,
+        summary:
+          "Pick the one you meant to trace its verified answer.",
+        path: { nodes: candidates.map(({ node }) => node), edges: [] },
+        evidence: [],
+        alternatives: candidates.map(({ node }) => toQuestion(node.label))
+      }
     };
   }
 
@@ -235,7 +301,14 @@ export class QueryEngine {
   }
 
   traceDeployment(question: string): QueryResult {
-    const target = this.graph.findBestMention(question, ["package", "pipeline"]);
+    const resolution = this.resolveTarget(
+      question,
+      ["package", "pipeline"],
+      (label) => `Where does ${label} deploy?`,
+      "trace-deployment"
+    );
+    if ("result" in resolution) return resolution.result;
+    const { target, note } = resolution;
     if (!target) {
       return this.notFound(
         "trace-deployment",
@@ -301,7 +374,7 @@ export class QueryEngine {
       intent: "trace-deployment",
       status: "confirmed",
       headline: `${pipeline.label} has ${stageTargets.length} confirmed deployment targets`,
-      summary: destinations,
+      summary: note + destinations,
       path: {
         nodes: uniqueNodes([
           target,

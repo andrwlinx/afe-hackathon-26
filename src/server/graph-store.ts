@@ -78,6 +78,42 @@ export class GraphStore {
     return candidates[0]?.node;
   }
 
+  /**
+   * Token-based fuzzy lookup for plain-text mentions like "orbit cdk".
+   * A candidate scores by the fraction of query tokens found as substrings
+   * of its normalized label or aliases (spaces removed, so "orbit cdk"
+   * matches "OrbitGndsysCDK").
+   */
+  fuzzyFindMentions(
+    topic: string,
+    types?: NodeType[],
+    limit = 4
+  ): Array<{ node: GraphNode; score: number }> {
+    const tokens = normalize(topic)
+      .split(" ")
+      .filter((token) => token.length > 1);
+    if (!tokens.length) return [];
+
+    return this.nodes(types)
+      .map((node) => {
+        const values = [node.label, ...node.aliases].map((value) =>
+          normalize(value).replace(/ /g, "")
+        );
+        const matched = tokens.filter((token) =>
+          values.some((value) => value.includes(token))
+        );
+        return { node, score: matched.length / tokens.length };
+      })
+      .filter(({ score }) => score >= 0.5)
+      .sort(
+        (a, b) =>
+          b.score - a.score ||
+          a.node.label.length - b.node.label.length ||
+          a.node.label.localeCompare(b.node.label)
+      )
+      .slice(0, limit);
+  }
+
   search(query: string, limit = 8): GraphNode[] {
     const needle = normalize(query);
     if (!needle) return [];

@@ -253,6 +253,19 @@ export function App() {
                   </div>
                   <h1>{response.result.headline}</h1>
                   <p>{response.result.summary}</p>
+                  {response.result.alternatives?.length ? (
+                    <div className="alternative-chips">
+                      {response.result.alternatives.map((alternative) => (
+                        <button
+                          key={alternative}
+                          type="button"
+                          onClick={() => void submit(alternative)}
+                        >
+                          {alternative}
+                        </button>
+                      ))}
+                    </div>
+                  ) : null}
                 </div>
                 {response.result.nextAction ? (
                   <div className="next-action">

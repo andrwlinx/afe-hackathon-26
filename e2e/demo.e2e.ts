@@ -40,8 +40,8 @@ for (const viewport of [
         })
       )
       .toEqual({
-        bodyFont: expect.stringContaining("Source Sans 3"),
-        headingFont: expect.stringContaining("IBM Plex Sans Condensed"),
+        bodyFont: expect.stringContaining("Amazon Ember"),
+        headingFont: expect.stringContaining("Amazon Ember"),
         primaryRadius: "999px 999px 999px 999px",
         brandColor: "rgb(23, 104, 201)",
         noHorizontalOverflow: true
@@ -102,9 +102,9 @@ for (const viewport of [
             const alpha = pixels[index + 3];
             if (
               alpha > 0 &&
-              (Math.abs(red - 21) > 8 ||
-                Math.abs(green - 27) > 8 ||
-                Math.abs(blue - 39) > 8)
+              (Math.abs(red - 247) > 8 ||
+                Math.abs(green - 248) > 8 ||
+                Math.abs(blue - 250) > 8)
             ) {
               nonBackgroundPixels += 1;
             }
@@ -167,3 +167,30 @@ for (const viewport of [
     });
   });
 }
+
+test("Phone Tool page links into RampPath", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 960 });
+  await page.goto("/phonetool");
+  await expect(page.getByRole("heading", { name: "Phone Tool" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Ava Martoma" })).toBeVisible();
+
+  await page.getByRole("link", { name: /RampPath/ }).click();
+  await expect(page).toHaveURL(/\/$/);
+  await expect(page.getByText("RampPath", { exact: true })).toBeVisible();
+});
+
+test("plain-text ownership query offers clickable options", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 960 });
+  await page.goto("/");
+
+  await page.getByLabel("What do you need to unblock?").fill("Who owns payments?");
+  await page.getByRole("button", { name: /Trace answer/ }).click();
+  await expect(
+    page.getByRole("heading", { name: /Multiple resources match/ })
+  ).toBeVisible();
+
+  await page.getByRole("button", { name: "Who owns PaymentsCDK?" }).click();
+  await expect(
+    page.getByRole("heading", { name: /PaymentsCDK is owned by/ })
+  ).toBeVisible();
+});
