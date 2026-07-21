@@ -8,7 +8,8 @@ async function main(): Promise<void> {
   const loaded = await loadConfiguredGraph();
   const { app } = createApp({
     dataset: loaded.dataset,
-    dataMode: loaded.isPrivate ? "private" : "public"
+    dataMode: loaded.isPrivate ? "private" : "public",
+    expertiseLoaded: loaded.expertiseLoaded
   });
 
   app.listen(port, host, () => {

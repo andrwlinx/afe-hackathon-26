@@ -5,6 +5,10 @@ import type {
   PathEdge,
   QueryResult
 } from "../shared/graph.js";
+import {
+  ExpertiseSearch,
+  extractExpertTopic
+} from "./expertise-search.js";
 import { GraphStore } from "./graph-store.js";
 
 const entityTypes = [
@@ -70,11 +74,20 @@ function isExpired(edge: GraphEdge): boolean {
 }
 
 export class QueryEngine {
-  constructor(private readonly graph: GraphStore) {}
+  private readonly expertise: ExpertiseSearch;
+
+  constructor(private readonly graph: GraphStore) {
+    this.expertise = new ExpertiseSearch(graph);
+  }
 
   query(question: string): QueryResult {
     const normalized = question.toLowerCase();
 
+    if (
+      /\bwho (knows|should i ask|can help)\b|\bexperts?\b/.test(normalized)
+    ) {
+      return this.findExperts(question);
+    }
     if (/\b(where|what)\b.*\bdeploy|\bdeploy(ed|s|ment)?\b/.test(normalized)) {
       return this.traceDeployment(question);
     }
@@ -101,11 +114,63 @@ export class QueryEngine {
       path: { nodes: [], edges: [] },
       evidence: [],
       alternatives: [
+        "Who knows about AtlasRegionContext?",
         "Who owns AtlasRegionContext?",
         "Can I edit supported locations in prod?",
         "What access should I request for supported locations?",
         "Where does AtlasRegionContext deploy?"
       ]
+    };
+  }
+
+  findExperts(question: string): QueryResult {
+    const experts = this.expertise.search(question);
+    const topic = extractExpertTopic(question);
+    if (!experts.length) {
+      return this.notFound(
+        "find-experts",
+        "No expertise paths matched that topic"
+      );
+    }
+
+    const pathEdgeIds = new Set(
+      experts.flatMap((expert) =>
+        expert.reasons.flatMap((reason) => reason.edgeIds)
+      )
+    );
+    const pathEdges = [...pathEdgeIds]
+      .map((id) => this.graph.getEdge(id))
+      .filter((edge): edge is GraphEdge => Boolean(edge))
+      .map(verified);
+    const pathNodes = uniqueNodes([
+      ...experts.map((expert) => expert.person),
+      ...experts.flatMap((expert) =>
+        expert.reasons.map((reason) => reason.resource)
+      ),
+      ...pathEdges.flatMap((edge) => [
+        this.graph.getNode(edge.from),
+        this.graph.getNode(edge.to)
+      ])
+    ]);
+    const resourceCount = new Set(
+      experts.flatMap((expert) =>
+        expert.reasons.map((reason) => reason.resource.id)
+      )
+    ).size;
+    const top = experts[0];
+
+    return {
+      intent: "find-experts",
+      status: "confirmed",
+      headline: `${top.person.label} is the strongest match`,
+      summary: `${experts.length} people matched through ${resourceCount} connected resource${resourceCount === 1 ? "" : "s"}. Scores combine keyword relevance, relationship strength, and recent activity.`,
+      path: {
+        nodes: pathNodes,
+        edges: pathEdges
+      },
+      evidence: uniqueEvidence(pathEdges),
+      experts,
+      nextAction: `Start with ${top.person.label}; review the score breakdown before reaching out.`
     };
   }
 
@@ -365,6 +430,7 @@ export class QueryEngine {
       path: { nodes: node ? [node] : [], edges: [] },
       evidence: [],
       alternatives: [
+        "Who knows about AtlasRegionContext?",
         "Who owns AtlasRegionContext?",
         "Can I edit supported locations in prod?",
         "What access should I request for supported locations?",

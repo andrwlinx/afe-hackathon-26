@@ -1,0 +1,18 @@
+[
+  {
+    "id": "person:morgan-lee",
+    "name": "Morgan Lee",
+    "alias": "morganl",
+    "team": "Payments Platform",
+    "role": "Software Development Engineer",
+    "aliases": ["Morgan"]
+  },
+  {
+    "id": "person:sam-rivera",
+    "name": "Sam Rivera",
+    "alias": "samriver",
+    "team": "Payments Platform",
+    "role": "Systems Development Engineer",
+    "aliases": ["Sam"]
+  }
+]

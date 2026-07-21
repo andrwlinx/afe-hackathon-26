@@ -22,7 +22,9 @@ export const edgeTypes = [
   "CAN_ASSUME",
   "GRANTS",
   "APPROVES",
-  "DEPENDS_ON"
+  "DEPENDS_ON",
+  "MAINTAINS",
+  "CONTRIBUTES_TO"
 ] as const;
 
 export const NodeTypeSchema = z.enum(nodeTypes);
@@ -80,8 +82,30 @@ export interface GraphPath {
   edges: PathEdge[];
 }
 
+export interface ExpertReason {
+  resource: GraphNode;
+  relation: "owns" | "maintains" | "contributes-to" | "team-owner";
+  relationshipWeight: number;
+  matchStrength: number;
+  recencyFactor: number;
+  contribution: number;
+  lastActive?: string;
+  edgeIds: string[];
+}
+
+export interface ExpertMatch {
+  person: GraphNode;
+  score: number;
+  reasons: ExpertReason[];
+}
+
 export interface QueryResult {
-  intent: "resolve-owner" | "check-access" | "plan-access" | "trace-deployment";
+  intent:
+    | "resolve-owner"
+    | "check-access"
+    | "plan-access"
+    | "trace-deployment"
+    | "find-experts";
   status: "confirmed" | "action-needed" | "unknown";
   headline: string;
   summary: string;
@@ -90,6 +114,7 @@ export interface QueryResult {
   nextAction?: string;
   draftRequest?: string;
   alternatives?: string[];
+  experts?: ExpertMatch[];
 }
 
 export interface QueryResponse {

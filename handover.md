@@ -26,6 +26,7 @@ Add newest entries at the top.
 
 | Date (PST) | Person | Branch | Files / Area Changed | Summary |
 |------------|--------|--------|----------------------|---------|
+| 2026-07-21 | Andrew Lin | `andrew` | Expertise search, JSON contract, UI | Added explainable ranked people search, person cards, optional three-file synthetic data ingestion, tests, and MCP support. |
 | 2026-07-21 | Andrew Lin | `andrew` | handover.md | Merged the latest `main`, preserving the Compass project spec and RampPath implementation notes. |
 | 2026-07-20 | Andrew Lin | `andrew` | Full application | Added RampPath graph contracts, deterministic query engine, HTTP/MCP interfaces, React/Cytoscape UI, synthetic fixtures, tests, and demo documentation. |
 | 2026-07-20 | Ava Martoma | `main` | handover.md | Added full project spec for Compass (ownership knowledge graph + people search with relevancy scores, Phone Tool integration) and team work split. |
@@ -55,7 +56,8 @@ Use this section to record any team decisions, blockers, or things future contri
 
 - 2026-07-21: Project idea selected and scoped — see spec below.
 - The public repository contains synthetic graph data only. Real internal snapshots must remain under the gitignored `data/private/` directory.
-- The MVP supports four deterministic intents; arbitrary LLM-generated graph queries and continuous synchronization are future work.
+- The MVP supports five deterministic intents, including ranked expertise search; arbitrary LLM-generated graph queries and continuous synchronization are future work.
+- Synthetic expertise data uses `people.json`, `resources.json`, and `relationships.json` under `data/public/expertise/`; see that directory's README for the contract.
 
 ---
 

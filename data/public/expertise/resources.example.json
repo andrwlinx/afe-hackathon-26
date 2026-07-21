@@ -1,0 +1,18 @@
+[
+  {
+    "id": "package:payment-event-processor",
+    "type": "package",
+    "name": "PaymentEventProcessor",
+    "description": "Processes payment events from a durable event stream.",
+    "tags": ["payments", "events", "stream-processing"],
+    "aliases": ["payment processor"]
+  },
+  {
+    "id": "pipeline:payment-stream",
+    "type": "pipeline",
+    "name": "PaymentStreamPipeline",
+    "description": "Builds and deploys the payment stream processor.",
+    "tags": ["payments", "pipeline", "deployment"],
+    "aliases": ["payment pipeline"]
+  }
+]

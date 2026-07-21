@@ -18,6 +18,18 @@ beforeAll(async () => {
 });
 
 describe("RampPath query engine", () => {
+  it("ranks people connected to a matching resource", () => {
+    const result = engine.query("Who knows about AtlasRegionContext?");
+
+    expect(result.intent).toBe("find-experts");
+    expect(result.status).toBe("confirmed");
+    expect(result.experts?.map((expert) => expert.person.label)).toEqual([
+      "Jordan Rivera",
+      "Priya Shah"
+    ]);
+    expect(result.experts?.map((expert) => expert.score)).toEqual([100, 70]);
+  });
+
   it("resolves an owner and primary contact", () => {
     const result = engine.query("Who owns AtlasRegionContext?");
 

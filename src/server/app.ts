@@ -12,9 +12,14 @@ const QueryBodySchema = z.object({
 export interface AppOptions {
   dataset: GraphDataset;
   dataMode: "public" | "private";
+  expertiseLoaded?: boolean;
 }
 
-export function createApp({ dataset, dataMode }: AppOptions) {
+export function createApp({
+  dataset,
+  dataMode,
+  expertiseLoaded = false
+}: AppOptions) {
   const app = express();
   const graph = new GraphStore(dataset);
   const engine = new QueryEngine(graph);
@@ -28,7 +33,8 @@ export function createApp({ dataset, dataMode }: AppOptions) {
       nodes: dataset.nodes.length,
       edges: dataset.edges.length,
       generatedAt: dataset.generatedAt,
-      dataMode
+      dataMode,
+      expertiseLoaded
     });
   });
 

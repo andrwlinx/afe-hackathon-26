@@ -1,0 +1,26 @@
+[
+  {
+    "id": "relationship:morgan-owns-payment-processor",
+    "personId": "person:morgan-lee",
+    "resourceId": "package:payment-event-processor",
+    "relation": "owns",
+    "lastActive": "2026-07-15",
+    "observedAt": "2026-07-20T20:00:00.000Z"
+  },
+  {
+    "id": "relationship:sam-maintains-payment-processor",
+    "personId": "person:sam-rivera",
+    "resourceId": "package:payment-event-processor",
+    "relation": "maintains",
+    "lastActive": "2026-07-01",
+    "observedAt": "2026-07-20T20:00:00.000Z"
+  },
+  {
+    "id": "relationship:taylor-contributes-payment-processor",
+    "personId": "person:taylor-kim",
+    "resourceId": "package:payment-event-processor",
+    "relation": "contributes-to",
+    "lastActive": "2025-12-01",
+    "observedAt": "2026-07-20T20:00:00.000Z"
+  }
+]
