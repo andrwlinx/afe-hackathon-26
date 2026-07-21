@@ -6,31 +6,58 @@
       "id": "person:avery",
       "type": "person",
       "label": "Avery Chen",
-      "aliases": ["avery", "me", "i"],
+      "aliases": [
+        "avery",
+        "me",
+        "i"
+      ],
       "description": "Incoming software engineering intern",
-      "attributes": { "currentActor": true }
+      "attributes": {
+        "currentActor": true,
+        "alias": "achen",
+        "team": "Atlas Experience",
+        "role": "SDE Intern",
+        "profileUrl": "https://phonetool.example.com/users/achen"
+      }
     },
     {
       "id": "person:jordan",
       "type": "person",
       "label": "Jordan Rivera",
-      "aliases": ["jordan"],
+      "aliases": [
+        "jordan"
+      ],
       "description": "Primary service contact",
-      "attributes": {}
+      "attributes": {
+        "alias": "jrivera",
+        "team": "Atlas Experience",
+        "role": "Senior SDE",
+        "profileUrl": "https://phonetool.example.com/users/jrivera"
+      }
     },
     {
       "id": "person:priya",
       "type": "person",
       "label": "Priya Shah",
-      "aliases": ["priya"],
+      "aliases": [
+        "priya"
+      ],
       "description": "Access approver",
-      "attributes": {}
+      "attributes": {
+        "alias": "pshah",
+        "team": "Atlas Experience",
+        "role": "SDE III",
+        "profileUrl": "https://phonetool.example.com/users/pshah"
+      }
     },
     {
       "id": "team:atlas-experience",
       "type": "team",
       "label": "Atlas Experience",
-      "aliases": ["atlas team", "atlas experience team"],
+      "aliases": [
+        "atlas team",
+        "atlas experience team"
+      ],
       "description": "Owns the Atlas regional experience",
       "attributes": {}
     },
@@ -38,7 +65,11 @@
       "id": "package:atlas-region-context",
       "type": "package",
       "label": "AtlasRegionContext",
-      "aliases": ["atlas region context", "region context", "arc"],
+      "aliases": [
+        "atlas region context",
+        "region context",
+        "arc"
+      ],
       "description": "Resolves supported regional experiences",
       "attributes": {}
     },
@@ -46,7 +77,10 @@
       "id": "package:atlas-region-context-cdk",
       "type": "package",
       "label": "AtlasRegionContextCDK",
-      "aliases": ["atlas cdk", "region context cdk"],
+      "aliases": [
+        "atlas cdk",
+        "region context cdk"
+      ],
       "description": "Infrastructure definitions for AtlasRegionContext",
       "attributes": {}
     },
@@ -54,7 +88,10 @@
       "id": "pipeline:atlas-region-context",
       "type": "pipeline",
       "label": "AtlasRegionContextPipeline",
-      "aliases": ["atlas pipeline", "region context pipeline"],
+      "aliases": [
+        "atlas pipeline",
+        "region context pipeline"
+      ],
       "description": "Builds and deploys AtlasRegionContext",
       "attributes": {}
     },
@@ -62,39 +99,62 @@
       "id": "stage:atlas-alpha",
       "type": "stage",
       "label": "Alpha",
-      "aliases": ["alpha stage"],
+      "aliases": [
+        "alpha stage"
+      ],
       "description": "Pre-production deployment stage",
-      "attributes": { "environment": "alpha" }
+      "attributes": {
+        "environment": "alpha"
+      }
     },
     {
       "id": "stage:atlas-prod",
       "type": "stage",
       "label": "Prod",
-      "aliases": ["prod stage", "production stage"],
+      "aliases": [
+        "prod stage",
+        "production stage"
+      ],
       "description": "Production deployment stage",
-      "attributes": { "environment": "prod" }
+      "attributes": {
+        "environment": "prod"
+      }
     },
     {
       "id": "account:atlas-alpha",
       "type": "account",
       "label": "Atlas Alpha Account",
-      "aliases": ["alpha account"],
+      "aliases": [
+        "alpha account"
+      ],
       "description": "Fictional non-production AWS account",
-      "attributes": { "environment": "alpha", "accountId": "111122223333" }
+      "attributes": {
+        "environment": "alpha",
+        "accountId": "111122223333"
+      }
     },
     {
       "id": "account:atlas-prod",
       "type": "account",
       "label": "Atlas Prod Account",
-      "aliases": ["prod account", "production account"],
+      "aliases": [
+        "prod account",
+        "production account"
+      ],
       "description": "Fictional production AWS account",
-      "attributes": { "environment": "prod", "accountId": "444455556666" }
+      "attributes": {
+        "environment": "prod",
+        "accountId": "444455556666"
+      }
     },
     {
       "id": "bindle:atlas-region-context",
       "type": "bindle",
       "label": "atlas-region-context",
-      "aliases": ["atlas bindle", "region context bindle"],
+      "aliases": [
+        "atlas bindle",
+        "region context bindle"
+      ],
       "description": "Governs Atlas regional context resources",
       "attributes": {}
     },
@@ -102,7 +162,10 @@
       "id": "role:atlas-reader",
       "type": "role",
       "label": "AtlasReadOnly",
-      "aliases": ["atlas read role", "read only role"],
+      "aliases": [
+        "atlas read role",
+        "read only role"
+      ],
       "description": "Read access to Atlas configuration",
       "attributes": {}
     },
@@ -110,7 +173,10 @@
       "id": "role:atlas-prod-operator",
       "type": "role",
       "label": "AtlasProdOperator",
-      "aliases": ["atlas prod role", "prod operator role"],
+      "aliases": [
+        "atlas prod role",
+        "prod operator role"
+      ],
       "description": "Write access to production Atlas configuration",
       "attributes": {}
     },
@@ -118,17 +184,31 @@
       "id": "resource:supported-locations-alpha",
       "type": "resource",
       "label": "supported-locations (alpha)",
-      "aliases": ["alpha supported locations", "supported locations alpha"],
+      "aliases": [
+        "alpha supported locations",
+        "supported locations alpha"
+      ],
       "description": "Supported-locations configuration in alpha",
-      "attributes": { "kind": "configuration", "environment": "alpha" }
+      "attributes": {
+        "kind": "configuration",
+        "environment": "alpha"
+      }
     },
     {
       "id": "resource:supported-locations-prod",
       "type": "resource",
       "label": "supported-locations (prod)",
-      "aliases": ["prod supported locations", "supported locations prod", "supported-locations config", "supported locations"],
+      "aliases": [
+        "prod supported locations",
+        "supported locations prod",
+        "supported-locations config",
+        "supported locations"
+      ],
       "description": "Supported-locations configuration in production",
-      "attributes": { "kind": "configuration", "environment": "prod" }
+      "attributes": {
+        "kind": "configuration",
+        "environment": "prod"
+      }
     }
   ],
   "edges": [
@@ -138,8 +218,15 @@
       "from": "person:jordan",
       "to": "team:atlas-experience",
       "label": "member of",
-      "attributes": { "role": "service owner" },
-      "evidence": { "source": "manual", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "manual" }
+      "attributes": {
+        "role": "service owner"
+      },
+      "evidence": {
+        "source": "manual",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "manual"
+      }
     },
     {
       "id": "edge:priya-member-atlas",
@@ -147,8 +234,15 @@
       "from": "person:priya",
       "to": "team:atlas-experience",
       "label": "member of",
-      "attributes": { "role": "access approver" },
-      "evidence": { "source": "manual", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "manual" }
+      "attributes": {
+        "role": "access approver"
+      },
+      "evidence": {
+        "source": "manual",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "manual"
+      }
     },
     {
       "id": "edge:atlas-owns-package",
@@ -157,7 +251,13 @@
       "to": "package:atlas-region-context",
       "label": "owns",
       "attributes": {},
-      "evidence": { "source": "package-metadata", "sourceRecordId": "sample-package-owner", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "authoritative" }
+      "evidence": {
+        "source": "package-metadata",
+        "sourceRecordId": "sample-package-owner",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "authoritative"
+      }
     },
     {
       "id": "edge:atlas-owns-cdk",
@@ -166,7 +266,13 @@
       "to": "package:atlas-region-context-cdk",
       "label": "owns",
       "attributes": {},
-      "evidence": { "source": "package-metadata", "sourceRecordId": "sample-cdk-owner", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "authoritative" }
+      "evidence": {
+        "source": "package-metadata",
+        "sourceRecordId": "sample-cdk-owner",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "authoritative"
+      }
     },
     {
       "id": "edge:atlas-owns-bindle",
@@ -175,7 +281,13 @@
       "to": "bindle:atlas-region-context",
       "label": "owns",
       "attributes": {},
-      "evidence": { "source": "bindle", "sourceRecordId": "sample-bindle-owner", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "authoritative" }
+      "evidence": {
+        "source": "bindle",
+        "sourceRecordId": "sample-bindle-owner",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "authoritative"
+      }
     },
     {
       "id": "edge:priya-approves-bindle",
@@ -184,7 +296,13 @@
       "to": "bindle:atlas-region-context",
       "label": "approves access for",
       "attributes": {},
-      "evidence": { "source": "bindle", "sourceRecordId": "sample-approver", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "authoritative" }
+      "evidence": {
+        "source": "bindle",
+        "sourceRecordId": "sample-approver",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "authoritative"
+      }
     },
     {
       "id": "edge:pipeline-contains-package",
@@ -193,7 +311,13 @@
       "to": "package:atlas-region-context",
       "label": "builds",
       "attributes": {},
-      "evidence": { "source": "pipelines", "sourceRecordId": "sample-pipeline-package", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "authoritative" }
+      "evidence": {
+        "source": "pipelines",
+        "sourceRecordId": "sample-pipeline-package",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "authoritative"
+      }
     },
     {
       "id": "edge:package-depends-cdk",
@@ -202,7 +326,13 @@
       "to": "package:atlas-region-context-cdk",
       "label": "depends on",
       "attributes": {},
-      "evidence": { "source": "package-metadata", "sourceRecordId": "sample-dependency", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "authoritative" }
+      "evidence": {
+        "source": "package-metadata",
+        "sourceRecordId": "sample-dependency",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "authoritative"
+      }
     },
     {
       "id": "edge:pipeline-alpha",
@@ -211,7 +341,13 @@
       "to": "stage:atlas-alpha",
       "label": "deploys to",
       "attributes": {},
-      "evidence": { "source": "pipelines", "sourceRecordId": "sample-alpha-stage", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "authoritative" }
+      "evidence": {
+        "source": "pipelines",
+        "sourceRecordId": "sample-alpha-stage",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "authoritative"
+      }
     },
     {
       "id": "edge:pipeline-prod",
@@ -220,7 +356,13 @@
       "to": "stage:atlas-prod",
       "label": "deploys to",
       "attributes": {},
-      "evidence": { "source": "pipelines", "sourceRecordId": "sample-prod-stage", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "authoritative" }
+      "evidence": {
+        "source": "pipelines",
+        "sourceRecordId": "sample-prod-stage",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "authoritative"
+      }
     },
     {
       "id": "edge:alpha-account",
@@ -229,7 +371,13 @@
       "to": "account:atlas-alpha",
       "label": "targets",
       "attributes": {},
-      "evidence": { "source": "pipelines", "sourceRecordId": "sample-alpha-target", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "authoritative" }
+      "evidence": {
+        "source": "pipelines",
+        "sourceRecordId": "sample-alpha-target",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "authoritative"
+      }
     },
     {
       "id": "edge:prod-account",
@@ -238,7 +386,13 @@
       "to": "account:atlas-prod",
       "label": "targets",
       "attributes": {},
-      "evidence": { "source": "pipelines", "sourceRecordId": "sample-prod-target", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "authoritative" }
+      "evidence": {
+        "source": "pipelines",
+        "sourceRecordId": "sample-prod-target",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "authoritative"
+      }
     },
     {
       "id": "edge:alpha-contains-config",
@@ -247,7 +401,12 @@
       "to": "resource:supported-locations-alpha",
       "label": "contains",
       "attributes": {},
-      "evidence": { "source": "manual", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "manual" }
+      "evidence": {
+        "source": "manual",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "manual"
+      }
     },
     {
       "id": "edge:prod-contains-config",
@@ -256,7 +415,12 @@
       "to": "resource:supported-locations-prod",
       "label": "contains",
       "attributes": {},
-      "evidence": { "source": "manual", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "manual" }
+      "evidence": {
+        "source": "manual",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "manual"
+      }
     },
     {
       "id": "edge:bindle-governs-prod",
@@ -265,7 +429,13 @@
       "to": "account:atlas-prod",
       "label": "governs",
       "attributes": {},
-      "evidence": { "source": "bindle", "sourceRecordId": "sample-prod-account", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "authoritative" }
+      "evidence": {
+        "source": "bindle",
+        "sourceRecordId": "sample-prod-account",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "authoritative"
+      }
     },
     {
       "id": "edge:bindle-governs-alpha",
@@ -274,7 +444,13 @@
       "to": "account:atlas-alpha",
       "label": "governs",
       "attributes": {},
-      "evidence": { "source": "bindle", "sourceRecordId": "sample-alpha-account", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "authoritative" }
+      "evidence": {
+        "source": "bindle",
+        "sourceRecordId": "sample-alpha-account",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "authoritative"
+      }
     },
     {
       "id": "edge:alpha-requires-reader",
@@ -282,8 +458,18 @@
       "from": "resource:supported-locations-alpha",
       "to": "role:atlas-reader",
       "label": "requires",
-      "attributes": { "actions": ["read"] },
-      "evidence": { "source": "bindle", "sourceRecordId": "sample-alpha-requirement", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "authoritative" }
+      "attributes": {
+        "actions": [
+          "read"
+        ]
+      },
+      "evidence": {
+        "source": "bindle",
+        "sourceRecordId": "sample-alpha-requirement",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "authoritative"
+      }
     },
     {
       "id": "edge:prod-requires-operator",
@@ -291,8 +477,18 @@
       "from": "resource:supported-locations-prod",
       "to": "role:atlas-prod-operator",
       "label": "requires",
-      "attributes": { "actions": ["write"] },
-      "evidence": { "source": "bindle", "sourceRecordId": "sample-prod-requirement", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "authoritative" }
+      "attributes": {
+        "actions": [
+          "write"
+        ]
+      },
+      "evidence": {
+        "source": "bindle",
+        "sourceRecordId": "sample-prod-requirement",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "authoritative"
+      }
     },
     {
       "id": "edge:reader-grants-alpha",
@@ -300,8 +496,18 @@
       "from": "role:atlas-reader",
       "to": "resource:supported-locations-alpha",
       "label": "grants read",
-      "attributes": { "actions": ["read"] },
-      "evidence": { "source": "bindle", "sourceRecordId": "sample-read-grant", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "authoritative" }
+      "attributes": {
+        "actions": [
+          "read"
+        ]
+      },
+      "evidence": {
+        "source": "bindle",
+        "sourceRecordId": "sample-read-grant",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "authoritative"
+      }
     },
     {
       "id": "edge:operator-grants-prod",
@@ -309,8 +515,18 @@
       "from": "role:atlas-prod-operator",
       "to": "resource:supported-locations-prod",
       "label": "grants write",
-      "attributes": { "actions": ["write"] },
-      "evidence": { "source": "bindle", "sourceRecordId": "sample-write-grant", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "authoritative" }
+      "attributes": {
+        "actions": [
+          "write"
+        ]
+      },
+      "evidence": {
+        "source": "bindle",
+        "sourceRecordId": "sample-write-grant",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "authoritative"
+      }
     },
     {
       "id": "edge:avery-can-assume-reader",
@@ -318,8 +534,16 @@
       "from": "person:avery",
       "to": "role:atlas-reader",
       "label": "can assume",
-      "attributes": { "expiresAt": "2026-09-11T00:00:00.000Z" },
-      "evidence": { "source": "bindle", "sourceRecordId": "sample-reader-access", "observedAt": "2026-07-20T20:00:00.000Z", "mode": "snapshot", "confidence": "authoritative" }
+      "attributes": {
+        "expiresAt": "2026-09-11T00:00:00.000Z"
+      },
+      "evidence": {
+        "source": "bindle",
+        "sourceRecordId": "sample-reader-access",
+        "observedAt": "2026-07-20T20:00:00.000Z",
+        "mode": "snapshot",
+        "confidence": "authoritative"
+      }
     }
   ]
 }

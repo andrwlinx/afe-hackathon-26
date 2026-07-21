@@ -14,10 +14,11 @@ import { AtoZHeader, AzBanner } from "./AtoZHeader.js";
  */
 
 const orgChart = [
-  { initials: "JP", name: "Jordan Parks", alias: "jparks", title: "Sr. Mgr. Ground Systems, L7" },
-  { initials: "CR", name: "Casey Reed", alias: "caseyr", title: "Sr Mgr, Gateway Implementation, L7" },
-  { initials: "ML", name: "Morgan Lee", alias: "morganl", title: "Mgr, Gnd Terminal Tech Ops, L6" },
-  { initials: "JD", name: "Jane Doe", alias: "jdoe", title: "AFE SDE Intern, L4", self: true }
+  { initials: "RC", name: "Riley Chen", alias: "rileyc", title: "VP, Technology, L10", meta: "Direct reports: 214", level: 0 },
+  { initials: "JP", name: "Jordan Parks", alias: "jparks", title: "Director, Software Development, L8", meta: "Direct reports: 62", level: 1 },
+  { initials: "CR", name: "Casey Reed", alias: "caseyr", title: "Senior Manager, Software Development, L7", meta: "Direct reports: 24", level: 2 },
+  { initials: "ML", name: "Morgan Lee", alias: "morganl", title: "Software Development Manager, L6", meta: "Direct reports: 8", level: 3 },
+  { initials: "JD", name: "Jane Doe", alias: "jdoe", title: "AFE SDE Intern, L4", meta: "2 months at Amazon", level: 4, self: true }
 ];
 
 export function PhoneToolPage() {
@@ -27,7 +28,7 @@ export function PhoneToolPage() {
 
       <AzBanner cta={{ label: "Ask RampPath", href: "/ramppath" }}>
         Need answers to ownership queries? Ask RampPath &ldquo;Who owns
-        AtlasRegionContext?&rdquo; or &ldquo;Who knows about telemetry?&rdquo;
+        AtlasRegionContext?&rdquo; or &ldquo;Who owns metrics?&rdquo;
       </AzBanner>
 
       <main className="pt-content">
@@ -42,7 +43,7 @@ export function PhoneToolPage() {
           <div className="pt-hero-info">
             <h2>Jane Doe</h2>
             <p className="pt-title-line">AFE SDE Intern, L4</p>
-            <p className="pt-title-line">Ground Station Software (7421)</p>
+            <p className="pt-title-line">Atlas Experience (7421)</p>
             <dl>
               <div>
                 <dt>Message:</dt>
@@ -96,7 +97,14 @@ export function PhoneToolPage() {
                 <li
                   key={person.alias}
                   className={person.self ? "pt-org-self" : ""}
+                  style={{ marginLeft: person.level * 22 }}
                 >
+                  <span
+                    className="pt-org-expand"
+                    aria-hidden="true"
+                  >
+                    {person.self ? "" : "+"}
+                  </span>
                   <span className="pt-org-avatar" aria-hidden="true">
                     {person.self ? (
                       <img src="/profile-jane.jpeg" alt="" />
@@ -108,6 +116,7 @@ export function PhoneToolPage() {
                     <a href="/">{person.name}</a>{" "}
                     <span className="pt-org-alias">{person.alias}@</span>
                     <small>{person.title}</small>
+                    <small className="pt-org-meta">{person.meta}</small>
                   </span>
                 </li>
               ))}
@@ -122,9 +131,10 @@ export function PhoneToolPage() {
               <h3>RampPath</h3>
             </div>
             <p>
-              Who owns what? Ask in plain English — "who owns orbit cdk?" —
-              and trace verified ownership, access, and deployment paths
-              across packages, pipelines, and bindles.
+              Who owns what? Ask in plain English — "who owns
+              AtlasRegionContext?" — and trace verified ownership, access,
+              and deployment paths across packages, pipelines, bindles, and
+              AWS accounts.
             </p>
             <span className="pt-ramppath-cta">
               Open RampPath

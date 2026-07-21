@@ -1,1797 +1,1656 @@
 [
   {
-    "id": "package:gnd-station-scheduler",
+    "id": "package:compute-instance-scaler",
     "type": "package",
-    "name": "LeoGndStationScheduler",
-    "description": "scheduler service for Ground Station Software on Amazon Leo.",
+    "name": "AtlasComputeInstanceScaler",
+    "description": "instance scaler service for Atlas Compute (Atlas org).",
     "tags": [
-      "ground station",
-      "gndsys",
-      "scheduling",
-      "scheduler"
+      "compute",
+      "ec2",
+      "instances",
+      "instance scaler"
     ],
     "aliases": [
-      "gnd-station-scheduler"
+      "compute-instance-scaler"
     ]
   },
   {
-    "id": "pipeline:gnd-station-scheduler",
+    "id": "pipeline:compute-instance-scaler",
     "type": "pipeline",
-    "name": "LeoGndStationSchedulerPipeline",
-    "description": "Deployment pipeline for LeoGndStationScheduler (Ground Station Software).",
+    "name": "AtlasComputeInstanceScalerPipeline",
+    "description": "Deployment pipeline for AtlasComputeInstanceScaler (Atlas Compute).",
     "tags": [
-      "ground station",
-      "gndsys",
-      "scheduling",
-      "scheduler",
+      "compute",
+      "ec2",
+      "instances",
+      "instance scaler",
       "pipeline"
     ],
     "aliases": [
-      "gnd-station-scheduler-pipeline"
+      "compute-instance-scaler-pipeline"
     ]
   },
   {
-    "id": "package:gnd-station-antenna-control",
+    "id": "package:compute-placement-engine",
     "type": "package",
-    "name": "LeoGndStationAntennaControlModel",
-    "description": "antenna control Model for Ground Station Software on Amazon Leo.",
+    "name": "AtlasComputePlacementEngineModel",
+    "description": "placement engine Model for Atlas Compute (Atlas org).",
     "tags": [
-      "ground station",
-      "gndsys",
-      "scheduling",
-      "antenna control"
+      "compute",
+      "ec2",
+      "instances",
+      "placement engine"
     ],
     "aliases": [
-      "gnd-station-antenna-control"
+      "compute-placement-engine"
     ]
   },
   {
-    "id": "pipeline:gnd-station-antenna-control",
+    "id": "pipeline:compute-placement-engine",
     "type": "pipeline",
-    "name": "LeoGndStationAntennaControlPipeline",
-    "description": "Deployment pipeline for LeoGndStationAntennaControl (Ground Station Software).",
+    "name": "AtlasComputePlacementEnginePipeline",
+    "description": "Deployment pipeline for AtlasComputePlacementEngine (Atlas Compute).",
     "tags": [
-      "ground station",
-      "gndsys",
-      "scheduling",
-      "antenna control",
+      "compute",
+      "ec2",
+      "instances",
+      "placement engine",
       "pipeline"
     ],
     "aliases": [
-      "gnd-station-antenna-control-pipeline"
+      "compute-placement-engine-pipeline"
     ]
   },
   {
-    "id": "package:gnd-station-pass-planner",
+    "id": "package:compute-host-manager",
     "type": "package",
-    "name": "LeoGndStationPassPlannerLambda",
-    "description": "pass planner Lambda for Ground Station Software on Amazon Leo.",
+    "name": "AtlasComputeHostManagerLambda",
+    "description": "host manager Lambda for Atlas Compute (Atlas org).",
     "tags": [
-      "ground station",
-      "gndsys",
-      "scheduling",
-      "pass planner"
+      "compute",
+      "ec2",
+      "instances",
+      "host manager"
     ],
     "aliases": [
-      "gnd-station-pass-planner"
+      "compute-host-manager"
     ]
   },
   {
-    "id": "service:gnd-station-gateway",
+    "id": "service:compute-gateway",
     "type": "service",
-    "name": "LeoGndStationGateway",
-    "description": "Internal API gateway operated by Ground Station Software.",
+    "name": "AtlasComputeGateway",
+    "description": "Internal API gateway operated by Atlas Compute.",
     "tags": [
-      "ground station",
-      "gndsys",
-      "scheduling",
+      "compute",
+      "ec2",
+      "instances",
       "gateway",
       "api"
     ],
     "aliases": [
-      "gnd-station-gateway"
+      "compute-gateway"
     ]
   },
   {
-    "id": "bindle:gnd-station",
+    "id": "bindle:compute",
     "type": "bindle",
-    "name": "LeoGndStationBindle",
-    "description": "Ownership bindle for Ground Station Software packages, pipelines, and accounts.",
+    "name": "AtlasComputeBindle",
+    "description": "Ownership bindle for Atlas Compute packages, pipelines, and accounts.",
     "tags": [
-      "ground station",
-      "gndsys",
-      "scheduling",
+      "compute",
+      "ec2",
+      "instances",
       "bindle",
       "ownership"
     ],
     "aliases": [
-      "gnd-station-bindle"
+      "compute-bindle"
     ]
   },
   {
-    "id": "account:gnd-station-prod",
+    "id": "account:compute-prod",
     "type": "account",
-    "name": "leo-gnd-station-prod",
-    "description": "Production AWS account for Ground Station Software.",
+    "name": "atlas-compute-prod",
+    "description": "Production AWS account for Atlas Compute.",
     "tags": [
-      "ground station",
-      "gndsys",
-      "scheduling",
+      "compute",
+      "ec2",
+      "instances",
       "aws account",
       "prod"
     ],
     "aliases": [
-      "gnd-station prod account"
+      "compute prod account"
     ]
   },
   {
-    "id": "account:gnd-station-beta",
+    "id": "account:compute-beta",
     "type": "account",
-    "name": "leo-gnd-station-beta",
-    "description": "Beta AWS account for Ground Station Software.",
+    "name": "atlas-compute-beta",
+    "description": "Beta AWS account for Atlas Compute.",
     "tags": [
-      "ground station",
-      "gndsys",
-      "scheduling",
+      "compute",
+      "ec2",
+      "instances",
       "aws account",
       "beta"
     ],
     "aliases": [
-      "gnd-station beta account"
+      "compute beta account"
     ]
   },
   {
-    "id": "package:gnd-station-cdk",
+    "id": "package:compute-cdk",
     "type": "package",
-    "name": "LeoGndStationCDK",
-    "description": "CDK infrastructure definitions for Ground Station Software deployments.",
+    "name": "AtlasComputeCDK",
+    "description": "CDK infrastructure definitions for Atlas Compute deployments.",
     "tags": [
-      "ground station",
-      "gndsys",
-      "scheduling",
+      "compute",
+      "ec2",
+      "instances",
       "cdk",
       "infrastructure"
     ],
     "aliases": [
-      "gnd-station-cdk"
+      "compute-cdk"
     ]
   },
   {
-    "id": "package:telemetry-ingest",
+    "id": "package:identity-policy-evaluator",
     "type": "package",
-    "name": "LeoTelemetryIngestModel",
-    "description": "ingest Model for Telemetry & Command on Amazon Leo.",
+    "name": "AtlasIdentityPolicyEvaluatorModel",
+    "description": "policy evaluator Model for Atlas Identity (Atlas org).",
     "tags": [
-      "telemetry",
-      "command",
-      "downlink",
-      "ingest"
+      "identity",
+      "iam",
+      "auth",
+      "policy evaluator"
     ],
     "aliases": [
-      "telemetry-ingest"
+      "identity-policy-evaluator"
     ]
   },
   {
-    "id": "pipeline:telemetry-ingest",
+    "id": "pipeline:identity-policy-evaluator",
     "type": "pipeline",
-    "name": "LeoTelemetryIngestPipeline",
-    "description": "Deployment pipeline for LeoTelemetryIngest (Telemetry & Command).",
+    "name": "AtlasIdentityPolicyEvaluatorPipeline",
+    "description": "Deployment pipeline for AtlasIdentityPolicyEvaluator (Atlas Identity).",
     "tags": [
-      "telemetry",
-      "command",
-      "downlink",
-      "ingest",
+      "identity",
+      "iam",
+      "auth",
+      "policy evaluator",
       "pipeline"
     ],
     "aliases": [
-      "telemetry-ingest-pipeline"
+      "identity-policy-evaluator-pipeline"
     ]
   },
   {
-    "id": "package:telemetry-command-dispatch",
+    "id": "package:identity-credential-vendor",
     "type": "package",
-    "name": "LeoTelemetryCommandDispatchLambda",
-    "description": "command dispatch Lambda for Telemetry & Command on Amazon Leo.",
+    "name": "AtlasIdentityCredentialVendorLambda",
+    "description": "credential vendor Lambda for Atlas Identity (Atlas org).",
     "tags": [
-      "telemetry",
-      "command",
-      "downlink",
-      "command dispatch"
+      "identity",
+      "iam",
+      "auth",
+      "credential vendor"
     ],
     "aliases": [
-      "telemetry-command-dispatch"
+      "identity-credential-vendor"
     ]
   },
   {
-    "id": "pipeline:telemetry-command-dispatch",
+    "id": "pipeline:identity-credential-vendor",
     "type": "pipeline",
-    "name": "LeoTelemetryCommandDispatchPipeline",
-    "description": "Deployment pipeline for LeoTelemetryCommandDispatch (Telemetry & Command).",
+    "name": "AtlasIdentityCredentialVendorPipeline",
+    "description": "Deployment pipeline for AtlasIdentityCredentialVendor (Atlas Identity).",
     "tags": [
-      "telemetry",
-      "command",
-      "downlink",
-      "command dispatch",
+      "identity",
+      "iam",
+      "auth",
+      "credential vendor",
       "pipeline"
     ],
     "aliases": [
-      "telemetry-command-dispatch-pipeline"
+      "identity-credential-vendor-pipeline"
     ]
   },
   {
-    "id": "package:telemetry-alerting",
+    "id": "package:identity-signin-gateway",
     "type": "package",
-    "name": "LeoTelemetryAlertingCLI",
-    "description": "alerting CLI for Telemetry & Command on Amazon Leo.",
+    "name": "AtlasIdentitySigninGatewayCLI",
+    "description": "signin gateway CLI for Atlas Identity (Atlas org).",
     "tags": [
-      "telemetry",
-      "command",
-      "downlink",
-      "alerting"
+      "identity",
+      "iam",
+      "auth",
+      "signin gateway"
     ],
     "aliases": [
-      "telemetry-alerting"
+      "identity-signin-gateway"
     ]
   },
   {
-    "id": "service:telemetry-gateway",
+    "id": "service:identity-gateway",
     "type": "service",
-    "name": "LeoTelemetryGateway",
-    "description": "Internal API gateway operated by Telemetry & Command.",
+    "name": "AtlasIdentityGateway",
+    "description": "Internal API gateway operated by Atlas Identity.",
     "tags": [
-      "telemetry",
-      "command",
-      "downlink",
+      "identity",
+      "iam",
+      "auth",
       "gateway",
       "api"
     ],
     "aliases": [
-      "telemetry-gateway"
+      "identity-gateway"
     ]
   },
   {
-    "id": "bindle:telemetry",
+    "id": "bindle:identity",
     "type": "bindle",
-    "name": "LeoTelemetryBindle",
-    "description": "Ownership bindle for Telemetry & Command packages, pipelines, and accounts.",
+    "name": "AtlasIdentityBindle",
+    "description": "Ownership bindle for Atlas Identity packages, pipelines, and accounts.",
     "tags": [
-      "telemetry",
-      "command",
-      "downlink",
+      "identity",
+      "iam",
+      "auth",
       "bindle",
       "ownership"
     ],
     "aliases": [
-      "telemetry-bindle"
+      "identity-bindle"
     ]
   },
   {
-    "id": "account:telemetry-prod",
+    "id": "account:identity-prod",
     "type": "account",
-    "name": "leo-telemetry-prod",
-    "description": "Production AWS account for Telemetry & Command.",
+    "name": "atlas-identity-prod",
+    "description": "Production AWS account for Atlas Identity.",
     "tags": [
-      "telemetry",
-      "command",
-      "downlink",
+      "identity",
+      "iam",
+      "auth",
       "aws account",
       "prod"
     ],
     "aliases": [
-      "telemetry prod account"
+      "identity prod account"
     ]
   },
   {
-    "id": "account:telemetry-beta",
+    "id": "account:identity-beta",
     "type": "account",
-    "name": "leo-telemetry-beta",
-    "description": "Beta AWS account for Telemetry & Command.",
+    "name": "atlas-identity-beta",
+    "description": "Beta AWS account for Atlas Identity.",
     "tags": [
-      "telemetry",
-      "command",
-      "downlink",
+      "identity",
+      "iam",
+      "auth",
       "aws account",
       "beta"
     ],
     "aliases": [
-      "telemetry beta account"
+      "identity beta account"
     ]
   },
   {
-    "id": "package:constellation-orbit-planner",
+    "id": "package:networking-vpc-builder",
     "type": "package",
-    "name": "LeoConstellationOrbitPlannerLambda",
-    "description": "orbit planner Lambda for Constellation Planning on Amazon Leo.",
+    "name": "AtlasNetworkVpcBuilderLambda",
+    "description": "vpc builder Lambda for Atlas Networking (Atlas org).",
     "tags": [
-      "constellation",
-      "orbit",
-      "planning",
-      "orbit planner"
+      "networking",
+      "vpc",
+      "routing",
+      "vpc builder"
     ],
     "aliases": [
-      "constellation-orbit-planner"
+      "networking-vpc-builder"
     ]
   },
   {
-    "id": "pipeline:constellation-orbit-planner",
+    "id": "pipeline:networking-vpc-builder",
     "type": "pipeline",
-    "name": "LeoConstellationOrbitPlannerPipeline",
-    "description": "Deployment pipeline for LeoConstellationOrbitPlanner (Constellation Planning).",
+    "name": "AtlasNetworkVpcBuilderPipeline",
+    "description": "Deployment pipeline for AtlasNetworkVpcBuilder (Atlas Networking).",
     "tags": [
-      "constellation",
-      "orbit",
-      "planning",
-      "orbit planner",
+      "networking",
+      "vpc",
+      "routing",
+      "vpc builder",
       "pipeline"
     ],
     "aliases": [
-      "constellation-orbit-planner-pipeline"
+      "networking-vpc-builder-pipeline"
     ]
   },
   {
-    "id": "package:constellation-maneuver",
+    "id": "package:networking-subnet-manager",
     "type": "package",
-    "name": "LeoConstellationManeuverCLI",
-    "description": "maneuver CLI for Constellation Planning on Amazon Leo.",
+    "name": "AtlasNetworkSubnetManagerCLI",
+    "description": "subnet manager CLI for Atlas Networking (Atlas org).",
     "tags": [
-      "constellation",
-      "orbit",
-      "planning",
-      "maneuver"
+      "networking",
+      "vpc",
+      "routing",
+      "subnet manager"
     ],
     "aliases": [
-      "constellation-maneuver"
+      "networking-subnet-manager"
     ]
   },
   {
-    "id": "pipeline:constellation-maneuver",
+    "id": "pipeline:networking-subnet-manager",
     "type": "pipeline",
-    "name": "LeoConstellationManeuverPipeline",
-    "description": "Deployment pipeline for LeoConstellationManeuver (Constellation Planning).",
+    "name": "AtlasNetworkSubnetManagerPipeline",
+    "description": "Deployment pipeline for AtlasNetworkSubnetManager (Atlas Networking).",
     "tags": [
-      "constellation",
-      "orbit",
-      "planning",
-      "maneuver",
+      "networking",
+      "vpc",
+      "routing",
+      "subnet manager",
       "pipeline"
     ],
     "aliases": [
-      "constellation-maneuver-pipeline"
+      "networking-subnet-manager-pipeline"
     ]
   },
   {
-    "id": "package:constellation-conjunction",
+    "id": "package:networking-peering-broker",
     "type": "package",
-    "name": "LeoConstellationConjunctionDaemon",
-    "description": "conjunction Daemon for Constellation Planning on Amazon Leo.",
+    "name": "AtlasNetworkPeeringBrokerDaemon",
+    "description": "peering broker Daemon for Atlas Networking (Atlas org).",
     "tags": [
-      "constellation",
-      "orbit",
-      "planning",
-      "conjunction"
+      "networking",
+      "vpc",
+      "routing",
+      "peering broker"
     ],
     "aliases": [
-      "constellation-conjunction"
+      "networking-peering-broker"
     ]
   },
   {
-    "id": "service:constellation-gateway",
+    "id": "service:networking-gateway",
     "type": "service",
-    "name": "LeoConstellationGateway",
-    "description": "Internal API gateway operated by Constellation Planning.",
+    "name": "AtlasNetworkGateway",
+    "description": "Internal API gateway operated by Atlas Networking.",
     "tags": [
-      "constellation",
-      "orbit",
-      "planning",
+      "networking",
+      "vpc",
+      "routing",
       "gateway",
       "api"
     ],
     "aliases": [
-      "constellation-gateway"
+      "networking-gateway"
     ]
   },
   {
-    "id": "bindle:constellation",
+    "id": "bindle:networking",
     "type": "bindle",
-    "name": "LeoConstellationBindle",
-    "description": "Ownership bindle for Constellation Planning packages, pipelines, and accounts.",
+    "name": "AtlasNetworkBindle",
+    "description": "Ownership bindle for Atlas Networking packages, pipelines, and accounts.",
     "tags": [
-      "constellation",
-      "orbit",
-      "planning",
+      "networking",
+      "vpc",
+      "routing",
       "bindle",
       "ownership"
     ],
     "aliases": [
-      "constellation-bindle"
+      "networking-bindle"
     ]
   },
   {
-    "id": "account:constellation-prod",
+    "id": "account:networking-prod",
     "type": "account",
-    "name": "leo-constellation-prod",
-    "description": "Production AWS account for Constellation Planning.",
+    "name": "atlas-networking-prod",
+    "description": "Production AWS account for Atlas Networking.",
     "tags": [
-      "constellation",
-      "orbit",
-      "planning",
+      "networking",
+      "vpc",
+      "routing",
       "aws account",
       "prod"
     ],
     "aliases": [
-      "constellation prod account"
+      "networking prod account"
     ]
   },
   {
-    "id": "account:constellation-beta",
+    "id": "account:networking-beta",
     "type": "account",
-    "name": "leo-constellation-beta",
-    "description": "Beta AWS account for Constellation Planning.",
+    "name": "atlas-networking-beta",
+    "description": "Beta AWS account for Atlas Networking.",
     "tags": [
-      "constellation",
-      "orbit",
-      "planning",
+      "networking",
+      "vpc",
+      "routing",
       "aws account",
       "beta"
     ],
     "aliases": [
-      "constellation beta account"
+      "networking beta account"
     ]
   },
   {
-    "id": "package:constellation-cdk",
+    "id": "package:networking-cdk",
     "type": "package",
-    "name": "LeoConstellationCDK",
-    "description": "CDK infrastructure definitions for Constellation Planning deployments.",
+    "name": "AtlasNetworkCDK",
+    "description": "CDK infrastructure definitions for Atlas Networking deployments.",
     "tags": [
-      "constellation",
-      "orbit",
-      "planning",
+      "networking",
+      "vpc",
+      "routing",
       "cdk",
       "infrastructure"
     ],
     "aliases": [
-      "constellation-cdk"
+      "networking-cdk"
     ]
   },
   {
-    "id": "package:optical-isl-link-manager",
+    "id": "package:storage-bucket-index",
     "type": "package",
-    "name": "LeoOpticalIslLinkManagerCLI",
-    "description": "link manager CLI for Optical ISL Dev on Amazon Leo.",
+    "name": "AtlasStorageBucketIndexCLI",
+    "description": "bucket index CLI for Atlas Storage (Atlas org).",
     "tags": [
-      "optical",
-      "isl",
-      "laser link",
-      "link manager"
+      "storage",
+      "s3",
+      "objects",
+      "bucket index"
     ],
     "aliases": [
-      "optical-isl-link-manager"
+      "storage-bucket-index"
     ]
   },
   {
-    "id": "pipeline:optical-isl-link-manager",
+    "id": "pipeline:storage-bucket-index",
     "type": "pipeline",
-    "name": "LeoOpticalIslLinkManagerPipeline",
-    "description": "Deployment pipeline for LeoOpticalIslLinkManager (Optical ISL Dev).",
+    "name": "AtlasStorageBucketIndexPipeline",
+    "description": "Deployment pipeline for AtlasStorageBucketIndex (Atlas Storage).",
     "tags": [
-      "optical",
-      "isl",
-      "laser link",
-      "link manager",
+      "storage",
+      "s3",
+      "objects",
+      "bucket index",
       "pipeline"
     ],
     "aliases": [
-      "optical-isl-link-manager-pipeline"
+      "storage-bucket-index-pipeline"
     ]
   },
   {
-    "id": "package:optical-isl-pointing",
+    "id": "package:storage-replication-engine",
     "type": "package",
-    "name": "LeoOpticalIslPointingDaemon",
-    "description": "pointing Daemon for Optical ISL Dev on Amazon Leo.",
+    "name": "AtlasStorageReplicationEngineDaemon",
+    "description": "replication engine Daemon for Atlas Storage (Atlas org).",
     "tags": [
-      "optical",
-      "isl",
-      "laser link",
-      "pointing"
+      "storage",
+      "s3",
+      "objects",
+      "replication engine"
     ],
     "aliases": [
-      "optical-isl-pointing"
+      "storage-replication-engine"
     ]
   },
   {
-    "id": "pipeline:optical-isl-pointing",
+    "id": "pipeline:storage-replication-engine",
     "type": "pipeline",
-    "name": "LeoOpticalIslPointingPipeline",
-    "description": "Deployment pipeline for LeoOpticalIslPointing (Optical ISL Dev).",
+    "name": "AtlasStorageReplicationEnginePipeline",
+    "description": "Deployment pipeline for AtlasStorageReplicationEngine (Atlas Storage).",
     "tags": [
-      "optical",
-      "isl",
-      "laser link",
-      "pointing",
+      "storage",
+      "s3",
+      "objects",
+      "replication engine",
       "pipeline"
     ],
     "aliases": [
-      "optical-isl-pointing-pipeline"
+      "storage-replication-engine-pipeline"
     ]
   },
   {
-    "id": "package:optical-isl-handoff",
+    "id": "package:storage-lifecycle-manager",
     "type": "package",
-    "name": "LeoOpticalIslHandoff",
-    "description": "handoff service for Optical ISL Dev on Amazon Leo.",
+    "name": "AtlasStorageLifecycleManager",
+    "description": "lifecycle manager service for Atlas Storage (Atlas org).",
     "tags": [
-      "optical",
-      "isl",
-      "laser link",
-      "handoff"
+      "storage",
+      "s3",
+      "objects",
+      "lifecycle manager"
     ],
     "aliases": [
-      "optical-isl-handoff"
+      "storage-lifecycle-manager"
     ]
   },
   {
-    "id": "service:optical-isl-gateway",
+    "id": "service:storage-gateway",
     "type": "service",
-    "name": "LeoOpticalIslGateway",
-    "description": "Internal API gateway operated by Optical ISL Dev.",
+    "name": "AtlasStorageGateway",
+    "description": "Internal API gateway operated by Atlas Storage.",
     "tags": [
-      "optical",
-      "isl",
-      "laser link",
+      "storage",
+      "s3",
+      "objects",
       "gateway",
       "api"
     ],
     "aliases": [
-      "optical-isl-gateway"
+      "storage-gateway"
     ]
   },
   {
-    "id": "bindle:optical-isl",
+    "id": "bindle:storage",
     "type": "bindle",
-    "name": "LeoOpticalIslBindle",
-    "description": "Ownership bindle for Optical ISL Dev packages, pipelines, and accounts.",
+    "name": "AtlasStorageBindle",
+    "description": "Ownership bindle for Atlas Storage packages, pipelines, and accounts.",
     "tags": [
-      "optical",
-      "isl",
-      "laser link",
+      "storage",
+      "s3",
+      "objects",
       "bindle",
       "ownership"
     ],
     "aliases": [
-      "optical-isl-bindle"
+      "storage-bindle"
     ]
   },
   {
-    "id": "account:optical-isl-prod",
+    "id": "account:storage-prod",
     "type": "account",
-    "name": "leo-optical-isl-prod",
-    "description": "Production AWS account for Optical ISL Dev.",
+    "name": "atlas-storage-prod",
+    "description": "Production AWS account for Atlas Storage.",
     "tags": [
-      "optical",
-      "isl",
-      "laser link",
+      "storage",
+      "s3",
+      "objects",
       "aws account",
       "prod"
     ],
     "aliases": [
-      "optical-isl prod account"
+      "storage prod account"
     ]
   },
   {
-    "id": "account:optical-isl-beta",
+    "id": "account:storage-beta",
     "type": "account",
-    "name": "leo-optical-isl-beta",
-    "description": "Beta AWS account for Optical ISL Dev.",
+    "name": "atlas-storage-beta",
+    "description": "Beta AWS account for Atlas Storage.",
     "tags": [
-      "optical",
-      "isl",
-      "laser link",
+      "storage",
+      "s3",
+      "objects",
       "aws account",
       "beta"
     ],
     "aliases": [
-      "optical-isl beta account"
+      "storage beta account"
     ]
   },
   {
-    "id": "package:terminals-provisioning",
+    "id": "package:observability-metrics-ingest",
     "type": "package",
-    "name": "LeoTerminalProvisioningDaemon",
-    "description": "provisioning Daemon for Customer Terminals on Amazon Leo.",
+    "name": "AtlasWatchMetricsIngestDaemon",
+    "description": "metrics ingest Daemon for Atlas Observability (Atlas org).",
     "tags": [
-      "terminal",
-      "customer",
-      "firmware",
-      "provisioning"
+      "observability",
+      "metrics",
+      "alarms",
+      "metrics ingest"
     ],
     "aliases": [
-      "terminals-provisioning"
+      "observability-metrics-ingest"
     ]
   },
   {
-    "id": "pipeline:terminals-provisioning",
+    "id": "pipeline:observability-metrics-ingest",
     "type": "pipeline",
-    "name": "LeoTerminalProvisioningPipeline",
-    "description": "Deployment pipeline for LeoTerminalProvisioning (Customer Terminals).",
+    "name": "AtlasWatchMetricsIngestPipeline",
+    "description": "Deployment pipeline for AtlasWatchMetricsIngest (Atlas Observability).",
     "tags": [
-      "terminal",
-      "customer",
-      "firmware",
-      "provisioning",
+      "observability",
+      "metrics",
+      "alarms",
+      "metrics ingest",
       "pipeline"
     ],
     "aliases": [
-      "terminals-provisioning-pipeline"
+      "observability-metrics-ingest-pipeline"
     ]
   },
   {
-    "id": "package:terminals-firmware-update",
+    "id": "package:observability-alarm-engine",
     "type": "package",
-    "name": "LeoTerminalFirmwareUpdate",
-    "description": "firmware update service for Customer Terminals on Amazon Leo.",
+    "name": "AtlasWatchAlarmEngine",
+    "description": "alarm engine service for Atlas Observability (Atlas org).",
     "tags": [
-      "terminal",
-      "customer",
-      "firmware",
-      "firmware update"
+      "observability",
+      "metrics",
+      "alarms",
+      "alarm engine"
     ],
     "aliases": [
-      "terminals-firmware-update"
+      "observability-alarm-engine"
     ]
   },
   {
-    "id": "pipeline:terminals-firmware-update",
+    "id": "pipeline:observability-alarm-engine",
     "type": "pipeline",
-    "name": "LeoTerminalFirmwareUpdatePipeline",
-    "description": "Deployment pipeline for LeoTerminalFirmwareUpdate (Customer Terminals).",
+    "name": "AtlasWatchAlarmEnginePipeline",
+    "description": "Deployment pipeline for AtlasWatchAlarmEngine (Atlas Observability).",
     "tags": [
-      "terminal",
-      "customer",
-      "firmware",
-      "firmware update",
+      "observability",
+      "metrics",
+      "alarms",
+      "alarm engine",
       "pipeline"
     ],
     "aliases": [
-      "terminals-firmware-update-pipeline"
+      "observability-alarm-engine-pipeline"
     ]
   },
   {
-    "id": "package:terminals-diagnostics",
+    "id": "package:observability-trace-collector",
     "type": "package",
-    "name": "LeoTerminalDiagnosticsModel",
-    "description": "diagnostics Model for Customer Terminals on Amazon Leo.",
+    "name": "AtlasWatchTraceCollectorModel",
+    "description": "trace collector Model for Atlas Observability (Atlas org).",
     "tags": [
-      "terminal",
-      "customer",
-      "firmware",
-      "diagnostics"
+      "observability",
+      "metrics",
+      "alarms",
+      "trace collector"
     ],
     "aliases": [
-      "terminals-diagnostics"
+      "observability-trace-collector"
     ]
   },
   {
-    "id": "service:terminals-gateway",
+    "id": "service:observability-gateway",
     "type": "service",
-    "name": "LeoTerminalGateway",
-    "description": "Internal API gateway operated by Customer Terminals.",
+    "name": "AtlasWatchGateway",
+    "description": "Internal API gateway operated by Atlas Observability.",
     "tags": [
-      "terminal",
-      "customer",
-      "firmware",
+      "observability",
+      "metrics",
+      "alarms",
       "gateway",
       "api"
     ],
     "aliases": [
-      "terminals-gateway"
+      "observability-gateway"
     ]
   },
   {
-    "id": "bindle:terminals",
+    "id": "bindle:observability",
     "type": "bindle",
-    "name": "LeoTerminalBindle",
-    "description": "Ownership bindle for Customer Terminals packages, pipelines, and accounts.",
+    "name": "AtlasWatchBindle",
+    "description": "Ownership bindle for Atlas Observability packages, pipelines, and accounts.",
     "tags": [
-      "terminal",
-      "customer",
-      "firmware",
+      "observability",
+      "metrics",
+      "alarms",
       "bindle",
       "ownership"
     ],
     "aliases": [
-      "terminals-bindle"
+      "observability-bindle"
     ]
   },
   {
-    "id": "account:terminals-prod",
+    "id": "account:observability-prod",
     "type": "account",
-    "name": "leo-terminals-prod",
-    "description": "Production AWS account for Customer Terminals.",
+    "name": "atlas-observability-prod",
+    "description": "Production AWS account for Atlas Observability.",
     "tags": [
-      "terminal",
-      "customer",
-      "firmware",
+      "observability",
+      "metrics",
+      "alarms",
       "aws account",
       "prod"
     ],
     "aliases": [
-      "terminals prod account"
+      "observability prod account"
     ]
   },
   {
-    "id": "account:terminals-beta",
+    "id": "account:observability-beta",
     "type": "account",
-    "name": "leo-terminals-beta",
-    "description": "Beta AWS account for Customer Terminals.",
+    "name": "atlas-observability-beta",
+    "description": "Beta AWS account for Atlas Observability.",
     "tags": [
-      "terminal",
-      "customer",
-      "firmware",
+      "observability",
+      "metrics",
+      "alarms",
       "aws account",
       "beta"
     ],
     "aliases": [
-      "terminals beta account"
+      "observability beta account"
     ]
   },
   {
-    "id": "package:terminals-cdk",
+    "id": "package:observability-cdk",
     "type": "package",
-    "name": "LeoTerminalCDK",
-    "description": "CDK infrastructure definitions for Customer Terminals deployments.",
+    "name": "AtlasWatchCDK",
+    "description": "CDK infrastructure definitions for Atlas Observability deployments.",
     "tags": [
-      "terminal",
-      "customer",
-      "firmware",
+      "observability",
+      "metrics",
+      "alarms",
       "cdk",
       "infrastructure"
     ],
     "aliases": [
-      "terminals-cdk"
+      "observability-cdk"
     ]
   },
   {
-    "id": "package:network-route-planner",
+    "id": "package:deployment-orchestrator",
     "type": "package",
-    "name": "LeoNetworkRoutePlanner",
-    "description": "route planner service for Network Control Plane on Amazon Leo.",
+    "name": "AtlasDeployOrchestrator",
+    "description": "orchestrator service for Atlas Deployment (Atlas org).",
     "tags": [
-      "network",
-      "routing",
-      "spectrum",
-      "route planner"
+      "deployment",
+      "pipelines",
+      "release",
+      "orchestrator"
     ],
     "aliases": [
-      "network-route-planner"
+      "deployment-orchestrator"
     ]
   },
   {
-    "id": "pipeline:network-route-planner",
+    "id": "pipeline:deployment-orchestrator",
     "type": "pipeline",
-    "name": "LeoNetworkRoutePlannerPipeline",
-    "description": "Deployment pipeline for LeoNetworkRoutePlanner (Network Control Plane).",
+    "name": "AtlasDeployOrchestratorPipeline",
+    "description": "Deployment pipeline for AtlasDeployOrchestrator (Atlas Deployment).",
     "tags": [
-      "network",
-      "routing",
-      "spectrum",
-      "route planner",
+      "deployment",
+      "pipelines",
+      "release",
+      "orchestrator",
       "pipeline"
     ],
     "aliases": [
-      "network-route-planner-pipeline"
+      "deployment-orchestrator-pipeline"
     ]
   },
   {
-    "id": "package:network-spectrum-manager",
+    "id": "package:deployment-rollback-engine",
     "type": "package",
-    "name": "LeoNetworkSpectrumManagerModel",
-    "description": "spectrum manager Model for Network Control Plane on Amazon Leo.",
+    "name": "AtlasDeployRollbackEngineModel",
+    "description": "rollback engine Model for Atlas Deployment (Atlas org).",
     "tags": [
-      "network",
-      "routing",
-      "spectrum",
-      "spectrum manager"
+      "deployment",
+      "pipelines",
+      "release",
+      "rollback engine"
     ],
     "aliases": [
-      "network-spectrum-manager"
+      "deployment-rollback-engine"
     ]
   },
   {
-    "id": "pipeline:network-spectrum-manager",
+    "id": "pipeline:deployment-rollback-engine",
     "type": "pipeline",
-    "name": "LeoNetworkSpectrumManagerPipeline",
-    "description": "Deployment pipeline for LeoNetworkSpectrumManager (Network Control Plane).",
+    "name": "AtlasDeployRollbackEnginePipeline",
+    "description": "Deployment pipeline for AtlasDeployRollbackEngine (Atlas Deployment).",
     "tags": [
-      "network",
-      "routing",
-      "spectrum",
-      "spectrum manager",
+      "deployment",
+      "pipelines",
+      "release",
+      "rollback engine",
       "pipeline"
     ],
     "aliases": [
-      "network-spectrum-manager-pipeline"
+      "deployment-rollback-engine-pipeline"
     ]
   },
   {
-    "id": "package:network-capacity",
+    "id": "package:deployment-canary-runner",
     "type": "package",
-    "name": "LeoNetworkCapacityLambda",
-    "description": "capacity Lambda for Network Control Plane on Amazon Leo.",
+    "name": "AtlasDeployCanaryRunnerLambda",
+    "description": "canary runner Lambda for Atlas Deployment (Atlas org).",
     "tags": [
-      "network",
-      "routing",
-      "spectrum",
-      "capacity"
+      "deployment",
+      "pipelines",
+      "release",
+      "canary runner"
     ],
     "aliases": [
-      "network-capacity"
+      "deployment-canary-runner"
     ]
   },
   {
-    "id": "service:network-gateway",
+    "id": "service:deployment-gateway",
     "type": "service",
-    "name": "LeoNetworkGateway",
-    "description": "Internal API gateway operated by Network Control Plane.",
+    "name": "AtlasDeployGateway",
+    "description": "Internal API gateway operated by Atlas Deployment.",
     "tags": [
-      "network",
-      "routing",
-      "spectrum",
+      "deployment",
+      "pipelines",
+      "release",
       "gateway",
       "api"
     ],
     "aliases": [
-      "network-gateway"
+      "deployment-gateway"
     ]
   },
   {
-    "id": "bindle:network",
+    "id": "bindle:deployment",
     "type": "bindle",
-    "name": "LeoNetworkBindle",
-    "description": "Ownership bindle for Network Control Plane packages, pipelines, and accounts.",
+    "name": "AtlasDeployBindle",
+    "description": "Ownership bindle for Atlas Deployment packages, pipelines, and accounts.",
     "tags": [
-      "network",
-      "routing",
-      "spectrum",
+      "deployment",
+      "pipelines",
+      "release",
       "bindle",
       "ownership"
     ],
     "aliases": [
-      "network-bindle"
+      "deployment-bindle"
     ]
   },
   {
-    "id": "account:network-prod",
+    "id": "account:deployment-prod",
     "type": "account",
-    "name": "leo-network-prod",
-    "description": "Production AWS account for Network Control Plane.",
+    "name": "atlas-deployment-prod",
+    "description": "Production AWS account for Atlas Deployment.",
     "tags": [
-      "network",
-      "routing",
-      "spectrum",
+      "deployment",
+      "pipelines",
+      "release",
       "aws account",
       "prod"
     ],
     "aliases": [
-      "network prod account"
+      "deployment prod account"
     ]
   },
   {
-    "id": "account:network-beta",
+    "id": "account:deployment-beta",
     "type": "account",
-    "name": "leo-network-beta",
-    "description": "Beta AWS account for Network Control Plane.",
+    "name": "atlas-deployment-beta",
+    "description": "Beta AWS account for Atlas Deployment.",
     "tags": [
-      "network",
-      "routing",
-      "spectrum",
+      "deployment",
+      "pipelines",
+      "release",
       "aws account",
       "beta"
     ],
     "aliases": [
-      "network beta account"
+      "deployment beta account"
     ]
   },
   {
-    "id": "package:fleet-ops-dashboard",
+    "id": "package:billing-usage-metering",
     "type": "package",
-    "name": "LeoFleetOpsDashboardModel",
-    "description": "dashboard Model for Fleet Operations on Amazon Leo.",
+    "name": "AtlasBillingUsageMeteringModel",
+    "description": "usage metering Model for Atlas Billing (Atlas org).",
     "tags": [
-      "fleet",
-      "operations",
-      "oncall",
+      "billing",
+      "usage",
+      "cost",
+      "usage metering"
+    ],
+    "aliases": [
+      "billing-usage-metering"
+    ]
+  },
+  {
+    "id": "pipeline:billing-usage-metering",
+    "type": "pipeline",
+    "name": "AtlasBillingUsageMeteringPipeline",
+    "description": "Deployment pipeline for AtlasBillingUsageMetering (Atlas Billing).",
+    "tags": [
+      "billing",
+      "usage",
+      "cost",
+      "usage metering",
+      "pipeline"
+    ],
+    "aliases": [
+      "billing-usage-metering-pipeline"
+    ]
+  },
+  {
+    "id": "package:billing-invoice-builder",
+    "type": "package",
+    "name": "AtlasBillingInvoiceBuilderLambda",
+    "description": "invoice builder Lambda for Atlas Billing (Atlas org).",
+    "tags": [
+      "billing",
+      "usage",
+      "cost",
+      "invoice builder"
+    ],
+    "aliases": [
+      "billing-invoice-builder"
+    ]
+  },
+  {
+    "id": "pipeline:billing-invoice-builder",
+    "type": "pipeline",
+    "name": "AtlasBillingInvoiceBuilderPipeline",
+    "description": "Deployment pipeline for AtlasBillingInvoiceBuilder (Atlas Billing).",
+    "tags": [
+      "billing",
+      "usage",
+      "cost",
+      "invoice builder",
+      "pipeline"
+    ],
+    "aliases": [
+      "billing-invoice-builder-pipeline"
+    ]
+  },
+  {
+    "id": "package:billing-cost-analyzer",
+    "type": "package",
+    "name": "AtlasBillingCostAnalyzerCLI",
+    "description": "cost analyzer CLI for Atlas Billing (Atlas org).",
+    "tags": [
+      "billing",
+      "usage",
+      "cost",
+      "cost analyzer"
+    ],
+    "aliases": [
+      "billing-cost-analyzer"
+    ]
+  },
+  {
+    "id": "service:billing-gateway",
+    "type": "service",
+    "name": "AtlasBillingGateway",
+    "description": "Internal API gateway operated by Atlas Billing.",
+    "tags": [
+      "billing",
+      "usage",
+      "cost",
+      "gateway",
+      "api"
+    ],
+    "aliases": [
+      "billing-gateway"
+    ]
+  },
+  {
+    "id": "bindle:billing",
+    "type": "bindle",
+    "name": "AtlasBillingBindle",
+    "description": "Ownership bindle for Atlas Billing packages, pipelines, and accounts.",
+    "tags": [
+      "billing",
+      "usage",
+      "cost",
+      "bindle",
+      "ownership"
+    ],
+    "aliases": [
+      "billing-bindle"
+    ]
+  },
+  {
+    "id": "account:billing-prod",
+    "type": "account",
+    "name": "atlas-billing-prod",
+    "description": "Production AWS account for Atlas Billing.",
+    "tags": [
+      "billing",
+      "usage",
+      "cost",
+      "aws account",
+      "prod"
+    ],
+    "aliases": [
+      "billing prod account"
+    ]
+  },
+  {
+    "id": "account:billing-beta",
+    "type": "account",
+    "name": "atlas-billing-beta",
+    "description": "Beta AWS account for Atlas Billing.",
+    "tags": [
+      "billing",
+      "usage",
+      "cost",
+      "aws account",
+      "beta"
+    ],
+    "aliases": [
+      "billing beta account"
+    ]
+  },
+  {
+    "id": "package:billing-cdk",
+    "type": "package",
+    "name": "AtlasBillingCDK",
+    "description": "CDK infrastructure definitions for Atlas Billing deployments.",
+    "tags": [
+      "billing",
+      "usage",
+      "cost",
+      "cdk",
+      "infrastructure"
+    ],
+    "aliases": [
+      "billing-cdk"
+    ]
+  },
+  {
+    "id": "package:console-dashboard",
+    "type": "package",
+    "name": "AtlasConsoleDashboardLambda",
+    "description": "dashboard Lambda for Atlas Console (Atlas org).",
+    "tags": [
+      "console",
+      "frontend",
+      "ui",
       "dashboard"
     ],
     "aliases": [
-      "fleet-ops-dashboard"
+      "console-dashboard"
     ]
   },
   {
-    "id": "pipeline:fleet-ops-dashboard",
+    "id": "pipeline:console-dashboard",
     "type": "pipeline",
-    "name": "LeoFleetOpsDashboardPipeline",
-    "description": "Deployment pipeline for LeoFleetOpsDashboard (Fleet Operations).",
+    "name": "AtlasConsoleDashboardPipeline",
+    "description": "Deployment pipeline for AtlasConsoleDashboard (Atlas Console).",
     "tags": [
-      "fleet",
-      "operations",
-      "oncall",
+      "console",
+      "frontend",
+      "ui",
       "dashboard",
       "pipeline"
     ],
     "aliases": [
-      "fleet-ops-dashboard-pipeline"
+      "console-dashboard-pipeline"
     ]
   },
   {
-    "id": "package:fleet-ops-incident-tracker",
+    "id": "package:console-resource-browser",
     "type": "package",
-    "name": "LeoFleetOpsIncidentTrackerLambda",
-    "description": "incident tracker Lambda for Fleet Operations on Amazon Leo.",
+    "name": "AtlasConsoleResourceBrowserCLI",
+    "description": "resource browser CLI for Atlas Console (Atlas org).",
     "tags": [
-      "fleet",
-      "operations",
-      "oncall",
-      "incident tracker"
+      "console",
+      "frontend",
+      "ui",
+      "resource browser"
     ],
     "aliases": [
-      "fleet-ops-incident-tracker"
+      "console-resource-browser"
     ]
   },
   {
-    "id": "pipeline:fleet-ops-incident-tracker",
+    "id": "pipeline:console-resource-browser",
     "type": "pipeline",
-    "name": "LeoFleetOpsIncidentTrackerPipeline",
-    "description": "Deployment pipeline for LeoFleetOpsIncidentTracker (Fleet Operations).",
+    "name": "AtlasConsoleResourceBrowserPipeline",
+    "description": "Deployment pipeline for AtlasConsoleResourceBrowser (Atlas Console).",
     "tags": [
-      "fleet",
-      "operations",
-      "oncall",
-      "incident tracker",
+      "console",
+      "frontend",
+      "ui",
+      "resource browser",
       "pipeline"
     ],
     "aliases": [
-      "fleet-ops-incident-tracker-pipeline"
+      "console-resource-browser-pipeline"
     ]
   },
   {
-    "id": "package:fleet-ops-health-monitor",
+    "id": "package:console-signin-ui",
     "type": "package",
-    "name": "LeoFleetOpsHealthMonitorCLI",
-    "description": "health monitor CLI for Fleet Operations on Amazon Leo.",
+    "name": "AtlasConsoleSigninUiDaemon",
+    "description": "signin ui Daemon for Atlas Console (Atlas org).",
     "tags": [
-      "fleet",
-      "operations",
-      "oncall",
-      "health monitor"
+      "console",
+      "frontend",
+      "ui",
+      "signin ui"
     ],
     "aliases": [
-      "fleet-ops-health-monitor"
+      "console-signin-ui"
     ]
   },
   {
-    "id": "service:fleet-ops-gateway",
+    "id": "service:console-gateway",
     "type": "service",
-    "name": "LeoFleetOpsGateway",
-    "description": "Internal API gateway operated by Fleet Operations.",
+    "name": "AtlasConsoleGateway",
+    "description": "Internal API gateway operated by Atlas Console.",
     "tags": [
-      "fleet",
-      "operations",
-      "oncall",
+      "console",
+      "frontend",
+      "ui",
       "gateway",
       "api"
     ],
     "aliases": [
-      "fleet-ops-gateway"
+      "console-gateway"
     ]
   },
   {
-    "id": "bindle:fleet-ops",
+    "id": "bindle:console",
     "type": "bindle",
-    "name": "LeoFleetOpsBindle",
-    "description": "Ownership bindle for Fleet Operations packages, pipelines, and accounts.",
+    "name": "AtlasConsoleBindle",
+    "description": "Ownership bindle for Atlas Console packages, pipelines, and accounts.",
     "tags": [
-      "fleet",
-      "operations",
-      "oncall",
+      "console",
+      "frontend",
+      "ui",
       "bindle",
       "ownership"
     ],
     "aliases": [
-      "fleet-ops-bindle"
+      "console-bindle"
     ]
   },
   {
-    "id": "account:fleet-ops-prod",
+    "id": "account:console-prod",
     "type": "account",
-    "name": "leo-fleet-ops-prod",
-    "description": "Production AWS account for Fleet Operations.",
+    "name": "atlas-console-prod",
+    "description": "Production AWS account for Atlas Console.",
     "tags": [
-      "fleet",
-      "operations",
-      "oncall",
+      "console",
+      "frontend",
+      "ui",
       "aws account",
       "prod"
     ],
     "aliases": [
-      "fleet-ops prod account"
+      "console prod account"
     ]
   },
   {
-    "id": "account:fleet-ops-beta",
+    "id": "account:console-beta",
     "type": "account",
-    "name": "leo-fleet-ops-beta",
-    "description": "Beta AWS account for Fleet Operations.",
+    "name": "atlas-console-beta",
+    "description": "Beta AWS account for Atlas Console.",
     "tags": [
-      "fleet",
-      "operations",
-      "oncall",
+      "console",
+      "frontend",
+      "ui",
       "aws account",
       "beta"
     ],
     "aliases": [
-      "fleet-ops beta account"
+      "console beta account"
     ]
   },
   {
-    "id": "package:fleet-ops-cdk",
+    "id": "package:data-query-engine",
     "type": "package",
-    "name": "LeoFleetOpsCDK",
-    "description": "CDK infrastructure definitions for Fleet Operations deployments.",
+    "name": "AtlasDataQueryEngineCLI",
+    "description": "query engine CLI for Atlas Data Services (Atlas org).",
     "tags": [
-      "fleet",
-      "operations",
-      "oncall",
+      "data",
+      "query",
+      "streams",
+      "query engine"
+    ],
+    "aliases": [
+      "data-query-engine"
+    ]
+  },
+  {
+    "id": "pipeline:data-query-engine",
+    "type": "pipeline",
+    "name": "AtlasDataQueryEnginePipeline",
+    "description": "Deployment pipeline for AtlasDataQueryEngine (Atlas Data Services).",
+    "tags": [
+      "data",
+      "query",
+      "streams",
+      "query engine",
+      "pipeline"
+    ],
+    "aliases": [
+      "data-query-engine-pipeline"
+    ]
+  },
+  {
+    "id": "package:data-table-catalog",
+    "type": "package",
+    "name": "AtlasDataTableCatalogDaemon",
+    "description": "table catalog Daemon for Atlas Data Services (Atlas org).",
+    "tags": [
+      "data",
+      "query",
+      "streams",
+      "table catalog"
+    ],
+    "aliases": [
+      "data-table-catalog"
+    ]
+  },
+  {
+    "id": "pipeline:data-table-catalog",
+    "type": "pipeline",
+    "name": "AtlasDataTableCatalogPipeline",
+    "description": "Deployment pipeline for AtlasDataTableCatalog (Atlas Data Services).",
+    "tags": [
+      "data",
+      "query",
+      "streams",
+      "table catalog",
+      "pipeline"
+    ],
+    "aliases": [
+      "data-table-catalog-pipeline"
+    ]
+  },
+  {
+    "id": "package:data-stream-processor",
+    "type": "package",
+    "name": "AtlasDataStreamProcessor",
+    "description": "stream processor service for Atlas Data Services (Atlas org).",
+    "tags": [
+      "data",
+      "query",
+      "streams",
+      "stream processor"
+    ],
+    "aliases": [
+      "data-stream-processor"
+    ]
+  },
+  {
+    "id": "service:data-gateway",
+    "type": "service",
+    "name": "AtlasDataGateway",
+    "description": "Internal API gateway operated by Atlas Data Services.",
+    "tags": [
+      "data",
+      "query",
+      "streams",
+      "gateway",
+      "api"
+    ],
+    "aliases": [
+      "data-gateway"
+    ]
+  },
+  {
+    "id": "bindle:data",
+    "type": "bindle",
+    "name": "AtlasDataBindle",
+    "description": "Ownership bindle for Atlas Data Services packages, pipelines, and accounts.",
+    "tags": [
+      "data",
+      "query",
+      "streams",
+      "bindle",
+      "ownership"
+    ],
+    "aliases": [
+      "data-bindle"
+    ]
+  },
+  {
+    "id": "account:data-prod",
+    "type": "account",
+    "name": "atlas-data-prod",
+    "description": "Production AWS account for Atlas Data Services.",
+    "tags": [
+      "data",
+      "query",
+      "streams",
+      "aws account",
+      "prod"
+    ],
+    "aliases": [
+      "data prod account"
+    ]
+  },
+  {
+    "id": "account:data-beta",
+    "type": "account",
+    "name": "atlas-data-beta",
+    "description": "Beta AWS account for Atlas Data Services.",
+    "tags": [
+      "data",
+      "query",
+      "streams",
+      "aws account",
+      "beta"
+    ],
+    "aliases": [
+      "data beta account"
+    ]
+  },
+  {
+    "id": "package:data-cdk",
+    "type": "package",
+    "name": "AtlasDataCDK",
+    "description": "CDK infrastructure definitions for Atlas Data Services deployments.",
+    "tags": [
+      "data",
+      "query",
+      "streams",
       "cdk",
       "infrastructure"
     ],
     "aliases": [
-      "fleet-ops-cdk"
+      "data-cdk"
     ]
   },
   {
-    "id": "package:payload-boot-manager",
+    "id": "package:edge-cache-fleet",
     "type": "package",
-    "name": "LeoPayloadBootManagerLambda",
-    "description": "boot manager Lambda for Payload Software on Amazon Leo.",
+    "name": "AtlasEdgeCacheFleetDaemon",
+    "description": "cache fleet Daemon for Atlas Edge (Atlas org).",
     "tags": [
-      "payload",
-      "flight software",
-      "satellite",
-      "boot manager"
+      "edge",
+      "cdn",
+      "dns",
+      "cache fleet"
     ],
     "aliases": [
-      "payload-boot-manager"
+      "edge-cache-fleet"
     ]
   },
   {
-    "id": "pipeline:payload-boot-manager",
+    "id": "pipeline:edge-cache-fleet",
     "type": "pipeline",
-    "name": "LeoPayloadBootManagerPipeline",
-    "description": "Deployment pipeline for LeoPayloadBootManager (Payload Software).",
+    "name": "AtlasEdgeCacheFleetPipeline",
+    "description": "Deployment pipeline for AtlasEdgeCacheFleet (Atlas Edge).",
     "tags": [
-      "payload",
-      "flight software",
-      "satellite",
-      "boot manager",
+      "edge",
+      "cdn",
+      "dns",
+      "cache fleet",
       "pipeline"
     ],
     "aliases": [
-      "payload-boot-manager-pipeline"
+      "edge-cache-fleet-pipeline"
     ]
   },
   {
-    "id": "package:payload-imaging",
+    "id": "package:edge-dns-resolver",
     "type": "package",
-    "name": "LeoPayloadImagingCLI",
-    "description": "imaging CLI for Payload Software on Amazon Leo.",
+    "name": "AtlasEdgeDnsResolver",
+    "description": "dns resolver service for Atlas Edge (Atlas org).",
     "tags": [
-      "payload",
-      "flight software",
-      "satellite",
-      "imaging"
+      "edge",
+      "cdn",
+      "dns",
+      "dns resolver"
     ],
     "aliases": [
-      "payload-imaging"
+      "edge-dns-resolver"
     ]
   },
   {
-    "id": "pipeline:payload-imaging",
+    "id": "pipeline:edge-dns-resolver",
     "type": "pipeline",
-    "name": "LeoPayloadImagingPipeline",
-    "description": "Deployment pipeline for LeoPayloadImaging (Payload Software).",
+    "name": "AtlasEdgeDnsResolverPipeline",
+    "description": "Deployment pipeline for AtlasEdgeDnsResolver (Atlas Edge).",
     "tags": [
-      "payload",
-      "flight software",
-      "satellite",
-      "imaging",
+      "edge",
+      "cdn",
+      "dns",
+      "dns resolver",
       "pipeline"
     ],
     "aliases": [
-      "payload-imaging-pipeline"
+      "edge-dns-resolver-pipeline"
     ]
   },
   {
-    "id": "package:payload-power-control",
+    "id": "package:edge-cert-manager",
     "type": "package",
-    "name": "LeoPayloadPowerControlDaemon",
-    "description": "power control Daemon for Payload Software on Amazon Leo.",
+    "name": "AtlasEdgeCertManagerModel",
+    "description": "cert manager Model for Atlas Edge (Atlas org).",
     "tags": [
-      "payload",
-      "flight software",
-      "satellite",
-      "power control"
+      "edge",
+      "cdn",
+      "dns",
+      "cert manager"
     ],
     "aliases": [
-      "payload-power-control"
+      "edge-cert-manager"
     ]
   },
   {
-    "id": "service:payload-gateway",
+    "id": "service:edge-gateway",
     "type": "service",
-    "name": "LeoPayloadGateway",
-    "description": "Internal API gateway operated by Payload Software.",
+    "name": "AtlasEdgeGateway",
+    "description": "Internal API gateway operated by Atlas Edge.",
     "tags": [
-      "payload",
-      "flight software",
-      "satellite",
+      "edge",
+      "cdn",
+      "dns",
       "gateway",
       "api"
     ],
     "aliases": [
-      "payload-gateway"
+      "edge-gateway"
     ]
   },
   {
-    "id": "bindle:payload",
+    "id": "bindle:edge",
     "type": "bindle",
-    "name": "LeoPayloadBindle",
-    "description": "Ownership bindle for Payload Software packages, pipelines, and accounts.",
+    "name": "AtlasEdgeBindle",
+    "description": "Ownership bindle for Atlas Edge packages, pipelines, and accounts.",
     "tags": [
-      "payload",
-      "flight software",
-      "satellite",
+      "edge",
+      "cdn",
+      "dns",
       "bindle",
       "ownership"
     ],
     "aliases": [
-      "payload-bindle"
+      "edge-bindle"
     ]
   },
   {
-    "id": "account:payload-prod",
+    "id": "account:edge-prod",
     "type": "account",
-    "name": "leo-payload-prod",
-    "description": "Production AWS account for Payload Software.",
+    "name": "atlas-edge-prod",
+    "description": "Production AWS account for Atlas Edge.",
     "tags": [
-      "payload",
-      "flight software",
-      "satellite",
+      "edge",
+      "cdn",
+      "dns",
       "aws account",
       "prod"
     ],
     "aliases": [
-      "payload prod account"
+      "edge prod account"
     ]
   },
   {
-    "id": "account:payload-beta",
+    "id": "account:edge-beta",
     "type": "account",
-    "name": "leo-payload-beta",
-    "description": "Beta AWS account for Payload Software.",
+    "name": "atlas-edge-beta",
+    "description": "Beta AWS account for Atlas Edge.",
     "tags": [
-      "payload",
-      "flight software",
-      "satellite",
+      "edge",
+      "cdn",
+      "dns",
       "aws account",
       "beta"
     ],
     "aliases": [
-      "payload beta account"
+      "edge beta account"
     ]
   },
   {
-    "id": "package:sim-test-orbit-sim",
+    "id": "package:capacity-demand-forecaster",
     "type": "package",
-    "name": "LeoSimOrbitSimCLI",
-    "description": "orbit sim CLI for Simulation & Test on Amazon Leo.",
+    "name": "AtlasCapacityDemandForecaster",
+    "description": "demand forecaster service for Atlas Capacity (Atlas org).",
     "tags": [
-      "simulation",
-      "testing",
-      "hil",
-      "orbit sim"
+      "capacity",
+      "quotas",
+      "forecasting",
+      "demand forecaster"
     ],
     "aliases": [
-      "sim-test-orbit-sim"
+      "capacity-demand-forecaster"
     ]
   },
   {
-    "id": "pipeline:sim-test-orbit-sim",
+    "id": "pipeline:capacity-demand-forecaster",
     "type": "pipeline",
-    "name": "LeoSimOrbitSimPipeline",
-    "description": "Deployment pipeline for LeoSimOrbitSim (Simulation & Test).",
+    "name": "AtlasCapacityDemandForecasterPipeline",
+    "description": "Deployment pipeline for AtlasCapacityDemandForecaster (Atlas Capacity).",
     "tags": [
-      "simulation",
-      "testing",
-      "hil",
-      "orbit sim",
+      "capacity",
+      "quotas",
+      "forecasting",
+      "demand forecaster",
       "pipeline"
     ],
     "aliases": [
-      "sim-test-orbit-sim-pipeline"
+      "capacity-demand-forecaster-pipeline"
     ]
   },
   {
-    "id": "package:sim-test-hardware-in-loop",
+    "id": "package:capacity-quota-service",
     "type": "package",
-    "name": "LeoSimHardwareInLoopDaemon",
-    "description": "hardware in loop Daemon for Simulation & Test on Amazon Leo.",
+    "name": "AtlasCapacityQuotaServiceModel",
+    "description": "quota service Model for Atlas Capacity (Atlas org).",
     "tags": [
-      "simulation",
-      "testing",
-      "hil",
-      "hardware in loop"
+      "capacity",
+      "quotas",
+      "forecasting",
+      "quota service"
     ],
     "aliases": [
-      "sim-test-hardware-in-loop"
+      "capacity-quota-service"
     ]
   },
   {
-    "id": "pipeline:sim-test-hardware-in-loop",
+    "id": "pipeline:capacity-quota-service",
     "type": "pipeline",
-    "name": "LeoSimHardwareInLoopPipeline",
-    "description": "Deployment pipeline for LeoSimHardwareInLoop (Simulation & Test).",
+    "name": "AtlasCapacityQuotaServicePipeline",
+    "description": "Deployment pipeline for AtlasCapacityQuotaService (Atlas Capacity).",
     "tags": [
-      "simulation",
-      "testing",
-      "hil",
-      "hardware in loop",
+      "capacity",
+      "quotas",
+      "forecasting",
+      "quota service",
       "pipeline"
     ],
     "aliases": [
-      "sim-test-hardware-in-loop-pipeline"
+      "capacity-quota-service-pipeline"
     ]
   },
   {
-    "id": "package:sim-test-regression-suite",
+    "id": "package:capacity-fleet-planner",
     "type": "package",
-    "name": "LeoSimRegressionSuite",
-    "description": "regression suite service for Simulation & Test on Amazon Leo.",
+    "name": "AtlasCapacityFleetPlannerLambda",
+    "description": "fleet planner Lambda for Atlas Capacity (Atlas org).",
     "tags": [
-      "simulation",
-      "testing",
-      "hil",
-      "regression suite"
+      "capacity",
+      "quotas",
+      "forecasting",
+      "fleet planner"
     ],
     "aliases": [
-      "sim-test-regression-suite"
+      "capacity-fleet-planner"
     ]
   },
   {
-    "id": "service:sim-test-gateway",
+    "id": "service:capacity-gateway",
     "type": "service",
-    "name": "LeoSimGateway",
-    "description": "Internal API gateway operated by Simulation & Test.",
+    "name": "AtlasCapacityGateway",
+    "description": "Internal API gateway operated by Atlas Capacity.",
     "tags": [
-      "simulation",
-      "testing",
-      "hil",
+      "capacity",
+      "quotas",
+      "forecasting",
       "gateway",
       "api"
     ],
     "aliases": [
-      "sim-test-gateway"
+      "capacity-gateway"
     ]
   },
   {
-    "id": "bindle:sim-test",
+    "id": "bindle:capacity",
     "type": "bindle",
-    "name": "LeoSimBindle",
-    "description": "Ownership bindle for Simulation & Test packages, pipelines, and accounts.",
+    "name": "AtlasCapacityBindle",
+    "description": "Ownership bindle for Atlas Capacity packages, pipelines, and accounts.",
     "tags": [
-      "simulation",
-      "testing",
-      "hil",
+      "capacity",
+      "quotas",
+      "forecasting",
       "bindle",
       "ownership"
     ],
     "aliases": [
-      "sim-test-bindle"
+      "capacity-bindle"
     ]
   },
   {
-    "id": "account:sim-test-prod",
+    "id": "account:capacity-prod",
     "type": "account",
-    "name": "leo-sim-test-prod",
-    "description": "Production AWS account for Simulation & Test.",
+    "name": "atlas-capacity-prod",
+    "description": "Production AWS account for Atlas Capacity.",
     "tags": [
-      "simulation",
-      "testing",
-      "hil",
+      "capacity",
+      "quotas",
+      "forecasting",
       "aws account",
       "prod"
     ],
     "aliases": [
-      "sim-test prod account"
+      "capacity prod account"
     ]
   },
   {
-    "id": "account:sim-test-beta",
+    "id": "account:capacity-beta",
     "type": "account",
-    "name": "leo-sim-test-beta",
-    "description": "Beta AWS account for Simulation & Test.",
+    "name": "atlas-capacity-beta",
+    "description": "Beta AWS account for Atlas Capacity.",
     "tags": [
-      "simulation",
-      "testing",
-      "hil",
+      "capacity",
+      "quotas",
+      "forecasting",
       "aws account",
       "beta"
     ],
     "aliases": [
-      "sim-test beta account"
+      "capacity beta account"
     ]
   },
   {
-    "id": "package:sim-test-cdk",
+    "id": "package:capacity-cdk",
     "type": "package",
-    "name": "LeoSimCDK",
-    "description": "CDK infrastructure definitions for Simulation & Test deployments.",
+    "name": "AtlasCapacityCDK",
+    "description": "CDK infrastructure definitions for Atlas Capacity deployments.",
     "tags": [
-      "simulation",
-      "testing",
-      "hil",
+      "capacity",
+      "quotas",
+      "forecasting",
       "cdk",
       "infrastructure"
     ],
     "aliases": [
-      "sim-test-cdk"
-    ]
-  },
-  {
-    "id": "package:rf-modem-waveform",
-    "type": "package",
-    "name": "LeoRfModemWaveformDaemon",
-    "description": "waveform Daemon for RF Modem Dev on Amazon Leo.",
-    "tags": [
-      "rf",
-      "modem",
-      "waveform",
-      "waveform"
-    ],
-    "aliases": [
-      "rf-modem-waveform"
-    ]
-  },
-  {
-    "id": "pipeline:rf-modem-waveform",
-    "type": "pipeline",
-    "name": "LeoRfModemWaveformPipeline",
-    "description": "Deployment pipeline for LeoRfModemWaveform (RF Modem Dev).",
-    "tags": [
-      "rf",
-      "modem",
-      "waveform",
-      "waveform",
-      "pipeline"
-    ],
-    "aliases": [
-      "rf-modem-waveform-pipeline"
-    ]
-  },
-  {
-    "id": "package:rf-modem-beam-steering",
-    "type": "package",
-    "name": "LeoRfModemBeamSteering",
-    "description": "beam steering service for RF Modem Dev on Amazon Leo.",
-    "tags": [
-      "rf",
-      "modem",
-      "waveform",
-      "beam steering"
-    ],
-    "aliases": [
-      "rf-modem-beam-steering"
-    ]
-  },
-  {
-    "id": "pipeline:rf-modem-beam-steering",
-    "type": "pipeline",
-    "name": "LeoRfModemBeamSteeringPipeline",
-    "description": "Deployment pipeline for LeoRfModemBeamSteering (RF Modem Dev).",
-    "tags": [
-      "rf",
-      "modem",
-      "waveform",
-      "beam steering",
-      "pipeline"
-    ],
-    "aliases": [
-      "rf-modem-beam-steering-pipeline"
-    ]
-  },
-  {
-    "id": "package:rf-modem-signal-analyzer",
-    "type": "package",
-    "name": "LeoRfModemSignalAnalyzerModel",
-    "description": "signal analyzer Model for RF Modem Dev on Amazon Leo.",
-    "tags": [
-      "rf",
-      "modem",
-      "waveform",
-      "signal analyzer"
-    ],
-    "aliases": [
-      "rf-modem-signal-analyzer"
-    ]
-  },
-  {
-    "id": "service:rf-modem-gateway",
-    "type": "service",
-    "name": "LeoRfModemGateway",
-    "description": "Internal API gateway operated by RF Modem Dev.",
-    "tags": [
-      "rf",
-      "modem",
-      "waveform",
-      "gateway",
-      "api"
-    ],
-    "aliases": [
-      "rf-modem-gateway"
-    ]
-  },
-  {
-    "id": "bindle:rf-modem",
-    "type": "bindle",
-    "name": "LeoRfModemBindle",
-    "description": "Ownership bindle for RF Modem Dev packages, pipelines, and accounts.",
-    "tags": [
-      "rf",
-      "modem",
-      "waveform",
-      "bindle",
-      "ownership"
-    ],
-    "aliases": [
-      "rf-modem-bindle"
-    ]
-  },
-  {
-    "id": "account:rf-modem-prod",
-    "type": "account",
-    "name": "leo-rf-modem-prod",
-    "description": "Production AWS account for RF Modem Dev.",
-    "tags": [
-      "rf",
-      "modem",
-      "waveform",
-      "aws account",
-      "prod"
-    ],
-    "aliases": [
-      "rf-modem prod account"
-    ]
-  },
-  {
-    "id": "account:rf-modem-beta",
-    "type": "account",
-    "name": "leo-rf-modem-beta",
-    "description": "Beta AWS account for RF Modem Dev.",
-    "tags": [
-      "rf",
-      "modem",
-      "waveform",
-      "aws account",
-      "beta"
-    ],
-    "aliases": [
-      "rf-modem beta account"
-    ]
-  },
-  {
-    "id": "package:mission-data-data-lake",
-    "type": "package",
-    "name": "LeoMissionDataDataLake",
-    "description": "data lake service for Mission Data Services on Amazon Leo.",
-    "tags": [
-      "data",
-      "processing",
-      "storage",
-      "data lake"
-    ],
-    "aliases": [
-      "mission-data-data-lake"
-    ]
-  },
-  {
-    "id": "pipeline:mission-data-data-lake",
-    "type": "pipeline",
-    "name": "LeoMissionDataDataLakePipeline",
-    "description": "Deployment pipeline for LeoMissionDataDataLake (Mission Data Services).",
-    "tags": [
-      "data",
-      "processing",
-      "storage",
-      "data lake",
-      "pipeline"
-    ],
-    "aliases": [
-      "mission-data-data-lake-pipeline"
-    ]
-  },
-  {
-    "id": "package:mission-data-downlink-processor",
-    "type": "package",
-    "name": "LeoMissionDataDownlinkProcessorModel",
-    "description": "downlink processor Model for Mission Data Services on Amazon Leo.",
-    "tags": [
-      "data",
-      "processing",
-      "storage",
-      "downlink processor"
-    ],
-    "aliases": [
-      "mission-data-downlink-processor"
-    ]
-  },
-  {
-    "id": "pipeline:mission-data-downlink-processor",
-    "type": "pipeline",
-    "name": "LeoMissionDataDownlinkProcessorPipeline",
-    "description": "Deployment pipeline for LeoMissionDataDownlinkProcessor (Mission Data Services).",
-    "tags": [
-      "data",
-      "processing",
-      "storage",
-      "downlink processor",
-      "pipeline"
-    ],
-    "aliases": [
-      "mission-data-downlink-processor-pipeline"
-    ]
-  },
-  {
-    "id": "package:mission-data-catalog-api",
-    "type": "package",
-    "name": "LeoMissionDataCatalogApiLambda",
-    "description": "catalog api Lambda for Mission Data Services on Amazon Leo.",
-    "tags": [
-      "data",
-      "processing",
-      "storage",
-      "catalog api"
-    ],
-    "aliases": [
-      "mission-data-catalog-api"
-    ]
-  },
-  {
-    "id": "service:mission-data-gateway",
-    "type": "service",
-    "name": "LeoMissionDataGateway",
-    "description": "Internal API gateway operated by Mission Data Services.",
-    "tags": [
-      "data",
-      "processing",
-      "storage",
-      "gateway",
-      "api"
-    ],
-    "aliases": [
-      "mission-data-gateway"
-    ]
-  },
-  {
-    "id": "bindle:mission-data",
-    "type": "bindle",
-    "name": "LeoMissionDataBindle",
-    "description": "Ownership bindle for Mission Data Services packages, pipelines, and accounts.",
-    "tags": [
-      "data",
-      "processing",
-      "storage",
-      "bindle",
-      "ownership"
-    ],
-    "aliases": [
-      "mission-data-bindle"
-    ]
-  },
-  {
-    "id": "account:mission-data-prod",
-    "type": "account",
-    "name": "leo-mission-data-prod",
-    "description": "Production AWS account for Mission Data Services.",
-    "tags": [
-      "data",
-      "processing",
-      "storage",
-      "aws account",
-      "prod"
-    ],
-    "aliases": [
-      "mission-data prod account"
-    ]
-  },
-  {
-    "id": "account:mission-data-beta",
-    "type": "account",
-    "name": "leo-mission-data-beta",
-    "description": "Beta AWS account for Mission Data Services.",
-    "tags": [
-      "data",
-      "processing",
-      "storage",
-      "aws account",
-      "beta"
-    ],
-    "aliases": [
-      "mission-data beta account"
-    ]
-  },
-  {
-    "id": "package:mission-data-cdk",
-    "type": "package",
-    "name": "LeoMissionDataCDK",
-    "description": "CDK infrastructure definitions for Mission Data Services deployments.",
-    "tags": [
-      "data",
-      "processing",
-      "storage",
-      "cdk",
-      "infrastructure"
-    ],
-    "aliases": [
-      "mission-data-cdk"
-    ]
-  },
-  {
-    "id": "package:launch-sequence-planner",
-    "type": "package",
-    "name": "LeoLaunchSequencePlannerModel",
-    "description": "sequence planner Model for Launch Integration on Amazon Leo.",
-    "tags": [
-      "launch",
-      "integration",
-      "checkout",
-      "sequence planner"
-    ],
-    "aliases": [
-      "launch-sequence-planner"
-    ]
-  },
-  {
-    "id": "pipeline:launch-sequence-planner",
-    "type": "pipeline",
-    "name": "LeoLaunchSequencePlannerPipeline",
-    "description": "Deployment pipeline for LeoLaunchSequencePlanner (Launch Integration).",
-    "tags": [
-      "launch",
-      "integration",
-      "checkout",
-      "sequence planner",
-      "pipeline"
-    ],
-    "aliases": [
-      "launch-sequence-planner-pipeline"
-    ]
-  },
-  {
-    "id": "package:launch-vehicle-checkout",
-    "type": "package",
-    "name": "LeoLaunchVehicleCheckoutLambda",
-    "description": "vehicle checkout Lambda for Launch Integration on Amazon Leo.",
-    "tags": [
-      "launch",
-      "integration",
-      "checkout",
-      "vehicle checkout"
-    ],
-    "aliases": [
-      "launch-vehicle-checkout"
-    ]
-  },
-  {
-    "id": "pipeline:launch-vehicle-checkout",
-    "type": "pipeline",
-    "name": "LeoLaunchVehicleCheckoutPipeline",
-    "description": "Deployment pipeline for LeoLaunchVehicleCheckout (Launch Integration).",
-    "tags": [
-      "launch",
-      "integration",
-      "checkout",
-      "vehicle checkout",
-      "pipeline"
-    ],
-    "aliases": [
-      "launch-vehicle-checkout-pipeline"
-    ]
-  },
-  {
-    "id": "package:launch-range-safety",
-    "type": "package",
-    "name": "LeoLaunchRangeSafetyCLI",
-    "description": "range safety CLI for Launch Integration on Amazon Leo.",
-    "tags": [
-      "launch",
-      "integration",
-      "checkout",
-      "range safety"
-    ],
-    "aliases": [
-      "launch-range-safety"
-    ]
-  },
-  {
-    "id": "service:launch-gateway",
-    "type": "service",
-    "name": "LeoLaunchGateway",
-    "description": "Internal API gateway operated by Launch Integration.",
-    "tags": [
-      "launch",
-      "integration",
-      "checkout",
-      "gateway",
-      "api"
-    ],
-    "aliases": [
-      "launch-gateway"
-    ]
-  },
-  {
-    "id": "bindle:launch",
-    "type": "bindle",
-    "name": "LeoLaunchBindle",
-    "description": "Ownership bindle for Launch Integration packages, pipelines, and accounts.",
-    "tags": [
-      "launch",
-      "integration",
-      "checkout",
-      "bindle",
-      "ownership"
-    ],
-    "aliases": [
-      "launch-bindle"
-    ]
-  },
-  {
-    "id": "account:launch-prod",
-    "type": "account",
-    "name": "leo-launch-prod",
-    "description": "Production AWS account for Launch Integration.",
-    "tags": [
-      "launch",
-      "integration",
-      "checkout",
-      "aws account",
-      "prod"
-    ],
-    "aliases": [
-      "launch prod account"
-    ]
-  },
-  {
-    "id": "account:launch-beta",
-    "type": "account",
-    "name": "leo-launch-beta",
-    "description": "Beta AWS account for Launch Integration.",
-    "tags": [
-      "launch",
-      "integration",
-      "checkout",
-      "aws account",
-      "beta"
-    ],
-    "aliases": [
-      "launch beta account"
+      "capacity-cdk"
     ]
   },
   {
     "id": "package:devex-build-tools",
     "type": "package",
-    "name": "LeoDevExBuildToolsLambda",
-    "description": "build tools Lambda for DevEx & Onboarding on Amazon Leo.",
+    "name": "AtlasDevExBuildToolsModel",
+    "description": "build tools Model for Atlas DevEx & Onboarding (Atlas org).",
     "tags": [
       "devtools",
       "onboarding",
@@ -1805,8 +1664,8 @@
   {
     "id": "pipeline:devex-build-tools",
     "type": "pipeline",
-    "name": "LeoDevExBuildToolsPipeline",
-    "description": "Deployment pipeline for LeoDevExBuildTools (DevEx & Onboarding).",
+    "name": "AtlasDevExBuildToolsPipeline",
+    "description": "Deployment pipeline for AtlasDevExBuildTools (Atlas DevEx & Onboarding).",
     "tags": [
       "devtools",
       "onboarding",
@@ -1821,8 +1680,8 @@
   {
     "id": "package:devex-ramp-tracker",
     "type": "package",
-    "name": "LeoDevExRampTrackerCLI",
-    "description": "ramp tracker CLI for DevEx & Onboarding on Amazon Leo.",
+    "name": "AtlasDevExRampTrackerLambda",
+    "description": "ramp tracker Lambda for Atlas DevEx & Onboarding (Atlas org).",
     "tags": [
       "devtools",
       "onboarding",
@@ -1836,8 +1695,8 @@
   {
     "id": "pipeline:devex-ramp-tracker",
     "type": "pipeline",
-    "name": "LeoDevExRampTrackerPipeline",
-    "description": "Deployment pipeline for LeoDevExRampTracker (DevEx & Onboarding).",
+    "name": "AtlasDevExRampTrackerPipeline",
+    "description": "Deployment pipeline for AtlasDevExRampTracker (Atlas DevEx & Onboarding).",
     "tags": [
       "devtools",
       "onboarding",
@@ -1852,8 +1711,8 @@
   {
     "id": "package:devex-wiki-sync",
     "type": "package",
-    "name": "LeoDevExWikiSyncDaemon",
-    "description": "wiki sync Daemon for DevEx & Onboarding on Amazon Leo.",
+    "name": "AtlasDevExWikiSyncCLI",
+    "description": "wiki sync CLI for Atlas DevEx & Onboarding (Atlas org).",
     "tags": [
       "devtools",
       "onboarding",
@@ -1867,8 +1726,8 @@
   {
     "id": "service:devex-gateway",
     "type": "service",
-    "name": "LeoDevExGateway",
-    "description": "Internal API gateway operated by DevEx & Onboarding.",
+    "name": "AtlasDevExGateway",
+    "description": "Internal API gateway operated by Atlas DevEx & Onboarding.",
     "tags": [
       "devtools",
       "onboarding",
@@ -1883,8 +1742,8 @@
   {
     "id": "bindle:devex",
     "type": "bindle",
-    "name": "LeoDevExBindle",
-    "description": "Ownership bindle for DevEx & Onboarding packages, pipelines, and accounts.",
+    "name": "AtlasDevExBindle",
+    "description": "Ownership bindle for Atlas DevEx & Onboarding packages, pipelines, and accounts.",
     "tags": [
       "devtools",
       "onboarding",
@@ -1899,8 +1758,8 @@
   {
     "id": "account:devex-prod",
     "type": "account",
-    "name": "leo-devex-prod",
-    "description": "Production AWS account for DevEx & Onboarding.",
+    "name": "atlas-devex-prod",
+    "description": "Production AWS account for Atlas DevEx & Onboarding.",
     "tags": [
       "devtools",
       "onboarding",
@@ -1915,8 +1774,8 @@
   {
     "id": "account:devex-beta",
     "type": "account",
-    "name": "leo-devex-beta",
-    "description": "Beta AWS account for DevEx & Onboarding.",
+    "name": "atlas-devex-beta",
+    "description": "Beta AWS account for Atlas DevEx & Onboarding.",
     "tags": [
       "devtools",
       "onboarding",
@@ -1929,103 +1788,87 @@
     ]
   },
   {
-    "id": "package:devex-cdk",
+    "id": "package:atlascommonauth",
     "type": "package",
-    "name": "LeoDevExCDK",
-    "description": "CDK infrastructure definitions for DevEx & Onboarding deployments.",
-    "tags": [
-      "devtools",
-      "onboarding",
-      "build",
-      "cdk",
-      "infrastructure"
-    ],
-    "aliases": [
-      "devex-cdk"
-    ]
-  },
-  {
-    "id": "package:leocommonauth",
-    "type": "package",
-    "name": "LeoCommonAuth",
-    "description": "Shared authentication and Midway integration library used by every Leo service.",
+    "name": "AtlasCommonAuth",
+    "description": "Shared authentication and Midway integration library used by every Atlas service.",
     "tags": [
       "auth",
       "platform",
       "shared"
     ],
     "aliases": [
-      "leocommonauth"
+      "atlascommonauth"
     ]
   },
   {
-    "id": "package:leotelemetrysdk",
+    "id": "package:atlasmetricssdk",
     "type": "package",
-    "name": "LeoTelemetrySDK",
-    "description": "Client SDK for publishing and consuming satellite telemetry streams.",
-    "tags": [
-      "telemetry",
-      "sdk",
-      "shared"
-    ],
-    "aliases": [
-      "leotelemetrysdk"
-    ]
-  },
-  {
-    "id": "package:leobuildcli",
-    "type": "package",
-    "name": "LeoBuildCLI",
-    "description": "Command line tooling that wraps Brazil workflows for Leo packages.",
-    "tags": [
-      "build",
-      "cli",
-      "devtools"
-    ],
-    "aliases": [
-      "leobuildcli"
-    ]
-  },
-  {
-    "id": "package:leodatalakeclient",
-    "type": "package",
-    "name": "LeoDataLakeClient",
-    "description": "Access layer for the Leo mission data lake with schema validation.",
-    "tags": [
-      "data",
-      "client",
-      "shared"
-    ],
-    "aliases": [
-      "leodatalakeclient"
-    ]
-  },
-  {
-    "id": "package:leooncalldashboard",
-    "type": "package",
-    "name": "LeoOnCallDashboard",
-    "description": "Org-wide on-call and fleet health dashboard.",
-    "tags": [
-      "oncall",
-      "dashboard",
-      "operations"
-    ],
-    "aliases": [
-      "leooncalldashboard"
-    ]
-  },
-  {
-    "id": "package:leometricssdk",
-    "type": "package",
-    "name": "LeoMetricsSDK",
-    "description": "Standard metrics emission library for Leo services.",
+    "name": "AtlasMetricsSDK",
+    "description": "Standard metrics emission library for Atlas services.",
     "tags": [
       "metrics",
       "sdk",
       "shared"
     ],
     "aliases": [
-      "leometricssdk"
+      "atlasmetricssdk"
+    ]
+  },
+  {
+    "id": "package:atlasbuildcli",
+    "type": "package",
+    "name": "AtlasBuildCLI",
+    "description": "Command line tooling that wraps Brazil workflows for Atlas packages.",
+    "tags": [
+      "build",
+      "cli",
+      "devtools"
+    ],
+    "aliases": [
+      "atlasbuildcli"
+    ]
+  },
+  {
+    "id": "package:atlasdatalakeclient",
+    "type": "package",
+    "name": "AtlasDataLakeClient",
+    "description": "Access layer for the Atlas data lake with schema validation.",
+    "tags": [
+      "data",
+      "client",
+      "shared"
+    ],
+    "aliases": [
+      "atlasdatalakeclient"
+    ]
+  },
+  {
+    "id": "package:atlasoncalldashboard",
+    "type": "package",
+    "name": "AtlasOnCallDashboard",
+    "description": "Org-wide on-call and deployment health dashboard.",
+    "tags": [
+      "oncall",
+      "dashboard",
+      "operations"
+    ],
+    "aliases": [
+      "atlasoncalldashboard"
+    ]
+  },
+  {
+    "id": "package:atlascostexplorersdk",
+    "type": "package",
+    "name": "AtlasCostExplorerSDK",
+    "description": "Client library for querying usage and cost data across Atlas accounts.",
+    "tags": [
+      "cost",
+      "sdk",
+      "shared"
+    ],
+    "aliases": [
+      "atlascostexplorersdk"
     ]
   }
 ]

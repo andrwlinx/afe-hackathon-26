@@ -2,7 +2,7 @@
 /**
  * Deterministic synthetic expertise data generator for RampPath.
  *
- * Models a single fictional org — "Amazon Leo" (satellite constellation) —
+ * Models a single fictional org — "Atlas" (fictional AWS-style region services org) —
  * with ~13 teams of 7-8 people each (~100 people total). Teams own a varied
  * mix of resources (services, models, Lambdas, CLIs, pipelines, bindles,
  * AWS accounts, at most one CDK package per team), and org-wide platform
@@ -57,98 +57,94 @@ const LAST_NAMES = [
 ];
 
 /**
- * Amazon Leo teams. Each team lists the components it builds; the
- * generator turns components into a varied mix of resource types.
+ * Atlas org teams (fictional AWS-style region services org — the same org
+ * that owns AtlasRegionContext in the base demo graph). Each team lists the
+ * components it builds; the generator turns components into a varied mix of
+ * resource types. Component words deliberately avoid "region"/"context" so
+ * the scripted AtlasRegionContext demo queries stay unambiguous.
  */
 const TEAMS = [
   {
-    name: "Ground Station Software",
-    slug: "gnd-station",
-    prefix: "LeoGndStation",
-    tags: ["ground station", "gndsys", "scheduling"],
-    components: ["scheduler", "antenna-control", "pass-planner"]
+    name: "Atlas Compute",
+    slug: "compute",
+    prefix: "AtlasCompute",
+    tags: ["compute", "ec2", "instances"],
+    components: ["instance-scaler", "placement-engine", "host-manager"]
   },
   {
-    name: "Telemetry & Command",
-    slug: "telemetry",
-    prefix: "LeoTelemetry",
-    tags: ["telemetry", "command", "downlink"],
-    components: ["ingest", "command-dispatch", "alerting"]
+    name: "Atlas Identity",
+    slug: "identity",
+    prefix: "AtlasIdentity",
+    tags: ["identity", "iam", "auth"],
+    components: ["policy-evaluator", "credential-vendor", "signin-gateway"]
   },
   {
-    name: "Constellation Planning",
-    slug: "constellation",
-    prefix: "LeoConstellation",
-    tags: ["constellation", "orbit", "planning"],
-    components: ["orbit-planner", "maneuver", "conjunction"]
+    name: "Atlas Networking",
+    slug: "networking",
+    prefix: "AtlasNetwork",
+    tags: ["networking", "vpc", "routing"],
+    components: ["vpc-builder", "subnet-manager", "peering-broker"]
   },
   {
-    name: "Optical ISL Dev",
-    slug: "optical-isl",
-    prefix: "LeoOpticalIsl",
-    tags: ["optical", "isl", "laser link"],
-    components: ["link-manager", "pointing", "handoff"]
+    name: "Atlas Storage",
+    slug: "storage",
+    prefix: "AtlasStorage",
+    tags: ["storage", "s3", "objects"],
+    components: ["bucket-index", "replication-engine", "lifecycle-manager"]
   },
   {
-    name: "Customer Terminals",
-    slug: "terminals",
-    prefix: "LeoTerminal",
-    tags: ["terminal", "customer", "firmware"],
-    components: ["provisioning", "firmware-update", "diagnostics"]
+    name: "Atlas Observability",
+    slug: "observability",
+    prefix: "AtlasWatch",
+    tags: ["observability", "metrics", "alarms"],
+    components: ["metrics-ingest", "alarm-engine", "trace-collector"]
   },
   {
-    name: "Network Control Plane",
-    slug: "network",
-    prefix: "LeoNetwork",
-    tags: ["network", "routing", "spectrum"],
-    components: ["route-planner", "spectrum-manager", "capacity"]
+    name: "Atlas Deployment",
+    slug: "deployment",
+    prefix: "AtlasDeploy",
+    tags: ["deployment", "pipelines", "release"],
+    components: ["orchestrator", "rollback-engine", "canary-runner"]
   },
   {
-    name: "Fleet Operations",
-    slug: "fleet-ops",
-    prefix: "LeoFleetOps",
-    tags: ["fleet", "operations", "oncall"],
-    components: ["dashboard", "incident-tracker", "health-monitor"]
+    name: "Atlas Billing",
+    slug: "billing",
+    prefix: "AtlasBilling",
+    tags: ["billing", "usage", "cost"],
+    components: ["usage-metering", "invoice-builder", "cost-analyzer"]
   },
   {
-    name: "Payload Software",
-    slug: "payload",
-    prefix: "LeoPayload",
-    tags: ["payload", "flight software", "satellite"],
-    components: ["boot-manager", "imaging", "power-control"]
+    name: "Atlas Console",
+    slug: "console",
+    prefix: "AtlasConsole",
+    tags: ["console", "frontend", "ui"],
+    components: ["dashboard", "resource-browser", "signin-ui"]
   },
   {
-    name: "Simulation & Test",
-    slug: "sim-test",
-    prefix: "LeoSim",
-    tags: ["simulation", "testing", "hil"],
-    components: ["orbit-sim", "hardware-in-loop", "regression-suite"]
+    name: "Atlas Data Services",
+    slug: "data",
+    prefix: "AtlasData",
+    tags: ["data", "query", "streams"],
+    components: ["query-engine", "table-catalog", "stream-processor"]
   },
   {
-    name: "RF Modem Dev",
-    slug: "rf-modem",
-    prefix: "LeoRfModem",
-    tags: ["rf", "modem", "waveform"],
-    components: ["waveform", "beam-steering", "signal-analyzer"]
+    name: "Atlas Edge",
+    slug: "edge",
+    prefix: "AtlasEdge",
+    tags: ["edge", "cdn", "dns"],
+    components: ["cache-fleet", "dns-resolver", "cert-manager"]
   },
   {
-    name: "Mission Data Services",
-    slug: "mission-data",
-    prefix: "LeoMissionData",
-    tags: ["data", "processing", "storage"],
-    components: ["data-lake", "downlink-processor", "catalog-api"]
+    name: "Atlas Capacity",
+    slug: "capacity",
+    prefix: "AtlasCapacity",
+    tags: ["capacity", "quotas", "forecasting"],
+    components: ["demand-forecaster", "quota-service", "fleet-planner"]
   },
   {
-    name: "Launch Integration",
-    slug: "launch",
-    prefix: "LeoLaunch",
-    tags: ["launch", "integration", "checkout"],
-    components: ["sequence-planner", "vehicle-checkout", "range-safety"]
-  },
-  {
-    name: "DevEx & Onboarding",
+    name: "Atlas DevEx & Onboarding",
     slug: "devex",
-    prefix: "LeoDevEx",
+    prefix: "AtlasDevEx",
     tags: ["devtools", "onboarding", "build"],
     components: ["build-tools", "ramp-tracker", "wiki-sync"]
   }
@@ -156,12 +152,12 @@ const TEAMS = [
 
 /** Org-wide platform packages, maintained across team boundaries. */
 const PLATFORM_RESOURCES = [
-  { name: "LeoCommonAuth", ownerSlug: "devex", tags: ["auth", "platform", "shared"], description: "Shared authentication and Midway integration library used by every Leo service." },
-  { name: "LeoTelemetrySDK", ownerSlug: "telemetry", tags: ["telemetry", "sdk", "shared"], description: "Client SDK for publishing and consuming satellite telemetry streams." },
-  { name: "LeoBuildCLI", ownerSlug: "devex", tags: ["build", "cli", "devtools"], description: "Command line tooling that wraps Brazil workflows for Leo packages." },
-  { name: "LeoDataLakeClient", ownerSlug: "mission-data", tags: ["data", "client", "shared"], description: "Access layer for the Leo mission data lake with schema validation." },
-  { name: "LeoOnCallDashboard", ownerSlug: "fleet-ops", tags: ["oncall", "dashboard", "operations"], description: "Org-wide on-call and fleet health dashboard." },
-  { name: "LeoMetricsSDK", ownerSlug: "fleet-ops", tags: ["metrics", "sdk", "shared"], description: "Standard metrics emission library for Leo services." }
+  { name: "AtlasCommonAuth", ownerSlug: "identity", tags: ["auth", "platform", "shared"], description: "Shared authentication and Midway integration library used by every Atlas service." },
+  { name: "AtlasMetricsSDK", ownerSlug: "observability", tags: ["metrics", "sdk", "shared"], description: "Standard metrics emission library for Atlas services." },
+  { name: "AtlasBuildCLI", ownerSlug: "devex", tags: ["build", "cli", "devtools"], description: "Command line tooling that wraps Brazil workflows for Atlas packages." },
+  { name: "AtlasDataLakeClient", ownerSlug: "data", tags: ["data", "client", "shared"], description: "Access layer for the Atlas data lake with schema validation." },
+  { name: "AtlasOnCallDashboard", ownerSlug: "deployment", tags: ["oncall", "dashboard", "operations"], description: "Org-wide on-call and deployment health dashboard." },
+  { name: "AtlasCostExplorerSDK", ownerSlug: "billing", tags: ["cost", "sdk", "shared"], description: "Client library for querying usage and cost data across Atlas accounts." }
 ];
 
 const ROLE_POOL = [
@@ -260,7 +256,7 @@ for (const [teamIndex, team] of TEAMS.entries()) {
       id: `package:${team.slug}-${component}`,
       type: "package",
       name: `${team.prefix}${componentName}${suffix === "Service" ? "" : suffix}`,
-      description: `${component.replace(/-/g, " ")} ${suffix.toLowerCase() === "service" ? "service" : suffix} for ${team.name} on Amazon Leo.`,
+      description: `${component.replace(/-/g, " ")} ${suffix.toLowerCase() === "service" ? "service" : suffix} for ${team.name} (Atlas org).`,
       tags: [...shortTags, component.replace(/-/g, " ")],
       aliases: [`${team.slug}-${component}`]
     });
@@ -302,7 +298,7 @@ for (const [teamIndex, team] of TEAMS.entries()) {
     list.push({
       id: `account:${team.slug}-${stage}`,
       type: "account",
-      name: `leo-${team.slug}-${stage}`,
+      name: `atlas-${team.slug}-${stage}`,
       description: `${stage === "prod" ? "Production" : "Beta"} AWS account for ${team.name}.`,
       tags: [...shortTags, "aws account", stage],
       aliases: [`${team.slug} ${stage} account`]
@@ -430,7 +426,7 @@ const typeCounts = resources.reduce((counts, resource) => {
   return counts;
 }, {});
 console.log(
-  `Amazon Leo org: ${people.length} people in ${TEAMS.length} teams, ` +
+  `Atlas org: ${people.length} people in ${TEAMS.length} teams, ` +
     `${resources.length} resources (${JSON.stringify(typeCounts)}), ` +
     `${relationships.length} relationships -> ${outDir}`
 );

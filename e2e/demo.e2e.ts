@@ -183,14 +183,14 @@ test("plain-text ownership query offers clickable options", async ({ page }) => 
   await page.setViewportSize({ width: 1440, height: 960 });
   await page.goto("/ramppath");
 
-  await page.getByLabel("What do you need to unblock?").fill("Who owns telemetry?");
+  await page.getByLabel("What do you need to unblock?").fill("Who owns metrics?");
   await page.getByRole("button", { name: /Trace answer/ }).click();
   await expect(
     page.getByRole("heading", { name: /Multiple resources match/ })
   ).toBeVisible();
 
-  await page.getByRole("button", { name: "Who owns LeoTelemetrySDK?" }).click();
+  await page.getByRole("button", { name: "Who owns AtlasMetricsSDK?" }).click();
   await expect(
-    page.getByRole("heading", { name: /LeoTelemetrySDK is owned by/ })
+    page.getByRole("heading", { name: /AtlasMetricsSDK is owned by/ })
   ).toBeVisible();
 });

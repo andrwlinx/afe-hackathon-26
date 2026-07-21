@@ -1924,3 +1924,54 @@ summary:focus-visible {
     display: none;
   }
 }
+
+/* Person contact info in the graph node inspector */
+.inspector-contact {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.inspector-contact span {
+  color: #4f5d70;
+  font-size: 12px;
+}
+
+.inspector-contact a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #1768c9;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.inspector-contact a:hover {
+  text-decoration: underline;
+}
+
+/* Org chart hierarchy */
+.pt-org-expand {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  color: #1768c9;
+  background: #e8f1fd;
+  border: 1px solid #9cc0e8;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.pt-org-self .pt-org-expand {
+  visibility: hidden;
+}
+
+.pt-org-meta {
+  color: #8a939e;
+}

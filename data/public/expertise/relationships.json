@@ -1,688 +1,688 @@
 [
   {
     "id": "relationship:r0001",
-    "personId": "person:lucas-iyer",
-    "resourceId": "package:gnd-station-scheduler",
-    "relation": "owns",
-    "lastActive": "2026-06-23",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0002",
-    "personId": "person:cole-lindqvist",
-    "resourceId": "package:gnd-station-scheduler",
-    "relation": "maintains",
-    "lastActive": "2026-07-18",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0003",
-    "personId": "person:cato-sokolov",
-    "resourceId": "package:gnd-station-scheduler",
-    "relation": "maintains",
-    "lastActive": "2026-06-11",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0004",
-    "personId": "person:lucas-castillo",
-    "resourceId": "package:gnd-station-scheduler",
-    "relation": "contributes-to",
-    "lastActive": "2026-03-14",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0005",
-    "personId": "person:sana-tanaka",
-    "resourceId": "package:gnd-station-scheduler",
-    "relation": "contributes-to",
-    "lastActive": "2026-06-03",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0006",
-    "personId": "person:lucas-iyer",
-    "resourceId": "pipeline:gnd-station-scheduler",
+    "personId": "person:suki-petrov",
+    "resourceId": "package:compute-instance-scaler",
     "relation": "owns",
     "lastActive": "2026-06-27",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
+    "id": "relationship:r0002",
+    "personId": "person:sana-tanaka",
+    "resourceId": "package:compute-instance-scaler",
+    "relation": "maintains",
+    "lastActive": "2026-04-09",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0003",
+    "personId": "person:lucas-iyer",
+    "resourceId": "package:compute-instance-scaler",
+    "relation": "contributes-to",
+    "lastActive": "2026-07-13",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0004",
+    "personId": "person:cole-lindqvist",
+    "resourceId": "pipeline:compute-instance-scaler",
+    "relation": "owns",
+    "lastActive": "2026-07-20",
+    "observedAt": "2026-07-20T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0005",
+    "personId": "person:lucas-castillo",
+    "resourceId": "pipeline:compute-instance-scaler",
+    "relation": "maintains",
+    "lastActive": "2026-04-26",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0006",
+    "personId": "person:cato-sokolov",
+    "resourceId": "pipeline:compute-instance-scaler",
+    "relation": "contributes-to",
+    "lastActive": "2026-06-03",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
     "id": "relationship:r0007",
     "personId": "person:cole-sorensen",
-    "resourceId": "pipeline:gnd-station-scheduler",
+    "resourceId": "pipeline:compute-instance-scaler",
+    "relation": "contributes-to",
+    "lastActive": "2026-03-02",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0008",
+    "personId": "person:cole-sorensen",
+    "resourceId": "package:compute-placement-engine",
+    "relation": "owns",
+    "lastActive": "2026-06-27",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0009",
+    "personId": "person:lucas-iyer",
+    "resourceId": "package:compute-placement-engine",
     "relation": "maintains",
     "lastActive": "2026-04-02",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0008",
-    "personId": "person:suki-petrov",
-    "resourceId": "pipeline:gnd-station-scheduler",
+    "id": "relationship:r0010",
+    "personId": "person:idris-varga",
+    "resourceId": "package:compute-placement-engine",
     "relation": "maintains",
     "lastActive": "2026-07-13",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0009",
-    "personId": "person:lucas-castillo",
-    "resourceId": "pipeline:gnd-station-scheduler",
-    "relation": "contributes-to",
-    "lastActive": "2026-04-18",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0010",
-    "personId": "person:cole-lindqvist",
-    "resourceId": "package:gnd-station-antenna-control",
-    "relation": "owns",
-    "lastActive": "2026-06-09",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0011",
     "personId": "person:lucas-iyer",
-    "resourceId": "package:gnd-station-antenna-control",
+    "resourceId": "pipeline:compute-placement-engine",
+    "relation": "owns",
+    "lastActive": "2026-06-09",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0012",
+    "personId": "person:cole-lindqvist",
+    "resourceId": "pipeline:compute-placement-engine",
     "relation": "maintains",
     "lastActive": "2026-06-30",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0012",
+    "id": "relationship:r0013",
     "personId": "person:suki-petrov",
-    "resourceId": "package:gnd-station-antenna-control",
+    "resourceId": "pipeline:compute-placement-engine",
     "relation": "maintains",
     "lastActive": "2026-05-05",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0013",
-    "personId": "person:sana-tanaka",
-    "resourceId": "pipeline:gnd-station-antenna-control",
-    "relation": "owns",
-    "lastActive": "2026-07-10",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
     "id": "relationship:r0014",
-    "personId": "person:lucas-castillo",
-    "resourceId": "pipeline:gnd-station-antenna-control",
-    "relation": "maintains",
-    "lastActive": "2026-04-17",
+    "personId": "person:cole-sorensen",
+    "resourceId": "pipeline:compute-placement-engine",
+    "relation": "contributes-to",
+    "lastActive": "2026-02-22",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0015",
-    "personId": "person:suki-petrov",
-    "resourceId": "pipeline:gnd-station-antenna-control",
-    "relation": "maintains",
-    "lastActive": "2026-07-17",
+    "personId": "person:cole-lindqvist",
+    "resourceId": "package:compute-host-manager",
+    "relation": "owns",
+    "lastActive": "2026-06-16",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0016",
-    "personId": "person:idris-varga",
-    "resourceId": "pipeline:gnd-station-antenna-control",
-    "relation": "contributes-to",
-    "lastActive": "2026-03-06",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0017",
-    "personId": "person:cole-lindqvist",
-    "resourceId": "package:gnd-station-pass-planner",
-    "relation": "owns",
-    "lastActive": "2026-06-12",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0018",
-    "personId": "person:cato-sokolov",
-    "resourceId": "package:gnd-station-pass-planner",
-    "relation": "maintains",
-    "lastActive": "2026-05-11",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0019",
     "personId": "person:cole-sorensen",
-    "resourceId": "package:gnd-station-pass-planner",
-    "relation": "contributes-to",
-    "lastActive": "2026-06-28",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0020",
-    "personId": "person:suki-petrov",
-    "resourceId": "package:gnd-station-pass-planner",
-    "relation": "contributes-to",
-    "lastActive": "2026-05-24",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0021",
-    "personId": "person:lucas-castillo",
-    "resourceId": "package:gnd-station-pass-planner",
-    "relation": "contributes-to",
-    "lastActive": "2026-02-05",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0022",
-    "personId": "person:lucas-castillo",
-    "resourceId": "service:gnd-station-gateway",
-    "relation": "owns",
-    "lastActive": "2026-07-15",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0023",
-    "personId": "person:idris-varga",
-    "resourceId": "service:gnd-station-gateway",
-    "relation": "maintains",
-    "lastActive": "2026-05-04",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0024",
-    "personId": "person:lucas-iyer",
-    "resourceId": "service:gnd-station-gateway",
-    "relation": "contributes-to",
-    "lastActive": "2026-02-10",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0025",
-    "personId": "person:lucas-castillo",
-    "resourceId": "bindle:gnd-station",
-    "relation": "owns",
-    "lastActive": "2026-07-16",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0026",
-    "personId": "person:sana-tanaka",
-    "resourceId": "bindle:gnd-station",
-    "relation": "maintains",
-    "lastActive": "2026-07-04",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0027",
-    "personId": "person:cole-lindqvist",
-    "resourceId": "bindle:gnd-station",
-    "relation": "maintains",
-    "lastActive": "2026-07-13",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0028",
-    "personId": "person:idris-varga",
-    "resourceId": "bindle:gnd-station",
-    "relation": "contributes-to",
-    "lastActive": "2026-02-16",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0029",
-    "personId": "person:cole-sorensen",
-    "resourceId": "bindle:gnd-station",
-    "relation": "contributes-to",
-    "lastActive": "2026-03-17",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0030",
-    "personId": "person:leila-sokolov",
-    "resourceId": "bindle:gnd-station",
-    "relation": "contributes-to",
-    "lastActive": "2026-02-19",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0031",
-    "personId": "person:lucas-iyer",
-    "resourceId": "account:gnd-station-prod",
-    "relation": "owns",
-    "lastActive": "2026-07-08",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0032",
-    "personId": "person:sana-tanaka",
-    "resourceId": "account:gnd-station-prod",
-    "relation": "maintains",
-    "lastActive": "2026-06-22",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0033",
-    "personId": "person:idris-varga",
-    "resourceId": "account:gnd-station-prod",
-    "relation": "contributes-to",
-    "lastActive": "2026-06-23",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0034",
-    "personId": "person:kai-kimura",
-    "resourceId": "account:gnd-station-prod",
-    "relation": "contributes-to",
-    "lastActive": "2026-04-03",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0035",
-    "personId": "person:cole-lindqvist",
-    "resourceId": "account:gnd-station-beta",
-    "relation": "owns",
-    "lastActive": "2026-06-25",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0036",
-    "personId": "person:lucas-iyer",
-    "resourceId": "account:gnd-station-beta",
-    "relation": "maintains",
-    "lastActive": "2026-07-07",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0037",
-    "personId": "person:cato-sokolov",
-    "resourceId": "account:gnd-station-beta",
-    "relation": "maintains",
-    "lastActive": "2026-05-02",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0038",
-    "personId": "person:sana-tanaka",
-    "resourceId": "account:gnd-station-beta",
-    "relation": "contributes-to",
-    "lastActive": "2026-05-26",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0039",
-    "personId": "person:lucas-iyer",
-    "resourceId": "package:gnd-station-cdk",
-    "relation": "owns",
-    "lastActive": "2026-07-06",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0040",
-    "personId": "person:cole-sorensen",
-    "resourceId": "package:gnd-station-cdk",
+    "resourceId": "package:compute-host-manager",
     "relation": "maintains",
     "lastActive": "2026-04-21",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0041",
-    "personId": "person:lucas-castillo",
-    "resourceId": "package:gnd-station-cdk",
+    "id": "relationship:r0017",
+    "personId": "person:idris-varga",
+    "resourceId": "package:compute-host-manager",
     "relation": "contributes-to",
+    "lastActive": "2026-03-24",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0018",
+    "personId": "person:suki-petrov",
+    "resourceId": "package:compute-host-manager",
+    "relation": "contributes-to",
+    "lastActive": "2026-02-28",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0019",
+    "personId": "person:sana-tanaka",
+    "resourceId": "package:compute-host-manager",
+    "relation": "contributes-to",
+    "lastActive": "2026-02-16",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0020",
+    "personId": "person:cole-sorensen",
+    "resourceId": "service:compute-gateway",
+    "relation": "owns",
+    "lastActive": "2026-06-25",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0021",
+    "personId": "person:lucas-castillo",
+    "resourceId": "service:compute-gateway",
+    "relation": "maintains",
+    "lastActive": "2026-06-12",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0022",
+    "personId": "person:sana-tanaka",
+    "resourceId": "service:compute-gateway",
+    "relation": "contributes-to",
+    "lastActive": "2026-02-05",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0023",
+    "personId": "person:lucas-iyer",
+    "resourceId": "service:compute-gateway",
+    "relation": "contributes-to",
+    "lastActive": "2026-04-09",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0024",
+    "personId": "person:elsa-fontaine",
+    "resourceId": "service:compute-gateway",
+    "relation": "contributes-to",
+    "lastActive": "2026-04-08",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0025",
+    "personId": "person:suki-petrov",
+    "resourceId": "bindle:compute",
+    "relation": "owns",
+    "lastActive": "2026-06-11",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0026",
+    "personId": "person:idris-varga",
+    "resourceId": "bindle:compute",
+    "relation": "maintains",
+    "lastActive": "2026-04-28",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0027",
+    "personId": "person:lucas-castillo",
+    "resourceId": "bindle:compute",
+    "relation": "maintains",
     "lastActive": "2026-05-02",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0042",
+    "id": "relationship:r0028",
     "personId": "person:cole-lindqvist",
-    "resourceId": "package:gnd-station-cdk",
-    "relation": "contributes-to",
-    "lastActive": "2026-06-30",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0043",
-    "personId": "person:suki-petrov",
-    "resourceId": "package:gnd-station-cdk",
-    "relation": "contributes-to",
-    "lastActive": "2026-01-27",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0044",
-    "personId": "person:cato-okafor",
-    "resourceId": "package:telemetry-ingest",
+    "resourceId": "account:compute-prod",
     "relation": "owns",
     "lastActive": "2026-07-18",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0045",
-    "personId": "person:sofia-iyer",
-    "resourceId": "package:telemetry-ingest",
+    "id": "relationship:r0029",
+    "personId": "person:idris-varga",
+    "resourceId": "account:compute-prod",
     "relation": "maintains",
-    "lastActive": "2026-04-20",
+    "lastActive": "2026-04-28",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0030",
+    "personId": "person:lucas-iyer",
+    "resourceId": "account:compute-prod",
+    "relation": "maintains",
+    "lastActive": "2026-07-02",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0031",
+    "personId": "person:lucas-castillo",
+    "resourceId": "account:compute-prod",
+    "relation": "contributes-to",
+    "lastActive": "2026-06-16",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0032",
+    "personId": "person:suki-petrov",
+    "resourceId": "account:compute-prod",
+    "relation": "contributes-to",
+    "lastActive": "2026-02-19",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0033",
+    "personId": "person:aisha-brandt",
+    "resourceId": "account:compute-prod",
+    "relation": "contributes-to",
+    "lastActive": "2026-01-23",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0034",
+    "personId": "person:cole-sorensen",
+    "resourceId": "account:compute-beta",
+    "relation": "owns",
+    "lastActive": "2026-07-14",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0035",
+    "personId": "person:cato-sokolov",
+    "resourceId": "account:compute-beta",
+    "relation": "maintains",
+    "lastActive": "2026-05-09",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0036",
+    "personId": "person:suki-petrov",
+    "resourceId": "account:compute-beta",
+    "relation": "maintains",
+    "lastActive": "2026-05-29",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0037",
+    "personId": "person:lucas-iyer",
+    "resourceId": "account:compute-beta",
+    "relation": "contributes-to",
+    "lastActive": "2026-03-08",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0038",
+    "personId": "person:tara-castillo",
+    "resourceId": "account:compute-beta",
+    "relation": "contributes-to",
+    "lastActive": "2026-02-21",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0039",
+    "personId": "person:lucas-castillo",
+    "resourceId": "package:compute-cdk",
+    "relation": "owns",
+    "lastActive": "2026-06-20",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0040",
+    "personId": "person:lucas-iyer",
+    "resourceId": "package:compute-cdk",
+    "relation": "maintains",
+    "lastActive": "2026-07-11",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0041",
+    "personId": "person:cole-lindqvist",
+    "resourceId": "package:compute-cdk",
+    "relation": "maintains",
+    "lastActive": "2026-06-29",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0042",
+    "personId": "person:cole-sorensen",
+    "resourceId": "package:compute-cdk",
+    "relation": "contributes-to",
+    "lastActive": "2026-04-07",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0043",
+    "personId": "person:sana-takeda",
+    "resourceId": "package:identity-policy-evaluator",
+    "relation": "owns",
+    "lastActive": "2026-07-01",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0044",
+    "personId": "person:aisha-brandt",
+    "resourceId": "package:identity-policy-evaluator",
+    "relation": "maintains",
+    "lastActive": "2026-03-27",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0045",
+    "personId": "person:cato-okafor",
+    "resourceId": "package:identity-policy-evaluator",
+    "relation": "contributes-to",
+    "lastActive": "2026-04-08",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0046",
-    "personId": "person:marco-tanaka",
-    "resourceId": "package:telemetry-ingest",
+    "personId": "person:sofia-iyer",
+    "resourceId": "pipeline:identity-policy-evaluator",
+    "relation": "owns",
+    "lastActive": "2026-06-23",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0047",
+    "personId": "person:cato-okafor",
+    "resourceId": "pipeline:identity-policy-evaluator",
     "relation": "maintains",
     "lastActive": "2026-05-27",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0047",
-    "personId": "person:maya-antar",
-    "resourceId": "package:telemetry-ingest",
-    "relation": "contributes-to",
-    "lastActive": "2026-05-18",
+    "id": "relationship:r0048",
+    "personId": "person:marco-tanaka",
+    "resourceId": "pipeline:identity-policy-evaluator",
+    "relation": "maintains",
+    "lastActive": "2026-06-08",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0048",
+    "id": "relationship:r0049",
     "personId": "person:sana-takeda",
-    "resourceId": "package:telemetry-ingest",
+    "resourceId": "pipeline:identity-policy-evaluator",
     "relation": "contributes-to",
     "lastActive": "2026-03-30",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0049",
-    "personId": "person:ivy-vance",
-    "resourceId": "package:telemetry-ingest",
-    "relation": "contributes-to",
-    "lastActive": "2026-02-18",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
     "id": "relationship:r0050",
-    "personId": "person:sana-takeda",
-    "resourceId": "pipeline:telemetry-ingest",
-    "relation": "owns",
-    "lastActive": "2026-07-18",
+    "personId": "person:aisha-brandt",
+    "resourceId": "pipeline:identity-policy-evaluator",
+    "relation": "contributes-to",
+    "lastActive": "2026-05-21",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0051",
-    "personId": "person:aisha-brandt",
-    "resourceId": "pipeline:telemetry-ingest",
-    "relation": "maintains",
-    "lastActive": "2026-05-05",
+    "personId": "person:sana-takeda",
+    "resourceId": "package:identity-credential-vendor",
+    "relation": "owns",
+    "lastActive": "2026-06-21",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0052",
     "personId": "person:sofia-iyer",
-    "resourceId": "pipeline:telemetry-ingest",
+    "resourceId": "package:identity-credential-vendor",
     "relation": "maintains",
     "lastActive": "2026-06-18",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0053",
-    "personId": "person:kai-holm",
-    "resourceId": "package:telemetry-command-dispatch",
-    "relation": "owns",
-    "lastActive": "2026-07-09",
+    "personId": "person:aisha-brandt",
+    "resourceId": "package:identity-credential-vendor",
+    "relation": "maintains",
+    "lastActive": "2026-05-24",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0054",
-    "personId": "person:aisha-brandt",
-    "resourceId": "package:telemetry-command-dispatch",
-    "relation": "maintains",
-    "lastActive": "2026-05-17",
+    "personId": "person:maya-antar",
+    "resourceId": "package:identity-credential-vendor",
+    "relation": "contributes-to",
+    "lastActive": "2026-04-21",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0055",
-    "personId": "person:sofia-iyer",
-    "resourceId": "package:telemetry-command-dispatch",
-    "relation": "maintains",
-    "lastActive": "2026-05-02",
+    "personId": "person:marco-tanaka",
+    "resourceId": "package:identity-credential-vendor",
+    "relation": "contributes-to",
+    "lastActive": "2026-02-01",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0056",
-    "personId": "person:maya-antar",
-    "resourceId": "package:telemetry-command-dispatch",
+    "personId": "person:cole-sorensen",
+    "resourceId": "package:identity-credential-vendor",
     "relation": "contributes-to",
-    "lastActive": "2026-03-19",
+    "lastActive": "2026-05-17",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0057",
-    "personId": "person:marco-kowalski",
-    "resourceId": "package:telemetry-command-dispatch",
+    "personId": "person:marco-tanaka",
+    "resourceId": "pipeline:identity-credential-vendor",
+    "relation": "owns",
+    "lastActive": "2026-06-20",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0058",
+    "personId": "person:maya-antar",
+    "resourceId": "pipeline:identity-credential-vendor",
+    "relation": "maintains",
+    "lastActive": "2026-03-30",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0059",
+    "personId": "person:cato-okafor",
+    "resourceId": "pipeline:identity-credential-vendor",
     "relation": "contributes-to",
     "lastActive": "2026-05-16",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0058",
-    "personId": "person:cato-okafor",
-    "resourceId": "pipeline:telemetry-command-dispatch",
-    "relation": "owns",
-    "lastActive": "2026-06-28",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0059",
-    "personId": "person:aisha-brandt",
-    "resourceId": "pipeline:telemetry-command-dispatch",
-    "relation": "maintains",
-    "lastActive": "2026-06-01",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
     "id": "relationship:r0060",
-    "personId": "person:kai-holm",
-    "resourceId": "pipeline:telemetry-command-dispatch",
-    "relation": "contributes-to",
-    "lastActive": "2026-02-27",
+    "personId": "person:aisha-brandt",
+    "resourceId": "package:identity-signin-gateway",
+    "relation": "owns",
+    "lastActive": "2026-07-04",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0061",
-    "personId": "person:sana-takeda",
-    "resourceId": "pipeline:telemetry-command-dispatch",
-    "relation": "contributes-to",
-    "lastActive": "2026-01-26",
+    "personId": "person:kai-holm",
+    "resourceId": "package:identity-signin-gateway",
+    "relation": "maintains",
+    "lastActive": "2026-04-16",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0062",
     "personId": "person:maya-antar",
-    "resourceId": "pipeline:telemetry-command-dispatch",
+    "resourceId": "package:identity-signin-gateway",
+    "relation": "contributes-to",
+    "lastActive": "2026-01-26",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0063",
+    "personId": "person:marco-tanaka",
+    "resourceId": "package:identity-signin-gateway",
     "relation": "contributes-to",
     "lastActive": "2026-05-06",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0063",
-    "personId": "person:aisha-brandt",
-    "resourceId": "package:telemetry-alerting",
-    "relation": "owns",
-    "lastActive": "2026-07-04",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
     "id": "relationship:r0064",
-    "personId": "person:sofia-iyer",
-    "resourceId": "package:telemetry-alerting",
-    "relation": "maintains",
-    "lastActive": "2026-06-24",
+    "personId": "person:sana-takeda",
+    "resourceId": "package:identity-signin-gateway",
+    "relation": "contributes-to",
+    "lastActive": "2026-04-06",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0065",
-    "personId": "person:sana-takeda",
-    "resourceId": "package:telemetry-alerting",
-    "relation": "maintains",
-    "lastActive": "2026-06-17",
+    "personId": "person:idris-alvarez",
+    "resourceId": "package:identity-signin-gateway",
+    "relation": "contributes-to",
+    "lastActive": "2026-07-11",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0066",
-    "personId": "person:maya-antar",
-    "resourceId": "service:telemetry-gateway",
+    "personId": "person:sana-takeda",
+    "resourceId": "service:identity-gateway",
     "relation": "owns",
-    "lastActive": "2026-06-16",
+    "lastActive": "2026-07-08",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0067",
     "personId": "person:cato-okafor",
-    "resourceId": "service:telemetry-gateway",
+    "resourceId": "service:identity-gateway",
     "relation": "maintains",
-    "lastActive": "2026-05-30",
+    "lastActive": "2026-05-28",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0068",
-    "personId": "person:marco-tanaka",
-    "resourceId": "service:telemetry-gateway",
-    "relation": "contributes-to",
-    "lastActive": "2026-07-13",
+    "personId": "person:sofia-iyer",
+    "resourceId": "service:identity-gateway",
+    "relation": "maintains",
+    "lastActive": "2026-05-15",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0069",
-    "personId": "person:sofia-iyer",
-    "resourceId": "service:telemetry-gateway",
-    "relation": "contributes-to",
-    "lastActive": "2026-02-27",
-    "observedAt": "2026-07-18T12:00:00Z"
+    "personId": "person:sana-takeda",
+    "resourceId": "bindle:identity",
+    "relation": "owns",
+    "lastActive": "2026-07-19",
+    "observedAt": "2026-07-19T12:00:00Z"
   },
   {
     "id": "relationship:r0070",
-    "personId": "person:kai-holm",
-    "resourceId": "bindle:telemetry",
-    "relation": "owns",
-    "lastActive": "2026-07-01",
+    "personId": "person:cato-okafor",
+    "resourceId": "bindle:identity",
+    "relation": "maintains",
+    "lastActive": "2026-05-01",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0071",
-    "personId": "person:sana-takeda",
-    "resourceId": "bindle:telemetry",
+    "personId": "person:aisha-brandt",
+    "resourceId": "bindle:identity",
     "relation": "maintains",
-    "lastActive": "2026-04-23",
+    "lastActive": "2026-04-01",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0072",
-    "personId": "person:aisha-brandt",
-    "resourceId": "bindle:telemetry",
+    "personId": "person:maya-antar",
+    "resourceId": "bindle:identity",
     "relation": "contributes-to",
-    "lastActive": "2026-07-04",
+    "lastActive": "2026-02-05",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0073",
     "personId": "person:sofia-iyer",
-    "resourceId": "bindle:telemetry",
-    "relation": "contributes-to",
-    "lastActive": "2026-03-06",
+    "resourceId": "account:identity-prod",
+    "relation": "owns",
+    "lastActive": "2026-07-06",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0074",
-    "personId": "person:maya-antar",
-    "resourceId": "bindle:telemetry",
-    "relation": "contributes-to",
-    "lastActive": "2026-04-18",
+    "personId": "person:sana-takeda",
+    "resourceId": "account:identity-prod",
+    "relation": "maintains",
+    "lastActive": "2026-07-10",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0075",
-    "personId": "person:ravi-steiner",
-    "resourceId": "bindle:telemetry",
-    "relation": "contributes-to",
-    "lastActive": "2026-05-20",
+    "personId": "person:marco-tanaka",
+    "resourceId": "account:identity-prod",
+    "relation": "maintains",
+    "lastActive": "2026-04-21",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0076",
-    "personId": "person:kai-holm",
-    "resourceId": "account:telemetry-prod",
+    "personId": "person:sofia-iyer",
+    "resourceId": "account:identity-beta",
     "relation": "owns",
     "lastActive": "2026-06-08",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0077",
-    "personId": "person:cato-okafor",
-    "resourceId": "account:telemetry-prod",
+    "personId": "person:maya-antar",
+    "resourceId": "account:identity-beta",
     "relation": "maintains",
-    "lastActive": "2026-06-26",
+    "lastActive": "2026-05-02",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0078",
-    "personId": "person:maya-antar",
-    "resourceId": "account:telemetry-prod",
-    "relation": "contributes-to",
-    "lastActive": "2026-03-25",
+    "personId": "person:cato-okafor",
+    "resourceId": "account:identity-beta",
+    "relation": "maintains",
+    "lastActive": "2026-05-27",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0079",
-    "personId": "person:sofia-iyer",
-    "resourceId": "account:telemetry-prod",
+    "personId": "person:amara-varga",
+    "resourceId": "account:identity-beta",
     "relation": "contributes-to",
-    "lastActive": "2026-01-31",
+    "lastActive": "2026-05-14",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0080",
-    "personId": "person:aisha-brandt",
-    "resourceId": "account:telemetry-prod",
-    "relation": "contributes-to",
-    "lastActive": "2026-03-14",
+    "personId": "person:alma-tanaka",
+    "resourceId": "package:networking-vpc-builder",
+    "relation": "owns",
+    "lastActive": "2026-07-10",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0081",
-    "personId": "person:maya-holm",
-    "resourceId": "account:telemetry-prod",
-    "relation": "contributes-to",
-    "lastActive": "2026-03-21",
+    "personId": "person:jonas-rahim",
+    "resourceId": "package:networking-vpc-builder",
+    "relation": "maintains",
+    "lastActive": "2026-05-01",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0082",
-    "personId": "person:marco-tanaka",
-    "resourceId": "account:telemetry-beta",
-    "relation": "owns",
-    "lastActive": "2026-06-17",
+    "personId": "person:noah-iyer",
+    "resourceId": "package:networking-vpc-builder",
+    "relation": "maintains",
+    "lastActive": "2026-05-20",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0083",
-    "personId": "person:aisha-brandt",
-    "resourceId": "account:telemetry-beta",
-    "relation": "maintains",
-    "lastActive": "2026-03-29",
-    "observedAt": "2026-07-18T12:00:00Z"
+    "personId": "person:maya-rahim",
+    "resourceId": "pipeline:networking-vpc-builder",
+    "relation": "owns",
+    "lastActive": "2026-07-21",
+    "observedAt": "2026-07-21T12:00:00Z"
   },
   {
     "id": "relationship:r0084",
-    "personId": "person:kai-holm",
-    "resourceId": "account:telemetry-beta",
-    "relation": "contributes-to",
-    "lastActive": "2026-04-05",
+    "personId": "person:sofia-delgado",
+    "resourceId": "pipeline:networking-vpc-builder",
+    "relation": "maintains",
+    "lastActive": "2026-05-11",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0085",
-    "personId": "person:sofia-iyer",
-    "resourceId": "account:telemetry-beta",
-    "relation": "contributes-to",
-    "lastActive": "2026-03-08",
+    "personId": "person:alma-tanaka",
+    "resourceId": "pipeline:networking-vpc-builder",
+    "relation": "maintains",
+    "lastActive": "2026-04-22",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0086",
     "personId": "person:jonas-rahim",
-    "resourceId": "package:constellation-orbit-planner",
+    "resourceId": "package:networking-subnet-manager",
     "relation": "owns",
     "lastActive": "2026-07-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -690,7 +690,7 @@
   {
     "id": "relationship:r0087",
     "personId": "person:niko-okafor",
-    "resourceId": "package:constellation-orbit-planner",
+    "resourceId": "package:networking-subnet-manager",
     "relation": "maintains",
     "lastActive": "2026-05-06",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -698,7 +698,7 @@
   {
     "id": "relationship:r0088",
     "personId": "person:sofia-delgado",
-    "resourceId": "package:constellation-orbit-planner",
+    "resourceId": "package:networking-subnet-manager",
     "relation": "contributes-to",
     "lastActive": "2026-05-20",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -706,7 +706,7 @@
   {
     "id": "relationship:r0089",
     "personId": "person:maya-rahim",
-    "resourceId": "package:constellation-orbit-planner",
+    "resourceId": "package:networking-subnet-manager",
     "relation": "contributes-to",
     "lastActive": "2026-04-01",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -714,7 +714,7 @@
   {
     "id": "relationship:r0090",
     "personId": "person:idris-alvarez",
-    "resourceId": "package:constellation-orbit-planner",
+    "resourceId": "package:networking-subnet-manager",
     "relation": "contributes-to",
     "lastActive": "2026-04-30",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -722,7 +722,7 @@
   {
     "id": "relationship:r0091",
     "personId": "person:idris-alvarez",
-    "resourceId": "pipeline:constellation-orbit-planner",
+    "resourceId": "pipeline:networking-subnet-manager",
     "relation": "owns",
     "lastActive": "2026-07-14",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -730,7 +730,7 @@
   {
     "id": "relationship:r0092",
     "personId": "person:rosa-oduya",
-    "resourceId": "pipeline:constellation-orbit-planner",
+    "resourceId": "pipeline:networking-subnet-manager",
     "relation": "maintains",
     "lastActive": "2026-03-30",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -738,7 +738,7 @@
   {
     "id": "relationship:r0093",
     "personId": "person:alma-tanaka",
-    "resourceId": "pipeline:constellation-orbit-planner",
+    "resourceId": "pipeline:networking-subnet-manager",
     "relation": "contributes-to",
     "lastActive": "2026-06-17",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -746,15 +746,15 @@
   {
     "id": "relationship:r0094",
     "personId": "person:maya-rahim",
-    "resourceId": "pipeline:constellation-orbit-planner",
+    "resourceId": "pipeline:networking-subnet-manager",
     "relation": "contributes-to",
     "lastActive": "2026-03-18",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0095",
-    "personId": "person:cole-castillo",
-    "resourceId": "pipeline:constellation-orbit-planner",
+    "personId": "person:lena-oduya",
+    "resourceId": "pipeline:networking-subnet-manager",
     "relation": "contributes-to",
     "lastActive": "2026-06-05",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -762,7 +762,7 @@
   {
     "id": "relationship:r0096",
     "personId": "person:noah-iyer",
-    "resourceId": "package:constellation-maneuver",
+    "resourceId": "package:networking-peering-broker",
     "relation": "owns",
     "lastActive": "2026-07-02",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -770,7 +770,7 @@
   {
     "id": "relationship:r0097",
     "personId": "person:niko-okafor",
-    "resourceId": "package:constellation-maneuver",
+    "resourceId": "package:networking-peering-broker",
     "relation": "maintains",
     "lastActive": "2026-07-09",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -778,7 +778,7 @@
   {
     "id": "relationship:r0098",
     "personId": "person:sofia-delgado",
-    "resourceId": "package:constellation-maneuver",
+    "resourceId": "package:networking-peering-broker",
     "relation": "maintains",
     "lastActive": "2026-07-19",
     "observedAt": "2026-07-19T12:00:00Z"
@@ -786,7 +786,7 @@
   {
     "id": "relationship:r0099",
     "personId": "person:idris-alvarez",
-    "resourceId": "package:constellation-maneuver",
+    "resourceId": "package:networking-peering-broker",
     "relation": "contributes-to",
     "lastActive": "2026-04-24",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -794,15 +794,15 @@
   {
     "id": "relationship:r0100",
     "personId": "person:alma-tanaka",
-    "resourceId": "package:constellation-maneuver",
+    "resourceId": "package:networking-peering-broker",
     "relation": "contributes-to",
     "lastActive": "2026-02-12",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0101",
-    "personId": "person:bruno-silva",
-    "resourceId": "package:constellation-maneuver",
+    "personId": "person:ravi-steiner",
+    "resourceId": "package:networking-peering-broker",
     "relation": "contributes-to",
     "lastActive": "2026-04-09",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -810,7 +810,7 @@
   {
     "id": "relationship:r0102",
     "personId": "person:niko-okafor",
-    "resourceId": "pipeline:constellation-maneuver",
+    "resourceId": "service:networking-gateway",
     "relation": "owns",
     "lastActive": "2026-07-05",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -818,7 +818,7 @@
   {
     "id": "relationship:r0103",
     "personId": "person:rosa-oduya",
-    "resourceId": "pipeline:constellation-maneuver",
+    "resourceId": "service:networking-gateway",
     "relation": "maintains",
     "lastActive": "2026-03-28",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -826,7 +826,7 @@
   {
     "id": "relationship:r0104",
     "personId": "person:alma-tanaka",
-    "resourceId": "pipeline:constellation-maneuver",
+    "resourceId": "service:networking-gateway",
     "relation": "maintains",
     "lastActive": "2026-04-20",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -834,7 +834,7 @@
   {
     "id": "relationship:r0105",
     "personId": "person:maya-rahim",
-    "resourceId": "pipeline:constellation-maneuver",
+    "resourceId": "service:networking-gateway",
     "relation": "contributes-to",
     "lastActive": "2026-07-09",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -842,7 +842,7 @@
   {
     "id": "relationship:r0106",
     "personId": "person:alma-tanaka",
-    "resourceId": "package:constellation-conjunction",
+    "resourceId": "bindle:networking",
     "relation": "owns",
     "lastActive": "2026-06-24",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -850,7 +850,7 @@
   {
     "id": "relationship:r0107",
     "personId": "person:noah-iyer",
-    "resourceId": "package:constellation-conjunction",
+    "resourceId": "bindle:networking",
     "relation": "maintains",
     "lastActive": "2026-04-18",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -858,7 +858,7 @@
   {
     "id": "relationship:r0108",
     "personId": "person:maya-rahim",
-    "resourceId": "package:constellation-conjunction",
+    "resourceId": "bindle:networking",
     "relation": "maintains",
     "lastActive": "2026-03-29",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -866,7 +866,7 @@
   {
     "id": "relationship:r0109",
     "personId": "person:idris-alvarez",
-    "resourceId": "package:constellation-conjunction",
+    "resourceId": "bindle:networking",
     "relation": "contributes-to",
     "lastActive": "2026-04-05",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -874,15 +874,15 @@
   {
     "id": "relationship:r0110",
     "personId": "person:jonas-rahim",
-    "resourceId": "package:constellation-conjunction",
+    "resourceId": "bindle:networking",
     "relation": "contributes-to",
     "lastActive": "2026-05-12",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0111",
-    "personId": "person:cato-okafor",
-    "resourceId": "package:constellation-conjunction",
+    "personId": "person:marco-tanaka",
+    "resourceId": "bindle:networking",
     "relation": "contributes-to",
     "lastActive": "2026-07-04",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -890,7 +890,7 @@
   {
     "id": "relationship:r0112",
     "personId": "person:sofia-delgado",
-    "resourceId": "service:constellation-gateway",
+    "resourceId": "account:networking-prod",
     "relation": "owns",
     "lastActive": "2026-07-07",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -898,7 +898,7 @@
   {
     "id": "relationship:r0113",
     "personId": "person:niko-okafor",
-    "resourceId": "service:constellation-gateway",
+    "resourceId": "account:networking-prod",
     "relation": "maintains",
     "lastActive": "2026-06-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -906,7 +906,7 @@
   {
     "id": "relationship:r0114",
     "personId": "person:idris-alvarez",
-    "resourceId": "service:constellation-gateway",
+    "resourceId": "account:networking-prod",
     "relation": "maintains",
     "lastActive": "2026-06-09",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -914,7 +914,7 @@
   {
     "id": "relationship:r0115",
     "personId": "person:sofia-delgado",
-    "resourceId": "bindle:constellation",
+    "resourceId": "account:networking-beta",
     "relation": "owns",
     "lastActive": "2026-06-10",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -922,7 +922,7 @@
   {
     "id": "relationship:r0116",
     "personId": "person:idris-alvarez",
-    "resourceId": "bindle:constellation",
+    "resourceId": "account:networking-beta",
     "relation": "maintains",
     "lastActive": "2026-05-30",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -930,7 +930,7 @@
   {
     "id": "relationship:r0117",
     "personId": "person:maya-rahim",
-    "resourceId": "bindle:constellation",
+    "resourceId": "account:networking-beta",
     "relation": "maintains",
     "lastActive": "2026-05-23",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -938,15 +938,15 @@
   {
     "id": "relationship:r0118",
     "personId": "person:noah-iyer",
-    "resourceId": "bindle:constellation",
+    "resourceId": "account:networking-beta",
     "relation": "contributes-to",
     "lastActive": "2026-05-21",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0119",
-    "personId": "person:ezra-steiner",
-    "resourceId": "bindle:constellation",
+    "personId": "person:noah-alvarez",
+    "resourceId": "account:networking-beta",
     "relation": "contributes-to",
     "lastActive": "2026-06-05",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -954,7 +954,7 @@
   {
     "id": "relationship:r0120",
     "personId": "person:jonas-rahim",
-    "resourceId": "account:constellation-prod",
+    "resourceId": "package:networking-cdk",
     "relation": "owns",
     "lastActive": "2026-07-14",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -962,7 +962,7 @@
   {
     "id": "relationship:r0121",
     "personId": "person:rosa-oduya",
-    "resourceId": "account:constellation-prod",
+    "resourceId": "package:networking-cdk",
     "relation": "maintains",
     "lastActive": "2026-05-11",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -970,7 +970,7 @@
   {
     "id": "relationship:r0122",
     "personId": "person:alma-tanaka",
-    "resourceId": "account:constellation-prod",
+    "resourceId": "package:networking-cdk",
     "relation": "contributes-to",
     "lastActive": "2026-02-11",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -978,79 +978,79 @@
   {
     "id": "relationship:r0123",
     "personId": "person:maya-rahim",
-    "resourceId": "account:constellation-prod",
+    "resourceId": "package:networking-cdk",
     "relation": "contributes-to",
     "lastActive": "2026-05-13",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0124",
-    "personId": "person:idris-alvarez",
-    "resourceId": "account:constellation-beta",
+    "personId": "person:leila-sokolov",
+    "resourceId": "package:storage-bucket-index",
     "relation": "owns",
     "lastActive": "2026-07-01",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0125",
-    "personId": "person:sofia-delgado",
-    "resourceId": "account:constellation-beta",
+    "personId": "person:nadia-moreau",
+    "resourceId": "package:storage-bucket-index",
     "relation": "maintains",
     "lastActive": "2026-07-07",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0126",
-    "personId": "person:alma-tanaka",
-    "resourceId": "account:constellation-beta",
+    "personId": "person:ravi-steiner",
+    "resourceId": "package:storage-bucket-index",
     "relation": "maintains",
     "lastActive": "2026-06-29",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0127",
-    "personId": "person:leila-sorensen",
-    "resourceId": "account:constellation-beta",
+    "personId": "person:petra-steiner",
+    "resourceId": "package:storage-bucket-index",
     "relation": "contributes-to",
     "lastActive": "2026-03-30",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0128",
-    "personId": "person:jonas-rahim",
-    "resourceId": "package:constellation-cdk",
+    "personId": "person:vera-nakamura",
+    "resourceId": "pipeline:storage-bucket-index",
     "relation": "owns",
     "lastActive": "2026-07-08",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0129",
-    "personId": "person:alma-tanaka",
-    "resourceId": "package:constellation-cdk",
+    "personId": "person:ravi-steiner",
+    "resourceId": "pipeline:storage-bucket-index",
     "relation": "maintains",
     "lastActive": "2026-05-11",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0130",
-    "personId": "person:idris-alvarez",
-    "resourceId": "package:constellation-cdk",
+    "personId": "person:leila-sokolov",
+    "resourceId": "pipeline:storage-bucket-index",
     "relation": "maintains",
     "lastActive": "2026-06-04",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0131",
-    "personId": "person:sofia-delgado",
-    "resourceId": "package:constellation-cdk",
+    "personId": "person:wren-kimura",
+    "resourceId": "pipeline:storage-bucket-index",
     "relation": "contributes-to",
     "lastActive": "2026-07-03",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0132",
-    "personId": "person:rosa-oduya",
-    "resourceId": "package:constellation-cdk",
+    "personId": "person:rosa-varga",
+    "resourceId": "pipeline:storage-bucket-index",
     "relation": "contributes-to",
     "lastActive": "2026-06-22",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1058,7 +1058,7 @@
   {
     "id": "relationship:r0133",
     "personId": "person:rosa-varga",
-    "resourceId": "package:optical-isl-link-manager",
+    "resourceId": "package:storage-replication-engine",
     "relation": "owns",
     "lastActive": "2026-07-02",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1066,7 +1066,7 @@
   {
     "id": "relationship:r0134",
     "personId": "person:vera-nakamura",
-    "resourceId": "package:optical-isl-link-manager",
+    "resourceId": "package:storage-replication-engine",
     "relation": "maintains",
     "lastActive": "2026-05-01",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1074,7 +1074,7 @@
   {
     "id": "relationship:r0135",
     "personId": "person:nadia-moreau",
-    "resourceId": "package:optical-isl-link-manager",
+    "resourceId": "package:storage-replication-engine",
     "relation": "maintains",
     "lastActive": "2026-06-26",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1082,7 +1082,7 @@
   {
     "id": "relationship:r0136",
     "personId": "person:wren-kimura",
-    "resourceId": "package:optical-isl-link-manager",
+    "resourceId": "package:storage-replication-engine",
     "relation": "contributes-to",
     "lastActive": "2026-06-15",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1090,7 +1090,7 @@
   {
     "id": "relationship:r0137",
     "personId": "person:ravi-steiner",
-    "resourceId": "package:optical-isl-link-manager",
+    "resourceId": "package:storage-replication-engine",
     "relation": "contributes-to",
     "lastActive": "2026-05-03",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1098,7 +1098,7 @@
   {
     "id": "relationship:r0138",
     "personId": "person:rosa-varga",
-    "resourceId": "pipeline:optical-isl-link-manager",
+    "resourceId": "pipeline:storage-replication-engine",
     "relation": "owns",
     "lastActive": "2026-07-03",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1106,7 +1106,7 @@
   {
     "id": "relationship:r0139",
     "personId": "person:wren-kimura",
-    "resourceId": "pipeline:optical-isl-link-manager",
+    "resourceId": "pipeline:storage-replication-engine",
     "relation": "maintains",
     "lastActive": "2026-07-20",
     "observedAt": "2026-07-20T12:00:00Z"
@@ -1114,7 +1114,7 @@
   {
     "id": "relationship:r0140",
     "personId": "person:ezra-larsen",
-    "resourceId": "pipeline:optical-isl-link-manager",
+    "resourceId": "pipeline:storage-replication-engine",
     "relation": "maintains",
     "lastActive": "2026-04-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1122,7 +1122,7 @@
   {
     "id": "relationship:r0141",
     "personId": "person:ravi-steiner",
-    "resourceId": "pipeline:optical-isl-link-manager",
+    "resourceId": "pipeline:storage-replication-engine",
     "relation": "contributes-to",
     "lastActive": "2026-04-20",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1130,15 +1130,15 @@
   {
     "id": "relationship:r0142",
     "personId": "person:nadia-moreau",
-    "resourceId": "pipeline:optical-isl-link-manager",
+    "resourceId": "pipeline:storage-replication-engine",
     "relation": "contributes-to",
     "lastActive": "2026-04-03",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0143",
-    "personId": "person:cole-brandt",
-    "resourceId": "pipeline:optical-isl-link-manager",
+    "personId": "person:lena-oduya",
+    "resourceId": "pipeline:storage-replication-engine",
     "relation": "contributes-to",
     "lastActive": "2026-01-30",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1146,7 +1146,7 @@
   {
     "id": "relationship:r0144",
     "personId": "person:vera-nakamura",
-    "resourceId": "package:optical-isl-pointing",
+    "resourceId": "package:storage-lifecycle-manager",
     "relation": "owns",
     "lastActive": "2026-07-03",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1154,7 +1154,7 @@
   {
     "id": "relationship:r0145",
     "personId": "person:ravi-steiner",
-    "resourceId": "package:optical-isl-pointing",
+    "resourceId": "package:storage-lifecycle-manager",
     "relation": "maintains",
     "lastActive": "2026-05-31",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1162,7 +1162,7 @@
   {
     "id": "relationship:r0146",
     "personId": "person:nadia-moreau",
-    "resourceId": "package:optical-isl-pointing",
+    "resourceId": "package:storage-lifecycle-manager",
     "relation": "contributes-to",
     "lastActive": "2026-02-18",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1170,7 +1170,7 @@
   {
     "id": "relationship:r0147",
     "personId": "person:rosa-varga",
-    "resourceId": "package:optical-isl-pointing",
+    "resourceId": "package:storage-lifecycle-manager",
     "relation": "contributes-to",
     "lastActive": "2026-03-11",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1178,7 +1178,7 @@
   {
     "id": "relationship:r0148",
     "personId": "person:leila-sokolov",
-    "resourceId": "package:optical-isl-pointing",
+    "resourceId": "package:storage-lifecycle-manager",
     "relation": "contributes-to",
     "lastActive": "2026-04-01",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1186,7 +1186,7 @@
   {
     "id": "relationship:r0149",
     "personId": "person:nadia-moreau",
-    "resourceId": "pipeline:optical-isl-pointing",
+    "resourceId": "service:storage-gateway",
     "relation": "owns",
     "lastActive": "2026-06-18",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1194,7 +1194,7 @@
   {
     "id": "relationship:r0150",
     "personId": "person:ezra-larsen",
-    "resourceId": "pipeline:optical-isl-pointing",
+    "resourceId": "service:storage-gateway",
     "relation": "maintains",
     "lastActive": "2026-07-16",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1202,7 +1202,7 @@
   {
     "id": "relationship:r0151",
     "personId": "person:wren-kimura",
-    "resourceId": "pipeline:optical-isl-pointing",
+    "resourceId": "service:storage-gateway",
     "relation": "maintains",
     "lastActive": "2026-07-15",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1210,7 +1210,7 @@
   {
     "id": "relationship:r0152",
     "personId": "person:ezra-larsen",
-    "resourceId": "package:optical-isl-handoff",
+    "resourceId": "bindle:storage",
     "relation": "owns",
     "lastActive": "2026-06-08",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1218,7 +1218,7 @@
   {
     "id": "relationship:r0153",
     "personId": "person:ravi-steiner",
-    "resourceId": "package:optical-isl-handoff",
+    "resourceId": "bindle:storage",
     "relation": "maintains",
     "lastActive": "2026-03-31",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1226,7 +1226,7 @@
   {
     "id": "relationship:r0154",
     "personId": "person:nadia-moreau",
-    "resourceId": "package:optical-isl-handoff",
+    "resourceId": "bindle:storage",
     "relation": "contributes-to",
     "lastActive": "2026-06-02",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1234,7 +1234,7 @@
   {
     "id": "relationship:r0155",
     "personId": "person:leila-sokolov",
-    "resourceId": "package:optical-isl-handoff",
+    "resourceId": "bindle:storage",
     "relation": "contributes-to",
     "lastActive": "2026-06-05",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1242,7 +1242,7 @@
   {
     "id": "relationship:r0156",
     "personId": "person:rosa-varga",
-    "resourceId": "service:optical-isl-gateway",
+    "resourceId": "account:storage-prod",
     "relation": "owns",
     "lastActive": "2026-07-10",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1250,7 +1250,7 @@
   {
     "id": "relationship:r0157",
     "personId": "person:ezra-larsen",
-    "resourceId": "service:optical-isl-gateway",
+    "resourceId": "account:storage-prod",
     "relation": "maintains",
     "lastActive": "2026-05-02",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1258,7 +1258,7 @@
   {
     "id": "relationship:r0158",
     "personId": "person:leila-sokolov",
-    "resourceId": "service:optical-isl-gateway",
+    "resourceId": "account:storage-prod",
     "relation": "maintains",
     "lastActive": "2026-04-11",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1266,7 +1266,7 @@
   {
     "id": "relationship:r0159",
     "personId": "person:ravi-steiner",
-    "resourceId": "service:optical-isl-gateway",
+    "resourceId": "account:storage-prod",
     "relation": "contributes-to",
     "lastActive": "2026-03-26",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1274,7 +1274,7 @@
   {
     "id": "relationship:r0160",
     "personId": "person:nadia-moreau",
-    "resourceId": "service:optical-isl-gateway",
+    "resourceId": "account:storage-prod",
     "relation": "contributes-to",
     "lastActive": "2026-03-25",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1282,7 +1282,7 @@
   {
     "id": "relationship:r0161",
     "personId": "person:ezra-larsen",
-    "resourceId": "bindle:optical-isl",
+    "resourceId": "account:storage-beta",
     "relation": "owns",
     "lastActive": "2026-06-10",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1290,7 +1290,7 @@
   {
     "id": "relationship:r0162",
     "personId": "person:vera-nakamura",
-    "resourceId": "bindle:optical-isl",
+    "resourceId": "account:storage-beta",
     "relation": "maintains",
     "lastActive": "2026-05-05",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1298,7 +1298,7 @@
   {
     "id": "relationship:r0163",
     "personId": "person:ravi-steiner",
-    "resourceId": "bindle:optical-isl",
+    "resourceId": "account:storage-beta",
     "relation": "maintains",
     "lastActive": "2026-04-22",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1306,95 +1306,95 @@
   {
     "id": "relationship:r0164",
     "personId": "person:wren-kimura",
-    "resourceId": "bindle:optical-isl",
+    "resourceId": "account:storage-beta",
     "relation": "contributes-to",
     "lastActive": "2026-02-08",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0165",
-    "personId": "person:cato-okafor",
-    "resourceId": "bindle:optical-isl",
+    "personId": "person:marco-tanaka",
+    "resourceId": "account:storage-beta",
     "relation": "contributes-to",
     "lastActive": "2026-07-16",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0166",
-    "personId": "person:rosa-varga",
-    "resourceId": "account:optical-isl-prod",
+    "personId": "person:ethan-castillo",
+    "resourceId": "package:observability-metrics-ingest",
     "relation": "owns",
     "lastActive": "2026-07-19",
     "observedAt": "2026-07-19T12:00:00Z"
   },
   {
     "id": "relationship:r0167",
-    "personId": "person:vera-nakamura",
-    "resourceId": "account:optical-isl-prod",
+    "personId": "person:owen-kowalski",
+    "resourceId": "package:observability-metrics-ingest",
     "relation": "maintains",
     "lastActive": "2026-05-09",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0168",
-    "personId": "person:ezra-larsen",
-    "resourceId": "account:optical-isl-prod",
+    "personId": "person:omar-egede",
+    "resourceId": "package:observability-metrics-ingest",
     "relation": "contributes-to",
     "lastActive": "2026-03-18",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0169",
-    "personId": "person:ravi-steiner",
-    "resourceId": "account:optical-isl-prod",
+    "personId": "person:kai-mensah",
+    "resourceId": "package:observability-metrics-ingest",
     "relation": "contributes-to",
     "lastActive": "2026-06-17",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0170",
-    "personId": "person:nadia-moreau",
-    "resourceId": "account:optical-isl-prod",
+    "personId": "person:aldo-novak",
+    "resourceId": "package:observability-metrics-ingest",
     "relation": "contributes-to",
     "lastActive": "2026-05-12",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0171",
-    "personId": "person:ravi-steiner",
-    "resourceId": "account:optical-isl-beta",
+    "personId": "person:kai-mensah",
+    "resourceId": "pipeline:observability-metrics-ingest",
     "relation": "owns",
     "lastActive": "2026-06-17",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0172",
-    "personId": "person:ezra-larsen",
-    "resourceId": "account:optical-isl-beta",
+    "personId": "person:omar-egede",
+    "resourceId": "pipeline:observability-metrics-ingest",
     "relation": "maintains",
     "lastActive": "2026-04-15",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0173",
-    "personId": "person:rosa-varga",
-    "resourceId": "account:optical-isl-beta",
+    "personId": "person:ethan-castillo",
+    "resourceId": "pipeline:observability-metrics-ingest",
     "relation": "contributes-to",
     "lastActive": "2026-05-17",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0174",
-    "personId": "person:nadia-moreau",
-    "resourceId": "account:optical-isl-beta",
+    "personId": "person:aldo-novak",
+    "resourceId": "pipeline:observability-metrics-ingest",
     "relation": "contributes-to",
     "lastActive": "2026-07-04",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0175",
-    "personId": "person:leila-sokolov",
-    "resourceId": "account:optical-isl-beta",
+    "personId": "person:diego-abara",
+    "resourceId": "pipeline:observability-metrics-ingest",
     "relation": "contributes-to",
     "lastActive": "2026-04-09",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1402,7 +1402,7 @@
   {
     "id": "relationship:r0176",
     "personId": "person:ethan-castillo",
-    "resourceId": "package:terminals-provisioning",
+    "resourceId": "package:observability-alarm-engine",
     "relation": "owns",
     "lastActive": "2026-06-15",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1410,7 +1410,7 @@
   {
     "id": "relationship:r0177",
     "personId": "person:owen-kowalski",
-    "resourceId": "package:terminals-provisioning",
+    "resourceId": "package:observability-alarm-engine",
     "relation": "maintains",
     "lastActive": "2026-07-06",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1418,7 +1418,7 @@
   {
     "id": "relationship:r0178",
     "personId": "person:bruno-silva",
-    "resourceId": "package:terminals-provisioning",
+    "resourceId": "package:observability-alarm-engine",
     "relation": "maintains",
     "lastActive": "2026-06-09",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1426,7 +1426,7 @@
   {
     "id": "relationship:r0179",
     "personId": "person:kai-mensah",
-    "resourceId": "package:terminals-provisioning",
+    "resourceId": "package:observability-alarm-engine",
     "relation": "contributes-to",
     "lastActive": "2026-05-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1434,7 +1434,7 @@
   {
     "id": "relationship:r0180",
     "personId": "person:omar-egede",
-    "resourceId": "package:terminals-provisioning",
+    "resourceId": "package:observability-alarm-engine",
     "relation": "contributes-to",
     "lastActive": "2026-05-26",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1442,7 +1442,7 @@
   {
     "id": "relationship:r0181",
     "personId": "person:owen-kowalski",
-    "resourceId": "pipeline:terminals-provisioning",
+    "resourceId": "pipeline:observability-alarm-engine",
     "relation": "owns",
     "lastActive": "2026-07-10",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1450,7 +1450,7 @@
   {
     "id": "relationship:r0182",
     "personId": "person:diego-abara",
-    "resourceId": "pipeline:terminals-provisioning",
+    "resourceId": "pipeline:observability-alarm-engine",
     "relation": "maintains",
     "lastActive": "2026-05-07",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1458,15 +1458,15 @@
   {
     "id": "relationship:r0183",
     "personId": "person:aldo-novak",
-    "resourceId": "pipeline:terminals-provisioning",
+    "resourceId": "pipeline:observability-alarm-engine",
     "relation": "contributes-to",
     "lastActive": "2026-03-29",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0184",
-    "personId": "person:yuki-kowalski",
-    "resourceId": "pipeline:terminals-provisioning",
+    "personId": "person:maya-haddad",
+    "resourceId": "pipeline:observability-alarm-engine",
     "relation": "contributes-to",
     "lastActive": "2026-01-27",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1474,7 +1474,7 @@
   {
     "id": "relationship:r0185",
     "personId": "person:kai-mensah",
-    "resourceId": "package:terminals-firmware-update",
+    "resourceId": "package:observability-trace-collector",
     "relation": "owns",
     "lastActive": "2026-06-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1482,7 +1482,7 @@
   {
     "id": "relationship:r0186",
     "personId": "person:omar-egede",
-    "resourceId": "package:terminals-firmware-update",
+    "resourceId": "package:observability-trace-collector",
     "relation": "maintains",
     "lastActive": "2026-04-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1490,7 +1490,7 @@
   {
     "id": "relationship:r0187",
     "personId": "person:owen-kowalski",
-    "resourceId": "package:terminals-firmware-update",
+    "resourceId": "package:observability-trace-collector",
     "relation": "maintains",
     "lastActive": "2026-06-09",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1498,15 +1498,15 @@
   {
     "id": "relationship:r0188",
     "personId": "person:bruno-silva",
-    "resourceId": "package:terminals-firmware-update",
+    "resourceId": "package:observability-trace-collector",
     "relation": "contributes-to",
     "lastActive": "2026-02-14",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0189",
-    "personId": "person:amara-varga",
-    "resourceId": "package:terminals-firmware-update",
+    "personId": "person:yuki-bishop",
+    "resourceId": "package:observability-trace-collector",
     "relation": "contributes-to",
     "lastActive": "2026-02-02",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1514,7 +1514,7 @@
   {
     "id": "relationship:r0190",
     "personId": "person:bruno-silva",
-    "resourceId": "pipeline:terminals-firmware-update",
+    "resourceId": "service:observability-gateway",
     "relation": "owns",
     "lastActive": "2026-07-13",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1522,7 +1522,7 @@
   {
     "id": "relationship:r0191",
     "personId": "person:aldo-novak",
-    "resourceId": "pipeline:terminals-firmware-update",
+    "resourceId": "service:observability-gateway",
     "relation": "maintains",
     "lastActive": "2026-07-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1530,7 +1530,7 @@
   {
     "id": "relationship:r0192",
     "personId": "person:omar-egede",
-    "resourceId": "pipeline:terminals-firmware-update",
+    "resourceId": "service:observability-gateway",
     "relation": "maintains",
     "lastActive": "2026-05-11",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1538,7 +1538,7 @@
   {
     "id": "relationship:r0193",
     "personId": "person:owen-kowalski",
-    "resourceId": "package:terminals-diagnostics",
+    "resourceId": "bindle:observability",
     "relation": "owns",
     "lastActive": "2026-06-27",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1546,7 +1546,7 @@
   {
     "id": "relationship:r0194",
     "personId": "person:kai-mensah",
-    "resourceId": "package:terminals-diagnostics",
+    "resourceId": "bindle:observability",
     "relation": "maintains",
     "lastActive": "2026-05-25",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1554,7 +1554,7 @@
   {
     "id": "relationship:r0195",
     "personId": "person:ethan-castillo",
-    "resourceId": "package:terminals-diagnostics",
+    "resourceId": "bindle:observability",
     "relation": "maintains",
     "lastActive": "2026-06-18",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1562,7 +1562,7 @@
   {
     "id": "relationship:r0196",
     "personId": "person:kai-mensah",
-    "resourceId": "service:terminals-gateway",
+    "resourceId": "account:observability-prod",
     "relation": "owns",
     "lastActive": "2026-07-17",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1570,7 +1570,7 @@
   {
     "id": "relationship:r0197",
     "personId": "person:ethan-castillo",
-    "resourceId": "service:terminals-gateway",
+    "resourceId": "account:observability-prod",
     "relation": "maintains",
     "lastActive": "2026-05-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1578,15 +1578,15 @@
   {
     "id": "relationship:r0198",
     "personId": "person:owen-kowalski",
-    "resourceId": "service:terminals-gateway",
+    "resourceId": "account:observability-prod",
     "relation": "maintains",
     "lastActive": "2026-06-17",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0199",
-    "personId": "person:ben-iyer",
-    "resourceId": "service:terminals-gateway",
+    "personId": "person:sam-egede",
+    "resourceId": "account:observability-prod",
     "relation": "contributes-to",
     "lastActive": "2026-02-26",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1594,7 +1594,7 @@
   {
     "id": "relationship:r0200",
     "personId": "person:ethan-castillo",
-    "resourceId": "bindle:terminals",
+    "resourceId": "account:observability-beta",
     "relation": "owns",
     "lastActive": "2026-06-21",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1602,7 +1602,7 @@
   {
     "id": "relationship:r0201",
     "personId": "person:omar-egede",
-    "resourceId": "bindle:terminals",
+    "resourceId": "account:observability-beta",
     "relation": "maintains",
     "lastActive": "2026-04-02",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1610,7 +1610,7 @@
   {
     "id": "relationship:r0202",
     "personId": "person:kai-mensah",
-    "resourceId": "bindle:terminals",
+    "resourceId": "account:observability-beta",
     "relation": "maintains",
     "lastActive": "2026-04-01",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1618,7 +1618,7 @@
   {
     "id": "relationship:r0203",
     "personId": "person:ethan-castillo",
-    "resourceId": "account:terminals-prod",
+    "resourceId": "package:observability-cdk",
     "relation": "owns",
     "lastActive": "2026-06-11",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1626,7 +1626,7 @@
   {
     "id": "relationship:r0204",
     "personId": "person:aldo-novak",
-    "resourceId": "account:terminals-prod",
+    "resourceId": "package:observability-cdk",
     "relation": "maintains",
     "lastActive": "2026-06-13",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1634,87 +1634,87 @@
   {
     "id": "relationship:r0205",
     "personId": "person:diego-abara",
-    "resourceId": "account:terminals-prod",
+    "resourceId": "package:observability-cdk",
     "relation": "maintains",
     "lastActive": "2026-07-17",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0206",
-    "personId": "person:cato-okafor",
-    "resourceId": "account:terminals-prod",
+    "personId": "person:marco-tanaka",
+    "resourceId": "package:observability-cdk",
     "relation": "contributes-to",
     "lastActive": "2026-02-11",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0207",
-    "personId": "person:diego-abara",
-    "resourceId": "account:terminals-beta",
+    "personId": "person:ezra-vidal",
+    "resourceId": "package:deployment-orchestrator",
     "relation": "owns",
     "lastActive": "2026-06-23",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0208",
-    "personId": "person:aldo-novak",
-    "resourceId": "account:terminals-beta",
+    "personId": "person:ivy-steiner",
+    "resourceId": "package:deployment-orchestrator",
     "relation": "maintains",
     "lastActive": "2026-04-13",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0209",
-    "personId": "person:kai-mensah",
-    "resourceId": "account:terminals-beta",
+    "personId": "person:jonas-petrov",
+    "resourceId": "package:deployment-orchestrator",
     "relation": "contributes-to",
     "lastActive": "2026-05-11",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0210",
-    "personId": "person:ethan-castillo",
-    "resourceId": "account:terminals-beta",
+    "personId": "person:aldo-antar",
+    "resourceId": "package:deployment-orchestrator",
     "relation": "contributes-to",
     "lastActive": "2026-03-07",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0211",
-    "personId": "person:omar-egede",
-    "resourceId": "package:terminals-cdk",
+    "personId": "person:jonas-petrov",
+    "resourceId": "pipeline:deployment-orchestrator",
     "relation": "owns",
     "lastActive": "2026-07-07",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0212",
-    "personId": "person:diego-abara",
-    "resourceId": "package:terminals-cdk",
+    "personId": "person:elsa-iyer",
+    "resourceId": "pipeline:deployment-orchestrator",
     "relation": "maintains",
     "lastActive": "2026-06-16",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0213",
-    "personId": "person:aldo-novak",
-    "resourceId": "package:terminals-cdk",
+    "personId": "person:ivy-steiner",
+    "resourceId": "pipeline:deployment-orchestrator",
     "relation": "maintains",
     "lastActive": "2026-06-15",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0214",
-    "personId": "person:owen-kowalski",
-    "resourceId": "package:terminals-cdk",
+    "personId": "person:sam-brandt",
+    "resourceId": "pipeline:deployment-orchestrator",
     "relation": "contributes-to",
     "lastActive": "2026-01-24",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0215",
-    "personId": "person:fatima-tanaka",
-    "resourceId": "package:terminals-cdk",
+    "personId": "person:wren-sorensen",
+    "resourceId": "pipeline:deployment-orchestrator",
     "relation": "contributes-to",
     "lastActive": "2026-06-07",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1722,7 +1722,7 @@
   {
     "id": "relationship:r0216",
     "personId": "person:ivy-steiner",
-    "resourceId": "package:network-route-planner",
+    "resourceId": "package:deployment-rollback-engine",
     "relation": "owns",
     "lastActive": "2026-06-16",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1730,7 +1730,7 @@
   {
     "id": "relationship:r0217",
     "personId": "person:aldo-antar",
-    "resourceId": "package:network-route-planner",
+    "resourceId": "package:deployment-rollback-engine",
     "relation": "maintains",
     "lastActive": "2026-06-15",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1738,7 +1738,7 @@
   {
     "id": "relationship:r0218",
     "personId": "person:marco-brandt",
-    "resourceId": "package:network-route-planner",
+    "resourceId": "package:deployment-rollback-engine",
     "relation": "contributes-to",
     "lastActive": "2026-04-25",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1746,7 +1746,7 @@
   {
     "id": "relationship:r0219",
     "personId": "person:ezra-vidal",
-    "resourceId": "package:network-route-planner",
+    "resourceId": "package:deployment-rollback-engine",
     "relation": "contributes-to",
     "lastActive": "2026-07-17",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1754,15 +1754,15 @@
   {
     "id": "relationship:r0220",
     "personId": "person:yuki-nakamura",
-    "resourceId": "package:network-route-planner",
+    "resourceId": "package:deployment-rollback-engine",
     "relation": "contributes-to",
     "lastActive": "2026-03-11",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0221",
-    "personId": "person:idris-alvarez",
-    "resourceId": "package:network-route-planner",
+    "personId": "person:sofia-delgado",
+    "resourceId": "package:deployment-rollback-engine",
     "relation": "contributes-to",
     "lastActive": "2026-03-03",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1770,7 +1770,7 @@
   {
     "id": "relationship:r0222",
     "personId": "person:aldo-antar",
-    "resourceId": "pipeline:network-route-planner",
+    "resourceId": "pipeline:deployment-rollback-engine",
     "relation": "owns",
     "lastActive": "2026-06-24",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1778,7 +1778,7 @@
   {
     "id": "relationship:r0223",
     "personId": "person:jonas-petrov",
-    "resourceId": "pipeline:network-route-planner",
+    "resourceId": "pipeline:deployment-rollback-engine",
     "relation": "maintains",
     "lastActive": "2026-07-14",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1786,15 +1786,15 @@
   {
     "id": "relationship:r0224",
     "personId": "person:marco-brandt",
-    "resourceId": "pipeline:network-route-planner",
+    "resourceId": "pipeline:deployment-rollback-engine",
     "relation": "maintains",
     "lastActive": "2026-07-16",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0225",
-    "personId": "person:maya-antar",
-    "resourceId": "pipeline:network-route-planner",
+    "personId": "person:sana-takeda",
+    "resourceId": "pipeline:deployment-rollback-engine",
     "relation": "contributes-to",
     "lastActive": "2026-02-13",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1802,7 +1802,7 @@
   {
     "id": "relationship:r0226",
     "personId": "person:aldo-antar",
-    "resourceId": "package:network-spectrum-manager",
+    "resourceId": "package:deployment-canary-runner",
     "relation": "owns",
     "lastActive": "2026-06-15",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1810,7 +1810,7 @@
   {
     "id": "relationship:r0227",
     "personId": "person:jonas-petrov",
-    "resourceId": "package:network-spectrum-manager",
+    "resourceId": "package:deployment-canary-runner",
     "relation": "maintains",
     "lastActive": "2026-07-21",
     "observedAt": "2026-07-21T12:00:00Z"
@@ -1818,7 +1818,7 @@
   {
     "id": "relationship:r0228",
     "personId": "person:marco-brandt",
-    "resourceId": "package:network-spectrum-manager",
+    "resourceId": "package:deployment-canary-runner",
     "relation": "contributes-to",
     "lastActive": "2026-05-24",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1826,7 +1826,7 @@
   {
     "id": "relationship:r0229",
     "personId": "person:ivy-steiner",
-    "resourceId": "package:network-spectrum-manager",
+    "resourceId": "package:deployment-canary-runner",
     "relation": "contributes-to",
     "lastActive": "2026-07-19",
     "observedAt": "2026-07-19T12:00:00Z"
@@ -1834,7 +1834,7 @@
   {
     "id": "relationship:r0230",
     "personId": "person:yuki-nakamura",
-    "resourceId": "pipeline:network-spectrum-manager",
+    "resourceId": "service:deployment-gateway",
     "relation": "owns",
     "lastActive": "2026-06-22",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1842,7 +1842,7 @@
   {
     "id": "relationship:r0231",
     "personId": "person:jonas-petrov",
-    "resourceId": "pipeline:network-spectrum-manager",
+    "resourceId": "service:deployment-gateway",
     "relation": "maintains",
     "lastActive": "2026-07-07",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1850,7 +1850,7 @@
   {
     "id": "relationship:r0232",
     "personId": "person:ezra-vidal",
-    "resourceId": "pipeline:network-spectrum-manager",
+    "resourceId": "service:deployment-gateway",
     "relation": "maintains",
     "lastActive": "2026-06-27",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1858,7 +1858,7 @@
   {
     "id": "relationship:r0233",
     "personId": "person:jonas-petrov",
-    "resourceId": "package:network-capacity",
+    "resourceId": "bindle:deployment",
     "relation": "owns",
     "lastActive": "2026-07-18",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1866,7 +1866,7 @@
   {
     "id": "relationship:r0234",
     "personId": "person:marco-brandt",
-    "resourceId": "package:network-capacity",
+    "resourceId": "bindle:deployment",
     "relation": "maintains",
     "lastActive": "2026-04-11",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1874,7 +1874,7 @@
   {
     "id": "relationship:r0235",
     "personId": "person:ivy-steiner",
-    "resourceId": "package:network-capacity",
+    "resourceId": "bindle:deployment",
     "relation": "contributes-to",
     "lastActive": "2026-06-08",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1882,7 +1882,7 @@
   {
     "id": "relationship:r0236",
     "personId": "person:yuki-nakamura",
-    "resourceId": "package:network-capacity",
+    "resourceId": "bindle:deployment",
     "relation": "contributes-to",
     "lastActive": "2026-03-10",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1890,7 +1890,7 @@
   {
     "id": "relationship:r0237",
     "personId": "person:yuki-nakamura",
-    "resourceId": "service:network-gateway",
+    "resourceId": "account:deployment-prod",
     "relation": "owns",
     "lastActive": "2026-06-19",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1898,7 +1898,7 @@
   {
     "id": "relationship:r0238",
     "personId": "person:ivy-steiner",
-    "resourceId": "service:network-gateway",
+    "resourceId": "account:deployment-prod",
     "relation": "maintains",
     "lastActive": "2026-06-20",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1906,7 +1906,7 @@
   {
     "id": "relationship:r0239",
     "personId": "person:aldo-antar",
-    "resourceId": "service:network-gateway",
+    "resourceId": "account:deployment-prod",
     "relation": "contributes-to",
     "lastActive": "2026-03-10",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1914,7 +1914,7 @@
   {
     "id": "relationship:r0240",
     "personId": "person:ezra-vidal",
-    "resourceId": "service:network-gateway",
+    "resourceId": "account:deployment-prod",
     "relation": "contributes-to",
     "lastActive": "2026-05-08",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1922,7 +1922,7 @@
   {
     "id": "relationship:r0241",
     "personId": "person:ivy-steiner",
-    "resourceId": "bindle:network",
+    "resourceId": "account:deployment-beta",
     "relation": "owns",
     "lastActive": "2026-06-07",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1930,7 +1930,7 @@
   {
     "id": "relationship:r0242",
     "personId": "person:marco-brandt",
-    "resourceId": "bindle:network",
+    "resourceId": "account:deployment-beta",
     "relation": "maintains",
     "lastActive": "2026-05-08",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1938,7 +1938,7 @@
   {
     "id": "relationship:r0243",
     "personId": "person:ezra-vidal",
-    "resourceId": "bindle:network",
+    "resourceId": "account:deployment-beta",
     "relation": "maintains",
     "lastActive": "2026-03-26",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1946,7 +1946,7 @@
   {
     "id": "relationship:r0244",
     "personId": "person:jonas-petrov",
-    "resourceId": "bindle:network",
+    "resourceId": "account:deployment-beta",
     "relation": "contributes-to",
     "lastActive": "2026-04-10",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -1954,87 +1954,87 @@
   {
     "id": "relationship:r0245",
     "personId": "person:aldo-antar",
-    "resourceId": "bindle:network",
+    "resourceId": "account:deployment-beta",
     "relation": "contributes-to",
     "lastActive": "2026-05-23",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0246",
-    "personId": "person:aldo-antar",
-    "resourceId": "account:network-prod",
+    "personId": "person:lena-oduya",
+    "resourceId": "package:billing-usage-metering",
     "relation": "owns",
     "lastActive": "2026-06-22",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0247",
-    "personId": "person:ivy-steiner",
-    "resourceId": "account:network-prod",
+    "personId": "person:tara-castillo",
+    "resourceId": "package:billing-usage-metering",
     "relation": "maintains",
     "lastActive": "2026-04-29",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0248",
-    "personId": "person:marco-brandt",
-    "resourceId": "account:network-prod",
+    "personId": "person:wren-sorensen",
+    "resourceId": "package:billing-usage-metering",
     "relation": "maintains",
     "lastActive": "2026-06-05",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0249",
-    "personId": "person:ezra-vidal",
-    "resourceId": "account:network-prod",
+    "personId": "person:fatima-tanaka",
+    "resourceId": "package:billing-usage-metering",
     "relation": "contributes-to",
     "lastActive": "2026-06-18",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0250",
-    "personId": "person:sam-brandt",
-    "resourceId": "account:network-prod",
+    "personId": "person:cole-castillo",
+    "resourceId": "package:billing-usage-metering",
     "relation": "contributes-to",
     "lastActive": "2026-01-24",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0251",
-    "personId": "person:aldo-antar",
-    "resourceId": "account:network-beta",
+    "personId": "person:lena-oduya",
+    "resourceId": "pipeline:billing-usage-metering",
     "relation": "owns",
     "lastActive": "2026-06-22",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0252",
-    "personId": "person:jonas-petrov",
-    "resourceId": "account:network-beta",
+    "personId": "person:ben-abara",
+    "resourceId": "pipeline:billing-usage-metering",
     "relation": "maintains",
     "lastActive": "2026-05-24",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0253",
-    "personId": "person:marco-brandt",
-    "resourceId": "account:network-beta",
+    "personId": "person:wren-sorensen",
+    "resourceId": "pipeline:billing-usage-metering",
     "relation": "maintains",
     "lastActive": "2026-07-11",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0254",
-    "personId": "person:ivy-steiner",
-    "resourceId": "account:network-beta",
+    "personId": "person:tara-castillo",
+    "resourceId": "pipeline:billing-usage-metering",
     "relation": "contributes-to",
     "lastActive": "2026-07-06",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0255",
-    "personId": "person:petra-steiner",
-    "resourceId": "account:network-beta",
+    "personId": "person:idris-fontaine",
+    "resourceId": "pipeline:billing-usage-metering",
     "relation": "contributes-to",
     "lastActive": "2026-05-07",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2042,7 +2042,7 @@
   {
     "id": "relationship:r0256",
     "personId": "person:rosa-novak",
-    "resourceId": "package:fleet-ops-dashboard",
+    "resourceId": "package:billing-invoice-builder",
     "relation": "owns",
     "lastActive": "2026-07-08",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2050,7 +2050,7 @@
   {
     "id": "relationship:r0257",
     "personId": "person:wren-sorensen",
-    "resourceId": "package:fleet-ops-dashboard",
+    "resourceId": "package:billing-invoice-builder",
     "relation": "maintains",
     "lastActive": "2026-04-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2058,7 +2058,7 @@
   {
     "id": "relationship:r0258",
     "personId": "person:ben-brandt",
-    "resourceId": "package:fleet-ops-dashboard",
+    "resourceId": "package:billing-invoice-builder",
     "relation": "contributes-to",
     "lastActive": "2026-02-07",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2066,15 +2066,15 @@
   {
     "id": "relationship:r0259",
     "personId": "person:cole-castillo",
-    "resourceId": "package:fleet-ops-dashboard",
+    "resourceId": "package:billing-invoice-builder",
     "relation": "contributes-to",
     "lastActive": "2026-06-11",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0260",
-    "personId": "person:idris-fontaine",
-    "resourceId": "package:fleet-ops-dashboard",
+    "personId": "person:yuki-kowalski",
+    "resourceId": "package:billing-invoice-builder",
     "relation": "contributes-to",
     "lastActive": "2026-07-10",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2082,7 +2082,7 @@
   {
     "id": "relationship:r0261",
     "personId": "person:tara-castillo",
-    "resourceId": "pipeline:fleet-ops-dashboard",
+    "resourceId": "pipeline:billing-invoice-builder",
     "relation": "owns",
     "lastActive": "2026-06-18",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2090,7 +2090,7 @@
   {
     "id": "relationship:r0262",
     "personId": "person:ben-brandt",
-    "resourceId": "pipeline:fleet-ops-dashboard",
+    "resourceId": "pipeline:billing-invoice-builder",
     "relation": "maintains",
     "lastActive": "2026-04-21",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2098,7 +2098,7 @@
   {
     "id": "relationship:r0263",
     "personId": "person:cole-castillo",
-    "resourceId": "pipeline:fleet-ops-dashboard",
+    "resourceId": "pipeline:billing-invoice-builder",
     "relation": "contributes-to",
     "lastActive": "2026-06-23",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2106,7 +2106,7 @@
   {
     "id": "relationship:r0264",
     "personId": "person:fatima-tanaka",
-    "resourceId": "package:fleet-ops-incident-tracker",
+    "resourceId": "package:billing-cost-analyzer",
     "relation": "owns",
     "lastActive": "2026-06-25",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2114,7 +2114,7 @@
   {
     "id": "relationship:r0265",
     "personId": "person:ben-abara",
-    "resourceId": "package:fleet-ops-incident-tracker",
+    "resourceId": "package:billing-cost-analyzer",
     "relation": "maintains",
     "lastActive": "2026-06-25",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2122,7 +2122,7 @@
   {
     "id": "relationship:r0266",
     "personId": "person:tara-castillo",
-    "resourceId": "package:fleet-ops-incident-tracker",
+    "resourceId": "package:billing-cost-analyzer",
     "relation": "contributes-to",
     "lastActive": "2026-06-04",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2130,7 +2130,7 @@
   {
     "id": "relationship:r0267",
     "personId": "person:ben-brandt",
-    "resourceId": "package:fleet-ops-incident-tracker",
+    "resourceId": "package:billing-cost-analyzer",
     "relation": "contributes-to",
     "lastActive": "2026-05-28",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2138,15 +2138,15 @@
   {
     "id": "relationship:r0268",
     "personId": "person:rosa-novak",
-    "resourceId": "package:fleet-ops-incident-tracker",
+    "resourceId": "package:billing-cost-analyzer",
     "relation": "contributes-to",
     "lastActive": "2026-03-17",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0269",
-    "personId": "person:ethan-castillo",
-    "resourceId": "package:fleet-ops-incident-tracker",
+    "personId": "person:aldo-novak",
+    "resourceId": "package:billing-cost-analyzer",
     "relation": "contributes-to",
     "lastActive": "2026-02-17",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2154,7 +2154,7 @@
   {
     "id": "relationship:r0270",
     "personId": "person:ben-abara",
-    "resourceId": "pipeline:fleet-ops-incident-tracker",
+    "resourceId": "service:billing-gateway",
     "relation": "owns",
     "lastActive": "2026-06-08",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2162,7 +2162,7 @@
   {
     "id": "relationship:r0271",
     "personId": "person:cole-castillo",
-    "resourceId": "pipeline:fleet-ops-incident-tracker",
+    "resourceId": "service:billing-gateway",
     "relation": "maintains",
     "lastActive": "2026-05-20",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2170,7 +2170,7 @@
   {
     "id": "relationship:r0272",
     "personId": "person:fatima-tanaka",
-    "resourceId": "pipeline:fleet-ops-incident-tracker",
+    "resourceId": "service:billing-gateway",
     "relation": "contributes-to",
     "lastActive": "2026-07-19",
     "observedAt": "2026-07-19T12:00:00Z"
@@ -2178,7 +2178,7 @@
   {
     "id": "relationship:r0273",
     "personId": "person:ben-brandt",
-    "resourceId": "pipeline:fleet-ops-incident-tracker",
+    "resourceId": "service:billing-gateway",
     "relation": "contributes-to",
     "lastActive": "2026-05-05",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2186,7 +2186,7 @@
   {
     "id": "relationship:r0274",
     "personId": "person:rosa-novak",
-    "resourceId": "pipeline:fleet-ops-incident-tracker",
+    "resourceId": "service:billing-gateway",
     "relation": "contributes-to",
     "lastActive": "2026-04-18",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2194,7 +2194,7 @@
   {
     "id": "relationship:r0275",
     "personId": "person:lena-oduya",
-    "resourceId": "package:fleet-ops-health-monitor",
+    "resourceId": "bindle:billing",
     "relation": "owns",
     "lastActive": "2026-06-13",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2202,7 +2202,7 @@
   {
     "id": "relationship:r0276",
     "personId": "person:wren-sorensen",
-    "resourceId": "package:fleet-ops-health-monitor",
+    "resourceId": "bindle:billing",
     "relation": "maintains",
     "lastActive": "2026-05-08",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2210,7 +2210,7 @@
   {
     "id": "relationship:r0277",
     "personId": "person:ben-brandt",
-    "resourceId": "package:fleet-ops-health-monitor",
+    "resourceId": "bindle:billing",
     "relation": "contributes-to",
     "lastActive": "2026-04-04",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2218,7 +2218,7 @@
   {
     "id": "relationship:r0278",
     "personId": "person:ben-abara",
-    "resourceId": "package:fleet-ops-health-monitor",
+    "resourceId": "bindle:billing",
     "relation": "contributes-to",
     "lastActive": "2026-04-14",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2226,7 +2226,7 @@
   {
     "id": "relationship:r0279",
     "personId": "person:cole-castillo",
-    "resourceId": "package:fleet-ops-health-monitor",
+    "resourceId": "bindle:billing",
     "relation": "contributes-to",
     "lastActive": "2026-06-03",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2234,7 +2234,7 @@
   {
     "id": "relationship:r0280",
     "personId": "person:lena-oduya",
-    "resourceId": "service:fleet-ops-gateway",
+    "resourceId": "account:billing-prod",
     "relation": "owns",
     "lastActive": "2026-07-05",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2242,7 +2242,7 @@
   {
     "id": "relationship:r0281",
     "personId": "person:wren-sorensen",
-    "resourceId": "service:fleet-ops-gateway",
+    "resourceId": "account:billing-prod",
     "relation": "maintains",
     "lastActive": "2026-06-23",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2250,7 +2250,7 @@
   {
     "id": "relationship:r0282",
     "personId": "person:tara-castillo",
-    "resourceId": "service:fleet-ops-gateway",
+    "resourceId": "account:billing-prod",
     "relation": "maintains",
     "lastActive": "2026-04-01",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2258,7 +2258,7 @@
   {
     "id": "relationship:r0283",
     "personId": "person:fatima-tanaka",
-    "resourceId": "service:fleet-ops-gateway",
+    "resourceId": "account:billing-prod",
     "relation": "contributes-to",
     "lastActive": "2026-05-09",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2266,7 +2266,7 @@
   {
     "id": "relationship:r0284",
     "personId": "person:fatima-tanaka",
-    "resourceId": "bindle:fleet-ops",
+    "resourceId": "account:billing-beta",
     "relation": "owns",
     "lastActive": "2026-06-27",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2274,7 +2274,7 @@
   {
     "id": "relationship:r0285",
     "personId": "person:ben-brandt",
-    "resourceId": "bindle:fleet-ops",
+    "resourceId": "account:billing-beta",
     "relation": "maintains",
     "lastActive": "2026-06-20",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2282,7 +2282,7 @@
   {
     "id": "relationship:r0286",
     "personId": "person:wren-sorensen",
-    "resourceId": "bindle:fleet-ops",
+    "resourceId": "account:billing-beta",
     "relation": "contributes-to",
     "lastActive": "2026-03-30",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2290,7 +2290,7 @@
   {
     "id": "relationship:r0287",
     "personId": "person:cole-castillo",
-    "resourceId": "bindle:fleet-ops",
+    "resourceId": "account:billing-beta",
     "relation": "contributes-to",
     "lastActive": "2026-05-08",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2298,7 +2298,7 @@
   {
     "id": "relationship:r0288",
     "personId": "person:rosa-novak",
-    "resourceId": "bindle:fleet-ops",
+    "resourceId": "account:billing-beta",
     "relation": "contributes-to",
     "lastActive": "2026-07-18",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2306,7 +2306,7 @@
   {
     "id": "relationship:r0289",
     "personId": "person:wren-sorensen",
-    "resourceId": "account:fleet-ops-prod",
+    "resourceId": "package:billing-cdk",
     "relation": "owns",
     "lastActive": "2026-07-08",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2314,7 +2314,7 @@
   {
     "id": "relationship:r0290",
     "personId": "person:ben-abara",
-    "resourceId": "account:fleet-ops-prod",
+    "resourceId": "package:billing-cdk",
     "relation": "maintains",
     "lastActive": "2026-05-29",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2322,7 +2322,7 @@
   {
     "id": "relationship:r0291",
     "personId": "person:fatima-tanaka",
-    "resourceId": "account:fleet-ops-prod",
+    "resourceId": "package:billing-cdk",
     "relation": "maintains",
     "lastActive": "2026-04-11",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2330,7 +2330,7 @@
   {
     "id": "relationship:r0292",
     "personId": "person:lena-oduya",
-    "resourceId": "account:fleet-ops-prod",
+    "resourceId": "package:billing-cdk",
     "relation": "contributes-to",
     "lastActive": "2026-05-19",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2338,79 +2338,79 @@
   {
     "id": "relationship:r0293",
     "personId": "person:tara-castillo",
-    "resourceId": "account:fleet-ops-prod",
+    "resourceId": "package:billing-cdk",
     "relation": "contributes-to",
     "lastActive": "2026-02-06",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0294",
-    "personId": "person:ivy-steiner",
-    "resourceId": "account:fleet-ops-prod",
+    "personId": "person:kai-mensah",
+    "resourceId": "package:billing-cdk",
     "relation": "contributes-to",
     "lastActive": "2026-02-15",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0295",
-    "personId": "person:ben-brandt",
-    "resourceId": "account:fleet-ops-beta",
+    "personId": "person:felix-steiner",
+    "resourceId": "package:console-dashboard",
     "relation": "owns",
     "lastActive": "2026-06-23",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0296",
-    "personId": "person:rosa-novak",
-    "resourceId": "account:fleet-ops-beta",
+    "personId": "person:ivy-vance",
+    "resourceId": "package:console-dashboard",
     "relation": "maintains",
     "lastActive": "2026-06-14",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0297",
-    "personId": "person:fatima-tanaka",
-    "resourceId": "account:fleet-ops-beta",
+    "personId": "person:maya-haddad",
+    "resourceId": "package:console-dashboard",
     "relation": "maintains",
     "lastActive": "2026-06-11",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0298",
-    "personId": "person:lena-oduya",
-    "resourceId": "package:fleet-ops-cdk",
+    "personId": "person:sam-novak",
+    "resourceId": "pipeline:console-dashboard",
     "relation": "owns",
     "lastActive": "2026-07-07",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0299",
-    "personId": "person:rosa-novak",
-    "resourceId": "package:fleet-ops-cdk",
+    "personId": "person:ivy-vance",
+    "resourceId": "pipeline:console-dashboard",
     "relation": "maintains",
     "lastActive": "2026-04-12",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0300",
-    "personId": "person:wren-sorensen",
-    "resourceId": "package:fleet-ops-cdk",
+    "personId": "person:cole-brandt",
+    "resourceId": "pipeline:console-dashboard",
     "relation": "contributes-to",
     "lastActive": "2026-07-09",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0301",
-    "personId": "person:cole-castillo",
-    "resourceId": "package:fleet-ops-cdk",
+    "personId": "person:kai-kimura",
+    "resourceId": "pipeline:console-dashboard",
     "relation": "contributes-to",
     "lastActive": "2026-06-27",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0302",
-    "personId": "person:fatima-tanaka",
-    "resourceId": "package:fleet-ops-cdk",
+    "personId": "person:bruno-steiner",
+    "resourceId": "pipeline:console-dashboard",
     "relation": "contributes-to",
     "lastActive": "2026-02-17",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2418,7 +2418,7 @@
   {
     "id": "relationship:r0303",
     "personId": "person:kai-kimura",
-    "resourceId": "package:payload-boot-manager",
+    "resourceId": "package:console-resource-browser",
     "relation": "owns",
     "lastActive": "2026-06-07",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2426,7 +2426,7 @@
   {
     "id": "relationship:r0304",
     "personId": "person:felix-steiner",
-    "resourceId": "package:payload-boot-manager",
+    "resourceId": "package:console-resource-browser",
     "relation": "maintains",
     "lastActive": "2026-06-21",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2434,15 +2434,15 @@
   {
     "id": "relationship:r0305",
     "personId": "person:ivy-vance",
-    "resourceId": "package:payload-boot-manager",
+    "resourceId": "package:console-resource-browser",
     "relation": "contributes-to",
     "lastActive": "2026-04-20",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0306",
-    "personId": "person:maya-antar",
-    "resourceId": "package:payload-boot-manager",
+    "personId": "person:sana-takeda",
+    "resourceId": "package:console-resource-browser",
     "relation": "contributes-to",
     "lastActive": "2026-02-19",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2450,7 +2450,7 @@
   {
     "id": "relationship:r0307",
     "personId": "person:maya-haddad",
-    "resourceId": "pipeline:payload-boot-manager",
+    "resourceId": "pipeline:console-resource-browser",
     "relation": "owns",
     "lastActive": "2026-06-19",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2458,7 +2458,7 @@
   {
     "id": "relationship:r0308",
     "personId": "person:kai-kimura",
-    "resourceId": "pipeline:payload-boot-manager",
+    "resourceId": "pipeline:console-resource-browser",
     "relation": "maintains",
     "lastActive": "2026-07-15",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2466,7 +2466,7 @@
   {
     "id": "relationship:r0309",
     "personId": "person:bruno-steiner",
-    "resourceId": "pipeline:payload-boot-manager",
+    "resourceId": "pipeline:console-resource-browser",
     "relation": "contributes-to",
     "lastActive": "2026-06-25",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2474,7 +2474,7 @@
   {
     "id": "relationship:r0310",
     "personId": "person:sam-novak",
-    "resourceId": "pipeline:payload-boot-manager",
+    "resourceId": "pipeline:console-resource-browser",
     "relation": "contributes-to",
     "lastActive": "2026-07-17",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2482,7 +2482,7 @@
   {
     "id": "relationship:r0311",
     "personId": "person:felix-steiner",
-    "resourceId": "package:payload-imaging",
+    "resourceId": "package:console-signin-ui",
     "relation": "owns",
     "lastActive": "2026-07-10",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2490,7 +2490,7 @@
   {
     "id": "relationship:r0312",
     "personId": "person:cole-brandt",
-    "resourceId": "package:payload-imaging",
+    "resourceId": "package:console-signin-ui",
     "relation": "maintains",
     "lastActive": "2026-06-06",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2498,7 +2498,7 @@
   {
     "id": "relationship:r0313",
     "personId": "person:sam-novak",
-    "resourceId": "package:payload-imaging",
+    "resourceId": "package:console-signin-ui",
     "relation": "maintains",
     "lastActive": "2026-06-26",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2506,7 +2506,7 @@
   {
     "id": "relationship:r0314",
     "personId": "person:bruno-steiner",
-    "resourceId": "pipeline:payload-imaging",
+    "resourceId": "service:console-gateway",
     "relation": "owns",
     "lastActive": "2026-06-25",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2514,7 +2514,7 @@
   {
     "id": "relationship:r0315",
     "personId": "person:kai-kimura",
-    "resourceId": "pipeline:payload-imaging",
+    "resourceId": "service:console-gateway",
     "relation": "maintains",
     "lastActive": "2026-05-13",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2522,7 +2522,7 @@
   {
     "id": "relationship:r0316",
     "personId": "person:ivy-vance",
-    "resourceId": "pipeline:payload-imaging",
+    "resourceId": "service:console-gateway",
     "relation": "contributes-to",
     "lastActive": "2026-02-22",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2530,7 +2530,7 @@
   {
     "id": "relationship:r0317",
     "personId": "person:maya-haddad",
-    "resourceId": "package:payload-power-control",
+    "resourceId": "bindle:console",
     "relation": "owns",
     "lastActive": "2026-07-03",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2538,7 +2538,7 @@
   {
     "id": "relationship:r0318",
     "personId": "person:felix-steiner",
-    "resourceId": "package:payload-power-control",
+    "resourceId": "bindle:console",
     "relation": "maintains",
     "lastActive": "2026-04-22",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2546,7 +2546,7 @@
   {
     "id": "relationship:r0319",
     "personId": "person:kai-kimura",
-    "resourceId": "package:payload-power-control",
+    "resourceId": "bindle:console",
     "relation": "contributes-to",
     "lastActive": "2026-05-30",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2554,7 +2554,7 @@
   {
     "id": "relationship:r0320",
     "personId": "person:ivy-vance",
-    "resourceId": "service:payload-gateway",
+    "resourceId": "account:console-prod",
     "relation": "owns",
     "lastActive": "2026-07-02",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2562,7 +2562,7 @@
   {
     "id": "relationship:r0321",
     "personId": "person:sam-novak",
-    "resourceId": "service:payload-gateway",
+    "resourceId": "account:console-prod",
     "relation": "maintains",
     "lastActive": "2026-03-24",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2570,7 +2570,7 @@
   {
     "id": "relationship:r0322",
     "personId": "person:kai-kimura",
-    "resourceId": "service:payload-gateway",
+    "resourceId": "account:console-prod",
     "relation": "maintains",
     "lastActive": "2026-04-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2578,7 +2578,7 @@
   {
     "id": "relationship:r0323",
     "personId": "person:ivy-vance",
-    "resourceId": "bindle:payload",
+    "resourceId": "account:console-beta",
     "relation": "owns",
     "lastActive": "2026-06-11",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2586,7 +2586,7 @@
   {
     "id": "relationship:r0324",
     "personId": "person:cole-brandt",
-    "resourceId": "bindle:payload",
+    "resourceId": "account:console-beta",
     "relation": "maintains",
     "lastActive": "2026-06-03",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2594,7 +2594,7 @@
   {
     "id": "relationship:r0325",
     "personId": "person:sam-novak",
-    "resourceId": "bindle:payload",
+    "resourceId": "account:console-beta",
     "relation": "maintains",
     "lastActive": "2026-06-25",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2602,7 +2602,7 @@
   {
     "id": "relationship:r0326",
     "personId": "person:bruno-steiner",
-    "resourceId": "bindle:payload",
+    "resourceId": "account:console-beta",
     "relation": "contributes-to",
     "lastActive": "2026-05-30",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2610,79 +2610,79 @@
   {
     "id": "relationship:r0327",
     "personId": "person:felix-steiner",
-    "resourceId": "bindle:payload",
+    "resourceId": "account:console-beta",
     "relation": "contributes-to",
     "lastActive": "2026-06-23",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0328",
-    "personId": "person:ivy-vance",
-    "resourceId": "account:payload-prod",
+    "personId": "person:chloe-egede",
+    "resourceId": "package:data-query-engine",
     "relation": "owns",
     "lastActive": "2026-06-20",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0329",
-    "personId": "person:maya-haddad",
-    "resourceId": "account:payload-prod",
+    "personId": "person:maya-vidal",
+    "resourceId": "package:data-query-engine",
     "relation": "maintains",
     "lastActive": "2026-04-10",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0330",
-    "personId": "person:bruno-steiner",
-    "resourceId": "account:payload-prod",
+    "personId": "person:dina-castillo",
+    "resourceId": "package:data-query-engine",
     "relation": "contributes-to",
     "lastActive": "2026-02-01",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0331",
-    "personId": "person:kai-kimura",
-    "resourceId": "account:payload-prod",
+    "personId": "person:elsa-fontaine",
+    "resourceId": "package:data-query-engine",
     "relation": "contributes-to",
     "lastActive": "2026-03-06",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0332",
-    "personId": "person:kai-kimura",
-    "resourceId": "account:payload-beta",
+    "personId": "person:elsa-fontaine",
+    "resourceId": "pipeline:data-query-engine",
     "relation": "owns",
     "lastActive": "2026-06-13",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0333",
-    "personId": "person:bruno-steiner",
-    "resourceId": "account:payload-beta",
+    "personId": "person:dina-castillo",
+    "resourceId": "pipeline:data-query-engine",
     "relation": "maintains",
     "lastActive": "2026-06-05",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0334",
-    "personId": "person:felix-steiner",
-    "resourceId": "account:payload-beta",
+    "personId": "person:idris-fontaine",
+    "resourceId": "pipeline:data-query-engine",
     "relation": "maintains",
     "lastActive": "2026-06-14",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0335",
-    "personId": "person:ivy-vance",
-    "resourceId": "account:payload-beta",
+    "personId": "person:chloe-egede",
+    "resourceId": "pipeline:data-query-engine",
     "relation": "contributes-to",
     "lastActive": "2026-04-24",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0336",
-    "personId": "person:maya-haddad",
-    "resourceId": "account:payload-beta",
+    "personId": "person:maya-vidal",
+    "resourceId": "pipeline:data-query-engine",
     "relation": "contributes-to",
     "lastActive": "2026-05-02",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2690,7 +2690,7 @@
   {
     "id": "relationship:r0337",
     "personId": "person:sofia-kimura",
-    "resourceId": "package:sim-test-orbit-sim",
+    "resourceId": "package:data-table-catalog",
     "relation": "owns",
     "lastActive": "2026-06-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2698,7 +2698,7 @@
   {
     "id": "relationship:r0338",
     "personId": "person:dina-castillo",
-    "resourceId": "package:sim-test-orbit-sim",
+    "resourceId": "package:data-table-catalog",
     "relation": "maintains",
     "lastActive": "2026-04-21",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2706,7 +2706,7 @@
   {
     "id": "relationship:r0339",
     "personId": "person:maya-vidal",
-    "resourceId": "package:sim-test-orbit-sim",
+    "resourceId": "package:data-table-catalog",
     "relation": "contributes-to",
     "lastActive": "2026-04-22",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2714,7 +2714,7 @@
   {
     "id": "relationship:r0340",
     "personId": "person:yuki-kowalski",
-    "resourceId": "package:sim-test-orbit-sim",
+    "resourceId": "package:data-table-catalog",
     "relation": "contributes-to",
     "lastActive": "2026-04-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2722,7 +2722,7 @@
   {
     "id": "relationship:r0341",
     "personId": "person:chloe-egede",
-    "resourceId": "pipeline:sim-test-orbit-sim",
+    "resourceId": "pipeline:data-table-catalog",
     "relation": "owns",
     "lastActive": "2026-06-08",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2730,7 +2730,7 @@
   {
     "id": "relationship:r0342",
     "personId": "person:sofia-kimura",
-    "resourceId": "pipeline:sim-test-orbit-sim",
+    "resourceId": "pipeline:data-table-catalog",
     "relation": "maintains",
     "lastActive": "2026-07-18",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2738,15 +2738,15 @@
   {
     "id": "relationship:r0343",
     "personId": "person:elsa-fontaine",
-    "resourceId": "pipeline:sim-test-orbit-sim",
+    "resourceId": "pipeline:data-table-catalog",
     "relation": "contributes-to",
     "lastActive": "2026-07-02",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0344",
-    "personId": "person:elsa-iyer",
-    "resourceId": "pipeline:sim-test-orbit-sim",
+    "personId": "person:owen-kowalski",
+    "resourceId": "pipeline:data-table-catalog",
     "relation": "contributes-to",
     "lastActive": "2026-03-09",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2754,7 +2754,7 @@
   {
     "id": "relationship:r0345",
     "personId": "person:yuki-kowalski",
-    "resourceId": "package:sim-test-hardware-in-loop",
+    "resourceId": "package:data-stream-processor",
     "relation": "owns",
     "lastActive": "2026-07-03",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2762,7 +2762,7 @@
   {
     "id": "relationship:r0346",
     "personId": "person:maya-vidal",
-    "resourceId": "package:sim-test-hardware-in-loop",
+    "resourceId": "package:data-stream-processor",
     "relation": "maintains",
     "lastActive": "2026-05-15",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2770,7 +2770,7 @@
   {
     "id": "relationship:r0347",
     "personId": "person:elsa-fontaine",
-    "resourceId": "package:sim-test-hardware-in-loop",
+    "resourceId": "package:data-stream-processor",
     "relation": "maintains",
     "lastActive": "2026-07-01",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2778,15 +2778,15 @@
   {
     "id": "relationship:r0348",
     "personId": "person:sofia-kimura",
-    "resourceId": "package:sim-test-hardware-in-loop",
+    "resourceId": "package:data-stream-processor",
     "relation": "contributes-to",
     "lastActive": "2026-04-06",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0349",
-    "personId": "person:leila-petrov",
-    "resourceId": "package:sim-test-hardware-in-loop",
+    "personId": "person:ben-iyer",
+    "resourceId": "package:data-stream-processor",
     "relation": "contributes-to",
     "lastActive": "2026-02-11",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2794,7 +2794,7 @@
   {
     "id": "relationship:r0350",
     "personId": "person:maya-vidal",
-    "resourceId": "pipeline:sim-test-hardware-in-loop",
+    "resourceId": "service:data-gateway",
     "relation": "owns",
     "lastActive": "2026-06-29",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2802,7 +2802,7 @@
   {
     "id": "relationship:r0351",
     "personId": "person:yuki-kowalski",
-    "resourceId": "pipeline:sim-test-hardware-in-loop",
+    "resourceId": "service:data-gateway",
     "relation": "maintains",
     "lastActive": "2026-04-22",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2810,15 +2810,15 @@
   {
     "id": "relationship:r0352",
     "personId": "person:dina-castillo",
-    "resourceId": "pipeline:sim-test-hardware-in-loop",
+    "resourceId": "service:data-gateway",
     "relation": "maintains",
     "lastActive": "2026-03-30",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0353",
-    "personId": "person:sam-brandt",
-    "resourceId": "pipeline:sim-test-hardware-in-loop",
+    "personId": "person:aldo-antar",
+    "resourceId": "service:data-gateway",
     "relation": "contributes-to",
     "lastActive": "2026-04-27",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2826,7 +2826,7 @@
   {
     "id": "relationship:r0354",
     "personId": "person:dina-castillo",
-    "resourceId": "package:sim-test-regression-suite",
+    "resourceId": "bindle:data",
     "relation": "owns",
     "lastActive": "2026-06-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2834,7 +2834,7 @@
   {
     "id": "relationship:r0355",
     "personId": "person:chloe-egede",
-    "resourceId": "package:sim-test-regression-suite",
+    "resourceId": "bindle:data",
     "relation": "maintains",
     "lastActive": "2026-03-28",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2842,15 +2842,15 @@
   {
     "id": "relationship:r0356",
     "personId": "person:sofia-kimura",
-    "resourceId": "package:sim-test-regression-suite",
+    "resourceId": "bindle:data",
     "relation": "contributes-to",
     "lastActive": "2026-05-20",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0357",
-    "personId": "person:rosa-moreau",
-    "resourceId": "package:sim-test-regression-suite",
+    "personId": "person:lucas-takeda",
+    "resourceId": "bindle:data",
     "relation": "contributes-to",
     "lastActive": "2026-06-15",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2858,7 +2858,7 @@
   {
     "id": "relationship:r0358",
     "personId": "person:chloe-egede",
-    "resourceId": "service:sim-test-gateway",
+    "resourceId": "account:data-prod",
     "relation": "owns",
     "lastActive": "2026-06-11",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2866,7 +2866,7 @@
   {
     "id": "relationship:r0359",
     "personId": "person:elsa-fontaine",
-    "resourceId": "service:sim-test-gateway",
+    "resourceId": "account:data-prod",
     "relation": "maintains",
     "lastActive": "2026-06-16",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2874,7 +2874,7 @@
   {
     "id": "relationship:r0360",
     "personId": "person:dina-castillo",
-    "resourceId": "service:sim-test-gateway",
+    "resourceId": "account:data-prod",
     "relation": "contributes-to",
     "lastActive": "2026-02-08",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2882,7 +2882,7 @@
   {
     "id": "relationship:r0361",
     "personId": "person:idris-fontaine",
-    "resourceId": "service:sim-test-gateway",
+    "resourceId": "account:data-prod",
     "relation": "contributes-to",
     "lastActive": "2026-05-16",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2890,7 +2890,7 @@
   {
     "id": "relationship:r0362",
     "personId": "person:maya-vidal",
-    "resourceId": "service:sim-test-gateway",
+    "resourceId": "account:data-prod",
     "relation": "contributes-to",
     "lastActive": "2026-06-07",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2898,7 +2898,7 @@
   {
     "id": "relationship:r0363",
     "personId": "person:maya-vidal",
-    "resourceId": "bindle:sim-test",
+    "resourceId": "account:data-beta",
     "relation": "owns",
     "lastActive": "2026-07-16",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2906,7 +2906,7 @@
   {
     "id": "relationship:r0364",
     "personId": "person:chloe-egede",
-    "resourceId": "bindle:sim-test",
+    "resourceId": "account:data-beta",
     "relation": "maintains",
     "lastActive": "2026-05-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2914,7 +2914,7 @@
   {
     "id": "relationship:r0365",
     "personId": "person:sofia-kimura",
-    "resourceId": "bindle:sim-test",
+    "resourceId": "account:data-beta",
     "relation": "contributes-to",
     "lastActive": "2026-05-10",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2922,7 +2922,7 @@
   {
     "id": "relationship:r0366",
     "personId": "person:yuki-kowalski",
-    "resourceId": "account:sim-test-prod",
+    "resourceId": "package:data-cdk",
     "relation": "owns",
     "lastActive": "2026-06-07",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2930,7 +2930,7 @@
   {
     "id": "relationship:r0367",
     "personId": "person:dina-castillo",
-    "resourceId": "account:sim-test-prod",
+    "resourceId": "package:data-cdk",
     "relation": "maintains",
     "lastActive": "2026-04-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2938,7 +2938,7 @@
   {
     "id": "relationship:r0368",
     "personId": "person:sofia-kimura",
-    "resourceId": "account:sim-test-prod",
+    "resourceId": "package:data-cdk",
     "relation": "maintains",
     "lastActive": "2026-05-19",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -2946,87 +2946,87 @@
   {
     "id": "relationship:r0369",
     "personId": "person:idris-fontaine",
-    "resourceId": "account:sim-test-prod",
+    "resourceId": "package:data-cdk",
     "relation": "contributes-to",
     "lastActive": "2026-04-30",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0370",
-    "personId": "person:wren-kimura",
-    "resourceId": "account:sim-test-prod",
+    "personId": "person:maya-rahim",
+    "resourceId": "package:data-cdk",
     "relation": "contributes-to",
     "lastActive": "2026-07-05",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0371",
-    "personId": "person:yuki-kowalski",
-    "resourceId": "account:sim-test-beta",
+    "personId": "person:niko-egede",
+    "resourceId": "package:edge-cache-fleet",
     "relation": "owns",
     "lastActive": "2026-06-27",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0372",
-    "personId": "person:elsa-fontaine",
-    "resourceId": "account:sim-test-beta",
+    "personId": "person:sam-egede",
+    "resourceId": "package:edge-cache-fleet",
     "relation": "maintains",
     "lastActive": "2026-05-14",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0373",
-    "personId": "person:sofia-kimura",
-    "resourceId": "account:sim-test-beta",
+    "personId": "person:ravi-okafor",
+    "resourceId": "package:edge-cache-fleet",
     "relation": "contributes-to",
     "lastActive": "2026-03-22",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0374",
-    "personId": "person:dina-castillo",
-    "resourceId": "account:sim-test-beta",
+    "personId": "person:lucas-takeda",
+    "resourceId": "package:edge-cache-fleet",
     "relation": "contributes-to",
     "lastActive": "2026-05-06",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0375",
-    "personId": "person:dina-castillo",
-    "resourceId": "package:sim-test-cdk",
+    "personId": "person:lucas-takeda",
+    "resourceId": "pipeline:edge-cache-fleet",
     "relation": "owns",
     "lastActive": "2026-07-20",
     "observedAt": "2026-07-20T12:00:00Z"
   },
   {
     "id": "relationship:r0376",
-    "personId": "person:idris-fontaine",
-    "resourceId": "package:sim-test-cdk",
+    "personId": "person:theo-mbeki",
+    "resourceId": "pipeline:edge-cache-fleet",
     "relation": "maintains",
     "lastActive": "2026-04-19",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0377",
-    "personId": "person:sofia-kimura",
-    "resourceId": "package:sim-test-cdk",
+    "personId": "person:ravi-okafor",
+    "resourceId": "pipeline:edge-cache-fleet",
     "relation": "contributes-to",
     "lastActive": "2026-05-22",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0378",
-    "personId": "person:elsa-fontaine",
-    "resourceId": "package:sim-test-cdk",
+    "personId": "person:sam-egede",
+    "resourceId": "pipeline:edge-cache-fleet",
     "relation": "contributes-to",
     "lastActive": "2026-02-07",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0379",
-    "personId": "person:bruno-silva",
-    "resourceId": "package:sim-test-cdk",
+    "personId": "person:ravi-steiner",
+    "resourceId": "pipeline:edge-cache-fleet",
     "relation": "contributes-to",
     "lastActive": "2026-03-15",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3034,7 +3034,7 @@
   {
     "id": "relationship:r0380",
     "personId": "person:theo-mbeki",
-    "resourceId": "package:rf-modem-waveform",
+    "resourceId": "package:edge-dns-resolver",
     "relation": "owns",
     "lastActive": "2026-07-14",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3042,7 +3042,7 @@
   {
     "id": "relationship:r0381",
     "personId": "person:lucas-takeda",
-    "resourceId": "package:rf-modem-waveform",
+    "resourceId": "package:edge-dns-resolver",
     "relation": "maintains",
     "lastActive": "2026-03-24",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3050,7 +3050,7 @@
   {
     "id": "relationship:r0382",
     "personId": "person:ravi-okafor",
-    "resourceId": "package:rf-modem-waveform",
+    "resourceId": "package:edge-dns-resolver",
     "relation": "maintains",
     "lastActive": "2026-06-22",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3058,15 +3058,15 @@
   {
     "id": "relationship:r0383",
     "personId": "person:niko-egede",
-    "resourceId": "package:rf-modem-waveform",
+    "resourceId": "package:edge-dns-resolver",
     "relation": "contributes-to",
     "lastActive": "2026-07-14",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0384",
-    "personId": "person:sana-takeda",
-    "resourceId": "package:rf-modem-waveform",
+    "personId": "person:sofia-iyer",
+    "resourceId": "package:edge-dns-resolver",
     "relation": "contributes-to",
     "lastActive": "2026-05-03",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3074,7 +3074,7 @@
   {
     "id": "relationship:r0385",
     "personId": "person:ravi-okafor",
-    "resourceId": "pipeline:rf-modem-waveform",
+    "resourceId": "pipeline:edge-dns-resolver",
     "relation": "owns",
     "lastActive": "2026-06-27",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3082,7 +3082,7 @@
   {
     "id": "relationship:r0386",
     "personId": "person:sam-egede",
-    "resourceId": "pipeline:rf-modem-waveform",
+    "resourceId": "pipeline:edge-dns-resolver",
     "relation": "maintains",
     "lastActive": "2026-05-24",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3090,7 +3090,7 @@
   {
     "id": "relationship:r0387",
     "personId": "person:lucas-takeda",
-    "resourceId": "pipeline:rf-modem-waveform",
+    "resourceId": "pipeline:edge-dns-resolver",
     "relation": "maintains",
     "lastActive": "2026-07-19",
     "observedAt": "2026-07-19T12:00:00Z"
@@ -3098,7 +3098,7 @@
   {
     "id": "relationship:r0388",
     "personId": "person:dina-vidal",
-    "resourceId": "package:rf-modem-beam-steering",
+    "resourceId": "package:edge-cert-manager",
     "relation": "owns",
     "lastActive": "2026-07-11",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3106,7 +3106,7 @@
   {
     "id": "relationship:r0389",
     "personId": "person:ravi-okafor",
-    "resourceId": "package:rf-modem-beam-steering",
+    "resourceId": "package:edge-cert-manager",
     "relation": "maintains",
     "lastActive": "2026-05-22",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3114,7 +3114,7 @@
   {
     "id": "relationship:r0390",
     "personId": "person:sam-egede",
-    "resourceId": "package:rf-modem-beam-steering",
+    "resourceId": "package:edge-cert-manager",
     "relation": "contributes-to",
     "lastActive": "2026-07-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3122,7 +3122,7 @@
   {
     "id": "relationship:r0391",
     "personId": "person:ravi-okafor",
-    "resourceId": "pipeline:rf-modem-beam-steering",
+    "resourceId": "service:edge-gateway",
     "relation": "owns",
     "lastActive": "2026-06-27",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3130,7 +3130,7 @@
   {
     "id": "relationship:r0392",
     "personId": "person:niko-egede",
-    "resourceId": "pipeline:rf-modem-beam-steering",
+    "resourceId": "service:edge-gateway",
     "relation": "maintains",
     "lastActive": "2026-05-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3138,7 +3138,7 @@
   {
     "id": "relationship:r0393",
     "personId": "person:sam-egede",
-    "resourceId": "pipeline:rf-modem-beam-steering",
+    "resourceId": "service:edge-gateway",
     "relation": "contributes-to",
     "lastActive": "2026-06-04",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3146,15 +3146,15 @@
   {
     "id": "relationship:r0394",
     "personId": "person:petra-steiner",
-    "resourceId": "pipeline:rf-modem-beam-steering",
+    "resourceId": "service:edge-gateway",
     "relation": "contributes-to",
     "lastActive": "2026-04-18",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0395",
-    "personId": "person:noah-iyer",
-    "resourceId": "pipeline:rf-modem-beam-steering",
+    "personId": "person:rosa-oduya",
+    "resourceId": "service:edge-gateway",
     "relation": "contributes-to",
     "lastActive": "2026-05-02",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3162,7 +3162,7 @@
   {
     "id": "relationship:r0396",
     "personId": "person:ravi-okafor",
-    "resourceId": "package:rf-modem-signal-analyzer",
+    "resourceId": "bindle:edge",
     "relation": "owns",
     "lastActive": "2026-07-21",
     "observedAt": "2026-07-21T12:00:00Z"
@@ -3170,7 +3170,7 @@
   {
     "id": "relationship:r0397",
     "personId": "person:lucas-takeda",
-    "resourceId": "package:rf-modem-signal-analyzer",
+    "resourceId": "bindle:edge",
     "relation": "maintains",
     "lastActive": "2026-05-22",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3178,7 +3178,7 @@
   {
     "id": "relationship:r0398",
     "personId": "person:petra-steiner",
-    "resourceId": "package:rf-modem-signal-analyzer",
+    "resourceId": "bindle:edge",
     "relation": "contributes-to",
     "lastActive": "2026-02-18",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3186,7 +3186,7 @@
   {
     "id": "relationship:r0399",
     "personId": "person:dina-vidal",
-    "resourceId": "package:rf-modem-signal-analyzer",
+    "resourceId": "bindle:edge",
     "relation": "contributes-to",
     "lastActive": "2026-07-17",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3194,15 +3194,15 @@
   {
     "id": "relationship:r0400",
     "personId": "person:niko-egede",
-    "resourceId": "package:rf-modem-signal-analyzer",
+    "resourceId": "bindle:edge",
     "relation": "contributes-to",
     "lastActive": "2026-04-26",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0401",
-    "personId": "person:maya-vidal",
-    "resourceId": "package:rf-modem-signal-analyzer",
+    "personId": "person:felix-steiner",
+    "resourceId": "bindle:edge",
     "relation": "contributes-to",
     "lastActive": "2026-02-18",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3210,7 +3210,7 @@
   {
     "id": "relationship:r0402",
     "personId": "person:dina-vidal",
-    "resourceId": "service:rf-modem-gateway",
+    "resourceId": "account:edge-prod",
     "relation": "owns",
     "lastActive": "2026-07-09",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3218,7 +3218,7 @@
   {
     "id": "relationship:r0403",
     "personId": "person:ravi-okafor",
-    "resourceId": "service:rf-modem-gateway",
+    "resourceId": "account:edge-prod",
     "relation": "maintains",
     "lastActive": "2026-04-04",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3226,7 +3226,7 @@
   {
     "id": "relationship:r0404",
     "personId": "person:niko-egede",
-    "resourceId": "service:rf-modem-gateway",
+    "resourceId": "account:edge-prod",
     "relation": "maintains",
     "lastActive": "2026-07-16",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3234,7 +3234,7 @@
   {
     "id": "relationship:r0405",
     "personId": "person:sam-egede",
-    "resourceId": "service:rf-modem-gateway",
+    "resourceId": "account:edge-prod",
     "relation": "contributes-to",
     "lastActive": "2026-05-24",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3242,7 +3242,7 @@
   {
     "id": "relationship:r0406",
     "personId": "person:dina-vidal",
-    "resourceId": "bindle:rf-modem",
+    "resourceId": "account:edge-beta",
     "relation": "owns",
     "lastActive": "2026-06-26",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3250,7 +3250,7 @@
   {
     "id": "relationship:r0407",
     "personId": "person:lucas-takeda",
-    "resourceId": "bindle:rf-modem",
+    "resourceId": "account:edge-beta",
     "relation": "maintains",
     "lastActive": "2026-04-07",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3258,87 +3258,87 @@
   {
     "id": "relationship:r0408",
     "personId": "person:petra-steiner",
-    "resourceId": "bindle:rf-modem",
+    "resourceId": "account:edge-beta",
     "relation": "contributes-to",
     "lastActive": "2026-05-09",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0409",
-    "personId": "person:petra-steiner",
-    "resourceId": "account:rf-modem-prod",
+    "personId": "person:amara-duval",
+    "resourceId": "package:capacity-demand-forecaster",
     "relation": "owns",
     "lastActive": "2026-06-22",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0410",
-    "personId": "person:niko-egede",
-    "resourceId": "account:rf-modem-prod",
+    "personId": "person:rosa-moreau",
+    "resourceId": "package:capacity-demand-forecaster",
     "relation": "maintains",
     "lastActive": "2026-04-01",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0411",
-    "personId": "person:lucas-takeda",
-    "resourceId": "account:rf-modem-prod",
+    "personId": "person:rosa-marino",
+    "resourceId": "package:capacity-demand-forecaster",
     "relation": "maintains",
     "lastActive": "2026-04-06",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0412",
-    "personId": "person:theo-mbeki",
-    "resourceId": "account:rf-modem-prod",
+    "personId": "person:yuki-bishop",
+    "resourceId": "package:capacity-demand-forecaster",
     "relation": "contributes-to",
     "lastActive": "2026-03-27",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0413",
-    "personId": "person:dina-vidal",
-    "resourceId": "account:rf-modem-prod",
+    "personId": "person:leila-sorensen",
+    "resourceId": "package:capacity-demand-forecaster",
     "relation": "contributes-to",
     "lastActive": "2026-06-26",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0414",
-    "personId": "person:rosa-varga",
-    "resourceId": "account:rf-modem-prod",
+    "personId": "person:nadia-moreau",
+    "resourceId": "package:capacity-demand-forecaster",
     "relation": "contributes-to",
     "lastActive": "2026-02-26",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0415",
-    "personId": "person:dina-vidal",
-    "resourceId": "account:rf-modem-beta",
+    "personId": "person:leila-sorensen",
+    "resourceId": "pipeline:capacity-demand-forecaster",
     "relation": "owns",
     "lastActive": "2026-07-17",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0416",
-    "personId": "person:petra-steiner",
-    "resourceId": "account:rf-modem-beta",
+    "personId": "person:ben-iyer",
+    "resourceId": "pipeline:capacity-demand-forecaster",
     "relation": "maintains",
     "lastActive": "2026-04-09",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0417",
-    "personId": "person:ravi-okafor",
-    "resourceId": "account:rf-modem-beta",
+    "personId": "person:amara-duval",
+    "resourceId": "pipeline:capacity-demand-forecaster",
     "relation": "maintains",
     "lastActive": "2026-06-14",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0418",
-    "personId": "person:jonas-rahim",
-    "resourceId": "account:rf-modem-beta",
+    "personId": "person:alma-tanaka",
+    "resourceId": "pipeline:capacity-demand-forecaster",
     "relation": "contributes-to",
     "lastActive": "2026-03-22",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3346,7 +3346,7 @@
   {
     "id": "relationship:r0419",
     "personId": "person:leila-sorensen",
-    "resourceId": "package:mission-data-data-lake",
+    "resourceId": "package:capacity-quota-service",
     "relation": "owns",
     "lastActive": "2026-06-13",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3354,7 +3354,7 @@
   {
     "id": "relationship:r0420",
     "personId": "person:amara-duval",
-    "resourceId": "package:mission-data-data-lake",
+    "resourceId": "package:capacity-quota-service",
     "relation": "maintains",
     "lastActive": "2026-07-01",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3362,7 +3362,7 @@
   {
     "id": "relationship:r0421",
     "personId": "person:jonas-silva",
-    "resourceId": "package:mission-data-data-lake",
+    "resourceId": "package:capacity-quota-service",
     "relation": "maintains",
     "lastActive": "2026-07-21",
     "observedAt": "2026-07-21T12:00:00Z"
@@ -3370,15 +3370,15 @@
   {
     "id": "relationship:r0422",
     "personId": "person:rosa-moreau",
-    "resourceId": "package:mission-data-data-lake",
+    "resourceId": "package:capacity-quota-service",
     "relation": "contributes-to",
     "lastActive": "2026-03-08",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0423",
-    "personId": "person:ethan-castillo",
-    "resourceId": "package:mission-data-data-lake",
+    "personId": "person:aldo-novak",
+    "resourceId": "package:capacity-quota-service",
     "relation": "contributes-to",
     "lastActive": "2026-02-01",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3386,7 +3386,7 @@
   {
     "id": "relationship:r0424",
     "personId": "person:amara-duval",
-    "resourceId": "pipeline:mission-data-data-lake",
+    "resourceId": "pipeline:capacity-quota-service",
     "relation": "owns",
     "lastActive": "2026-07-18",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3394,7 +3394,7 @@
   {
     "id": "relationship:r0425",
     "personId": "person:rosa-moreau",
-    "resourceId": "pipeline:mission-data-data-lake",
+    "resourceId": "pipeline:capacity-quota-service",
     "relation": "maintains",
     "lastActive": "2026-04-25",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3402,7 +3402,7 @@
   {
     "id": "relationship:r0426",
     "personId": "person:yuki-bishop",
-    "resourceId": "pipeline:mission-data-data-lake",
+    "resourceId": "pipeline:capacity-quota-service",
     "relation": "contributes-to",
     "lastActive": "2026-02-10",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3410,7 +3410,7 @@
   {
     "id": "relationship:r0427",
     "personId": "person:rosa-marino",
-    "resourceId": "pipeline:mission-data-data-lake",
+    "resourceId": "pipeline:capacity-quota-service",
     "relation": "contributes-to",
     "lastActive": "2026-05-11",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3418,7 +3418,7 @@
   {
     "id": "relationship:r0428",
     "personId": "person:leila-sorensen",
-    "resourceId": "pipeline:mission-data-data-lake",
+    "resourceId": "pipeline:capacity-quota-service",
     "relation": "contributes-to",
     "lastActive": "2026-02-03",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3426,7 +3426,7 @@
   {
     "id": "relationship:r0429",
     "personId": "person:yuki-bishop",
-    "resourceId": "package:mission-data-downlink-processor",
+    "resourceId": "package:capacity-fleet-planner",
     "relation": "owns",
     "lastActive": "2026-07-14",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3434,7 +3434,7 @@
   {
     "id": "relationship:r0430",
     "personId": "person:petra-varga",
-    "resourceId": "package:mission-data-downlink-processor",
+    "resourceId": "package:capacity-fleet-planner",
     "relation": "maintains",
     "lastActive": "2026-05-05",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3442,15 +3442,15 @@
   {
     "id": "relationship:r0431",
     "personId": "person:rosa-marino",
-    "resourceId": "package:mission-data-downlink-processor",
+    "resourceId": "package:capacity-fleet-planner",
     "relation": "maintains",
     "lastActive": "2026-03-31",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0432",
-    "personId": "person:aldo-antar",
-    "resourceId": "package:mission-data-downlink-processor",
+    "personId": "person:ivy-steiner",
+    "resourceId": "package:capacity-fleet-planner",
     "relation": "contributes-to",
     "lastActive": "2026-03-13",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3458,7 +3458,7 @@
   {
     "id": "relationship:r0433",
     "personId": "person:ben-iyer",
-    "resourceId": "pipeline:mission-data-downlink-processor",
+    "resourceId": "service:capacity-gateway",
     "relation": "owns",
     "lastActive": "2026-06-17",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3466,7 +3466,7 @@
   {
     "id": "relationship:r0434",
     "personId": "person:jonas-silva",
-    "resourceId": "pipeline:mission-data-downlink-processor",
+    "resourceId": "service:capacity-gateway",
     "relation": "maintains",
     "lastActive": "2026-06-29",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3474,7 +3474,7 @@
   {
     "id": "relationship:r0435",
     "personId": "person:leila-sorensen",
-    "resourceId": "pipeline:mission-data-downlink-processor",
+    "resourceId": "service:capacity-gateway",
     "relation": "maintains",
     "lastActive": "2026-03-30",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3482,7 +3482,7 @@
   {
     "id": "relationship:r0436",
     "personId": "person:rosa-moreau",
-    "resourceId": "package:mission-data-catalog-api",
+    "resourceId": "bindle:capacity",
     "relation": "owns",
     "lastActive": "2026-06-26",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3490,7 +3490,7 @@
   {
     "id": "relationship:r0437",
     "personId": "person:amara-duval",
-    "resourceId": "package:mission-data-catalog-api",
+    "resourceId": "bindle:capacity",
     "relation": "maintains",
     "lastActive": "2026-05-27",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3498,15 +3498,15 @@
   {
     "id": "relationship:r0438",
     "personId": "person:leila-sorensen",
-    "resourceId": "package:mission-data-catalog-api",
+    "resourceId": "bindle:capacity",
     "relation": "maintains",
     "lastActive": "2026-06-17",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0439",
-    "personId": "person:theo-mbeki",
-    "resourceId": "package:mission-data-catalog-api",
+    "personId": "person:elsa-fontaine",
+    "resourceId": "bindle:capacity",
     "relation": "contributes-to",
     "lastActive": "2026-06-10",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3514,7 +3514,7 @@
   {
     "id": "relationship:r0440",
     "personId": "person:ben-iyer",
-    "resourceId": "service:mission-data-gateway",
+    "resourceId": "account:capacity-prod",
     "relation": "owns",
     "lastActive": "2026-07-07",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3522,7 +3522,7 @@
   {
     "id": "relationship:r0441",
     "personId": "person:rosa-moreau",
-    "resourceId": "service:mission-data-gateway",
+    "resourceId": "account:capacity-prod",
     "relation": "maintains",
     "lastActive": "2026-07-11",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3530,7 +3530,7 @@
   {
     "id": "relationship:r0442",
     "personId": "person:yuki-bishop",
-    "resourceId": "service:mission-data-gateway",
+    "resourceId": "account:capacity-prod",
     "relation": "maintains",
     "lastActive": "2026-05-29",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3538,7 +3538,7 @@
   {
     "id": "relationship:r0443",
     "personId": "person:rosa-marino",
-    "resourceId": "service:mission-data-gateway",
+    "resourceId": "account:capacity-prod",
     "relation": "contributes-to",
     "lastActive": "2026-05-26",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3546,15 +3546,15 @@
   {
     "id": "relationship:r0444",
     "personId": "person:jonas-silva",
-    "resourceId": "service:mission-data-gateway",
+    "resourceId": "account:capacity-prod",
     "relation": "contributes-to",
     "lastActive": "2026-04-18",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0445",
-    "personId": "person:wren-sorensen",
-    "resourceId": "service:mission-data-gateway",
+    "personId": "person:jonas-petrov",
+    "resourceId": "account:capacity-prod",
     "relation": "contributes-to",
     "lastActive": "2026-02-14",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3562,7 +3562,7 @@
   {
     "id": "relationship:r0446",
     "personId": "person:petra-varga",
-    "resourceId": "bindle:mission-data",
+    "resourceId": "account:capacity-beta",
     "relation": "owns",
     "lastActive": "2026-07-14",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3570,7 +3570,7 @@
   {
     "id": "relationship:r0447",
     "personId": "person:jonas-silva",
-    "resourceId": "bindle:mission-data",
+    "resourceId": "account:capacity-beta",
     "relation": "maintains",
     "lastActive": "2026-05-08",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3578,7 +3578,7 @@
   {
     "id": "relationship:r0448",
     "personId": "person:amara-duval",
-    "resourceId": "bindle:mission-data",
+    "resourceId": "account:capacity-beta",
     "relation": "contributes-to",
     "lastActive": "2026-03-25",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3586,7 +3586,7 @@
   {
     "id": "relationship:r0449",
     "personId": "person:leila-sorensen",
-    "resourceId": "account:mission-data-prod",
+    "resourceId": "package:capacity-cdk",
     "relation": "owns",
     "lastActive": "2026-07-16",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3594,7 +3594,7 @@
   {
     "id": "relationship:r0450",
     "personId": "person:rosa-moreau",
-    "resourceId": "account:mission-data-prod",
+    "resourceId": "package:capacity-cdk",
     "relation": "maintains",
     "lastActive": "2026-04-17",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3602,7 +3602,7 @@
   {
     "id": "relationship:r0451",
     "personId": "person:petra-varga",
-    "resourceId": "account:mission-data-prod",
+    "resourceId": "package:capacity-cdk",
     "relation": "maintains",
     "lastActive": "2026-06-20",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3610,7 +3610,7 @@
   {
     "id": "relationship:r0452",
     "personId": "person:ben-iyer",
-    "resourceId": "account:mission-data-prod",
+    "resourceId": "package:capacity-cdk",
     "relation": "contributes-to",
     "lastActive": "2026-04-04",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3618,79 +3618,79 @@
   {
     "id": "relationship:r0453",
     "personId": "person:jonas-silva",
-    "resourceId": "account:mission-data-prod",
+    "resourceId": "package:capacity-cdk",
     "relation": "contributes-to",
     "lastActive": "2026-06-28",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0454",
-    "personId": "person:jonas-petrov",
-    "resourceId": "account:mission-data-prod",
+    "personId": "person:elsa-iyer",
+    "resourceId": "package:capacity-cdk",
     "relation": "contributes-to",
     "lastActive": "2026-05-21",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0455",
-    "personId": "person:jonas-silva",
-    "resourceId": "account:mission-data-beta",
+    "personId": "person:noah-alvarez",
+    "resourceId": "package:devex-build-tools",
     "relation": "owns",
     "lastActive": "2026-07-12",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0456",
-    "personId": "person:rosa-moreau",
-    "resourceId": "account:mission-data-beta",
+    "personId": "person:fatima-mensah",
+    "resourceId": "package:devex-build-tools",
     "relation": "maintains",
     "lastActive": "2026-06-08",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0457",
-    "personId": "person:rosa-marino",
-    "resourceId": "account:mission-data-beta",
+    "personId": "person:leila-egede",
+    "resourceId": "package:devex-build-tools",
     "relation": "contributes-to",
     "lastActive": "2026-02-08",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0458",
-    "personId": "person:petra-varga",
-    "resourceId": "account:mission-data-beta",
+    "personId": "person:amara-varga",
+    "resourceId": "package:devex-build-tools",
     "relation": "contributes-to",
     "lastActive": "2026-03-05",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0459",
-    "personId": "person:ben-iyer",
-    "resourceId": "package:mission-data-cdk",
+    "personId": "person:amara-varga",
+    "resourceId": "pipeline:devex-build-tools",
     "relation": "owns",
     "lastActive": "2026-07-21",
     "observedAt": "2026-07-21T12:00:00Z"
   },
   {
     "id": "relationship:r0460",
-    "personId": "person:amara-duval",
-    "resourceId": "package:mission-data-cdk",
+    "personId": "person:aisha-vance",
+    "resourceId": "pipeline:devex-build-tools",
     "relation": "maintains",
     "lastActive": "2026-05-14",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0461",
-    "personId": "person:rosa-moreau",
-    "resourceId": "package:mission-data-cdk",
+    "personId": "person:fatima-mensah",
+    "resourceId": "pipeline:devex-build-tools",
     "relation": "maintains",
     "lastActive": "2026-04-27",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0462",
-    "personId": "person:jonas-silva",
-    "resourceId": "package:mission-data-cdk",
+    "personId": "person:noah-alvarez",
+    "resourceId": "pipeline:devex-build-tools",
     "relation": "contributes-to",
     "lastActive": "2026-03-04",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3698,7 +3698,7 @@
   {
     "id": "relationship:r0463",
     "personId": "person:fatima-mensah",
-    "resourceId": "package:launch-sequence-planner",
+    "resourceId": "package:devex-ramp-tracker",
     "relation": "owns",
     "lastActive": "2026-07-13",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3706,7 +3706,7 @@
   {
     "id": "relationship:r0464",
     "personId": "person:noah-alvarez",
-    "resourceId": "package:launch-sequence-planner",
+    "resourceId": "package:devex-ramp-tracker",
     "relation": "maintains",
     "lastActive": "2026-06-20",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3714,7 +3714,7 @@
   {
     "id": "relationship:r0465",
     "personId": "person:amara-varga",
-    "resourceId": "package:launch-sequence-planner",
+    "resourceId": "package:devex-ramp-tracker",
     "relation": "contributes-to",
     "lastActive": "2026-04-20",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3722,7 +3722,7 @@
   {
     "id": "relationship:r0466",
     "personId": "person:aisha-vance",
-    "resourceId": "pipeline:launch-sequence-planner",
+    "resourceId": "pipeline:devex-ramp-tracker",
     "relation": "owns",
     "lastActive": "2026-07-06",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3730,7 +3730,7 @@
   {
     "id": "relationship:r0467",
     "personId": "person:noah-alvarez",
-    "resourceId": "pipeline:launch-sequence-planner",
+    "resourceId": "pipeline:devex-ramp-tracker",
     "relation": "maintains",
     "lastActive": "2026-05-05",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3738,7 +3738,7 @@
   {
     "id": "relationship:r0468",
     "personId": "person:leila-egede",
-    "resourceId": "pipeline:launch-sequence-planner",
+    "resourceId": "pipeline:devex-ramp-tracker",
     "relation": "maintains",
     "lastActive": "2026-03-25",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3746,7 +3746,7 @@
   {
     "id": "relationship:r0469",
     "personId": "person:fatima-mensah",
-    "resourceId": "pipeline:launch-sequence-planner",
+    "resourceId": "pipeline:devex-ramp-tracker",
     "relation": "contributes-to",
     "lastActive": "2026-02-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3754,15 +3754,15 @@
   {
     "id": "relationship:r0470",
     "personId": "person:ezra-bishop",
-    "resourceId": "pipeline:launch-sequence-planner",
+    "resourceId": "pipeline:devex-ramp-tracker",
     "relation": "contributes-to",
     "lastActive": "2026-03-13",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0471",
-    "personId": "person:maya-haddad",
-    "resourceId": "pipeline:launch-sequence-planner",
+    "personId": "person:ben-brandt",
+    "resourceId": "pipeline:devex-ramp-tracker",
     "relation": "contributes-to",
     "lastActive": "2026-05-15",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3770,7 +3770,7 @@
   {
     "id": "relationship:r0472",
     "personId": "person:aisha-vance",
-    "resourceId": "package:launch-vehicle-checkout",
+    "resourceId": "package:devex-wiki-sync",
     "relation": "owns",
     "lastActive": "2026-06-10",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3778,7 +3778,7 @@
   {
     "id": "relationship:r0473",
     "personId": "person:amara-varga",
-    "resourceId": "package:launch-vehicle-checkout",
+    "resourceId": "package:devex-wiki-sync",
     "relation": "maintains",
     "lastActive": "2026-05-25",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3786,7 +3786,7 @@
   {
     "id": "relationship:r0474",
     "personId": "person:fatima-mensah",
-    "resourceId": "package:launch-vehicle-checkout",
+    "resourceId": "package:devex-wiki-sync",
     "relation": "maintains",
     "lastActive": "2026-07-09",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3794,7 +3794,7 @@
   {
     "id": "relationship:r0475",
     "personId": "person:ezra-bishop",
-    "resourceId": "package:launch-vehicle-checkout",
+    "resourceId": "package:devex-wiki-sync",
     "relation": "contributes-to",
     "lastActive": "2026-02-08",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3802,7 +3802,7 @@
   {
     "id": "relationship:r0476",
     "personId": "person:noah-alvarez",
-    "resourceId": "package:launch-vehicle-checkout",
+    "resourceId": "package:devex-wiki-sync",
     "relation": "contributes-to",
     "lastActive": "2026-04-16",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3810,7 +3810,7 @@
   {
     "id": "relationship:r0477",
     "personId": "person:leila-egede",
-    "resourceId": "pipeline:launch-vehicle-checkout",
+    "resourceId": "service:devex-gateway",
     "relation": "owns",
     "lastActive": "2026-06-08",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3818,7 +3818,7 @@
   {
     "id": "relationship:r0478",
     "personId": "person:leila-petrov",
-    "resourceId": "pipeline:launch-vehicle-checkout",
+    "resourceId": "service:devex-gateway",
     "relation": "maintains",
     "lastActive": "2026-06-22",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3826,7 +3826,7 @@
   {
     "id": "relationship:r0479",
     "personId": "person:fatima-mensah",
-    "resourceId": "pipeline:launch-vehicle-checkout",
+    "resourceId": "service:devex-gateway",
     "relation": "contributes-to",
     "lastActive": "2026-02-15",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3834,7 +3834,7 @@
   {
     "id": "relationship:r0480",
     "personId": "person:noah-alvarez",
-    "resourceId": "pipeline:launch-vehicle-checkout",
+    "resourceId": "service:devex-gateway",
     "relation": "contributes-to",
     "lastActive": "2026-07-17",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3842,7 +3842,7 @@
   {
     "id": "relationship:r0481",
     "personId": "person:ezra-bishop",
-    "resourceId": "package:launch-range-safety",
+    "resourceId": "bindle:devex",
     "relation": "owns",
     "lastActive": "2026-06-26",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3850,7 +3850,7 @@
   {
     "id": "relationship:r0482",
     "personId": "person:fatima-mensah",
-    "resourceId": "package:launch-range-safety",
+    "resourceId": "bindle:devex",
     "relation": "maintains",
     "lastActive": "2026-03-28",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3858,7 +3858,7 @@
   {
     "id": "relationship:r0483",
     "personId": "person:aisha-vance",
-    "resourceId": "package:launch-range-safety",
+    "resourceId": "bindle:devex",
     "relation": "maintains",
     "lastActive": "2026-04-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3866,7 +3866,7 @@
   {
     "id": "relationship:r0484",
     "personId": "person:lucas-iyer",
-    "resourceId": "package:launch-range-safety",
+    "resourceId": "bindle:devex",
     "relation": "contributes-to",
     "lastActive": "2026-02-20",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3874,7 +3874,7 @@
   {
     "id": "relationship:r0485",
     "personId": "person:fatima-mensah",
-    "resourceId": "service:launch-gateway",
+    "resourceId": "account:devex-prod",
     "relation": "owns",
     "lastActive": "2026-07-11",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3882,7 +3882,7 @@
   {
     "id": "relationship:r0486",
     "personId": "person:leila-petrov",
-    "resourceId": "service:launch-gateway",
+    "resourceId": "account:devex-prod",
     "relation": "maintains",
     "lastActive": "2026-07-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3890,7 +3890,7 @@
   {
     "id": "relationship:r0487",
     "personId": "person:aisha-vance",
-    "resourceId": "service:launch-gateway",
+    "resourceId": "account:devex-prod",
     "relation": "maintains",
     "lastActive": "2026-07-12",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3898,7 +3898,7 @@
   {
     "id": "relationship:r0488",
     "personId": "person:ezra-bishop",
-    "resourceId": "service:launch-gateway",
+    "resourceId": "account:devex-prod",
     "relation": "contributes-to",
     "lastActive": "2026-01-26",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3906,7 +3906,7 @@
   {
     "id": "relationship:r0489",
     "personId": "person:amara-varga",
-    "resourceId": "service:launch-gateway",
+    "resourceId": "account:devex-prod",
     "relation": "contributes-to",
     "lastActive": "2026-03-18",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3914,7 +3914,7 @@
   {
     "id": "relationship:r0490",
     "personId": "person:ezra-bishop",
-    "resourceId": "bindle:launch",
+    "resourceId": "account:devex-beta",
     "relation": "owns",
     "lastActive": "2026-06-10",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3922,7 +3922,7 @@
   {
     "id": "relationship:r0491",
     "personId": "person:amara-varga",
-    "resourceId": "bindle:launch",
+    "resourceId": "account:devex-beta",
     "relation": "maintains",
     "lastActive": "2026-05-20",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3930,7 +3930,7 @@
   {
     "id": "relationship:r0492",
     "personId": "person:fatima-mensah",
-    "resourceId": "bindle:launch",
+    "resourceId": "account:devex-beta",
     "relation": "maintains",
     "lastActive": "2026-06-05",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3938,7 +3938,7 @@
   {
     "id": "relationship:r0493",
     "personId": "person:leila-egede",
-    "resourceId": "bindle:launch",
+    "resourceId": "account:devex-beta",
     "relation": "contributes-to",
     "lastActive": "2026-05-23",
     "observedAt": "2026-07-18T12:00:00Z"
@@ -3946,705 +3946,281 @@
   {
     "id": "relationship:r0494",
     "personId": "person:noah-alvarez",
-    "resourceId": "bindle:launch",
+    "resourceId": "account:devex-beta",
     "relation": "contributes-to",
     "lastActive": "2026-02-13",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0495",
-    "personId": "person:leila-petrov",
-    "resourceId": "account:launch-prod",
+    "personId": "person:marco-tanaka",
+    "resourceId": "package:atlascommonauth",
     "relation": "owns",
     "lastActive": "2026-07-20",
     "observedAt": "2026-07-20T12:00:00Z"
   },
   {
     "id": "relationship:r0496",
-    "personId": "person:fatima-mensah",
-    "resourceId": "account:launch-prod",
+    "personId": "person:sofia-iyer",
+    "resourceId": "package:atlascommonauth",
     "relation": "maintains",
-    "lastActive": "2026-06-11",
+    "lastActive": "2026-05-29",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0497",
-    "personId": "person:noah-alvarez",
-    "resourceId": "account:launch-prod",
+    "personId": "person:ben-iyer",
+    "resourceId": "package:atlascommonauth",
     "relation": "contributes-to",
-    "lastActive": "2026-04-06",
+    "lastActive": "2026-03-31",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
     "id": "relationship:r0498",
-    "personId": "person:amara-varga",
-    "resourceId": "account:launch-prod",
-    "relation": "contributes-to",
-    "lastActive": "2026-04-07",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0499",
-    "personId": "person:ezra-bishop",
-    "resourceId": "account:launch-prod",
-    "relation": "contributes-to",
-    "lastActive": "2026-03-09",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0500",
-    "personId": "person:fatima-mensah",
-    "resourceId": "account:launch-beta",
-    "relation": "owns",
-    "lastActive": "2026-07-05",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0501",
-    "personId": "person:leila-egede",
-    "resourceId": "account:launch-beta",
+    "personId": "person:sana-tanaka",
+    "resourceId": "package:atlascommonauth",
     "relation": "maintains",
-    "lastActive": "2026-07-21",
-    "observedAt": "2026-07-21T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0502",
-    "personId": "person:leila-petrov",
-    "resourceId": "account:launch-beta",
-    "relation": "contributes-to",
-    "lastActive": "2026-02-21",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0503",
-    "personId": "person:chloe-silva",
-    "resourceId": "package:devex-build-tools",
-    "relation": "owns",
-    "lastActive": "2026-07-15",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0504",
-    "personId": "person:maya-holm",
-    "resourceId": "package:devex-build-tools",
-    "relation": "maintains",
-    "lastActive": "2026-04-23",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0505",
-    "personId": "person:ezra-steiner",
-    "resourceId": "package:devex-build-tools",
-    "relation": "maintains",
-    "lastActive": "2026-05-08",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0506",
-    "personId": "person:cole-moreau",
-    "resourceId": "package:devex-build-tools",
-    "relation": "contributes-to",
-    "lastActive": "2026-07-14",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0507",
-    "personId": "person:wren-vance",
-    "resourceId": "package:devex-build-tools",
-    "relation": "contributes-to",
-    "lastActive": "2026-02-22",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0508",
-    "personId": "person:amara-duval",
-    "resourceId": "package:devex-build-tools",
-    "relation": "contributes-to",
-    "lastActive": "2026-06-16",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0509",
-    "personId": "person:maya-holm",
-    "resourceId": "pipeline:devex-build-tools",
-    "relation": "owns",
-    "lastActive": "2026-07-15",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0510",
-    "personId": "person:cole-moreau",
-    "resourceId": "pipeline:devex-build-tools",
-    "relation": "maintains",
-    "lastActive": "2026-05-21",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0511",
-    "personId": "person:wren-vance",
-    "resourceId": "pipeline:devex-build-tools",
-    "relation": "contributes-to",
-    "lastActive": "2026-02-22",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0512",
-    "personId": "person:ravi-okafor",
-    "resourceId": "pipeline:devex-build-tools",
-    "relation": "contributes-to",
-    "lastActive": "2026-07-14",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0513",
-    "personId": "person:maya-holm",
-    "resourceId": "package:devex-ramp-tracker",
-    "relation": "owns",
-    "lastActive": "2026-06-17",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0514",
-    "personId": "person:chloe-silva",
-    "resourceId": "package:devex-ramp-tracker",
-    "relation": "maintains",
-    "lastActive": "2026-03-25",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0515",
-    "personId": "person:marco-kowalski",
-    "resourceId": "package:devex-ramp-tracker",
-    "relation": "contributes-to",
-    "lastActive": "2026-06-12",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0516",
-    "personId": "person:nadia-oduya",
-    "resourceId": "package:devex-ramp-tracker",
-    "relation": "contributes-to",
-    "lastActive": "2026-03-04",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0517",
-    "personId": "person:idris-alvarez",
-    "resourceId": "package:devex-ramp-tracker",
-    "relation": "contributes-to",
-    "lastActive": "2026-04-09",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0518",
-    "personId": "person:maya-holm",
-    "resourceId": "pipeline:devex-ramp-tracker",
-    "relation": "owns",
-    "lastActive": "2026-06-07",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0519",
-    "personId": "person:cole-moreau",
-    "resourceId": "pipeline:devex-ramp-tracker",
-    "relation": "maintains",
-    "lastActive": "2026-06-11",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0520",
-    "personId": "person:nadia-oduya",
-    "resourceId": "pipeline:devex-ramp-tracker",
-    "relation": "contributes-to",
-    "lastActive": "2026-05-17",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0521",
-    "personId": "person:lucas-takeda",
-    "resourceId": "pipeline:devex-ramp-tracker",
-    "relation": "contributes-to",
-    "lastActive": "2026-05-04",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0522",
-    "personId": "person:maya-holm",
-    "resourceId": "package:devex-wiki-sync",
-    "relation": "owns",
-    "lastActive": "2026-06-26",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0523",
-    "personId": "person:chloe-silva",
-    "resourceId": "package:devex-wiki-sync",
-    "relation": "maintains",
-    "lastActive": "2026-04-22",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0524",
-    "personId": "person:cole-moreau",
-    "resourceId": "package:devex-wiki-sync",
-    "relation": "contributes-to",
-    "lastActive": "2026-03-03",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0525",
-    "personId": "person:ezra-steiner",
-    "resourceId": "service:devex-gateway",
-    "relation": "owns",
-    "lastActive": "2026-06-16",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0526",
-    "personId": "person:maya-holm",
-    "resourceId": "service:devex-gateway",
-    "relation": "maintains",
-    "lastActive": "2026-06-07",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0527",
-    "personId": "person:nadia-oduya",
-    "resourceId": "service:devex-gateway",
-    "relation": "contributes-to",
-    "lastActive": "2026-04-29",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0528",
-    "personId": "person:wren-vance",
-    "resourceId": "service:devex-gateway",
-    "relation": "contributes-to",
     "lastActive": "2026-07-07",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0529",
-    "personId": "person:chloe-silva",
-    "resourceId": "service:devex-gateway",
-    "relation": "contributes-to",
-    "lastActive": "2026-04-25",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0530",
-    "personId": "person:chloe-silva",
-    "resourceId": "bindle:devex",
-    "relation": "owns",
-    "lastActive": "2026-07-19",
-    "observedAt": "2026-07-19T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0531",
-    "personId": "person:ezra-steiner",
-    "resourceId": "bindle:devex",
+    "id": "relationship:r0499",
+    "personId": "person:wren-kimura",
+    "resourceId": "package:atlascommonauth",
     "relation": "maintains",
-    "lastActive": "2026-07-03",
+    "lastActive": "2026-05-27",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0532",
-    "personId": "person:cole-moreau",
-    "resourceId": "bindle:devex",
+    "id": "relationship:r0500",
+    "personId": "person:ezra-vidal",
+    "resourceId": "package:atlascommonauth",
+    "relation": "maintains",
+    "lastActive": "2026-03-18",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0501",
+    "personId": "person:ethan-castillo",
+    "resourceId": "package:atlasmetricssdk",
+    "relation": "owns",
+    "lastActive": "2026-07-01",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0502",
+    "personId": "person:owen-kowalski",
+    "resourceId": "package:atlasmetricssdk",
     "relation": "maintains",
     "lastActive": "2026-06-03",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0533",
-    "personId": "person:wren-vance",
-    "resourceId": "bindle:devex",
+    "id": "relationship:r0503",
+    "personId": "person:jonas-petrov",
+    "resourceId": "package:atlasmetricssdk",
+    "relation": "contributes-to",
+    "lastActive": "2026-07-15",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0504",
+    "personId": "person:idris-fontaine",
+    "resourceId": "package:atlasmetricssdk",
+    "relation": "maintains",
+    "lastActive": "2026-03-12",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0505",
+    "personId": "person:sofia-iyer",
+    "resourceId": "package:atlasmetricssdk",
+    "relation": "maintains",
+    "lastActive": "2026-03-29",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0506",
+    "personId": "person:leila-sorensen",
+    "resourceId": "package:atlasmetricssdk",
+    "relation": "contributes-to",
+    "lastActive": "2026-06-29",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0507",
+    "personId": "person:aisha-vance",
+    "resourceId": "package:atlasbuildcli",
+    "relation": "owns",
+    "lastActive": "2026-06-27",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0508",
+    "personId": "person:amara-varga",
+    "resourceId": "package:atlasbuildcli",
+    "relation": "maintains",
+    "lastActive": "2026-07-18",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0509",
+    "personId": "person:idris-varga",
+    "resourceId": "package:atlasbuildcli",
+    "relation": "maintains",
+    "lastActive": "2026-03-28",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0510",
+    "personId": "person:tara-castillo",
+    "resourceId": "package:atlasbuildcli",
     "relation": "contributes-to",
     "lastActive": "2026-06-19",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0534",
-    "personId": "person:maya-holm",
-    "resourceId": "bindle:devex",
-    "relation": "contributes-to",
-    "lastActive": "2026-01-27",
+    "id": "relationship:r0511",
+    "personId": "person:idris-fontaine",
+    "resourceId": "package:atlasbuildcli",
+    "relation": "maintains",
+    "lastActive": "2026-06-21",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0535",
-    "personId": "person:wren-vance",
-    "resourceId": "account:devex-prod",
+    "id": "relationship:r0512",
+    "personId": "person:sam-novak",
+    "resourceId": "package:atlasbuildcli",
+    "relation": "maintains",
+    "lastActive": "2026-03-31",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0513",
+    "personId": "person:dina-castillo",
+    "resourceId": "package:atlasdatalakeclient",
     "relation": "owns",
-    "lastActive": "2026-06-27",
+    "lastActive": "2026-06-22",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0536",
-    "personId": "person:maya-holm",
-    "resourceId": "account:devex-prod",
+    "id": "relationship:r0514",
+    "personId": "person:chloe-egede",
+    "resourceId": "package:atlasdatalakeclient",
+    "relation": "maintains",
+    "lastActive": "2026-06-22",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0515",
+    "personId": "person:ethan-castillo",
+    "resourceId": "package:atlasdatalakeclient",
+    "relation": "maintains",
+    "lastActive": "2026-03-16",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0516",
+    "personId": "person:lucas-castillo",
+    "resourceId": "package:atlasdatalakeclient",
+    "relation": "contributes-to",
+    "lastActive": "2026-04-28",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0517",
+    "personId": "person:dina-vidal",
+    "resourceId": "package:atlasdatalakeclient",
+    "relation": "contributes-to",
+    "lastActive": "2026-03-26",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0518",
+    "personId": "person:elsa-iyer",
+    "resourceId": "package:atlasoncalldashboard",
+    "relation": "owns",
+    "lastActive": "2026-06-26",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0519",
+    "personId": "person:jonas-petrov",
+    "resourceId": "package:atlasoncalldashboard",
     "relation": "maintains",
     "lastActive": "2026-05-28",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0537",
-    "personId": "person:cole-moreau",
-    "resourceId": "account:devex-prod",
+    "id": "relationship:r0520",
+    "personId": "person:cole-brandt",
+    "resourceId": "package:atlasoncalldashboard",
     "relation": "contributes-to",
-    "lastActive": "2026-07-20",
-    "observedAt": "2026-07-20T12:00:00Z"
+    "lastActive": "2026-05-13",
+    "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0538",
-    "personId": "person:marco-kowalski",
-    "resourceId": "account:devex-prod",
+    "id": "relationship:r0521",
+    "personId": "person:rosa-moreau",
+    "resourceId": "package:atlasoncalldashboard",
     "relation": "contributes-to",
-    "lastActive": "2026-02-19",
+    "lastActive": "2026-04-21",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0539",
-    "personId": "person:ezra-steiner",
-    "resourceId": "account:devex-beta",
-    "relation": "owns",
-    "lastActive": "2026-06-24",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0540",
-    "personId": "person:nadia-oduya",
-    "resourceId": "account:devex-beta",
-    "relation": "maintains",
-    "lastActive": "2026-06-12",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0541",
-    "personId": "person:maya-holm",
-    "resourceId": "account:devex-beta",
-    "relation": "maintains",
-    "lastActive": "2026-07-17",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0542",
-    "personId": "person:marco-kowalski",
-    "resourceId": "account:devex-beta",
+    "id": "relationship:r0522",
+    "personId": "person:sam-egede",
+    "resourceId": "package:atlasoncalldashboard",
     "relation": "contributes-to",
-    "lastActive": "2026-05-27",
+    "lastActive": "2026-03-08",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0543",
-    "personId": "person:chloe-silva",
-    "resourceId": "account:devex-beta",
-    "relation": "contributes-to",
-    "lastActive": "2026-07-01",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0544",
-    "personId": "person:maya-holm",
-    "resourceId": "package:devex-cdk",
-    "relation": "owns",
-    "lastActive": "2026-07-02",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0545",
-    "personId": "person:wren-vance",
-    "resourceId": "package:devex-cdk",
-    "relation": "maintains",
-    "lastActive": "2026-05-10",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0546",
-    "personId": "person:cole-moreau",
-    "resourceId": "package:devex-cdk",
-    "relation": "maintains",
-    "lastActive": "2026-04-02",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0547",
+    "id": "relationship:r0523",
     "personId": "person:rosa-novak",
-    "resourceId": "package:devex-cdk",
-    "relation": "contributes-to",
-    "lastActive": "2026-01-25",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0548",
-    "personId": "person:marco-kowalski",
-    "resourceId": "package:leocommonauth",
+    "resourceId": "package:atlascostexplorersdk",
     "relation": "owns",
-    "lastActive": "2026-07-12",
+    "lastActive": "2026-06-25",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0549",
-    "personId": "person:wren-vance",
-    "resourceId": "package:leocommonauth",
-    "relation": "maintains",
-    "lastActive": "2026-07-11",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0550",
-    "personId": "person:aldo-antar",
-    "resourceId": "package:leocommonauth",
-    "relation": "contributes-to",
-    "lastActive": "2026-03-07",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0551",
-    "personId": "person:idris-alvarez",
-    "resourceId": "package:leocommonauth",
-    "relation": "maintains",
-    "lastActive": "2026-02-25",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0552",
-    "personId": "person:kai-kimura",
-    "resourceId": "package:leocommonauth",
-    "relation": "contributes-to",
-    "lastActive": "2026-06-16",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0553",
-    "personId": "person:aisha-brandt",
-    "resourceId": "package:leotelemetrysdk",
-    "relation": "owns",
-    "lastActive": "2026-07-05",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0554",
-    "personId": "person:sana-takeda",
-    "resourceId": "package:leotelemetrysdk",
-    "relation": "maintains",
-    "lastActive": "2026-07-20",
-    "observedAt": "2026-07-20T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0555",
-    "personId": "person:cole-sorensen",
-    "resourceId": "package:leotelemetrysdk",
-    "relation": "maintains",
-    "lastActive": "2026-04-17",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0556",
-    "personId": "person:amara-duval",
-    "resourceId": "package:leotelemetrysdk",
-    "relation": "contributes-to",
-    "lastActive": "2026-04-30",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0557",
-    "personId": "person:ivy-steiner",
-    "resourceId": "package:leotelemetrysdk",
-    "relation": "contributes-to",
-    "lastActive": "2026-06-26",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0558",
-    "personId": "person:nadia-oduya",
-    "resourceId": "package:leobuildcli",
-    "relation": "owns",
-    "lastActive": "2026-07-03",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0559",
-    "personId": "person:maya-holm",
-    "resourceId": "package:leobuildcli",
+    "id": "relationship:r0524",
+    "personId": "person:lena-oduya",
+    "resourceId": "package:atlascostexplorersdk",
     "relation": "maintains",
     "lastActive": "2026-07-18",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0560",
-    "personId": "person:vera-nakamura",
-    "resourceId": "package:leobuildcli",
+    "id": "relationship:r0525",
+    "personId": "person:maya-antar",
+    "resourceId": "package:atlascostexplorersdk",
+    "relation": "contributes-to",
+    "lastActive": "2026-05-08",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0526",
+    "personId": "person:jonas-petrov",
+    "resourceId": "package:atlascostexplorersdk",
     "relation": "maintains",
-    "lastActive": "2026-06-24",
+    "lastActive": "2026-05-23",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0561",
-    "personId": "person:yuki-bishop",
-    "resourceId": "package:leobuildcli",
-    "relation": "contributes-to",
-    "lastActive": "2026-05-20",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0562",
-    "personId": "person:elsa-iyer",
-    "resourceId": "package:leobuildcli",
-    "relation": "contributes-to",
-    "lastActive": "2026-07-18",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0563",
-    "personId": "person:sofia-delgado",
-    "resourceId": "package:leobuildcli",
-    "relation": "contributes-to",
-    "lastActive": "2026-06-21",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0564",
-    "personId": "person:ben-iyer",
-    "resourceId": "package:leodatalakeclient",
-    "relation": "owns",
-    "lastActive": "2026-07-02",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0565",
-    "personId": "person:amara-duval",
-    "resourceId": "package:leodatalakeclient",
+    "id": "relationship:r0527",
+    "personId": "person:noah-iyer",
+    "resourceId": "package:atlascostexplorersdk",
     "relation": "maintains",
-    "lastActive": "2026-06-23",
+    "lastActive": "2026-05-14",
     "observedAt": "2026-07-18T12:00:00Z"
   },
   {
-    "id": "relationship:r0566",
-    "personId": "person:ben-abara",
-    "resourceId": "package:leodatalakeclient",
-    "relation": "maintains",
-    "lastActive": "2026-06-04",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0567",
-    "personId": "person:sam-brandt",
-    "resourceId": "package:leodatalakeclient",
+    "id": "relationship:r0528",
+    "personId": "person:fatima-mensah",
+    "resourceId": "package:atlascostexplorersdk",
     "relation": "contributes-to",
-    "lastActive": "2026-03-27",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0568",
-    "personId": "person:maya-vidal",
-    "resourceId": "package:leodatalakeclient",
-    "relation": "maintains",
-    "lastActive": "2026-06-27",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0569",
-    "personId": "person:kai-kimura",
-    "resourceId": "package:leodatalakeclient",
-    "relation": "maintains",
-    "lastActive": "2026-04-29",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0570",
-    "personId": "person:rosa-novak",
-    "resourceId": "package:leooncalldashboard",
-    "relation": "owns",
-    "lastActive": "2026-07-19",
-    "observedAt": "2026-07-19T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0571",
-    "personId": "person:cole-castillo",
-    "resourceId": "package:leooncalldashboard",
-    "relation": "maintains",
-    "lastActive": "2026-06-13",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0572",
-    "personId": "person:omar-egede",
-    "resourceId": "package:leooncalldashboard",
-    "relation": "maintains",
-    "lastActive": "2026-06-21",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0573",
-    "personId": "person:sofia-kimura",
-    "resourceId": "package:leooncalldashboard",
-    "relation": "contributes-to",
-    "lastActive": "2026-05-02",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0574",
-    "personId": "person:cato-okafor",
-    "resourceId": "package:leooncalldashboard",
-    "relation": "contributes-to",
-    "lastActive": "2026-06-20",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0575",
-    "personId": "person:leila-egede",
-    "resourceId": "package:leooncalldashboard",
-    "relation": "contributes-to",
-    "lastActive": "2026-05-07",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0576",
-    "personId": "person:ben-abara",
-    "resourceId": "package:leometricssdk",
-    "relation": "owns",
-    "lastActive": "2026-07-06",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0577",
-    "personId": "person:wren-sorensen",
-    "resourceId": "package:leometricssdk",
-    "relation": "maintains",
-    "lastActive": "2026-06-26",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0578",
-    "personId": "person:idris-alvarez",
-    "resourceId": "package:leometricssdk",
-    "relation": "maintains",
-    "lastActive": "2026-03-14",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0579",
-    "personId": "person:yuki-bishop",
-    "resourceId": "package:leometricssdk",
-    "relation": "contributes-to",
-    "lastActive": "2026-02-26",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0580",
-    "personId": "person:lucas-iyer",
-    "resourceId": "package:leometricssdk",
-    "relation": "contributes-to",
-    "lastActive": "2026-06-21",
-    "observedAt": "2026-07-18T12:00:00Z"
-  },
-  {
-    "id": "relationship:r0581",
-    "personId": "person:marco-tanaka",
-    "resourceId": "package:leometricssdk",
-    "relation": "contributes-to",
-    "lastActive": "2026-07-15",
+    "lastActive": "2026-02-27",
     "observedAt": "2026-07-18T12:00:00Z"
   }
 ]

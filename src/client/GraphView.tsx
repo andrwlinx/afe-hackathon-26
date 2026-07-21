@@ -3,7 +3,7 @@ import ForceGraph3D, {
   type LinkObject,
   type NodeObject
 } from "react-force-graph-3d";
-import { RotateCcw, ZoomIn, ZoomOut } from "lucide-react";
+import { ExternalLink, RotateCcw, ZoomIn, ZoomOut } from "lucide-react";
 import {
   useCallback,
   useEffect,
@@ -419,6 +419,22 @@ export function GraphView({ path }: { path: GraphPath }) {
             <span className={`node-type status-${selectedNode.status}`}>
               {selectedNode.type}
             </span>
+            {selectedNode.type === "person" &&
+            typeof selectedNode.attributes.alias === "string" ? (
+              <div className="inspector-contact">
+                <span>{selectedNode.attributes.alias}@</span>
+                {typeof selectedNode.attributes.profileUrl === "string" ? (
+                  <a
+                    href={selectedNode.attributes.profileUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Open in Phone Tool
+                    <ExternalLink size={12} />
+                  </a>
+                ) : null}
+              </div>
+            ) : null}
             {selectedNode.description ? <p>{selectedNode.description}</p> : null}
             <div className="connection-list">
               <span>Connections</span>
