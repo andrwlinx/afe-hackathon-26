@@ -159,7 +159,7 @@ summary:focus-visible {
 
 .query-form {
   display: grid;
-  grid-template-columns: minmax(260px, 1fr) 144px 152px;
+  grid-template-columns: minmax(220px, 1fr) 210px 152px;
   gap: 8px;
 }
 
@@ -1125,7 +1125,7 @@ summary:focus-visible {
   }
 
   .query-form {
-    grid-template-columns: minmax(0, 1fr) 142px;
+    grid-template-columns: minmax(0, 1fr) 176px;
   }
 
   .query-input {

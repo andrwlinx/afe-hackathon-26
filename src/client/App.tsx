@@ -71,7 +71,7 @@ function stringAttribute(
 }
 
 export function App() {
-  const [question, setQuestion] = useState(examples[0].question);
+  const [question, setQuestion] = useState("");
   const [response, setResponse] = useState<QueryResponse | null>(null);
   const [health, setHealth] = useState<Health | null>(null);
   const [loading, setLoading] = useState(false);
@@ -158,7 +158,7 @@ export function App() {
                 value={question}
                 onChange={(event) => setQuestion(event.target.value)}
                 maxLength={500}
-                placeholder="Ask about ownership, access, or deployments"
+                placeholder='Ask me a question, i.e. "Who knows about AtlasRegionContext?"'
               />
             </div>
             <select
