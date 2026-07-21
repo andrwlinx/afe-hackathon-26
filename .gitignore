@@ -14,6 +14,7 @@ Thumbs.db
 *.key
 credentials
 secrets.json
+data/private/
 
 # ---- Logs & temp ----
 *.log
@@ -31,6 +32,8 @@ dist/
 build/
 .next/
 coverage/
+playwright-report/
+test-results/
 
 # ---- Python ----
 __pycache__/
