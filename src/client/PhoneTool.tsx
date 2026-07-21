@@ -19,10 +19,10 @@ import {
  */
 
 const orgChart = [
-  { initials: "JB", name: "Jay Bloom", alias: "bloomjay", title: "Sr. Mgr. Sat Ground Systems, L7" },
-  { initials: "GS", name: "Greg Silk", alias: "gsilk", title: "Sr Mgr, Gateway Implementation, L7" },
-  { initials: "MD", name: "Marc Doman", alias: "mdoman", title: "Mgr, Gnd Terminal Tech Ops, L6" },
-  { initials: "AM", name: "Ava Martoma", alias: "martomaa", title: "AFE HDE Intern, L4", self: true }
+  { initials: "JP", name: "Jordan Parks", alias: "jparks", title: "Sr. Mgr. Ground Systems, L7" },
+  { initials: "CR", name: "Casey Reed", alias: "caseyr", title: "Sr Mgr, Gateway Implementation, L7" },
+  { initials: "ML", name: "Morgan Lee", alias: "morganl", title: "Mgr, Gnd Terminal Tech Ops, L6" },
+  { initials: "JD", name: "Jane Doe", alias: "jdoe", title: "AFE SDE Intern, L4", self: true }
 ];
 
 export function PhoneToolPage() {
@@ -57,7 +57,7 @@ export function PhoneToolPage() {
             <Bell size={19} />
           </button>
           <span className="pt-avatar" aria-label="Your profile">
-            AM
+            <img src="/profile-jane.jpeg" alt="Jane Doe" />
           </span>
         </div>
       </header>
@@ -85,16 +85,16 @@ export function PhoneToolPage() {
       <main className="pt-content">
         <section className="pt-hero">
           <div className="pt-badge" aria-hidden="true">
-            <span className="pt-badge-top">Ava</span>
+            <span className="pt-badge-top">Jane</span>
             <span className="pt-badge-photo">
-              <User size={44} strokeWidth={1.5} />
+              <img src="/profile-jane.jpeg" alt="" />
             </span>
-            <span className="pt-badge-alias">martomaa@</span>
+            <span className="pt-badge-alias">jdoe@</span>
           </div>
           <div className="pt-hero-info">
-            <h2>Ava Martoma</h2>
-            <p className="pt-title-line">AFE HDE Intern, L4</p>
-            <p className="pt-title-line">Optical ISL Dev (7585)</p>
+            <h2>Jane Doe</h2>
+            <p className="pt-title-line">AFE SDE Intern, L4</p>
+            <p className="pt-title-line">Ground Station Software (7421)</p>
             <dl>
               <div>
                 <dt>Message:</dt>
@@ -126,13 +126,13 @@ export function PhoneToolPage() {
           </div>
           <aside className="pt-contact-card">
             <p>
-              <strong>@</strong> martomaa
+              <strong>@</strong> jdoe
             </p>
             <p>
-              <strong>✉</strong> martomaa@example.com
+              <strong>✉</strong> jdoe@example.com
             </p>
             <p>
-              <strong>⌖</strong> SEA129-Astra (Redmond, WA, US)
+              <strong>⌖</strong> SEA000 (Seattle, WA, US)
             </p>
             <p>
               <strong>⏱</strong> 8:37 AM (PDT)
@@ -150,7 +150,11 @@ export function PhoneToolPage() {
                   className={person.self ? "pt-org-self" : ""}
                 >
                   <span className="pt-org-avatar" aria-hidden="true">
-                    {person.initials}
+                    {person.self ? (
+                      <img src="/profile-jane.jpeg" alt="" />
+                    ) : (
+                      person.initials
+                    )}
                   </span>
                   <span>
                     <a href="/">{person.name}</a>{" "}
