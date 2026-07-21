@@ -163,14 +163,21 @@ export function App() {
             </div>
             <select
               aria-label="Example questions"
-              defaultValue=""
+              value={
+                examples.some((example) => example.question === question)
+                  ? question
+                  : ""
+              }
               onChange={(event) => {
                 const nextQuestion = event.currentTarget.value;
-                event.currentTarget.value = "";
                 if (nextQuestion) void submit(nextQuestion);
               }}
             >
-              <option value="">Examples</option>
+              {examples.some((example) => example.question === question) ? null : (
+                <option value="" disabled>
+                  Examples
+                </option>
+              )}
               {examples.map((example) => (
                 <option key={example.label} value={example.question}>
                   {example.label}
