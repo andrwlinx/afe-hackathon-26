@@ -1,1168 +1,2031 @@
 [
   {
-    "id": "bindle:payments-ledger",
-    "type": "bindle",
-    "name": "PaymentsLedgerBindle",
-    "description": "Payment ledger ownership bindle owned by Payments Platform.",
-    "tags": [
-      "payments",
-      "transactions",
-      "billing",
-      "ledger"
-    ],
-    "aliases": [
-      "payments-ledger"
-    ]
-  },
-  {
-    "id": "package:payments-refund",
+    "id": "package:gnd-station-scheduler",
     "type": "package",
-    "name": "PaymentRefund",
-    "description": "Payment refund package owned by Payments Platform.",
-    "tags": [
-      "payments",
-      "transactions",
-      "billing",
-      "refund"
-    ],
-    "aliases": [
-      "payments-refund"
-    ]
-  },
-  {
-    "id": "bindle:payments-invoice",
-    "type": "bindle",
-    "name": "PaymentsInvoiceBindle",
-    "description": "Payment invoice ownership bindle owned by Payments Platform.",
-    "tags": [
-      "payments",
-      "transactions",
-      "billing",
-      "invoice"
-    ],
-    "aliases": [
-      "payments-invoice"
-    ]
-  },
-  {
-    "id": "pipeline:payments-settlement",
-    "type": "pipeline",
-    "name": "PaymentsSettlementPipeline",
-    "description": "Payment settlement deployment pipeline owned by Payments Platform.",
-    "tags": [
-      "payments",
-      "transactions",
-      "billing",
-      "settlement"
-    ],
-    "aliases": [
-      "payments-settlement"
-    ]
-  },
-  {
-    "id": "bindle:payments-checkout",
-    "type": "bindle",
-    "name": "PaymentsCheckoutBindle",
-    "description": "Payment checkout ownership bindle owned by Payments Platform.",
-    "tags": [
-      "payments",
-      "transactions",
-      "billing",
-      "checkout"
-    ],
-    "aliases": [
-      "payments-checkout"
-    ]
-  },
-  {
-    "id": "service:payments-chargeback",
-    "type": "service",
-    "name": "PaymentChargeback",
-    "description": "Payment chargeback service owned by Payments Platform.",
-    "tags": [
-      "payments",
-      "transactions",
-      "billing",
-      "chargeback"
-    ],
-    "aliases": [
-      "payments-chargeback"
-    ]
-  },
-  {
-    "id": "package:payments-cdk",
-    "type": "package",
-    "name": "PaymentsCDK",
-    "description": "CDK infrastructure definitions and deployment stacks for Payments Platform.",
-    "tags": [
-      "payments",
-      "transactions",
-      "billing",
-      "cdk",
-      "infrastructure"
-    ],
-    "aliases": [
-      "payments-cdk"
-    ]
-  },
-  {
-    "id": "package:search-indexer",
-    "type": "package",
-    "name": "SearchIndexer",
-    "description": "Search indexer package owned by Search Experience.",
-    "tags": [
-      "search",
-      "ranking",
-      "relevance",
-      "indexer"
-    ],
-    "aliases": [
-      "search-indexer"
-    ]
-  },
-  {
-    "id": "package:search-query-parser",
-    "type": "package",
-    "name": "SearchQueryParser",
-    "description": "Search query parser package owned by Search Experience.",
-    "tags": [
-      "search",
-      "ranking",
-      "relevance",
-      "query parser"
-    ],
-    "aliases": [
-      "search-query-parser"
-    ]
-  },
-  {
-    "id": "package:search-ranker",
-    "type": "package",
-    "name": "SearchRanker",
-    "description": "Search ranker package owned by Search Experience.",
-    "tags": [
-      "search",
-      "ranking",
-      "relevance",
-      "ranker"
-    ],
-    "aliases": [
-      "search-ranker"
-    ]
-  },
-  {
-    "id": "bindle:search-autocomplete",
-    "type": "bindle",
-    "name": "SearchAutocompleteBindle",
-    "description": "Search autocomplete ownership bindle owned by Search Experience.",
-    "tags": [
-      "search",
-      "ranking",
-      "relevance",
-      "autocomplete"
-    ],
-    "aliases": [
-      "search-autocomplete"
-    ]
-  },
-  {
-    "id": "service:search-spellcheck",
-    "type": "service",
-    "name": "SearchSpellcheck",
-    "description": "Search spellcheck service owned by Search Experience.",
-    "tags": [
-      "search",
-      "ranking",
-      "relevance",
-      "spellcheck"
-    ],
-    "aliases": [
-      "search-spellcheck"
-    ]
-  },
-  {
-    "id": "package:search-synonyms",
-    "type": "package",
-    "name": "SearchSynonyms",
-    "description": "Search synonyms package owned by Search Experience.",
-    "tags": [
-      "search",
-      "ranking",
-      "relevance",
-      "synonyms"
-    ],
-    "aliases": [
-      "search-synonyms"
-    ]
-  },
-  {
-    "id": "package:search-cdk",
-    "type": "package",
-    "name": "SearchCDK",
-    "description": "CDK infrastructure definitions and deployment stacks for Search Experience.",
-    "tags": [
-      "search",
-      "ranking",
-      "relevance",
-      "cdk",
-      "infrastructure"
-    ],
-    "aliases": [
-      "search-cdk"
-    ]
-  },
-  {
-    "id": "pipeline:catalog-item-master",
-    "type": "pipeline",
-    "name": "CatalogItemMasterPipeline",
-    "description": "Catalog item master deployment pipeline owned by Catalog Services.",
-    "tags": [
-      "catalog",
-      "listings",
-      "products",
-      "item master"
-    ],
-    "aliases": [
-      "catalog-item-master"
-    ]
-  },
-  {
-    "id": "package:catalog-taxonomy",
-    "type": "package",
-    "name": "CatalogTaxonomy",
-    "description": "Catalog taxonomy package owned by Catalog Services.",
-    "tags": [
-      "catalog",
-      "listings",
-      "products",
-      "taxonomy"
-    ],
-    "aliases": [
-      "catalog-taxonomy"
-    ]
-  },
-  {
-    "id": "package:catalog-attributes",
-    "type": "package",
-    "name": "CatalogAttributes",
-    "description": "Catalog attributes package owned by Catalog Services.",
-    "tags": [
-      "catalog",
-      "listings",
-      "products",
-      "attributes"
-    ],
-    "aliases": [
-      "catalog-attributes"
-    ]
-  },
-  {
-    "id": "service:catalog-images",
-    "type": "service",
-    "name": "CatalogImages",
-    "description": "Catalog images service owned by Catalog Services.",
-    "tags": [
-      "catalog",
-      "listings",
-      "products",
-      "images"
-    ],
-    "aliases": [
-      "catalog-images"
-    ]
-  },
-  {
-    "id": "pipeline:catalog-variations",
-    "type": "pipeline",
-    "name": "CatalogVariationsPipeline",
-    "description": "Catalog variations deployment pipeline owned by Catalog Services.",
-    "tags": [
-      "catalog",
-      "listings",
-      "products",
-      "variations"
-    ],
-    "aliases": [
-      "catalog-variations"
-    ]
-  },
-  {
-    "id": "package:catalog-dedupe",
-    "type": "package",
-    "name": "CatalogDedupe",
-    "description": "Catalog dedupe package owned by Catalog Services.",
-    "tags": [
-      "catalog",
-      "listings",
-      "products",
-      "dedupe"
-    ],
-    "aliases": [
-      "catalog-dedupe"
-    ]
-  },
-  {
-    "id": "package:catalog-cdk",
-    "type": "package",
-    "name": "CatalogCDK",
-    "description": "CDK infrastructure definitions and deployment stacks for Catalog Services.",
-    "tags": [
-      "catalog",
-      "listings",
-      "products",
-      "cdk",
-      "infrastructure"
-    ],
-    "aliases": [
-      "catalog-cdk"
-    ]
-  },
-  {
-    "id": "bindle:fulfillment-pick-route",
-    "type": "bindle",
-    "name": "FulfillmentPickRouteBindle",
-    "description": "Fulfillment pick route ownership bindle owned by Fulfillment Tech.",
-    "tags": [
-      "fulfillment",
-      "warehouse",
-      "logistics",
-      "pick route"
-    ],
-    "aliases": [
-      "fulfillment-pick-route"
-    ]
-  },
-  {
-    "id": "pipeline:fulfillment-inventory",
-    "type": "pipeline",
-    "name": "FulfillmentInventoryPipeline",
-    "description": "Fulfillment inventory deployment pipeline owned by Fulfillment Tech.",
-    "tags": [
-      "fulfillment",
-      "warehouse",
-      "logistics",
-      "inventory"
-    ],
-    "aliases": [
-      "fulfillment-inventory"
-    ]
-  },
-  {
-    "id": "package:fulfillment-slotting",
-    "type": "package",
-    "name": "FulfillmentSlotting",
-    "description": "Fulfillment slotting package owned by Fulfillment Tech.",
-    "tags": [
-      "fulfillment",
-      "warehouse",
-      "logistics",
-      "slotting"
-    ],
-    "aliases": [
-      "fulfillment-slotting"
-    ]
-  },
-  {
-    "id": "package:fulfillment-wave-planner",
-    "type": "package",
-    "name": "FulfillmentWavePlanner",
-    "description": "Fulfillment wave planner package owned by Fulfillment Tech.",
-    "tags": [
-      "fulfillment",
-      "warehouse",
-      "logistics",
-      "wave planner"
-    ],
-    "aliases": [
-      "fulfillment-wave-planner"
-    ]
-  },
-  {
-    "id": "package:fulfillment-packing",
-    "type": "package",
-    "name": "FulfillmentPacking",
-    "description": "Fulfillment packing package owned by Fulfillment Tech.",
-    "tags": [
-      "fulfillment",
-      "warehouse",
-      "logistics",
-      "packing"
-    ],
-    "aliases": [
-      "fulfillment-packing"
-    ]
-  },
-  {
-    "id": "pipeline:fulfillment-manifest",
-    "type": "pipeline",
-    "name": "FulfillmentManifestPipeline",
-    "description": "Fulfillment manifest deployment pipeline owned by Fulfillment Tech.",
-    "tags": [
-      "fulfillment",
-      "warehouse",
-      "logistics",
-      "manifest"
-    ],
-    "aliases": [
-      "fulfillment-manifest"
-    ]
-  },
-  {
-    "id": "package:fulfillment-cdk",
-    "type": "package",
-    "name": "FulfillmentCDK",
-    "description": "CDK infrastructure definitions and deployment stacks for Fulfillment Tech.",
-    "tags": [
-      "fulfillment",
-      "warehouse",
-      "logistics",
-      "cdk",
-      "infrastructure"
-    ],
-    "aliases": [
-      "fulfillment-cdk"
-    ]
-  },
-  {
-    "id": "service:identity-signin",
-    "type": "service",
-    "name": "IdentitySignin",
-    "description": "Identity signin service owned by Identity & Access.",
-    "tags": [
-      "identity",
-      "auth",
-      "security",
-      "signin"
-    ],
-    "aliases": [
-      "identity-signin"
-    ]
-  },
-  {
-    "id": "bindle:identity-tokens",
-    "type": "bindle",
-    "name": "IdentityTokensBindle",
-    "description": "Identity tokens ownership bindle owned by Identity & Access.",
-    "tags": [
-      "identity",
-      "auth",
-      "security",
-      "tokens"
-    ],
-    "aliases": [
-      "identity-tokens"
-    ]
-  },
-  {
-    "id": "bindle:identity-sessions",
-    "type": "bindle",
-    "name": "IdentitySessionsBindle",
-    "description": "Identity sessions ownership bindle owned by Identity & Access.",
-    "tags": [
-      "identity",
-      "auth",
-      "security",
-      "sessions"
-    ],
-    "aliases": [
-      "identity-sessions"
-    ]
-  },
-  {
-    "id": "bindle:identity-mfa",
-    "type": "bindle",
-    "name": "IdentityMfaBindle",
-    "description": "Identity mfa ownership bindle owned by Identity & Access.",
-    "tags": [
-      "identity",
-      "auth",
-      "security",
-      "mfa"
-    ],
-    "aliases": [
-      "identity-mfa"
-    ]
-  },
-  {
-    "id": "service:identity-permissions",
-    "type": "service",
-    "name": "IdentityPermissions",
-    "description": "Identity permissions service owned by Identity & Access.",
-    "tags": [
-      "identity",
-      "auth",
-      "security",
-      "permissions"
-    ],
-    "aliases": [
-      "identity-permissions"
-    ]
-  },
-  {
-    "id": "service:identity-audit-log",
-    "type": "service",
-    "name": "IdentityAuditLog",
-    "description": "Identity audit log service owned by Identity & Access.",
-    "tags": [
-      "identity",
-      "auth",
-      "security",
-      "audit log"
-    ],
-    "aliases": [
-      "identity-audit-log"
-    ]
-  },
-  {
-    "id": "package:identity-cdk",
-    "type": "package",
-    "name": "IdentityCDK",
-    "description": "CDK infrastructure definitions and deployment stacks for Identity & Access.",
-    "tags": [
-      "identity",
-      "auth",
-      "security",
-      "cdk",
-      "infrastructure"
-    ],
-    "aliases": [
-      "identity-cdk"
-    ]
-  },
-  {
-    "id": "bindle:notifications-dispatcher",
-    "type": "bindle",
-    "name": "NotificationsDispatcherBindle",
-    "description": "Notification dispatcher ownership bindle owned by Notifications Hub.",
-    "tags": [
-      "notifications",
-      "messaging",
-      "email",
-      "dispatcher"
-    ],
-    "aliases": [
-      "notifications-dispatcher"
-    ]
-  },
-  {
-    "id": "pipeline:notifications-templates",
-    "type": "pipeline",
-    "name": "NotificationsTemplatesPipeline",
-    "description": "Notification templates deployment pipeline owned by Notifications Hub.",
-    "tags": [
-      "notifications",
-      "messaging",
-      "email",
-      "templates"
-    ],
-    "aliases": [
-      "notifications-templates"
-    ]
-  },
-  {
-    "id": "package:notifications-preferences",
-    "type": "package",
-    "name": "NotificationPreferences",
-    "description": "Notification preferences package owned by Notifications Hub.",
-    "tags": [
-      "notifications",
-      "messaging",
-      "email",
-      "preferences"
-    ],
-    "aliases": [
-      "notifications-preferences"
-    ]
-  },
-  {
-    "id": "bindle:notifications-digest",
-    "type": "bindle",
-    "name": "NotificationsDigestBindle",
-    "description": "Notification digest ownership bindle owned by Notifications Hub.",
-    "tags": [
-      "notifications",
-      "messaging",
-      "email",
-      "digest"
-    ],
-    "aliases": [
-      "notifications-digest"
-    ]
-  },
-  {
-    "id": "package:notifications-push-relay",
-    "type": "package",
-    "name": "NotificationPushRelay",
-    "description": "Notification push relay package owned by Notifications Hub.",
-    "tags": [
-      "notifications",
-      "messaging",
-      "email",
-      "push relay"
-    ],
-    "aliases": [
-      "notifications-push-relay"
-    ]
-  },
-  {
-    "id": "package:notifications-bounce-handler",
-    "type": "package",
-    "name": "NotificationBounceHandler",
-    "description": "Notification bounce handler package owned by Notifications Hub.",
-    "tags": [
-      "notifications",
-      "messaging",
-      "email",
-      "bounce handler"
-    ],
-    "aliases": [
-      "notifications-bounce-handler"
-    ]
-  },
-  {
-    "id": "package:notifications-cdk",
-    "type": "package",
-    "name": "NotificationsCDK",
-    "description": "CDK infrastructure definitions and deployment stacks for Notifications Hub.",
-    "tags": [
-      "notifications",
-      "messaging",
-      "email",
-      "cdk",
-      "infrastructure"
-    ],
-    "aliases": [
-      "notifications-cdk"
-    ]
-  },
-  {
-    "id": "service:analytics-event-stream",
-    "type": "service",
-    "name": "AnalyticsEventStream",
-    "description": "Analytics event stream service owned by Analytics Insights.",
-    "tags": [
-      "analytics",
-      "metrics",
-      "reporting",
-      "event stream"
-    ],
-    "aliases": [
-      "analytics-event-stream"
-    ]
-  },
-  {
-    "id": "bindle:analytics-aggregator",
-    "type": "bindle",
-    "name": "AnalyticsAggregatorBindle",
-    "description": "Analytics aggregator ownership bindle owned by Analytics Insights.",
-    "tags": [
-      "analytics",
-      "metrics",
-      "reporting",
-      "aggregator"
-    ],
-    "aliases": [
-      "analytics-aggregator"
-    ]
-  },
-  {
-    "id": "package:analytics-dashboards",
-    "type": "package",
-    "name": "AnalyticsDashboards",
-    "description": "Analytics dashboards package owned by Analytics Insights.",
-    "tags": [
-      "analytics",
-      "metrics",
-      "reporting",
-      "dashboards"
-    ],
-    "aliases": [
-      "analytics-dashboards"
-    ]
-  },
-  {
-    "id": "package:analytics-funnels",
-    "type": "package",
-    "name": "AnalyticsFunnels",
-    "description": "Analytics funnels package owned by Analytics Insights.",
-    "tags": [
-      "analytics",
-      "metrics",
-      "reporting",
-      "funnels"
-    ],
-    "aliases": [
-      "analytics-funnels"
-    ]
-  },
-  {
-    "id": "service:analytics-cohorts",
-    "type": "service",
-    "name": "AnalyticsCohorts",
-    "description": "Analytics cohorts service owned by Analytics Insights.",
-    "tags": [
-      "analytics",
-      "metrics",
-      "reporting",
-      "cohorts"
-    ],
-    "aliases": [
-      "analytics-cohorts"
-    ]
-  },
-  {
-    "id": "package:analytics-exports",
-    "type": "package",
-    "name": "AnalyticsExports",
-    "description": "Analytics exports package owned by Analytics Insights.",
-    "tags": [
-      "analytics",
-      "metrics",
-      "reporting",
-      "exports"
-    ],
-    "aliases": [
-      "analytics-exports"
-    ]
-  },
-  {
-    "id": "package:analytics-cdk",
-    "type": "package",
-    "name": "AnalyticsCDK",
-    "description": "CDK infrastructure definitions and deployment stacks for Analytics Insights.",
-    "tags": [
-      "analytics",
-      "metrics",
-      "reporting",
-      "cdk",
-      "infrastructure"
-    ],
-    "aliases": [
-      "analytics-cdk"
-    ]
-  },
-  {
-    "id": "package:delivery-promise-engine",
-    "type": "package",
-    "name": "DeliveryPromiseEngine",
-    "description": "Delivery promise engine package owned by Delivery Estimates.",
-    "tags": [
-      "delivery",
-      "promise",
-      "shipping",
-      "promise engine"
-    ],
-    "aliases": [
-      "delivery-promise-engine"
-    ]
-  },
-  {
-    "id": "service:delivery-carrier-feed",
-    "type": "service",
-    "name": "DeliveryCarrierFeed",
-    "description": "Delivery carrier feed service owned by Delivery Estimates.",
-    "tags": [
-      "delivery",
-      "promise",
-      "shipping",
-      "carrier feed"
-    ],
-    "aliases": [
-      "delivery-carrier-feed"
-    ]
-  },
-  {
-    "id": "pipeline:delivery-zones",
-    "type": "pipeline",
-    "name": "DeliveryZonesPipeline",
-    "description": "Delivery zones deployment pipeline owned by Delivery Estimates.",
-    "tags": [
-      "delivery",
-      "promise",
-      "shipping",
-      "zones"
-    ],
-    "aliases": [
-      "delivery-zones"
-    ]
-  },
-  {
-    "id": "package:delivery-cutoffs",
-    "type": "package",
-    "name": "DeliveryCutoffs",
-    "description": "Delivery cutoffs package owned by Delivery Estimates.",
-    "tags": [
-      "delivery",
-      "promise",
-      "shipping",
-      "cutoffs"
-    ],
-    "aliases": [
-      "delivery-cutoffs"
-    ]
-  },
-  {
-    "id": "package:delivery-tracking",
-    "type": "package",
-    "name": "DeliveryTracking",
-    "description": "Delivery tracking package owned by Delivery Estimates.",
-    "tags": [
-      "delivery",
-      "promise",
-      "shipping",
-      "tracking"
-    ],
-    "aliases": [
-      "delivery-tracking"
-    ]
-  },
-  {
-    "id": "package:delivery-eta-model",
-    "type": "package",
-    "name": "DeliveryEtaModel",
-    "description": "Delivery eta model package owned by Delivery Estimates.",
-    "tags": [
-      "delivery",
-      "promise",
-      "shipping",
-      "eta model"
-    ],
-    "aliases": [
-      "delivery-eta-model"
-    ]
-  },
-  {
-    "id": "package:delivery-cdk",
-    "type": "package",
-    "name": "DeliveryCDK",
-    "description": "CDK infrastructure definitions and deployment stacks for Delivery Estimates.",
-    "tags": [
-      "delivery",
-      "promise",
-      "shipping",
-      "cdk",
-      "infrastructure"
-    ],
-    "aliases": [
-      "delivery-cdk"
-    ]
-  },
-  {
-    "id": "package:ads-click-tracker",
-    "type": "package",
-    "name": "AdsClickTracker",
-    "description": "Ads click tracker package owned by Ads Measurement.",
-    "tags": [
-      "ads",
-      "attribution",
-      "campaigns",
-      "click tracker"
-    ],
-    "aliases": [
-      "ads-click-tracker"
-    ]
-  },
-  {
-    "id": "package:ads-attribution",
-    "type": "package",
-    "name": "AdsAttribution",
-    "description": "Ads attribution package owned by Ads Measurement.",
-    "tags": [
-      "ads",
-      "attribution",
-      "campaigns",
-      "attribution"
-    ],
-    "aliases": [
-      "ads-attribution"
-    ]
-  },
-  {
-    "id": "pipeline:ads-budget-pacer",
-    "type": "pipeline",
-    "name": "AdsBudgetPacerPipeline",
-    "description": "Ads budget pacer deployment pipeline owned by Ads Measurement.",
-    "tags": [
-      "ads",
-      "attribution",
-      "campaigns",
-      "budget pacer"
-    ],
-    "aliases": [
-      "ads-budget-pacer"
-    ]
-  },
-  {
-    "id": "pipeline:ads-auctions",
-    "type": "pipeline",
-    "name": "AdsAuctionsPipeline",
-    "description": "Ads auctions deployment pipeline owned by Ads Measurement.",
-    "tags": [
-      "ads",
-      "attribution",
-      "campaigns",
-      "auctions"
-    ],
-    "aliases": [
-      "ads-auctions"
-    ]
-  },
-  {
-    "id": "package:ads-reporting-api",
-    "type": "package",
-    "name": "AdsReportingApi",
-    "description": "Ads reporting api package owned by Ads Measurement.",
-    "tags": [
-      "ads",
-      "attribution",
-      "campaigns",
-      "reporting api"
-    ],
-    "aliases": [
-      "ads-reporting-api"
-    ]
-  },
-  {
-    "id": "bindle:ads-fraud-filter",
-    "type": "bindle",
-    "name": "AdsFraudFilterBindle",
-    "description": "Ads fraud filter ownership bindle owned by Ads Measurement.",
-    "tags": [
-      "ads",
-      "attribution",
-      "campaigns",
-      "fraud filter"
-    ],
-    "aliases": [
-      "ads-fraud-filter"
-    ]
-  },
-  {
-    "id": "package:ads-cdk",
-    "type": "package",
-    "name": "AdsCDK",
-    "description": "CDK infrastructure definitions and deployment stacks for Ads Measurement.",
-    "tags": [
-      "ads",
-      "attribution",
-      "campaigns",
-      "cdk",
-      "infrastructure"
-    ],
-    "aliases": [
-      "ads-cdk"
-    ]
-  },
-  {
-    "id": "package:onboarding-ramp-tracker",
-    "type": "package",
-    "name": "OnboardingRampTracker",
-    "description": "Onboarding ramp tracker package owned by Onboarding Tools.",
-    "tags": [
-      "onboarding",
-      "interns",
-      "devtools",
-      "ramp tracker"
-    ],
-    "aliases": [
-      "onboarding-ramp-tracker"
-    ]
-  },
-  {
-    "id": "package:onboarding-mentor-match",
-    "type": "package",
-    "name": "OnboardingMentorMatch",
-    "description": "Onboarding mentor match package owned by Onboarding Tools.",
-    "tags": [
-      "onboarding",
-      "interns",
-      "devtools",
-      "mentor match"
-    ],
-    "aliases": [
-      "onboarding-mentor-match"
-    ]
-  },
-  {
-    "id": "service:onboarding-starter-tasks",
-    "type": "service",
-    "name": "OnboardingStarterTasks",
-    "description": "Onboarding starter tasks service owned by Onboarding Tools.",
-    "tags": [
-      "onboarding",
-      "interns",
-      "devtools",
-      "starter tasks"
-    ],
-    "aliases": [
-      "onboarding-starter-tasks"
-    ]
-  },
-  {
-    "id": "pipeline:onboarding-wiki-sync",
-    "type": "pipeline",
-    "name": "OnboardingWikiSyncPipeline",
-    "description": "Onboarding wiki sync deployment pipeline owned by Onboarding Tools.",
-    "tags": [
-      "onboarding",
-      "interns",
-      "devtools",
-      "wiki sync"
-    ],
-    "aliases": [
-      "onboarding-wiki-sync"
-    ]
-  },
-  {
-    "id": "bindle:onboarding-checklists",
-    "type": "bindle",
-    "name": "OnboardingChecklistsBindle",
-    "description": "Onboarding checklists ownership bindle owned by Onboarding Tools.",
-    "tags": [
-      "onboarding",
-      "interns",
-      "devtools",
-      "checklists"
-    ],
-    "aliases": [
-      "onboarding-checklists"
-    ]
-  },
-  {
-    "id": "package:onboarding-badges",
-    "type": "package",
-    "name": "OnboardingBadges",
-    "description": "Onboarding badges package owned by Onboarding Tools.",
-    "tags": [
-      "onboarding",
-      "interns",
-      "devtools",
-      "badges"
-    ],
-    "aliases": [
-      "onboarding-badges"
-    ]
-  },
-  {
-    "id": "package:onboarding-cdk",
-    "type": "package",
-    "name": "OnboardingCDK",
-    "description": "CDK infrastructure definitions and deployment stacks for Onboarding Tools.",
-    "tags": [
-      "onboarding",
-      "interns",
-      "devtools",
-      "cdk",
-      "infrastructure"
-    ],
-    "aliases": [
-      "onboarding-cdk"
-    ]
-  },
-  {
-    "id": "bindle:orbit-gndsys-telemetry",
-    "type": "bindle",
-    "name": "OrbitGndsysTelemetryBindle",
-    "description": "OrbitGndsys telemetry ownership bindle owned by Orbit Ground Systems.",
-    "tags": [
-      "orbit",
-      "ground-systems",
-      "satellite",
-      "telemetry"
-    ],
-    "aliases": [
-      "orbit-gndsys-telemetry"
-    ]
-  },
-  {
-    "id": "package:orbit-gndsys-scheduler",
-    "type": "package",
-    "name": "OrbitGndsysScheduler",
-    "description": "OrbitGndsys scheduler package owned by Orbit Ground Systems.",
-    "tags": [
-      "orbit",
-      "ground-systems",
-      "satellite",
+    "name": "LeoGndStationScheduler",
+    "description": "scheduler service for Ground Station Software on Amazon Leo.",
+    "tags": [
+      "ground station",
+      "gndsys",
+      "scheduling",
       "scheduler"
     ],
     "aliases": [
-      "orbit-gndsys-scheduler"
+      "gnd-station-scheduler"
     ]
   },
   {
-    "id": "bindle:orbit-gndsys-antenna-control",
-    "type": "bindle",
-    "name": "OrbitGndsysAntennaControlBindle",
-    "description": "OrbitGndsys antenna control ownership bindle owned by Orbit Ground Systems.",
+    "id": "pipeline:gnd-station-scheduler",
+    "type": "pipeline",
+    "name": "LeoGndStationSchedulerPipeline",
+    "description": "Deployment pipeline for LeoGndStationScheduler (Ground Station Software).",
     "tags": [
-      "orbit",
-      "ground-systems",
-      "satellite",
+      "ground station",
+      "gndsys",
+      "scheduling",
+      "scheduler",
+      "pipeline"
+    ],
+    "aliases": [
+      "gnd-station-scheduler-pipeline"
+    ]
+  },
+  {
+    "id": "package:gnd-station-antenna-control",
+    "type": "package",
+    "name": "LeoGndStationAntennaControlModel",
+    "description": "antenna control Model for Ground Station Software on Amazon Leo.",
+    "tags": [
+      "ground station",
+      "gndsys",
+      "scheduling",
       "antenna control"
     ],
     "aliases": [
-      "orbit-gndsys-antenna-control"
+      "gnd-station-antenna-control"
     ]
   },
   {
-    "id": "service:orbit-gndsys-downlink",
+    "id": "pipeline:gnd-station-antenna-control",
+    "type": "pipeline",
+    "name": "LeoGndStationAntennaControlPipeline",
+    "description": "Deployment pipeline for LeoGndStationAntennaControl (Ground Station Software).",
+    "tags": [
+      "ground station",
+      "gndsys",
+      "scheduling",
+      "antenna control",
+      "pipeline"
+    ],
+    "aliases": [
+      "gnd-station-antenna-control-pipeline"
+    ]
+  },
+  {
+    "id": "package:gnd-station-pass-planner",
+    "type": "package",
+    "name": "LeoGndStationPassPlannerLambda",
+    "description": "pass planner Lambda for Ground Station Software on Amazon Leo.",
+    "tags": [
+      "ground station",
+      "gndsys",
+      "scheduling",
+      "pass planner"
+    ],
+    "aliases": [
+      "gnd-station-pass-planner"
+    ]
+  },
+  {
+    "id": "service:gnd-station-gateway",
     "type": "service",
-    "name": "OrbitGndsysDownlink",
-    "description": "OrbitGndsys downlink service owned by Orbit Ground Systems.",
+    "name": "LeoGndStationGateway",
+    "description": "Internal API gateway operated by Ground Station Software.",
     "tags": [
-      "orbit",
-      "ground-systems",
-      "satellite",
-      "downlink"
+      "ground station",
+      "gndsys",
+      "scheduling",
+      "gateway",
+      "api"
     ],
     "aliases": [
-      "orbit-gndsys-downlink"
+      "gnd-station-gateway"
     ]
   },
   {
-    "id": "package:orbit-gndsys-ops-console",
-    "type": "package",
-    "name": "OrbitGndsysOpsConsole",
-    "description": "OrbitGndsys ops console package owned by Orbit Ground Systems.",
+    "id": "bindle:gnd-station",
+    "type": "bindle",
+    "name": "LeoGndStationBindle",
+    "description": "Ownership bindle for Ground Station Software packages, pipelines, and accounts.",
     "tags": [
-      "orbit",
-      "ground-systems",
-      "satellite",
-      "ops console"
+      "ground station",
+      "gndsys",
+      "scheduling",
+      "bindle",
+      "ownership"
     ],
     "aliases": [
-      "orbit-gndsys-ops-console"
+      "gnd-station-bindle"
     ]
   },
   {
-    "id": "package:orbit-gndsys-region-config",
-    "type": "package",
-    "name": "OrbitGndsysRegionConfig",
-    "description": "OrbitGndsys region config package owned by Orbit Ground Systems.",
+    "id": "account:gnd-station-prod",
+    "type": "account",
+    "name": "leo-gnd-station-prod",
+    "description": "Production AWS account for Ground Station Software.",
     "tags": [
-      "orbit",
-      "ground-systems",
-      "satellite",
-      "region config"
+      "ground station",
+      "gndsys",
+      "scheduling",
+      "aws account",
+      "prod"
     ],
     "aliases": [
-      "orbit-gndsys-region-config"
+      "gnd-station prod account"
     ]
   },
   {
-    "id": "package:orbit-gndsys-cdk",
-    "type": "package",
-    "name": "OrbitGndsysCDK",
-    "description": "CDK infrastructure definitions and deployment stacks for Orbit Ground Systems.",
+    "id": "account:gnd-station-beta",
+    "type": "account",
+    "name": "leo-gnd-station-beta",
+    "description": "Beta AWS account for Ground Station Software.",
     "tags": [
-      "orbit",
-      "ground-systems",
-      "satellite",
+      "ground station",
+      "gndsys",
+      "scheduling",
+      "aws account",
+      "beta"
+    ],
+    "aliases": [
+      "gnd-station beta account"
+    ]
+  },
+  {
+    "id": "package:gnd-station-cdk",
+    "type": "package",
+    "name": "LeoGndStationCDK",
+    "description": "CDK infrastructure definitions for Ground Station Software deployments.",
+    "tags": [
+      "ground station",
+      "gndsys",
+      "scheduling",
       "cdk",
       "infrastructure"
     ],
     "aliases": [
-      "orbit-gndsys-cdk"
+      "gnd-station-cdk"
+    ]
+  },
+  {
+    "id": "package:telemetry-ingest",
+    "type": "package",
+    "name": "LeoTelemetryIngestModel",
+    "description": "ingest Model for Telemetry & Command on Amazon Leo.",
+    "tags": [
+      "telemetry",
+      "command",
+      "downlink",
+      "ingest"
+    ],
+    "aliases": [
+      "telemetry-ingest"
+    ]
+  },
+  {
+    "id": "pipeline:telemetry-ingest",
+    "type": "pipeline",
+    "name": "LeoTelemetryIngestPipeline",
+    "description": "Deployment pipeline for LeoTelemetryIngest (Telemetry & Command).",
+    "tags": [
+      "telemetry",
+      "command",
+      "downlink",
+      "ingest",
+      "pipeline"
+    ],
+    "aliases": [
+      "telemetry-ingest-pipeline"
+    ]
+  },
+  {
+    "id": "package:telemetry-command-dispatch",
+    "type": "package",
+    "name": "LeoTelemetryCommandDispatchLambda",
+    "description": "command dispatch Lambda for Telemetry & Command on Amazon Leo.",
+    "tags": [
+      "telemetry",
+      "command",
+      "downlink",
+      "command dispatch"
+    ],
+    "aliases": [
+      "telemetry-command-dispatch"
+    ]
+  },
+  {
+    "id": "pipeline:telemetry-command-dispatch",
+    "type": "pipeline",
+    "name": "LeoTelemetryCommandDispatchPipeline",
+    "description": "Deployment pipeline for LeoTelemetryCommandDispatch (Telemetry & Command).",
+    "tags": [
+      "telemetry",
+      "command",
+      "downlink",
+      "command dispatch",
+      "pipeline"
+    ],
+    "aliases": [
+      "telemetry-command-dispatch-pipeline"
+    ]
+  },
+  {
+    "id": "package:telemetry-alerting",
+    "type": "package",
+    "name": "LeoTelemetryAlertingCLI",
+    "description": "alerting CLI for Telemetry & Command on Amazon Leo.",
+    "tags": [
+      "telemetry",
+      "command",
+      "downlink",
+      "alerting"
+    ],
+    "aliases": [
+      "telemetry-alerting"
+    ]
+  },
+  {
+    "id": "service:telemetry-gateway",
+    "type": "service",
+    "name": "LeoTelemetryGateway",
+    "description": "Internal API gateway operated by Telemetry & Command.",
+    "tags": [
+      "telemetry",
+      "command",
+      "downlink",
+      "gateway",
+      "api"
+    ],
+    "aliases": [
+      "telemetry-gateway"
+    ]
+  },
+  {
+    "id": "bindle:telemetry",
+    "type": "bindle",
+    "name": "LeoTelemetryBindle",
+    "description": "Ownership bindle for Telemetry & Command packages, pipelines, and accounts.",
+    "tags": [
+      "telemetry",
+      "command",
+      "downlink",
+      "bindle",
+      "ownership"
+    ],
+    "aliases": [
+      "telemetry-bindle"
+    ]
+  },
+  {
+    "id": "account:telemetry-prod",
+    "type": "account",
+    "name": "leo-telemetry-prod",
+    "description": "Production AWS account for Telemetry & Command.",
+    "tags": [
+      "telemetry",
+      "command",
+      "downlink",
+      "aws account",
+      "prod"
+    ],
+    "aliases": [
+      "telemetry prod account"
+    ]
+  },
+  {
+    "id": "account:telemetry-beta",
+    "type": "account",
+    "name": "leo-telemetry-beta",
+    "description": "Beta AWS account for Telemetry & Command.",
+    "tags": [
+      "telemetry",
+      "command",
+      "downlink",
+      "aws account",
+      "beta"
+    ],
+    "aliases": [
+      "telemetry beta account"
+    ]
+  },
+  {
+    "id": "package:constellation-orbit-planner",
+    "type": "package",
+    "name": "LeoConstellationOrbitPlannerLambda",
+    "description": "orbit planner Lambda for Constellation Planning on Amazon Leo.",
+    "tags": [
+      "constellation",
+      "orbit",
+      "planning",
+      "orbit planner"
+    ],
+    "aliases": [
+      "constellation-orbit-planner"
+    ]
+  },
+  {
+    "id": "pipeline:constellation-orbit-planner",
+    "type": "pipeline",
+    "name": "LeoConstellationOrbitPlannerPipeline",
+    "description": "Deployment pipeline for LeoConstellationOrbitPlanner (Constellation Planning).",
+    "tags": [
+      "constellation",
+      "orbit",
+      "planning",
+      "orbit planner",
+      "pipeline"
+    ],
+    "aliases": [
+      "constellation-orbit-planner-pipeline"
+    ]
+  },
+  {
+    "id": "package:constellation-maneuver",
+    "type": "package",
+    "name": "LeoConstellationManeuverCLI",
+    "description": "maneuver CLI for Constellation Planning on Amazon Leo.",
+    "tags": [
+      "constellation",
+      "orbit",
+      "planning",
+      "maneuver"
+    ],
+    "aliases": [
+      "constellation-maneuver"
+    ]
+  },
+  {
+    "id": "pipeline:constellation-maneuver",
+    "type": "pipeline",
+    "name": "LeoConstellationManeuverPipeline",
+    "description": "Deployment pipeline for LeoConstellationManeuver (Constellation Planning).",
+    "tags": [
+      "constellation",
+      "orbit",
+      "planning",
+      "maneuver",
+      "pipeline"
+    ],
+    "aliases": [
+      "constellation-maneuver-pipeline"
+    ]
+  },
+  {
+    "id": "package:constellation-conjunction",
+    "type": "package",
+    "name": "LeoConstellationConjunctionDaemon",
+    "description": "conjunction Daemon for Constellation Planning on Amazon Leo.",
+    "tags": [
+      "constellation",
+      "orbit",
+      "planning",
+      "conjunction"
+    ],
+    "aliases": [
+      "constellation-conjunction"
+    ]
+  },
+  {
+    "id": "service:constellation-gateway",
+    "type": "service",
+    "name": "LeoConstellationGateway",
+    "description": "Internal API gateway operated by Constellation Planning.",
+    "tags": [
+      "constellation",
+      "orbit",
+      "planning",
+      "gateway",
+      "api"
+    ],
+    "aliases": [
+      "constellation-gateway"
+    ]
+  },
+  {
+    "id": "bindle:constellation",
+    "type": "bindle",
+    "name": "LeoConstellationBindle",
+    "description": "Ownership bindle for Constellation Planning packages, pipelines, and accounts.",
+    "tags": [
+      "constellation",
+      "orbit",
+      "planning",
+      "bindle",
+      "ownership"
+    ],
+    "aliases": [
+      "constellation-bindle"
+    ]
+  },
+  {
+    "id": "account:constellation-prod",
+    "type": "account",
+    "name": "leo-constellation-prod",
+    "description": "Production AWS account for Constellation Planning.",
+    "tags": [
+      "constellation",
+      "orbit",
+      "planning",
+      "aws account",
+      "prod"
+    ],
+    "aliases": [
+      "constellation prod account"
+    ]
+  },
+  {
+    "id": "account:constellation-beta",
+    "type": "account",
+    "name": "leo-constellation-beta",
+    "description": "Beta AWS account for Constellation Planning.",
+    "tags": [
+      "constellation",
+      "orbit",
+      "planning",
+      "aws account",
+      "beta"
+    ],
+    "aliases": [
+      "constellation beta account"
+    ]
+  },
+  {
+    "id": "package:constellation-cdk",
+    "type": "package",
+    "name": "LeoConstellationCDK",
+    "description": "CDK infrastructure definitions for Constellation Planning deployments.",
+    "tags": [
+      "constellation",
+      "orbit",
+      "planning",
+      "cdk",
+      "infrastructure"
+    ],
+    "aliases": [
+      "constellation-cdk"
+    ]
+  },
+  {
+    "id": "package:optical-isl-link-manager",
+    "type": "package",
+    "name": "LeoOpticalIslLinkManagerCLI",
+    "description": "link manager CLI for Optical ISL Dev on Amazon Leo.",
+    "tags": [
+      "optical",
+      "isl",
+      "laser link",
+      "link manager"
+    ],
+    "aliases": [
+      "optical-isl-link-manager"
+    ]
+  },
+  {
+    "id": "pipeline:optical-isl-link-manager",
+    "type": "pipeline",
+    "name": "LeoOpticalIslLinkManagerPipeline",
+    "description": "Deployment pipeline for LeoOpticalIslLinkManager (Optical ISL Dev).",
+    "tags": [
+      "optical",
+      "isl",
+      "laser link",
+      "link manager",
+      "pipeline"
+    ],
+    "aliases": [
+      "optical-isl-link-manager-pipeline"
+    ]
+  },
+  {
+    "id": "package:optical-isl-pointing",
+    "type": "package",
+    "name": "LeoOpticalIslPointingDaemon",
+    "description": "pointing Daemon for Optical ISL Dev on Amazon Leo.",
+    "tags": [
+      "optical",
+      "isl",
+      "laser link",
+      "pointing"
+    ],
+    "aliases": [
+      "optical-isl-pointing"
+    ]
+  },
+  {
+    "id": "pipeline:optical-isl-pointing",
+    "type": "pipeline",
+    "name": "LeoOpticalIslPointingPipeline",
+    "description": "Deployment pipeline for LeoOpticalIslPointing (Optical ISL Dev).",
+    "tags": [
+      "optical",
+      "isl",
+      "laser link",
+      "pointing",
+      "pipeline"
+    ],
+    "aliases": [
+      "optical-isl-pointing-pipeline"
+    ]
+  },
+  {
+    "id": "package:optical-isl-handoff",
+    "type": "package",
+    "name": "LeoOpticalIslHandoff",
+    "description": "handoff service for Optical ISL Dev on Amazon Leo.",
+    "tags": [
+      "optical",
+      "isl",
+      "laser link",
+      "handoff"
+    ],
+    "aliases": [
+      "optical-isl-handoff"
+    ]
+  },
+  {
+    "id": "service:optical-isl-gateway",
+    "type": "service",
+    "name": "LeoOpticalIslGateway",
+    "description": "Internal API gateway operated by Optical ISL Dev.",
+    "tags": [
+      "optical",
+      "isl",
+      "laser link",
+      "gateway",
+      "api"
+    ],
+    "aliases": [
+      "optical-isl-gateway"
+    ]
+  },
+  {
+    "id": "bindle:optical-isl",
+    "type": "bindle",
+    "name": "LeoOpticalIslBindle",
+    "description": "Ownership bindle for Optical ISL Dev packages, pipelines, and accounts.",
+    "tags": [
+      "optical",
+      "isl",
+      "laser link",
+      "bindle",
+      "ownership"
+    ],
+    "aliases": [
+      "optical-isl-bindle"
+    ]
+  },
+  {
+    "id": "account:optical-isl-prod",
+    "type": "account",
+    "name": "leo-optical-isl-prod",
+    "description": "Production AWS account for Optical ISL Dev.",
+    "tags": [
+      "optical",
+      "isl",
+      "laser link",
+      "aws account",
+      "prod"
+    ],
+    "aliases": [
+      "optical-isl prod account"
+    ]
+  },
+  {
+    "id": "account:optical-isl-beta",
+    "type": "account",
+    "name": "leo-optical-isl-beta",
+    "description": "Beta AWS account for Optical ISL Dev.",
+    "tags": [
+      "optical",
+      "isl",
+      "laser link",
+      "aws account",
+      "beta"
+    ],
+    "aliases": [
+      "optical-isl beta account"
+    ]
+  },
+  {
+    "id": "package:terminals-provisioning",
+    "type": "package",
+    "name": "LeoTerminalProvisioningDaemon",
+    "description": "provisioning Daemon for Customer Terminals on Amazon Leo.",
+    "tags": [
+      "terminal",
+      "customer",
+      "firmware",
+      "provisioning"
+    ],
+    "aliases": [
+      "terminals-provisioning"
+    ]
+  },
+  {
+    "id": "pipeline:terminals-provisioning",
+    "type": "pipeline",
+    "name": "LeoTerminalProvisioningPipeline",
+    "description": "Deployment pipeline for LeoTerminalProvisioning (Customer Terminals).",
+    "tags": [
+      "terminal",
+      "customer",
+      "firmware",
+      "provisioning",
+      "pipeline"
+    ],
+    "aliases": [
+      "terminals-provisioning-pipeline"
+    ]
+  },
+  {
+    "id": "package:terminals-firmware-update",
+    "type": "package",
+    "name": "LeoTerminalFirmwareUpdate",
+    "description": "firmware update service for Customer Terminals on Amazon Leo.",
+    "tags": [
+      "terminal",
+      "customer",
+      "firmware",
+      "firmware update"
+    ],
+    "aliases": [
+      "terminals-firmware-update"
+    ]
+  },
+  {
+    "id": "pipeline:terminals-firmware-update",
+    "type": "pipeline",
+    "name": "LeoTerminalFirmwareUpdatePipeline",
+    "description": "Deployment pipeline for LeoTerminalFirmwareUpdate (Customer Terminals).",
+    "tags": [
+      "terminal",
+      "customer",
+      "firmware",
+      "firmware update",
+      "pipeline"
+    ],
+    "aliases": [
+      "terminals-firmware-update-pipeline"
+    ]
+  },
+  {
+    "id": "package:terminals-diagnostics",
+    "type": "package",
+    "name": "LeoTerminalDiagnosticsModel",
+    "description": "diagnostics Model for Customer Terminals on Amazon Leo.",
+    "tags": [
+      "terminal",
+      "customer",
+      "firmware",
+      "diagnostics"
+    ],
+    "aliases": [
+      "terminals-diagnostics"
+    ]
+  },
+  {
+    "id": "service:terminals-gateway",
+    "type": "service",
+    "name": "LeoTerminalGateway",
+    "description": "Internal API gateway operated by Customer Terminals.",
+    "tags": [
+      "terminal",
+      "customer",
+      "firmware",
+      "gateway",
+      "api"
+    ],
+    "aliases": [
+      "terminals-gateway"
+    ]
+  },
+  {
+    "id": "bindle:terminals",
+    "type": "bindle",
+    "name": "LeoTerminalBindle",
+    "description": "Ownership bindle for Customer Terminals packages, pipelines, and accounts.",
+    "tags": [
+      "terminal",
+      "customer",
+      "firmware",
+      "bindle",
+      "ownership"
+    ],
+    "aliases": [
+      "terminals-bindle"
+    ]
+  },
+  {
+    "id": "account:terminals-prod",
+    "type": "account",
+    "name": "leo-terminals-prod",
+    "description": "Production AWS account for Customer Terminals.",
+    "tags": [
+      "terminal",
+      "customer",
+      "firmware",
+      "aws account",
+      "prod"
+    ],
+    "aliases": [
+      "terminals prod account"
+    ]
+  },
+  {
+    "id": "account:terminals-beta",
+    "type": "account",
+    "name": "leo-terminals-beta",
+    "description": "Beta AWS account for Customer Terminals.",
+    "tags": [
+      "terminal",
+      "customer",
+      "firmware",
+      "aws account",
+      "beta"
+    ],
+    "aliases": [
+      "terminals beta account"
+    ]
+  },
+  {
+    "id": "package:terminals-cdk",
+    "type": "package",
+    "name": "LeoTerminalCDK",
+    "description": "CDK infrastructure definitions for Customer Terminals deployments.",
+    "tags": [
+      "terminal",
+      "customer",
+      "firmware",
+      "cdk",
+      "infrastructure"
+    ],
+    "aliases": [
+      "terminals-cdk"
+    ]
+  },
+  {
+    "id": "package:network-route-planner",
+    "type": "package",
+    "name": "LeoNetworkRoutePlanner",
+    "description": "route planner service for Network Control Plane on Amazon Leo.",
+    "tags": [
+      "network",
+      "routing",
+      "spectrum",
+      "route planner"
+    ],
+    "aliases": [
+      "network-route-planner"
+    ]
+  },
+  {
+    "id": "pipeline:network-route-planner",
+    "type": "pipeline",
+    "name": "LeoNetworkRoutePlannerPipeline",
+    "description": "Deployment pipeline for LeoNetworkRoutePlanner (Network Control Plane).",
+    "tags": [
+      "network",
+      "routing",
+      "spectrum",
+      "route planner",
+      "pipeline"
+    ],
+    "aliases": [
+      "network-route-planner-pipeline"
+    ]
+  },
+  {
+    "id": "package:network-spectrum-manager",
+    "type": "package",
+    "name": "LeoNetworkSpectrumManagerModel",
+    "description": "spectrum manager Model for Network Control Plane on Amazon Leo.",
+    "tags": [
+      "network",
+      "routing",
+      "spectrum",
+      "spectrum manager"
+    ],
+    "aliases": [
+      "network-spectrum-manager"
+    ]
+  },
+  {
+    "id": "pipeline:network-spectrum-manager",
+    "type": "pipeline",
+    "name": "LeoNetworkSpectrumManagerPipeline",
+    "description": "Deployment pipeline for LeoNetworkSpectrumManager (Network Control Plane).",
+    "tags": [
+      "network",
+      "routing",
+      "spectrum",
+      "spectrum manager",
+      "pipeline"
+    ],
+    "aliases": [
+      "network-spectrum-manager-pipeline"
+    ]
+  },
+  {
+    "id": "package:network-capacity",
+    "type": "package",
+    "name": "LeoNetworkCapacityLambda",
+    "description": "capacity Lambda for Network Control Plane on Amazon Leo.",
+    "tags": [
+      "network",
+      "routing",
+      "spectrum",
+      "capacity"
+    ],
+    "aliases": [
+      "network-capacity"
+    ]
+  },
+  {
+    "id": "service:network-gateway",
+    "type": "service",
+    "name": "LeoNetworkGateway",
+    "description": "Internal API gateway operated by Network Control Plane.",
+    "tags": [
+      "network",
+      "routing",
+      "spectrum",
+      "gateway",
+      "api"
+    ],
+    "aliases": [
+      "network-gateway"
+    ]
+  },
+  {
+    "id": "bindle:network",
+    "type": "bindle",
+    "name": "LeoNetworkBindle",
+    "description": "Ownership bindle for Network Control Plane packages, pipelines, and accounts.",
+    "tags": [
+      "network",
+      "routing",
+      "spectrum",
+      "bindle",
+      "ownership"
+    ],
+    "aliases": [
+      "network-bindle"
+    ]
+  },
+  {
+    "id": "account:network-prod",
+    "type": "account",
+    "name": "leo-network-prod",
+    "description": "Production AWS account for Network Control Plane.",
+    "tags": [
+      "network",
+      "routing",
+      "spectrum",
+      "aws account",
+      "prod"
+    ],
+    "aliases": [
+      "network prod account"
+    ]
+  },
+  {
+    "id": "account:network-beta",
+    "type": "account",
+    "name": "leo-network-beta",
+    "description": "Beta AWS account for Network Control Plane.",
+    "tags": [
+      "network",
+      "routing",
+      "spectrum",
+      "aws account",
+      "beta"
+    ],
+    "aliases": [
+      "network beta account"
+    ]
+  },
+  {
+    "id": "package:fleet-ops-dashboard",
+    "type": "package",
+    "name": "LeoFleetOpsDashboardModel",
+    "description": "dashboard Model for Fleet Operations on Amazon Leo.",
+    "tags": [
+      "fleet",
+      "operations",
+      "oncall",
+      "dashboard"
+    ],
+    "aliases": [
+      "fleet-ops-dashboard"
+    ]
+  },
+  {
+    "id": "pipeline:fleet-ops-dashboard",
+    "type": "pipeline",
+    "name": "LeoFleetOpsDashboardPipeline",
+    "description": "Deployment pipeline for LeoFleetOpsDashboard (Fleet Operations).",
+    "tags": [
+      "fleet",
+      "operations",
+      "oncall",
+      "dashboard",
+      "pipeline"
+    ],
+    "aliases": [
+      "fleet-ops-dashboard-pipeline"
+    ]
+  },
+  {
+    "id": "package:fleet-ops-incident-tracker",
+    "type": "package",
+    "name": "LeoFleetOpsIncidentTrackerLambda",
+    "description": "incident tracker Lambda for Fleet Operations on Amazon Leo.",
+    "tags": [
+      "fleet",
+      "operations",
+      "oncall",
+      "incident tracker"
+    ],
+    "aliases": [
+      "fleet-ops-incident-tracker"
+    ]
+  },
+  {
+    "id": "pipeline:fleet-ops-incident-tracker",
+    "type": "pipeline",
+    "name": "LeoFleetOpsIncidentTrackerPipeline",
+    "description": "Deployment pipeline for LeoFleetOpsIncidentTracker (Fleet Operations).",
+    "tags": [
+      "fleet",
+      "operations",
+      "oncall",
+      "incident tracker",
+      "pipeline"
+    ],
+    "aliases": [
+      "fleet-ops-incident-tracker-pipeline"
+    ]
+  },
+  {
+    "id": "package:fleet-ops-health-monitor",
+    "type": "package",
+    "name": "LeoFleetOpsHealthMonitorCLI",
+    "description": "health monitor CLI for Fleet Operations on Amazon Leo.",
+    "tags": [
+      "fleet",
+      "operations",
+      "oncall",
+      "health monitor"
+    ],
+    "aliases": [
+      "fleet-ops-health-monitor"
+    ]
+  },
+  {
+    "id": "service:fleet-ops-gateway",
+    "type": "service",
+    "name": "LeoFleetOpsGateway",
+    "description": "Internal API gateway operated by Fleet Operations.",
+    "tags": [
+      "fleet",
+      "operations",
+      "oncall",
+      "gateway",
+      "api"
+    ],
+    "aliases": [
+      "fleet-ops-gateway"
+    ]
+  },
+  {
+    "id": "bindle:fleet-ops",
+    "type": "bindle",
+    "name": "LeoFleetOpsBindle",
+    "description": "Ownership bindle for Fleet Operations packages, pipelines, and accounts.",
+    "tags": [
+      "fleet",
+      "operations",
+      "oncall",
+      "bindle",
+      "ownership"
+    ],
+    "aliases": [
+      "fleet-ops-bindle"
+    ]
+  },
+  {
+    "id": "account:fleet-ops-prod",
+    "type": "account",
+    "name": "leo-fleet-ops-prod",
+    "description": "Production AWS account for Fleet Operations.",
+    "tags": [
+      "fleet",
+      "operations",
+      "oncall",
+      "aws account",
+      "prod"
+    ],
+    "aliases": [
+      "fleet-ops prod account"
+    ]
+  },
+  {
+    "id": "account:fleet-ops-beta",
+    "type": "account",
+    "name": "leo-fleet-ops-beta",
+    "description": "Beta AWS account for Fleet Operations.",
+    "tags": [
+      "fleet",
+      "operations",
+      "oncall",
+      "aws account",
+      "beta"
+    ],
+    "aliases": [
+      "fleet-ops beta account"
+    ]
+  },
+  {
+    "id": "package:fleet-ops-cdk",
+    "type": "package",
+    "name": "LeoFleetOpsCDK",
+    "description": "CDK infrastructure definitions for Fleet Operations deployments.",
+    "tags": [
+      "fleet",
+      "operations",
+      "oncall",
+      "cdk",
+      "infrastructure"
+    ],
+    "aliases": [
+      "fleet-ops-cdk"
+    ]
+  },
+  {
+    "id": "package:payload-boot-manager",
+    "type": "package",
+    "name": "LeoPayloadBootManagerLambda",
+    "description": "boot manager Lambda for Payload Software on Amazon Leo.",
+    "tags": [
+      "payload",
+      "flight software",
+      "satellite",
+      "boot manager"
+    ],
+    "aliases": [
+      "payload-boot-manager"
+    ]
+  },
+  {
+    "id": "pipeline:payload-boot-manager",
+    "type": "pipeline",
+    "name": "LeoPayloadBootManagerPipeline",
+    "description": "Deployment pipeline for LeoPayloadBootManager (Payload Software).",
+    "tags": [
+      "payload",
+      "flight software",
+      "satellite",
+      "boot manager",
+      "pipeline"
+    ],
+    "aliases": [
+      "payload-boot-manager-pipeline"
+    ]
+  },
+  {
+    "id": "package:payload-imaging",
+    "type": "package",
+    "name": "LeoPayloadImagingCLI",
+    "description": "imaging CLI for Payload Software on Amazon Leo.",
+    "tags": [
+      "payload",
+      "flight software",
+      "satellite",
+      "imaging"
+    ],
+    "aliases": [
+      "payload-imaging"
+    ]
+  },
+  {
+    "id": "pipeline:payload-imaging",
+    "type": "pipeline",
+    "name": "LeoPayloadImagingPipeline",
+    "description": "Deployment pipeline for LeoPayloadImaging (Payload Software).",
+    "tags": [
+      "payload",
+      "flight software",
+      "satellite",
+      "imaging",
+      "pipeline"
+    ],
+    "aliases": [
+      "payload-imaging-pipeline"
+    ]
+  },
+  {
+    "id": "package:payload-power-control",
+    "type": "package",
+    "name": "LeoPayloadPowerControlDaemon",
+    "description": "power control Daemon for Payload Software on Amazon Leo.",
+    "tags": [
+      "payload",
+      "flight software",
+      "satellite",
+      "power control"
+    ],
+    "aliases": [
+      "payload-power-control"
+    ]
+  },
+  {
+    "id": "service:payload-gateway",
+    "type": "service",
+    "name": "LeoPayloadGateway",
+    "description": "Internal API gateway operated by Payload Software.",
+    "tags": [
+      "payload",
+      "flight software",
+      "satellite",
+      "gateway",
+      "api"
+    ],
+    "aliases": [
+      "payload-gateway"
+    ]
+  },
+  {
+    "id": "bindle:payload",
+    "type": "bindle",
+    "name": "LeoPayloadBindle",
+    "description": "Ownership bindle for Payload Software packages, pipelines, and accounts.",
+    "tags": [
+      "payload",
+      "flight software",
+      "satellite",
+      "bindle",
+      "ownership"
+    ],
+    "aliases": [
+      "payload-bindle"
+    ]
+  },
+  {
+    "id": "account:payload-prod",
+    "type": "account",
+    "name": "leo-payload-prod",
+    "description": "Production AWS account for Payload Software.",
+    "tags": [
+      "payload",
+      "flight software",
+      "satellite",
+      "aws account",
+      "prod"
+    ],
+    "aliases": [
+      "payload prod account"
+    ]
+  },
+  {
+    "id": "account:payload-beta",
+    "type": "account",
+    "name": "leo-payload-beta",
+    "description": "Beta AWS account for Payload Software.",
+    "tags": [
+      "payload",
+      "flight software",
+      "satellite",
+      "aws account",
+      "beta"
+    ],
+    "aliases": [
+      "payload beta account"
+    ]
+  },
+  {
+    "id": "package:sim-test-orbit-sim",
+    "type": "package",
+    "name": "LeoSimOrbitSimCLI",
+    "description": "orbit sim CLI for Simulation & Test on Amazon Leo.",
+    "tags": [
+      "simulation",
+      "testing",
+      "hil",
+      "orbit sim"
+    ],
+    "aliases": [
+      "sim-test-orbit-sim"
+    ]
+  },
+  {
+    "id": "pipeline:sim-test-orbit-sim",
+    "type": "pipeline",
+    "name": "LeoSimOrbitSimPipeline",
+    "description": "Deployment pipeline for LeoSimOrbitSim (Simulation & Test).",
+    "tags": [
+      "simulation",
+      "testing",
+      "hil",
+      "orbit sim",
+      "pipeline"
+    ],
+    "aliases": [
+      "sim-test-orbit-sim-pipeline"
+    ]
+  },
+  {
+    "id": "package:sim-test-hardware-in-loop",
+    "type": "package",
+    "name": "LeoSimHardwareInLoopDaemon",
+    "description": "hardware in loop Daemon for Simulation & Test on Amazon Leo.",
+    "tags": [
+      "simulation",
+      "testing",
+      "hil",
+      "hardware in loop"
+    ],
+    "aliases": [
+      "sim-test-hardware-in-loop"
+    ]
+  },
+  {
+    "id": "pipeline:sim-test-hardware-in-loop",
+    "type": "pipeline",
+    "name": "LeoSimHardwareInLoopPipeline",
+    "description": "Deployment pipeline for LeoSimHardwareInLoop (Simulation & Test).",
+    "tags": [
+      "simulation",
+      "testing",
+      "hil",
+      "hardware in loop",
+      "pipeline"
+    ],
+    "aliases": [
+      "sim-test-hardware-in-loop-pipeline"
+    ]
+  },
+  {
+    "id": "package:sim-test-regression-suite",
+    "type": "package",
+    "name": "LeoSimRegressionSuite",
+    "description": "regression suite service for Simulation & Test on Amazon Leo.",
+    "tags": [
+      "simulation",
+      "testing",
+      "hil",
+      "regression suite"
+    ],
+    "aliases": [
+      "sim-test-regression-suite"
+    ]
+  },
+  {
+    "id": "service:sim-test-gateway",
+    "type": "service",
+    "name": "LeoSimGateway",
+    "description": "Internal API gateway operated by Simulation & Test.",
+    "tags": [
+      "simulation",
+      "testing",
+      "hil",
+      "gateway",
+      "api"
+    ],
+    "aliases": [
+      "sim-test-gateway"
+    ]
+  },
+  {
+    "id": "bindle:sim-test",
+    "type": "bindle",
+    "name": "LeoSimBindle",
+    "description": "Ownership bindle for Simulation & Test packages, pipelines, and accounts.",
+    "tags": [
+      "simulation",
+      "testing",
+      "hil",
+      "bindle",
+      "ownership"
+    ],
+    "aliases": [
+      "sim-test-bindle"
+    ]
+  },
+  {
+    "id": "account:sim-test-prod",
+    "type": "account",
+    "name": "leo-sim-test-prod",
+    "description": "Production AWS account for Simulation & Test.",
+    "tags": [
+      "simulation",
+      "testing",
+      "hil",
+      "aws account",
+      "prod"
+    ],
+    "aliases": [
+      "sim-test prod account"
+    ]
+  },
+  {
+    "id": "account:sim-test-beta",
+    "type": "account",
+    "name": "leo-sim-test-beta",
+    "description": "Beta AWS account for Simulation & Test.",
+    "tags": [
+      "simulation",
+      "testing",
+      "hil",
+      "aws account",
+      "beta"
+    ],
+    "aliases": [
+      "sim-test beta account"
+    ]
+  },
+  {
+    "id": "package:sim-test-cdk",
+    "type": "package",
+    "name": "LeoSimCDK",
+    "description": "CDK infrastructure definitions for Simulation & Test deployments.",
+    "tags": [
+      "simulation",
+      "testing",
+      "hil",
+      "cdk",
+      "infrastructure"
+    ],
+    "aliases": [
+      "sim-test-cdk"
+    ]
+  },
+  {
+    "id": "package:rf-modem-waveform",
+    "type": "package",
+    "name": "LeoRfModemWaveformDaemon",
+    "description": "waveform Daemon for RF Modem Dev on Amazon Leo.",
+    "tags": [
+      "rf",
+      "modem",
+      "waveform",
+      "waveform"
+    ],
+    "aliases": [
+      "rf-modem-waveform"
+    ]
+  },
+  {
+    "id": "pipeline:rf-modem-waveform",
+    "type": "pipeline",
+    "name": "LeoRfModemWaveformPipeline",
+    "description": "Deployment pipeline for LeoRfModemWaveform (RF Modem Dev).",
+    "tags": [
+      "rf",
+      "modem",
+      "waveform",
+      "waveform",
+      "pipeline"
+    ],
+    "aliases": [
+      "rf-modem-waveform-pipeline"
+    ]
+  },
+  {
+    "id": "package:rf-modem-beam-steering",
+    "type": "package",
+    "name": "LeoRfModemBeamSteering",
+    "description": "beam steering service for RF Modem Dev on Amazon Leo.",
+    "tags": [
+      "rf",
+      "modem",
+      "waveform",
+      "beam steering"
+    ],
+    "aliases": [
+      "rf-modem-beam-steering"
+    ]
+  },
+  {
+    "id": "pipeline:rf-modem-beam-steering",
+    "type": "pipeline",
+    "name": "LeoRfModemBeamSteeringPipeline",
+    "description": "Deployment pipeline for LeoRfModemBeamSteering (RF Modem Dev).",
+    "tags": [
+      "rf",
+      "modem",
+      "waveform",
+      "beam steering",
+      "pipeline"
+    ],
+    "aliases": [
+      "rf-modem-beam-steering-pipeline"
+    ]
+  },
+  {
+    "id": "package:rf-modem-signal-analyzer",
+    "type": "package",
+    "name": "LeoRfModemSignalAnalyzerModel",
+    "description": "signal analyzer Model for RF Modem Dev on Amazon Leo.",
+    "tags": [
+      "rf",
+      "modem",
+      "waveform",
+      "signal analyzer"
+    ],
+    "aliases": [
+      "rf-modem-signal-analyzer"
+    ]
+  },
+  {
+    "id": "service:rf-modem-gateway",
+    "type": "service",
+    "name": "LeoRfModemGateway",
+    "description": "Internal API gateway operated by RF Modem Dev.",
+    "tags": [
+      "rf",
+      "modem",
+      "waveform",
+      "gateway",
+      "api"
+    ],
+    "aliases": [
+      "rf-modem-gateway"
+    ]
+  },
+  {
+    "id": "bindle:rf-modem",
+    "type": "bindle",
+    "name": "LeoRfModemBindle",
+    "description": "Ownership bindle for RF Modem Dev packages, pipelines, and accounts.",
+    "tags": [
+      "rf",
+      "modem",
+      "waveform",
+      "bindle",
+      "ownership"
+    ],
+    "aliases": [
+      "rf-modem-bindle"
+    ]
+  },
+  {
+    "id": "account:rf-modem-prod",
+    "type": "account",
+    "name": "leo-rf-modem-prod",
+    "description": "Production AWS account for RF Modem Dev.",
+    "tags": [
+      "rf",
+      "modem",
+      "waveform",
+      "aws account",
+      "prod"
+    ],
+    "aliases": [
+      "rf-modem prod account"
+    ]
+  },
+  {
+    "id": "account:rf-modem-beta",
+    "type": "account",
+    "name": "leo-rf-modem-beta",
+    "description": "Beta AWS account for RF Modem Dev.",
+    "tags": [
+      "rf",
+      "modem",
+      "waveform",
+      "aws account",
+      "beta"
+    ],
+    "aliases": [
+      "rf-modem beta account"
+    ]
+  },
+  {
+    "id": "package:mission-data-data-lake",
+    "type": "package",
+    "name": "LeoMissionDataDataLake",
+    "description": "data lake service for Mission Data Services on Amazon Leo.",
+    "tags": [
+      "data",
+      "processing",
+      "storage",
+      "data lake"
+    ],
+    "aliases": [
+      "mission-data-data-lake"
+    ]
+  },
+  {
+    "id": "pipeline:mission-data-data-lake",
+    "type": "pipeline",
+    "name": "LeoMissionDataDataLakePipeline",
+    "description": "Deployment pipeline for LeoMissionDataDataLake (Mission Data Services).",
+    "tags": [
+      "data",
+      "processing",
+      "storage",
+      "data lake",
+      "pipeline"
+    ],
+    "aliases": [
+      "mission-data-data-lake-pipeline"
+    ]
+  },
+  {
+    "id": "package:mission-data-downlink-processor",
+    "type": "package",
+    "name": "LeoMissionDataDownlinkProcessorModel",
+    "description": "downlink processor Model for Mission Data Services on Amazon Leo.",
+    "tags": [
+      "data",
+      "processing",
+      "storage",
+      "downlink processor"
+    ],
+    "aliases": [
+      "mission-data-downlink-processor"
+    ]
+  },
+  {
+    "id": "pipeline:mission-data-downlink-processor",
+    "type": "pipeline",
+    "name": "LeoMissionDataDownlinkProcessorPipeline",
+    "description": "Deployment pipeline for LeoMissionDataDownlinkProcessor (Mission Data Services).",
+    "tags": [
+      "data",
+      "processing",
+      "storage",
+      "downlink processor",
+      "pipeline"
+    ],
+    "aliases": [
+      "mission-data-downlink-processor-pipeline"
+    ]
+  },
+  {
+    "id": "package:mission-data-catalog-api",
+    "type": "package",
+    "name": "LeoMissionDataCatalogApiLambda",
+    "description": "catalog api Lambda for Mission Data Services on Amazon Leo.",
+    "tags": [
+      "data",
+      "processing",
+      "storage",
+      "catalog api"
+    ],
+    "aliases": [
+      "mission-data-catalog-api"
+    ]
+  },
+  {
+    "id": "service:mission-data-gateway",
+    "type": "service",
+    "name": "LeoMissionDataGateway",
+    "description": "Internal API gateway operated by Mission Data Services.",
+    "tags": [
+      "data",
+      "processing",
+      "storage",
+      "gateway",
+      "api"
+    ],
+    "aliases": [
+      "mission-data-gateway"
+    ]
+  },
+  {
+    "id": "bindle:mission-data",
+    "type": "bindle",
+    "name": "LeoMissionDataBindle",
+    "description": "Ownership bindle for Mission Data Services packages, pipelines, and accounts.",
+    "tags": [
+      "data",
+      "processing",
+      "storage",
+      "bindle",
+      "ownership"
+    ],
+    "aliases": [
+      "mission-data-bindle"
+    ]
+  },
+  {
+    "id": "account:mission-data-prod",
+    "type": "account",
+    "name": "leo-mission-data-prod",
+    "description": "Production AWS account for Mission Data Services.",
+    "tags": [
+      "data",
+      "processing",
+      "storage",
+      "aws account",
+      "prod"
+    ],
+    "aliases": [
+      "mission-data prod account"
+    ]
+  },
+  {
+    "id": "account:mission-data-beta",
+    "type": "account",
+    "name": "leo-mission-data-beta",
+    "description": "Beta AWS account for Mission Data Services.",
+    "tags": [
+      "data",
+      "processing",
+      "storage",
+      "aws account",
+      "beta"
+    ],
+    "aliases": [
+      "mission-data beta account"
+    ]
+  },
+  {
+    "id": "package:mission-data-cdk",
+    "type": "package",
+    "name": "LeoMissionDataCDK",
+    "description": "CDK infrastructure definitions for Mission Data Services deployments.",
+    "tags": [
+      "data",
+      "processing",
+      "storage",
+      "cdk",
+      "infrastructure"
+    ],
+    "aliases": [
+      "mission-data-cdk"
+    ]
+  },
+  {
+    "id": "package:launch-sequence-planner",
+    "type": "package",
+    "name": "LeoLaunchSequencePlannerModel",
+    "description": "sequence planner Model for Launch Integration on Amazon Leo.",
+    "tags": [
+      "launch",
+      "integration",
+      "checkout",
+      "sequence planner"
+    ],
+    "aliases": [
+      "launch-sequence-planner"
+    ]
+  },
+  {
+    "id": "pipeline:launch-sequence-planner",
+    "type": "pipeline",
+    "name": "LeoLaunchSequencePlannerPipeline",
+    "description": "Deployment pipeline for LeoLaunchSequencePlanner (Launch Integration).",
+    "tags": [
+      "launch",
+      "integration",
+      "checkout",
+      "sequence planner",
+      "pipeline"
+    ],
+    "aliases": [
+      "launch-sequence-planner-pipeline"
+    ]
+  },
+  {
+    "id": "package:launch-vehicle-checkout",
+    "type": "package",
+    "name": "LeoLaunchVehicleCheckoutLambda",
+    "description": "vehicle checkout Lambda for Launch Integration on Amazon Leo.",
+    "tags": [
+      "launch",
+      "integration",
+      "checkout",
+      "vehicle checkout"
+    ],
+    "aliases": [
+      "launch-vehicle-checkout"
+    ]
+  },
+  {
+    "id": "pipeline:launch-vehicle-checkout",
+    "type": "pipeline",
+    "name": "LeoLaunchVehicleCheckoutPipeline",
+    "description": "Deployment pipeline for LeoLaunchVehicleCheckout (Launch Integration).",
+    "tags": [
+      "launch",
+      "integration",
+      "checkout",
+      "vehicle checkout",
+      "pipeline"
+    ],
+    "aliases": [
+      "launch-vehicle-checkout-pipeline"
+    ]
+  },
+  {
+    "id": "package:launch-range-safety",
+    "type": "package",
+    "name": "LeoLaunchRangeSafetyCLI",
+    "description": "range safety CLI for Launch Integration on Amazon Leo.",
+    "tags": [
+      "launch",
+      "integration",
+      "checkout",
+      "range safety"
+    ],
+    "aliases": [
+      "launch-range-safety"
+    ]
+  },
+  {
+    "id": "service:launch-gateway",
+    "type": "service",
+    "name": "LeoLaunchGateway",
+    "description": "Internal API gateway operated by Launch Integration.",
+    "tags": [
+      "launch",
+      "integration",
+      "checkout",
+      "gateway",
+      "api"
+    ],
+    "aliases": [
+      "launch-gateway"
+    ]
+  },
+  {
+    "id": "bindle:launch",
+    "type": "bindle",
+    "name": "LeoLaunchBindle",
+    "description": "Ownership bindle for Launch Integration packages, pipelines, and accounts.",
+    "tags": [
+      "launch",
+      "integration",
+      "checkout",
+      "bindle",
+      "ownership"
+    ],
+    "aliases": [
+      "launch-bindle"
+    ]
+  },
+  {
+    "id": "account:launch-prod",
+    "type": "account",
+    "name": "leo-launch-prod",
+    "description": "Production AWS account for Launch Integration.",
+    "tags": [
+      "launch",
+      "integration",
+      "checkout",
+      "aws account",
+      "prod"
+    ],
+    "aliases": [
+      "launch prod account"
+    ]
+  },
+  {
+    "id": "account:launch-beta",
+    "type": "account",
+    "name": "leo-launch-beta",
+    "description": "Beta AWS account for Launch Integration.",
+    "tags": [
+      "launch",
+      "integration",
+      "checkout",
+      "aws account",
+      "beta"
+    ],
+    "aliases": [
+      "launch beta account"
+    ]
+  },
+  {
+    "id": "package:devex-build-tools",
+    "type": "package",
+    "name": "LeoDevExBuildToolsLambda",
+    "description": "build tools Lambda for DevEx & Onboarding on Amazon Leo.",
+    "tags": [
+      "devtools",
+      "onboarding",
+      "build",
+      "build tools"
+    ],
+    "aliases": [
+      "devex-build-tools"
+    ]
+  },
+  {
+    "id": "pipeline:devex-build-tools",
+    "type": "pipeline",
+    "name": "LeoDevExBuildToolsPipeline",
+    "description": "Deployment pipeline for LeoDevExBuildTools (DevEx & Onboarding).",
+    "tags": [
+      "devtools",
+      "onboarding",
+      "build",
+      "build tools",
+      "pipeline"
+    ],
+    "aliases": [
+      "devex-build-tools-pipeline"
+    ]
+  },
+  {
+    "id": "package:devex-ramp-tracker",
+    "type": "package",
+    "name": "LeoDevExRampTrackerCLI",
+    "description": "ramp tracker CLI for DevEx & Onboarding on Amazon Leo.",
+    "tags": [
+      "devtools",
+      "onboarding",
+      "build",
+      "ramp tracker"
+    ],
+    "aliases": [
+      "devex-ramp-tracker"
+    ]
+  },
+  {
+    "id": "pipeline:devex-ramp-tracker",
+    "type": "pipeline",
+    "name": "LeoDevExRampTrackerPipeline",
+    "description": "Deployment pipeline for LeoDevExRampTracker (DevEx & Onboarding).",
+    "tags": [
+      "devtools",
+      "onboarding",
+      "build",
+      "ramp tracker",
+      "pipeline"
+    ],
+    "aliases": [
+      "devex-ramp-tracker-pipeline"
+    ]
+  },
+  {
+    "id": "package:devex-wiki-sync",
+    "type": "package",
+    "name": "LeoDevExWikiSyncDaemon",
+    "description": "wiki sync Daemon for DevEx & Onboarding on Amazon Leo.",
+    "tags": [
+      "devtools",
+      "onboarding",
+      "build",
+      "wiki sync"
+    ],
+    "aliases": [
+      "devex-wiki-sync"
+    ]
+  },
+  {
+    "id": "service:devex-gateway",
+    "type": "service",
+    "name": "LeoDevExGateway",
+    "description": "Internal API gateway operated by DevEx & Onboarding.",
+    "tags": [
+      "devtools",
+      "onboarding",
+      "build",
+      "gateway",
+      "api"
+    ],
+    "aliases": [
+      "devex-gateway"
+    ]
+  },
+  {
+    "id": "bindle:devex",
+    "type": "bindle",
+    "name": "LeoDevExBindle",
+    "description": "Ownership bindle for DevEx & Onboarding packages, pipelines, and accounts.",
+    "tags": [
+      "devtools",
+      "onboarding",
+      "build",
+      "bindle",
+      "ownership"
+    ],
+    "aliases": [
+      "devex-bindle"
+    ]
+  },
+  {
+    "id": "account:devex-prod",
+    "type": "account",
+    "name": "leo-devex-prod",
+    "description": "Production AWS account for DevEx & Onboarding.",
+    "tags": [
+      "devtools",
+      "onboarding",
+      "build",
+      "aws account",
+      "prod"
+    ],
+    "aliases": [
+      "devex prod account"
+    ]
+  },
+  {
+    "id": "account:devex-beta",
+    "type": "account",
+    "name": "leo-devex-beta",
+    "description": "Beta AWS account for DevEx & Onboarding.",
+    "tags": [
+      "devtools",
+      "onboarding",
+      "build",
+      "aws account",
+      "beta"
+    ],
+    "aliases": [
+      "devex beta account"
+    ]
+  },
+  {
+    "id": "package:devex-cdk",
+    "type": "package",
+    "name": "LeoDevExCDK",
+    "description": "CDK infrastructure definitions for DevEx & Onboarding deployments.",
+    "tags": [
+      "devtools",
+      "onboarding",
+      "build",
+      "cdk",
+      "infrastructure"
+    ],
+    "aliases": [
+      "devex-cdk"
+    ]
+  },
+  {
+    "id": "package:leocommonauth",
+    "type": "package",
+    "name": "LeoCommonAuth",
+    "description": "Shared authentication and Midway integration library used by every Leo service.",
+    "tags": [
+      "auth",
+      "platform",
+      "shared"
+    ],
+    "aliases": [
+      "leocommonauth"
+    ]
+  },
+  {
+    "id": "package:leotelemetrysdk",
+    "type": "package",
+    "name": "LeoTelemetrySDK",
+    "description": "Client SDK for publishing and consuming satellite telemetry streams.",
+    "tags": [
+      "telemetry",
+      "sdk",
+      "shared"
+    ],
+    "aliases": [
+      "leotelemetrysdk"
+    ]
+  },
+  {
+    "id": "package:leobuildcli",
+    "type": "package",
+    "name": "LeoBuildCLI",
+    "description": "Command line tooling that wraps Brazil workflows for Leo packages.",
+    "tags": [
+      "build",
+      "cli",
+      "devtools"
+    ],
+    "aliases": [
+      "leobuildcli"
+    ]
+  },
+  {
+    "id": "package:leodatalakeclient",
+    "type": "package",
+    "name": "LeoDataLakeClient",
+    "description": "Access layer for the Leo mission data lake with schema validation.",
+    "tags": [
+      "data",
+      "client",
+      "shared"
+    ],
+    "aliases": [
+      "leodatalakeclient"
+    ]
+  },
+  {
+    "id": "package:leooncalldashboard",
+    "type": "package",
+    "name": "LeoOnCallDashboard",
+    "description": "Org-wide on-call and fleet health dashboard.",
+    "tags": [
+      "oncall",
+      "dashboard",
+      "operations"
+    ],
+    "aliases": [
+      "leooncalldashboard"
+    ]
+  },
+  {
+    "id": "package:leometricssdk",
+    "type": "package",
+    "name": "LeoMetricsSDK",
+    "description": "Standard metrics emission library for Leo services.",
+    "tags": [
+      "metrics",
+      "sdk",
+      "shared"
+    ],
+    "aliases": [
+      "leometricssdk"
     ]
   }
 ]

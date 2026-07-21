@@ -19,7 +19,7 @@ export const ExpertisePersonSchema = z.object({
 
 export const ExpertiseResourceSchema = z.object({
   id: EntityIdSchema,
-  type: z.enum(["package", "pipeline", "bindle", "service", "resource"]),
+  type: z.enum(["package", "pipeline", "bindle", "service", "resource", "account"]),
   name: z.string().min(2),
   description: z.string().min(4),
   tags: z.array(z.string().min(2)).min(1),

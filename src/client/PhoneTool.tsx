@@ -65,11 +65,11 @@ export function PhoneToolPage() {
       <nav className="pt-subnav" aria-label="Phone Tool sections">
         <div className="pt-subnav-left">
           <h1>Phone Tool</h1>
-          <a href="/phonetool">Bookmarks</a>
-          <a href="/phonetool">Awards</a>
-          <a href="/phonetool">Communities</a>
+          <a href="/">Bookmarks</a>
+          <a href="/">Awards</a>
+          <a href="/">Communities</a>
         </div>
-        <a className="pt-subnav-link" href="/phonetool">
+        <a className="pt-subnav-link" href="/">
           Share feedback
         </a>
       </nav>
@@ -78,7 +78,7 @@ export function PhoneToolPage() {
         <Info size={16} />
         <span>
           Welcome to new A to Z Phone Tool! Stay up-to-date with the latest
-          developments and roadmap on our <a href="/phonetool">A to Z Phone Tool Wiki</a>
+          developments and roadmap on our <a href="/">A to Z Phone Tool Wiki</a>
         </span>
       </div>
 
@@ -153,7 +153,7 @@ export function PhoneToolPage() {
                     {person.initials}
                   </span>
                   <span>
-                    <a href="/phonetool">{person.name}</a>{" "}
+                    <a href="/">{person.name}</a>{" "}
                     <span className="pt-org-alias">{person.alias}@</span>
                     <small>{person.title}</small>
                   </span>
@@ -162,7 +162,7 @@ export function PhoneToolPage() {
             </ul>
           </section>
 
-          <a className="pt-card pt-ramppath-card" href="/">
+          <a className="pt-card pt-ramppath-card" href="/ramppath">
             <div className="pt-ramppath-head">
               <span className="pt-ramppath-mark">
                 <Network size={20} />

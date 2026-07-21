@@ -8,7 +8,7 @@ for (const viewport of [
     page
   }) => {
     await page.setViewportSize(viewport);
-    await page.goto("/");
+    await page.goto("/ramppath");
     await expect(page.getByText("RampPath", { exact: true })).toBeVisible();
 
     await expect
@@ -170,27 +170,27 @@ for (const viewport of [
 
 test("Phone Tool page links into RampPath", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 960 });
-  await page.goto("/phonetool");
+  await page.goto("/");
   await expect(page.getByRole("heading", { name: "Phone Tool" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Ava Martoma" })).toBeVisible();
 
   await page.getByRole("link", { name: /RampPath/ }).click();
-  await expect(page).toHaveURL(/\/$/);
+  await expect(page).toHaveURL(/\/ramppath$/);
   await expect(page.getByText("RampPath", { exact: true })).toBeVisible();
 });
 
 test("plain-text ownership query offers clickable options", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 960 });
-  await page.goto("/");
+  await page.goto("/ramppath");
 
-  await page.getByLabel("What do you need to unblock?").fill("Who owns payments?");
+  await page.getByLabel("What do you need to unblock?").fill("Who owns telemetry?");
   await page.getByRole("button", { name: /Trace answer/ }).click();
   await expect(
     page.getByRole("heading", { name: /Multiple resources match/ })
   ).toBeVisible();
 
-  await page.getByRole("button", { name: "Who owns PaymentsCDK?" }).click();
+  await page.getByRole("button", { name: "Who owns LeoTelemetrySDK?" }).click();
   await expect(
-    page.getByRole("heading", { name: /PaymentsCDK is owned by/ })
+    page.getByRole("heading", { name: /LeoTelemetrySDK is owned by/ })
   ).toBeVisible();
 });

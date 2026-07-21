@@ -28,23 +28,23 @@ const GraphView = lazy(() =>
 const examples = [
   {
     label: "Find a package owner",
-    question: "Who owns OrbitGndsysCDK?"
+    question: "Who owns leo common auth?"
   },
   {
     label: "Find the right person",
     question: "Who knows about AtlasRegionContext?"
   },
   {
-    label: "Find bindle experts",
-    question: "Who knows about PaymentsCDK?"
+    label: "Ask about a topic",
+    question: "Who knows about ground station scheduling?"
+  },
+  {
+    label: "Find an AWS account owner",
+    question: "Who owns leo-payload-prod?"
   },
   {
     label: "Check my access",
     question: "Can I edit supported locations in prod?"
-  },
-  {
-    label: "Plan an access request",
-    question: "What access should I request to edit supported locations in prod?"
   },
   {
     label: "Trace a deployment",

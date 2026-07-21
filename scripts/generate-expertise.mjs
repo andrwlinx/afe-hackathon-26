@@ -2,6 +2,13 @@
 /**
  * Deterministic synthetic expertise data generator for RampPath.
  *
+ * Models a single fictional org — "Amazon Leo" (satellite constellation) —
+ * with ~13 teams of 7-8 people each (~100 people total). Teams own a varied
+ * mix of resources (services, models, Lambdas, CLIs, pipelines, bindles,
+ * AWS accounts, at most one CDK package per team), and org-wide platform
+ * packages are maintained across team boundaries so the graph is
+ * genuinely intertwined.
+ *
  * Produces the three-file contract described in data/public/expertise/README.md:
  *   people.json, resources.json, relationships.json
  *
@@ -49,15 +56,121 @@ const LAST_NAMES = [
   "Bishop", "Antar", "Vance", "Kerr"
 ];
 
+/**
+ * Amazon Leo teams. Each team lists the components it builds; the
+ * generator turns components into a varied mix of resource types.
+ */
+const TEAMS = [
+  {
+    name: "Ground Station Software",
+    slug: "gnd-station",
+    prefix: "LeoGndStation",
+    tags: ["ground station", "gndsys", "scheduling"],
+    components: ["scheduler", "antenna-control", "pass-planner"]
+  },
+  {
+    name: "Telemetry & Command",
+    slug: "telemetry",
+    prefix: "LeoTelemetry",
+    tags: ["telemetry", "command", "downlink"],
+    components: ["ingest", "command-dispatch", "alerting"]
+  },
+  {
+    name: "Constellation Planning",
+    slug: "constellation",
+    prefix: "LeoConstellation",
+    tags: ["constellation", "orbit", "planning"],
+    components: ["orbit-planner", "maneuver", "conjunction"]
+  },
+  {
+    name: "Optical ISL Dev",
+    slug: "optical-isl",
+    prefix: "LeoOpticalIsl",
+    tags: ["optical", "isl", "laser link"],
+    components: ["link-manager", "pointing", "handoff"]
+  },
+  {
+    name: "Customer Terminals",
+    slug: "terminals",
+    prefix: "LeoTerminal",
+    tags: ["terminal", "customer", "firmware"],
+    components: ["provisioning", "firmware-update", "diagnostics"]
+  },
+  {
+    name: "Network Control Plane",
+    slug: "network",
+    prefix: "LeoNetwork",
+    tags: ["network", "routing", "spectrum"],
+    components: ["route-planner", "spectrum-manager", "capacity"]
+  },
+  {
+    name: "Fleet Operations",
+    slug: "fleet-ops",
+    prefix: "LeoFleetOps",
+    tags: ["fleet", "operations", "oncall"],
+    components: ["dashboard", "incident-tracker", "health-monitor"]
+  },
+  {
+    name: "Payload Software",
+    slug: "payload",
+    prefix: "LeoPayload",
+    tags: ["payload", "flight software", "satellite"],
+    components: ["boot-manager", "imaging", "power-control"]
+  },
+  {
+    name: "Simulation & Test",
+    slug: "sim-test",
+    prefix: "LeoSim",
+    tags: ["simulation", "testing", "hil"],
+    components: ["orbit-sim", "hardware-in-loop", "regression-suite"]
+  },
+  {
+    name: "RF Modem Dev",
+    slug: "rf-modem",
+    prefix: "LeoRfModem",
+    tags: ["rf", "modem", "waveform"],
+    components: ["waveform", "beam-steering", "signal-analyzer"]
+  },
+  {
+    name: "Mission Data Services",
+    slug: "mission-data",
+    prefix: "LeoMissionData",
+    tags: ["data", "processing", "storage"],
+    components: ["data-lake", "downlink-processor", "catalog-api"]
+  },
+  {
+    name: "Launch Integration",
+    slug: "launch",
+    prefix: "LeoLaunch",
+    tags: ["launch", "integration", "checkout"],
+    components: ["sequence-planner", "vehicle-checkout", "range-safety"]
+  },
+  {
+    name: "DevEx & Onboarding",
+    slug: "devex",
+    prefix: "LeoDevEx",
+    tags: ["devtools", "onboarding", "build"],
+    components: ["build-tools", "ramp-tracker", "wiki-sync"]
+  }
+];
+
+/** Org-wide platform packages, maintained across team boundaries. */
+const PLATFORM_RESOURCES = [
+  { name: "LeoCommonAuth", ownerSlug: "devex", tags: ["auth", "platform", "shared"], description: "Shared authentication and Midway integration library used by every Leo service." },
+  { name: "LeoTelemetrySDK", ownerSlug: "telemetry", tags: ["telemetry", "sdk", "shared"], description: "Client SDK for publishing and consuming satellite telemetry streams." },
+  { name: "LeoBuildCLI", ownerSlug: "devex", tags: ["build", "cli", "devtools"], description: "Command line tooling that wraps Brazil workflows for Leo packages." },
+  { name: "LeoDataLakeClient", ownerSlug: "mission-data", tags: ["data", "client", "shared"], description: "Access layer for the Leo mission data lake with schema validation." },
+  { name: "LeoOnCallDashboard", ownerSlug: "fleet-ops", tags: ["oncall", "dashboard", "operations"], description: "Org-wide on-call and fleet health dashboard." },
+  { name: "LeoMetricsSDK", ownerSlug: "fleet-ops", tags: ["metrics", "sdk", "shared"], description: "Standard metrics emission library for Leo services." }
+];
+
 const ROLE_POOL = [
   { role: "SDE I", weight: 3 },
   { role: "SDE II", weight: 4 },
   { role: "SDE III", weight: 2 },
-  { role: "Senior SDE", weight: 2 },
-  { role: "Principal Engineer", weight: 0.5 },
-  { role: "SDM", weight: 1 },
-  { role: "TPM", weight: 1 },
-  { role: "SDE Intern", weight: 1.5 }
+  { role: "Senior SDE", weight: 1.5 },
+  { role: "TPM", weight: 0.8 },
+  { role: "SDE Intern", weight: 1.2 }
 ];
 function weightedRole() {
   const total = ROLE_POOL.reduce((sum, entry) => sum + entry.weight, 0);
@@ -69,91 +182,7 @@ function weightedRole() {
   return "SDE II";
 }
 
-// Team domains drive resource names and tags so search feels realistic.
-const TEAMS = [
-  {
-    name: "Payments Platform",
-    slug: "payments",
-    noun: "Payment",
-    tags: ["payments", "transactions", "billing"],
-    concepts: ["ledger", "refund", "invoice", "settlement", "checkout", "chargeback"]
-  },
-  {
-    name: "Search Experience",
-    slug: "search",
-    noun: "Search",
-    tags: ["search", "ranking", "relevance"],
-    concepts: ["indexer", "query-parser", "ranker", "autocomplete", "spellcheck", "synonyms"]
-  },
-  {
-    name: "Catalog Services",
-    slug: "catalog",
-    noun: "Catalog",
-    tags: ["catalog", "listings", "products"],
-    concepts: ["item-master", "taxonomy", "attributes", "images", "variations", "dedupe"]
-  },
-  {
-    name: "Fulfillment Tech",
-    slug: "fulfillment",
-    noun: "Fulfillment",
-    tags: ["fulfillment", "warehouse", "logistics"],
-    concepts: ["pick-route", "inventory", "slotting", "wave-planner", "packing", "manifest"]
-  },
-  {
-    name: "Identity & Access",
-    slug: "identity",
-    noun: "Identity",
-    tags: ["identity", "auth", "security"],
-    concepts: ["signin", "tokens", "sessions", "mfa", "permissions", "audit-log"]
-  },
-  {
-    name: "Notifications Hub",
-    slug: "notifications",
-    noun: "Notification",
-    tags: ["notifications", "messaging", "email"],
-    concepts: ["dispatcher", "templates", "preferences", "digest", "push-relay", "bounce-handler"]
-  },
-  {
-    name: "Analytics Insights",
-    slug: "analytics",
-    noun: "Analytics",
-    tags: ["analytics", "metrics", "reporting"],
-    concepts: ["event-stream", "aggregator", "dashboards", "funnels", "cohorts", "exports"]
-  },
-  {
-    name: "Delivery Estimates",
-    slug: "delivery",
-    noun: "Delivery",
-    tags: ["delivery", "promise", "shipping"],
-    concepts: ["promise-engine", "carrier-feed", "zones", "cutoffs", "tracking", "eta-model"]
-  },
-  {
-    name: "Ads Measurement",
-    slug: "ads",
-    noun: "Ads",
-    tags: ["ads", "attribution", "campaigns"],
-    concepts: ["click-tracker", "attribution", "budget-pacer", "auctions", "reporting-api", "fraud-filter"]
-  },
-  {
-    name: "Onboarding Tools",
-    slug: "onboarding",
-    noun: "Onboarding",
-    tags: ["onboarding", "interns", "devtools"],
-    concepts: ["ramp-tracker", "mentor-match", "starter-tasks", "wiki-sync", "checklists", "badges"]
-  },
-  {
-    name: "Orbit Ground Systems",
-    slug: "orbit-gndsys",
-    noun: "OrbitGndsys",
-    tags: ["orbit", "ground-systems", "satellite"],
-    concepts: ["telemetry", "scheduler", "antenna-control", "downlink", "ops-console", "region-config"]
-  }
-];
-
-const RESOURCE_KINDS = ["package", "package", "package", "pipeline", "bindle", "service"];
-
 // --- People ---
-const people = [];
 const usedAliases = new Set(["avery", "jordan", "priya"]);
 const usedNames = new Set();
 let nameCursor = 0;
@@ -163,13 +192,12 @@ for (const first of FIRST_NAMES) {
     namePairs.push([first, last]);
   }
 }
-// Shuffle deterministically
 for (let i = namePairs.length - 1; i > 0; i--) {
   const j = Math.floor(random() * (i + 1));
   [namePairs[i], namePairs[j]] = [namePairs[j], namePairs[i]];
 }
 
-function nextPerson(team) {
+function nextPerson(team, role) {
   while (nameCursor < namePairs.length) {
     const [first, last] = namePairs[nameCursor++];
     const name = `${first} ${last}`;
@@ -177,16 +205,15 @@ function nextPerson(team) {
     if (usedNames.has(name) || usedAliases.has(alias)) continue;
     usedNames.add(name);
     usedAliases.add(alias);
-    const id = `person:${first.toLowerCase()}-${last.toLowerCase()}`.replace(
-      /[^a-z0-9:-]/g,
-      ""
-    );
     return {
-      id,
+      id: `person:${first.toLowerCase()}-${last.toLowerCase()}`.replace(
+        /[^a-z0-9:-]/g,
+        ""
+      ),
       name,
       alias,
       team: team.name,
-      role: weightedRole(),
+      role,
       aliases: [`${first.toLowerCase()}.${last.toLowerCase()}`],
       profileUrl: `https://phonetool.example.com/users/${alias}`
     };
@@ -194,84 +221,134 @@ function nextPerson(team) {
   throw new Error("Ran out of unique names");
 }
 
+const people = [];
 const teamRosters = new Map();
 for (const team of TEAMS) {
-  const size = 9 + Math.floor(random() * 3); // 9-11 people per team
-  const roster = Array.from({ length: size }, () => nextPerson(team));
+  const size = 7 + Math.floor(random() * 2); // 7-8 people per team
+  const roster = [];
+  roster.push(nextPerson(team, "SDM"));
+  roster.push(nextPerson(team, "Senior SDE"));
+  for (let index = 2; index < size; index += 1) {
+    roster.push(nextPerson(team, weightedRole()));
+  }
   teamRosters.set(team.slug, roster);
   people.push(...roster);
 }
 
 // --- Resources ---
-const resources = [];
-const kindPrefix = {
-  package: "package",
-  pipeline: "pipeline",
-  bindle: "bindle",
-  service: "service"
-};
 function titleCase(slugText) {
   return slugText
     .split("-")
     .map((part) => part[0].toUpperCase() + part.slice(1))
     .join("");
 }
+
+const resources = [];
 const teamResources = new Map();
-for (const team of TEAMS) {
+// Package name suffix variety; one CDK max per team, and only for some teams.
+const PACKAGE_SUFFIXES = ["Service", "Model", "Lambda", "CLI", "Daemon"];
+
+for (const [teamIndex, team] of TEAMS.entries()) {
   const list = [];
-  for (const concept of team.concepts) {
-    const kind = pick(RESOURCE_KINDS);
-    const slug = `${team.slug}-${concept}`;
-    const name =
-      kind === "pipeline"
-        ? `${titleCase(slug)}Pipeline`
-        : kind === "bindle"
-          ? `${titleCase(slug)}Bindle`
-          : `${team.noun}${titleCase(concept)}`;
+  const shortTags = team.tags;
+
+  for (const [componentIndex, component] of team.components.entries()) {
+    const componentName = titleCase(component);
+    const suffix = PACKAGE_SUFFIXES[(teamIndex + componentIndex) % PACKAGE_SUFFIXES.length];
+    // Main package for the component
     list.push({
-      id: `${kindPrefix[kind]}:${slug}`,
-      type: kind,
-      name,
-      description: `${team.noun} ${concept.replace(/-/g, " ")} ${
-        kind === "pipeline"
-          ? "deployment pipeline"
-          : kind === "bindle"
-            ? "ownership bindle"
-            : kind === "service"
-              ? "service"
-              : "package"
-      } owned by ${team.name}.`,
-      tags: [...team.tags, concept.replace(/-/g, " ")],
-      aliases: [slug]
+      id: `package:${team.slug}-${component}`,
+      type: "package",
+      name: `${team.prefix}${componentName}${suffix === "Service" ? "" : suffix}`,
+      description: `${component.replace(/-/g, " ")} ${suffix.toLowerCase() === "service" ? "service" : suffix} for ${team.name} on Amazon Leo.`,
+      tags: [...shortTags, component.replace(/-/g, " ")],
+      aliases: [`${team.slug}-${component}`]
+    });
+    // Every component ships through a pipeline for the first two components
+    if (componentIndex < 2) {
+      list.push({
+        id: `pipeline:${team.slug}-${component}`,
+        type: "pipeline",
+        name: `${team.prefix}${componentName}Pipeline`,
+        description: `Deployment pipeline for ${team.prefix}${componentName} (${team.name}).`,
+        tags: [...shortTags, component.replace(/-/g, " "), "pipeline"],
+        aliases: [`${team.slug}-${component}-pipeline`]
+      });
+    }
+  }
+
+  // One internal service endpoint
+  list.push({
+    id: `service:${team.slug}-gateway`,
+    type: "service",
+    name: `${team.prefix}Gateway`,
+    description: `Internal API gateway operated by ${team.name}.`,
+    tags: [...shortTags, "gateway", "api"],
+    aliases: [`${team.slug}-gateway`]
+  });
+
+  // Team bindle
+  list.push({
+    id: `bindle:${team.slug}`,
+    type: "bindle",
+    name: `${team.prefix}Bindle`,
+    description: `Ownership bindle for ${team.name} packages, pipelines, and accounts.`,
+    tags: [...shortTags, "bindle", "ownership"],
+    aliases: [`${team.slug}-bindle`]
+  });
+
+  // AWS accounts (prod + beta)
+  for (const stage of ["prod", "beta"]) {
+    list.push({
+      id: `account:${team.slug}-${stage}`,
+      type: "account",
+      name: `leo-${team.slug}-${stage}`,
+      description: `${stage === "prod" ? "Production" : "Beta"} AWS account for ${team.name}.`,
+      tags: [...shortTags, "aws account", stage],
+      aliases: [`${team.slug} ${stage} account`]
     });
   }
-  // Every team gets a Brazil-style CDK infrastructure package
-  // (e.g. PaymentsCDK, OrbitGndsysCDK) so ownership queries feel real.
-  list.push({
-    id: `package:${team.slug}-cdk`,
-    type: "package",
-    name: `${titleCase(team.slug)}CDK`,
-    description: `CDK infrastructure definitions and deployment stacks for ${team.name}.`,
-    tags: [...team.tags, "cdk", "infrastructure"],
-    aliases: [`${team.slug}-cdk`]
-  });
+
+  // Roughly every other team maintains a CDK infrastructure package (max one)
+  if (teamIndex % 2 === 0) {
+    list.push({
+      id: `package:${team.slug}-cdk`,
+      type: "package",
+      name: `${team.prefix}CDK`,
+      description: `CDK infrastructure definitions for ${team.name} deployments.`,
+      tags: [...shortTags, "cdk", "infrastructure"],
+      aliases: [`${team.slug}-cdk`]
+    });
+  }
+
   teamResources.set(team.slug, list);
   resources.push(...list);
+}
+
+// Org-wide platform packages
+for (const platform of PLATFORM_RESOURCES) {
+  resources.push({
+    id: `package:${platform.name.toLowerCase()}`,
+    type: "package",
+    name: platform.name,
+    description: platform.description,
+    tags: platform.tags,
+    aliases: [platform.name.toLowerCase()]
+  });
 }
 
 // --- Relationships ---
 const relationships = [];
 let relationshipCounter = 0;
-function daysAgo(maxDays) {
-  return Math.floor(random() * maxDays);
-}
+const relatedPeople = new Set();
 function isoDateDaysAgo(days) {
   const date = new Date(Date.UTC(2026, 6, 21) - days * 86_400_000);
   return date.toISOString().slice(0, 10);
 }
 function addRelationship(person, resource, relation, maxAgeDays) {
-  const activeDays = daysAgo(maxAgeDays);
+  const activeDays = Math.floor(random() * maxAgeDays);
   relationshipCounter += 1;
+  relatedPeople.add(person.id);
   relationships.push({
     id: `relationship:r${String(relationshipCounter).padStart(4, "0")}`,
     personId: person.id,
@@ -286,8 +363,8 @@ const allPeople = people;
 for (const team of TEAMS) {
   const roster = teamRosters.get(team.slug);
   for (const resource of teamResources.get(team.slug)) {
-    const [owner, ...rest] = pickN(roster, 2 + Math.floor(random() * 3)); // owner + 1-3 others
-    addRelationship(owner, resource, "owns", 60);
+    const [owner, ...rest] = pickN(roster, 3 + Math.floor(random() * 3)); // owner + 2-4 teammates
+    addRelationship(owner, resource, "owns", 45);
     const maintainerCount = Math.min(rest.length, 1 + Math.floor(random() * 2));
     rest.slice(0, maintainerCount).forEach((person) => {
       addRelationship(person, resource, "maintains", 120);
@@ -295,10 +372,45 @@ for (const team of TEAMS) {
     rest.slice(maintainerCount).forEach((person) => {
       addRelationship(person, resource, "contributes-to", 180);
     });
-    // ~25% of resources get one cross-team contributor for realistic overlap
-    if (random() < 0.25) {
+    // ~35% of resources get a cross-team contributor so the org intertwines
+    if (random() < 0.35) {
       const outsider = pick(allPeople.filter((p) => p.team !== team.name));
       addRelationship(outsider, resource, "contributes-to", 180);
+    }
+  }
+}
+
+// Platform packages: owner from owning team, maintainers/contributors from
+// several other teams — the strongest cross-team connections in the graph.
+for (const platform of PLATFORM_RESOURCES) {
+  const resource = resources.find(
+    (item) => item.id === `package:${platform.name.toLowerCase()}`
+  );
+  const ownerRoster = teamRosters.get(platform.ownerSlug);
+  const [owner, coMaintainer] = pickN(ownerRoster, 2);
+  addRelationship(owner, resource, "owns", 30);
+  addRelationship(coMaintainer, resource, "maintains", 60);
+  const otherTeams = pickN(
+    TEAMS.filter((team) => team.slug !== platform.ownerSlug),
+    3 + Math.floor(random() * 2)
+  );
+  for (const otherTeam of otherTeams) {
+    const person = pick(teamRosters.get(otherTeam.slug));
+    addRelationship(
+      person,
+      resource,
+      random() < 0.35 ? "maintains" : "contributes-to",
+      150
+    );
+  }
+}
+
+// Everyone participates: sweep up anyone without a relationship as a
+// contributor to one of their own team's resources.
+for (const team of TEAMS) {
+  for (const person of teamRosters.get(team.slug)) {
+    if (!relatedPeople.has(person.id)) {
+      addRelationship(person, pick(teamResources.get(team.slug)), "contributes-to", 180);
     }
   }
 }
@@ -313,6 +425,12 @@ writeJson("people.json", people);
 writeJson("resources.json", resources);
 writeJson("relationships.json", relationships);
 
+const typeCounts = resources.reduce((counts, resource) => {
+  counts[resource.type] = (counts[resource.type] ?? 0) + 1;
+  return counts;
+}, {});
 console.log(
-  `Generated ${people.length} people, ${resources.length} resources, ${relationships.length} relationships across ${TEAMS.length} teams -> ${outDir}`
+  `Amazon Leo org: ${people.length} people in ${TEAMS.length} teams, ` +
+    `${resources.length} resources (${JSON.stringify(typeCounts)}), ` +
+    `${relationships.length} relationships -> ${outDir}`
 );

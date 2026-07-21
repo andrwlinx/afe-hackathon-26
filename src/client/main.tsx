@@ -5,7 +5,7 @@ import { PhoneToolPage } from "./PhoneTool.js";
 import "./styles.css";
 
 const page =
-  window.location.pathname === "/phonetool" ? <PhoneToolPage /> : <App />;
+  window.location.pathname === "/ramppath" ? <App /> : <PhoneToolPage />;
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>{page}</StrictMode>

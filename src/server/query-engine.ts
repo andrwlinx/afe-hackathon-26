@@ -223,22 +223,59 @@ export class QueryEngine {
     const contact = members.find(
       ({ edge }) => edge.attributes.role === "service owner"
     ) ?? members[0];
+
+    // Pull in everyone connected to the resource (maintainers and
+    // contributors) plus the owner's team so the path renders as a web
+    // instead of a single owner->resource edge.
+    const collaboratorEdges = this.graph
+      .edgesTo(target.id)
+      .filter(
+        (edge) =>
+          (edge.type === "MAINTAINS" || edge.type === "CONTRIBUTES_TO") &&
+          this.graph.getNode(edge.from)?.type === "person"
+      );
+    const collaborators = collaboratorEdges
+      .map((edge) => this.graph.getNode(edge.from))
+      .filter((node): node is GraphNode => Boolean(node));
+    const ownerTeamEdge =
+      owner.type === "person"
+        ? this.graph.edgesFrom(owner.id, "MEMBER_OF")[0]
+        : undefined;
+    const ownerTeam = ownerTeamEdge
+      ? this.graph.getNode(ownerTeamEdge.to)
+      : undefined;
+
     const pathEdges = [
       ...(contact ? [verified(contact.edge)] : []),
-      verified(ownership)
+      verified(ownership),
+      ...collaboratorEdges.map(verified),
+      ...(ownerTeamEdge ? [verified(ownerTeamEdge)] : [])
     ];
+    const ownerLabel = ownerTeam
+      ? `${owner.label} (${ownerTeam.label})`
+      : owner.label;
+    const collaboratorNote = collaborators.length
+      ? ` ${collaborators.length} other ${collaborators.length === 1 ? "person maintains or contributes to" : "people maintain or contribute to"} it.`
+      : "";
 
     return {
       intent: "resolve-owner",
       status: "confirmed",
-      headline: `${target.label} is owned by ${owner.label}`,
+      headline: `${target.label} is owned by ${ownerLabel}`,
       summary:
         note +
         (contact?.person
           ? `${contact.person.label} is the primary service contact. The ownership record was observed through ${ownership.evidence.source}.`
-          : `The ownership record was observed through ${ownership.evidence.source}.`),
+          : `The ownership record was observed through ${ownership.evidence.source}.`) +
+        collaboratorNote,
       path: {
-        nodes: uniqueNodes([contact?.person, owner, target]),
+        nodes: uniqueNodes([
+          contact?.person,
+          owner,
+          ownerTeam,
+          target,
+          ...collaborators
+        ]),
         edges: pathEdges
       },
       evidence: uniqueEvidence(pathEdges),

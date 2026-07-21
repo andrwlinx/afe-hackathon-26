@@ -3,8 +3,8 @@
     "id": "person:lucas-iyer",
     "name": "Lucas Iyer",
     "alias": "liyer",
-    "team": "Payments Platform",
-    "role": "SDE I",
+    "team": "Ground Station Software",
+    "role": "SDM",
     "aliases": [
       "lucas.iyer"
     ],
@@ -14,8 +14,8 @@
     "id": "person:suki-petrov",
     "name": "Suki Petrov",
     "alias": "spetrov",
-    "team": "Payments Platform",
-    "role": "SDE II",
+    "team": "Ground Station Software",
+    "role": "Senior SDE",
     "aliases": [
       "suki.petrov"
     ],
@@ -25,7 +25,7 @@
     "id": "person:cole-sorensen",
     "name": "Cole Sorensen",
     "alias": "csorensen",
-    "team": "Payments Platform",
+    "team": "Ground Station Software",
     "role": "SDE I",
     "aliases": [
       "cole.sorensen"
@@ -36,8 +36,8 @@
     "id": "person:cato-sokolov",
     "name": "Cato Sokolov",
     "alias": "csokolov",
-    "team": "Payments Platform",
-    "role": "SDE I",
+    "team": "Ground Station Software",
+    "role": "SDE II",
     "aliases": [
       "cato.sokolov"
     ],
@@ -47,8 +47,8 @@
     "id": "person:idris-varga",
     "name": "Idris Varga",
     "alias": "ivarga",
-    "team": "Payments Platform",
-    "role": "SDE II",
+    "team": "Ground Station Software",
+    "role": "SDE I",
     "aliases": [
       "idris.varga"
     ],
@@ -58,8 +58,8 @@
     "id": "person:lucas-castillo",
     "name": "Lucas Castillo",
     "alias": "lcastillo",
-    "team": "Payments Platform",
-    "role": "TPM",
+    "team": "Ground Station Software",
+    "role": "SDE I",
     "aliases": [
       "lucas.castillo"
     ],
@@ -69,8 +69,8 @@
     "id": "person:cole-lindqvist",
     "name": "Cole Lindqvist",
     "alias": "clindqvist",
-    "team": "Payments Platform",
-    "role": "SDE I",
+    "team": "Ground Station Software",
+    "role": "SDE II",
     "aliases": [
       "cole.lindqvist"
     ],
@@ -80,8 +80,8 @@
     "id": "person:sana-tanaka",
     "name": "Sana Tanaka",
     "alias": "stanaka",
-    "team": "Payments Platform",
-    "role": "Senior SDE",
+    "team": "Ground Station Software",
+    "role": "TPM",
     "aliases": [
       "sana.tanaka"
     ],
@@ -91,8 +91,8 @@
     "id": "person:aisha-brandt",
     "name": "Aisha Brandt",
     "alias": "abrandt",
-    "team": "Payments Platform",
-    "role": "SDE II",
+    "team": "Telemetry & Command",
+    "role": "SDM",
     "aliases": [
       "aisha.brandt"
     ],
@@ -102,7 +102,7 @@
     "id": "person:sofia-iyer",
     "name": "Sofia Iyer",
     "alias": "siyer",
-    "team": "Payments Platform",
+    "team": "Telemetry & Command",
     "role": "Senior SDE",
     "aliases": [
       "sofia.iyer"
@@ -113,8 +113,8 @@
     "id": "person:sana-takeda",
     "name": "Sana Takeda",
     "alias": "stakeda",
-    "team": "Search Experience",
-    "role": "SDE II",
+    "team": "Telemetry & Command",
+    "role": "SDE III",
     "aliases": [
       "sana.takeda"
     ],
@@ -124,8 +124,8 @@
     "id": "person:maya-antar",
     "name": "Maya Antar",
     "alias": "mantar",
-    "team": "Search Experience",
-    "role": "Senior SDE",
+    "team": "Telemetry & Command",
+    "role": "SDE II",
     "aliases": [
       "maya.antar"
     ],
@@ -135,8 +135,8 @@
     "id": "person:marco-tanaka",
     "name": "Marco Tanaka",
     "alias": "mtanaka",
-    "team": "Search Experience",
-    "role": "SDE I",
+    "team": "Telemetry & Command",
+    "role": "SDE III",
     "aliases": [
       "marco.tanaka"
     ],
@@ -146,8 +146,8 @@
     "id": "person:cato-okafor",
     "name": "Cato Okafor",
     "alias": "cokafor",
-    "team": "Search Experience",
-    "role": "TPM",
+    "team": "Telemetry & Command",
+    "role": "SDE I",
     "aliases": [
       "cato.okafor"
     ],
@@ -157,8 +157,8 @@
     "id": "person:kai-holm",
     "name": "Kai Holm",
     "alias": "kholm",
-    "team": "Search Experience",
-    "role": "SDE I",
+    "team": "Telemetry & Command",
+    "role": "SDE II",
     "aliases": [
       "kai.holm"
     ],
@@ -168,8 +168,8 @@
     "id": "person:niko-okafor",
     "name": "Niko Okafor",
     "alias": "nokafor",
-    "team": "Search Experience",
-    "role": "SDE II",
+    "team": "Constellation Planning",
+    "role": "SDM",
     "aliases": [
       "niko.okafor"
     ],
@@ -179,8 +179,8 @@
     "id": "person:sofia-delgado",
     "name": "Sofia Delgado",
     "alias": "sdelgado",
-    "team": "Search Experience",
-    "role": "SDE I",
+    "team": "Constellation Planning",
+    "role": "Senior SDE",
     "aliases": [
       "sofia.delgado"
     ],
@@ -190,7 +190,7 @@
     "id": "person:idris-alvarez",
     "name": "Idris Alvarez",
     "alias": "ialvarez",
-    "team": "Search Experience",
+    "team": "Constellation Planning",
     "role": "SDE I",
     "aliases": [
       "idris.alvarez"
@@ -201,8 +201,8 @@
     "id": "person:rosa-oduya",
     "name": "Rosa Oduya",
     "alias": "roduya",
-    "team": "Search Experience",
-    "role": "SDE II",
+    "team": "Constellation Planning",
+    "role": "TPM",
     "aliases": [
       "rosa.oduya"
     ],
@@ -212,8 +212,8 @@
     "id": "person:noah-iyer",
     "name": "Noah Iyer",
     "alias": "niyer",
-    "team": "Catalog Services",
-    "role": "SDE III",
+    "team": "Constellation Planning",
+    "role": "SDE I",
     "aliases": [
       "noah.iyer"
     ],
@@ -223,7 +223,7 @@
     "id": "person:alma-tanaka",
     "name": "Alma Tanaka",
     "alias": "atanaka",
-    "team": "Catalog Services",
+    "team": "Constellation Planning",
     "role": "SDE II",
     "aliases": [
       "alma.tanaka"
@@ -234,7 +234,7 @@
     "id": "person:maya-rahim",
     "name": "Maya Rahim",
     "alias": "mrahim",
-    "team": "Catalog Services",
+    "team": "Constellation Planning",
     "role": "SDE I",
     "aliases": [
       "maya.rahim"
@@ -245,8 +245,8 @@
     "id": "person:jonas-rahim",
     "name": "Jonas Rahim",
     "alias": "jrahim",
-    "team": "Catalog Services",
-    "role": "SDM",
+    "team": "Constellation Planning",
+    "role": "SDE I",
     "aliases": [
       "jonas.rahim"
     ],
@@ -256,8 +256,8 @@
     "id": "person:wren-kimura",
     "name": "Wren Kimura",
     "alias": "wkimura",
-    "team": "Catalog Services",
-    "role": "SDE I",
+    "team": "Optical ISL Dev",
+    "role": "SDM",
     "aliases": [
       "wren.kimura"
     ],
@@ -267,8 +267,8 @@
     "id": "person:nadia-moreau",
     "name": "Nadia Moreau",
     "alias": "nmoreau",
-    "team": "Catalog Services",
-    "role": "SDE III",
+    "team": "Optical ISL Dev",
+    "role": "Senior SDE",
     "aliases": [
       "nadia.moreau"
     ],
@@ -278,8 +278,8 @@
     "id": "person:leila-sokolov",
     "name": "Leila Sokolov",
     "alias": "lsokolov",
-    "team": "Catalog Services",
-    "role": "SDE II",
+    "team": "Optical ISL Dev",
+    "role": "SDE III",
     "aliases": [
       "leila.sokolov"
     ],
@@ -289,8 +289,8 @@
     "id": "person:rosa-varga",
     "name": "Rosa Varga",
     "alias": "rvarga",
-    "team": "Catalog Services",
-    "role": "Senior SDE",
+    "team": "Optical ISL Dev",
+    "role": "SDE II",
     "aliases": [
       "rosa.varga"
     ],
@@ -300,8 +300,8 @@
     "id": "person:ezra-larsen",
     "name": "Ezra Larsen",
     "alias": "elarsen",
-    "team": "Catalog Services",
-    "role": "SDE I",
+    "team": "Optical ISL Dev",
+    "role": "SDE II",
     "aliases": [
       "ezra.larsen"
     ],
@@ -311,8 +311,8 @@
     "id": "person:ravi-steiner",
     "name": "Ravi Steiner",
     "alias": "rsteiner",
-    "team": "Catalog Services",
-    "role": "TPM",
+    "team": "Optical ISL Dev",
+    "role": "SDE I",
     "aliases": [
       "ravi.steiner"
     ],
@@ -322,8 +322,8 @@
     "id": "person:vera-nakamura",
     "name": "Vera Nakamura",
     "alias": "vnakamura",
-    "team": "Fulfillment Tech",
-    "role": "SDE I",
+    "team": "Optical ISL Dev",
+    "role": "Senior SDE",
     "aliases": [
       "vera.nakamura"
     ],
@@ -333,8 +333,8 @@
     "id": "person:bruno-silva",
     "name": "Bruno Silva",
     "alias": "bsilva",
-    "team": "Fulfillment Tech",
-    "role": "TPM",
+    "team": "Customer Terminals",
+    "role": "SDM",
     "aliases": [
       "bruno.silva"
     ],
@@ -344,8 +344,8 @@
     "id": "person:aldo-novak",
     "name": "Aldo Novak",
     "alias": "anovak",
-    "team": "Fulfillment Tech",
-    "role": "SDE I",
+    "team": "Customer Terminals",
+    "role": "Senior SDE",
     "aliases": [
       "aldo.novak"
     ],
@@ -355,7 +355,7 @@
     "id": "person:diego-abara",
     "name": "Diego Abara",
     "alias": "dabara",
-    "team": "Fulfillment Tech",
+    "team": "Customer Terminals",
     "role": "SDE II",
     "aliases": [
       "diego.abara"
@@ -366,8 +366,8 @@
     "id": "person:ethan-castillo",
     "name": "Ethan Castillo",
     "alias": "ecastillo",
-    "team": "Fulfillment Tech",
-    "role": "SDE II",
+    "team": "Customer Terminals",
+    "role": "SDE I",
     "aliases": [
       "ethan.castillo"
     ],
@@ -377,8 +377,8 @@
     "id": "person:omar-egede",
     "name": "Omar Egede",
     "alias": "oegede",
-    "team": "Fulfillment Tech",
-    "role": "SDE Intern",
+    "team": "Customer Terminals",
+    "role": "SDE III",
     "aliases": [
       "omar.egede"
     ],
@@ -388,8 +388,8 @@
     "id": "person:kai-mensah",
     "name": "Kai Mensah",
     "alias": "kmensah",
-    "team": "Fulfillment Tech",
-    "role": "Senior SDE",
+    "team": "Customer Terminals",
+    "role": "SDE I",
     "aliases": [
       "kai.mensah"
     ],
@@ -399,8 +399,8 @@
     "id": "person:owen-kowalski",
     "name": "Owen Kowalski",
     "alias": "okowalski",
-    "team": "Fulfillment Tech",
-    "role": "Senior SDE",
+    "team": "Customer Terminals",
+    "role": "TPM",
     "aliases": [
       "owen.kowalski"
     ],
@@ -410,8 +410,8 @@
     "id": "person:marco-brandt",
     "name": "Marco Brandt",
     "alias": "mbrandt",
-    "team": "Fulfillment Tech",
-    "role": "Senior SDE",
+    "team": "Network Control Plane",
+    "role": "SDM",
     "aliases": [
       "marco.brandt"
     ],
@@ -421,8 +421,8 @@
     "id": "person:ivy-steiner",
     "name": "Ivy Steiner",
     "alias": "isteiner",
-    "team": "Fulfillment Tech",
-    "role": "SDE I",
+    "team": "Network Control Plane",
+    "role": "Senior SDE",
     "aliases": [
       "ivy.steiner"
     ],
@@ -432,7 +432,7 @@
     "id": "person:elsa-iyer",
     "name": "Elsa Iyer",
     "alias": "eiyer",
-    "team": "Fulfillment Tech",
+    "team": "Network Control Plane",
     "role": "SDE I",
     "aliases": [
       "elsa.iyer"
@@ -443,8 +443,8 @@
     "id": "person:ezra-vidal",
     "name": "Ezra Vidal",
     "alias": "evidal",
-    "team": "Identity & Access",
-    "role": "SDE III",
+    "team": "Network Control Plane",
+    "role": "TPM",
     "aliases": [
       "ezra.vidal"
     ],
@@ -454,8 +454,8 @@
     "id": "person:aldo-antar",
     "name": "Aldo Antar",
     "alias": "aantar",
-    "team": "Identity & Access",
-    "role": "SDE II",
+    "team": "Network Control Plane",
+    "role": "SDE I",
     "aliases": [
       "aldo.antar"
     ],
@@ -465,8 +465,8 @@
     "id": "person:jonas-petrov",
     "name": "Jonas Petrov",
     "alias": "jpetrov",
-    "team": "Identity & Access",
-    "role": "SDE III",
+    "team": "Network Control Plane",
+    "role": "SDE II",
     "aliases": [
       "jonas.petrov"
     ],
@@ -476,8 +476,8 @@
     "id": "person:yuki-nakamura",
     "name": "Yuki Nakamura",
     "alias": "ynakamura",
-    "team": "Identity & Access",
-    "role": "Senior SDE",
+    "team": "Network Control Plane",
+    "role": "SDE II",
     "aliases": [
       "yuki.nakamura"
     ],
@@ -487,8 +487,8 @@
     "id": "person:sam-brandt",
     "name": "Sam Brandt",
     "alias": "sbrandt",
-    "team": "Identity & Access",
-    "role": "SDE II",
+    "team": "Network Control Plane",
+    "role": "SDE Intern",
     "aliases": [
       "sam.brandt"
     ],
@@ -498,8 +498,8 @@
     "id": "person:wren-sorensen",
     "name": "Wren Sorensen",
     "alias": "wsorensen",
-    "team": "Identity & Access",
-    "role": "SDE II",
+    "team": "Fleet Operations",
+    "role": "SDM",
     "aliases": [
       "wren.sorensen"
     ],
@@ -509,7 +509,7 @@
     "id": "person:tara-castillo",
     "name": "Tara Castillo",
     "alias": "tcastillo",
-    "team": "Identity & Access",
+    "team": "Fleet Operations",
     "role": "Senior SDE",
     "aliases": [
       "tara.castillo"
@@ -520,8 +520,8 @@
     "id": "person:rosa-novak",
     "name": "Rosa Novak",
     "alias": "rnovak",
-    "team": "Identity & Access",
-    "role": "SDE I",
+    "team": "Fleet Operations",
+    "role": "SDE III",
     "aliases": [
       "rosa.novak"
     ],
@@ -531,8 +531,8 @@
     "id": "person:fatima-tanaka",
     "name": "Fatima Tanaka",
     "alias": "ftanaka",
-    "team": "Identity & Access",
-    "role": "SDE II",
+    "team": "Fleet Operations",
+    "role": "SDE III",
     "aliases": [
       "fatima.tanaka"
     ],
@@ -542,8 +542,8 @@
     "id": "person:lena-oduya",
     "name": "Lena Oduya",
     "alias": "loduya",
-    "team": "Identity & Access",
-    "role": "SDE Intern",
+    "team": "Fleet Operations",
+    "role": "SDE I",
     "aliases": [
       "lena.oduya"
     ],
@@ -553,8 +553,8 @@
     "id": "person:ben-abara",
     "name": "Ben Abara",
     "alias": "babara",
-    "team": "Identity & Access",
-    "role": "SDE Intern",
+    "team": "Fleet Operations",
+    "role": "SDE I",
     "aliases": [
       "ben.abara"
     ],
@@ -564,8 +564,8 @@
     "id": "person:ben-brandt",
     "name": "Ben Brandt",
     "alias": "bbrandt",
-    "team": "Notifications Hub",
-    "role": "SDE I",
+    "team": "Fleet Operations",
+    "role": "SDE III",
     "aliases": [
       "ben.brandt"
     ],
@@ -575,8 +575,8 @@
     "id": "person:cole-castillo",
     "name": "Cole Castillo",
     "alias": "ccastillo",
-    "team": "Notifications Hub",
-    "role": "SDE I",
+    "team": "Fleet Operations",
+    "role": "SDE III",
     "aliases": [
       "cole.castillo"
     ],
@@ -586,8 +586,8 @@
     "id": "person:cole-brandt",
     "name": "Cole Brandt",
     "alias": "cbrandt",
-    "team": "Notifications Hub",
-    "role": "SDE II",
+    "team": "Payload Software",
+    "role": "SDM",
     "aliases": [
       "cole.brandt"
     ],
@@ -597,7 +597,7 @@
     "id": "person:bruno-steiner",
     "name": "Bruno Steiner",
     "alias": "bsteiner",
-    "team": "Notifications Hub",
+    "team": "Payload Software",
     "role": "Senior SDE",
     "aliases": [
       "bruno.steiner"
@@ -608,7 +608,7 @@
     "id": "person:ivy-vance",
     "name": "Ivy Vance",
     "alias": "ivance",
-    "team": "Notifications Hub",
+    "team": "Payload Software",
     "role": "SDE II",
     "aliases": [
       "ivy.vance"
@@ -619,8 +619,8 @@
     "id": "person:maya-haddad",
     "name": "Maya Haddad",
     "alias": "mhaddad",
-    "team": "Notifications Hub",
-    "role": "SDE I",
+    "team": "Payload Software",
+    "role": "SDE III",
     "aliases": [
       "maya.haddad"
     ],
@@ -630,7 +630,7 @@
     "id": "person:sam-novak",
     "name": "Sam Novak",
     "alias": "snovak",
-    "team": "Notifications Hub",
+    "team": "Payload Software",
     "role": "SDE II",
     "aliases": [
       "sam.novak"
@@ -641,8 +641,8 @@
     "id": "person:felix-steiner",
     "name": "Felix Steiner",
     "alias": "fsteiner",
-    "team": "Notifications Hub",
-    "role": "SDE Intern",
+    "team": "Payload Software",
+    "role": "SDE II",
     "aliases": [
       "felix.steiner"
     ],
@@ -652,8 +652,8 @@
     "id": "person:kai-kimura",
     "name": "Kai Kimura",
     "alias": "kkimura",
-    "team": "Notifications Hub",
-    "role": "SDE II",
+    "team": "Payload Software",
+    "role": "SDE III",
     "aliases": [
       "kai.kimura"
     ],
@@ -663,8 +663,8 @@
     "id": "person:yuki-kowalski",
     "name": "Yuki Kowalski",
     "alias": "ykowalski",
-    "team": "Analytics Insights",
-    "role": "Senior SDE",
+    "team": "Simulation & Test",
+    "role": "SDM",
     "aliases": [
       "yuki.kowalski"
     ],
@@ -674,8 +674,8 @@
     "id": "person:dina-castillo",
     "name": "Dina Castillo",
     "alias": "dcastillo",
-    "team": "Analytics Insights",
-    "role": "SDE III",
+    "team": "Simulation & Test",
+    "role": "Senior SDE",
     "aliases": [
       "dina.castillo"
     ],
@@ -685,7 +685,7 @@
     "id": "person:chloe-egede",
     "name": "Chloe Egede",
     "alias": "cegede",
-    "team": "Analytics Insights",
+    "team": "Simulation & Test",
     "role": "SDE II",
     "aliases": [
       "chloe.egede"
@@ -696,8 +696,8 @@
     "id": "person:maya-vidal",
     "name": "Maya Vidal",
     "alias": "mvidal",
-    "team": "Analytics Insights",
-    "role": "Senior SDE",
+    "team": "Simulation & Test",
+    "role": "SDE Intern",
     "aliases": [
       "maya.vidal"
     ],
@@ -707,8 +707,8 @@
     "id": "person:sofia-kimura",
     "name": "Sofia Kimura",
     "alias": "skimura",
-    "team": "Analytics Insights",
-    "role": "SDE I",
+    "team": "Simulation & Test",
+    "role": "SDE Intern",
     "aliases": [
       "sofia.kimura"
     ],
@@ -718,8 +718,8 @@
     "id": "person:idris-fontaine",
     "name": "Idris Fontaine",
     "alias": "ifontaine",
-    "team": "Analytics Insights",
-    "role": "SDE II",
+    "team": "Simulation & Test",
+    "role": "SDE I",
     "aliases": [
       "idris.fontaine"
     ],
@@ -729,8 +729,8 @@
     "id": "person:elsa-fontaine",
     "name": "Elsa Fontaine",
     "alias": "efontaine",
-    "team": "Analytics Insights",
-    "role": "SDE III",
+    "team": "Simulation & Test",
+    "role": "SDE I",
     "aliases": [
       "elsa.fontaine"
     ],
@@ -740,8 +740,8 @@
     "id": "person:niko-egede",
     "name": "Niko Egede",
     "alias": "negede",
-    "team": "Analytics Insights",
-    "role": "TPM",
+    "team": "RF Modem Dev",
+    "role": "SDM",
     "aliases": [
       "niko.egede"
     ],
@@ -751,8 +751,8 @@
     "id": "person:lucas-takeda",
     "name": "Lucas Takeda",
     "alias": "ltakeda",
-    "team": "Analytics Insights",
-    "role": "TPM",
+    "team": "RF Modem Dev",
+    "role": "Senior SDE",
     "aliases": [
       "lucas.takeda"
     ],
@@ -762,8 +762,8 @@
     "id": "person:dina-vidal",
     "name": "Dina Vidal",
     "alias": "dvidal",
-    "team": "Delivery Estimates",
-    "role": "SDE I",
+    "team": "RF Modem Dev",
+    "role": "SDE II",
     "aliases": [
       "dina.vidal"
     ],
@@ -773,8 +773,8 @@
     "id": "person:petra-steiner",
     "name": "Petra Steiner",
     "alias": "psteiner",
-    "team": "Delivery Estimates",
-    "role": "SDE I",
+    "team": "RF Modem Dev",
+    "role": "SDE III",
     "aliases": [
       "petra.steiner"
     ],
@@ -784,8 +784,8 @@
     "id": "person:ravi-okafor",
     "name": "Ravi Okafor",
     "alias": "rokafor",
-    "team": "Delivery Estimates",
-    "role": "SDE Intern",
+    "team": "RF Modem Dev",
+    "role": "SDE II",
     "aliases": [
       "ravi.okafor"
     ],
@@ -795,7 +795,7 @@
     "id": "person:theo-mbeki",
     "name": "Theo Mbeki",
     "alias": "tmbeki",
-    "team": "Delivery Estimates",
+    "team": "RF Modem Dev",
     "role": "SDE I",
     "aliases": [
       "theo.mbeki"
@@ -806,8 +806,8 @@
     "id": "person:sam-egede",
     "name": "Sam Egede",
     "alias": "segede",
-    "team": "Delivery Estimates",
-    "role": "SDE III",
+    "team": "RF Modem Dev",
+    "role": "SDE I",
     "aliases": [
       "sam.egede"
     ],
@@ -817,8 +817,8 @@
     "id": "person:rosa-moreau",
     "name": "Rosa Moreau",
     "alias": "rmoreau",
-    "team": "Delivery Estimates",
-    "role": "SDE I",
+    "team": "Mission Data Services",
+    "role": "SDM",
     "aliases": [
       "rosa.moreau"
     ],
@@ -828,8 +828,8 @@
     "id": "person:rosa-marino",
     "name": "Rosa Marino",
     "alias": "rmarino",
-    "team": "Delivery Estimates",
-    "role": "TPM",
+    "team": "Mission Data Services",
+    "role": "Senior SDE",
     "aliases": [
       "rosa.marino"
     ],
@@ -839,8 +839,8 @@
     "id": "person:leila-sorensen",
     "name": "Leila Sorensen",
     "alias": "lsorensen",
-    "team": "Delivery Estimates",
-    "role": "SDE I",
+    "team": "Mission Data Services",
+    "role": "SDE II",
     "aliases": [
       "leila.sorensen"
     ],
@@ -850,8 +850,8 @@
     "id": "person:amara-duval",
     "name": "Amara Duval",
     "alias": "aduval",
-    "team": "Delivery Estimates",
-    "role": "Principal Engineer",
+    "team": "Mission Data Services",
+    "role": "SDE II",
     "aliases": [
       "amara.duval"
     ],
@@ -861,8 +861,8 @@
     "id": "person:ben-iyer",
     "name": "Ben Iyer",
     "alias": "biyer",
-    "team": "Delivery Estimates",
-    "role": "SDE II",
+    "team": "Mission Data Services",
+    "role": "SDE III",
     "aliases": [
       "ben.iyer"
     ],
@@ -872,8 +872,8 @@
     "id": "person:petra-varga",
     "name": "Petra Varga",
     "alias": "pvarga",
-    "team": "Delivery Estimates",
-    "role": "SDM",
+    "team": "Mission Data Services",
+    "role": "SDE II",
     "aliases": [
       "petra.varga"
     ],
@@ -883,8 +883,8 @@
     "id": "person:yuki-bishop",
     "name": "Yuki Bishop",
     "alias": "ybishop",
-    "team": "Ads Measurement",
-    "role": "Senior SDE",
+    "team": "Mission Data Services",
+    "role": "SDE I",
     "aliases": [
       "yuki.bishop"
     ],
@@ -894,7 +894,7 @@
     "id": "person:jonas-silva",
     "name": "Jonas Silva",
     "alias": "jsilva",
-    "team": "Ads Measurement",
+    "team": "Mission Data Services",
     "role": "SDE III",
     "aliases": [
       "jonas.silva"
@@ -905,8 +905,8 @@
     "id": "person:fatima-mensah",
     "name": "Fatima Mensah",
     "alias": "fmensah",
-    "team": "Ads Measurement",
-    "role": "SDE I",
+    "team": "Launch Integration",
+    "role": "SDM",
     "aliases": [
       "fatima.mensah"
     ],
@@ -916,8 +916,8 @@
     "id": "person:leila-egede",
     "name": "Leila Egede",
     "alias": "legede",
-    "team": "Ads Measurement",
-    "role": "SDE II",
+    "team": "Launch Integration",
+    "role": "Senior SDE",
     "aliases": [
       "leila.egede"
     ],
@@ -927,8 +927,8 @@
     "id": "person:leila-petrov",
     "name": "Leila Petrov",
     "alias": "lpetrov",
-    "team": "Ads Measurement",
-    "role": "Senior SDE",
+    "team": "Launch Integration",
+    "role": "SDE II",
     "aliases": [
       "leila.petrov"
     ],
@@ -938,7 +938,7 @@
     "id": "person:aisha-vance",
     "name": "Aisha Vance",
     "alias": "avance",
-    "team": "Ads Measurement",
+    "team": "Launch Integration",
     "role": "SDE II",
     "aliases": [
       "aisha.vance"
@@ -949,8 +949,8 @@
     "id": "person:amara-varga",
     "name": "Amara Varga",
     "alias": "avarga",
-    "team": "Ads Measurement",
-    "role": "SDM",
+    "team": "Launch Integration",
+    "role": "TPM",
     "aliases": [
       "amara.varga"
     ],
@@ -960,8 +960,8 @@
     "id": "person:ezra-bishop",
     "name": "Ezra Bishop",
     "alias": "ebishop",
-    "team": "Ads Measurement",
-    "role": "SDE III",
+    "team": "Launch Integration",
+    "role": "TPM",
     "aliases": [
       "ezra.bishop"
     ],
@@ -971,8 +971,8 @@
     "id": "person:noah-alvarez",
     "name": "Noah Alvarez",
     "alias": "nalvarez",
-    "team": "Ads Measurement",
-    "role": "SDE I",
+    "team": "Launch Integration",
+    "role": "Senior SDE",
     "aliases": [
       "noah.alvarez"
     ],
@@ -982,8 +982,8 @@
     "id": "person:nadia-oduya",
     "name": "Nadia Oduya",
     "alias": "noduya",
-    "team": "Ads Measurement",
-    "role": "SDE II",
+    "team": "DevEx & Onboarding",
+    "role": "SDM",
     "aliases": [
       "nadia.oduya"
     ],
@@ -993,8 +993,8 @@
     "id": "person:cole-moreau",
     "name": "Cole Moreau",
     "alias": "cmoreau",
-    "team": "Ads Measurement",
-    "role": "SDE I",
+    "team": "DevEx & Onboarding",
+    "role": "Senior SDE",
     "aliases": [
       "cole.moreau"
     ],
@@ -1004,8 +1004,8 @@
     "id": "person:marco-kowalski",
     "name": "Marco Kowalski",
     "alias": "mkowalski",
-    "team": "Onboarding Tools",
-    "role": "SDE III",
+    "team": "DevEx & Onboarding",
+    "role": "SDE I",
     "aliases": [
       "marco.kowalski"
     ],
@@ -1015,7 +1015,7 @@
     "id": "person:wren-vance",
     "name": "Wren Vance",
     "alias": "wvance",
-    "team": "Onboarding Tools",
+    "team": "DevEx & Onboarding",
     "role": "SDE Intern",
     "aliases": [
       "wren.vance"
@@ -1026,8 +1026,8 @@
     "id": "person:chloe-silva",
     "name": "Chloe Silva",
     "alias": "csilva",
-    "team": "Onboarding Tools",
-    "role": "SDE Intern",
+    "team": "DevEx & Onboarding",
+    "role": "SDE I",
     "aliases": [
       "chloe.silva"
     ],
@@ -1037,8 +1037,8 @@
     "id": "person:maya-holm",
     "name": "Maya Holm",
     "alias": "mholm",
-    "team": "Onboarding Tools",
-    "role": "SDE I",
+    "team": "DevEx & Onboarding",
+    "role": "SDE II",
     "aliases": [
       "maya.holm"
     ],
@@ -1048,187 +1048,11 @@
     "id": "person:ezra-steiner",
     "name": "Ezra Steiner",
     "alias": "esteiner",
-    "team": "Onboarding Tools",
-    "role": "SDE III",
+    "team": "DevEx & Onboarding",
+    "role": "SDE I",
     "aliases": [
       "ezra.steiner"
     ],
     "profileUrl": "https://phonetool.example.com/users/esteiner"
-  },
-  {
-    "id": "person:fatima-silva",
-    "name": "Fatima Silva",
-    "alias": "fsilva",
-    "team": "Onboarding Tools",
-    "role": "SDE II",
-    "aliases": [
-      "fatima.silva"
-    ],
-    "profileUrl": "https://phonetool.example.com/users/fsilva"
-  },
-  {
-    "id": "person:omar-iyer",
-    "name": "Omar Iyer",
-    "alias": "oiyer",
-    "team": "Onboarding Tools",
-    "role": "SDE I",
-    "aliases": [
-      "omar.iyer"
-    ],
-    "profileUrl": "https://phonetool.example.com/users/oiyer"
-  },
-  {
-    "id": "person:leila-tanaka",
-    "name": "Leila Tanaka",
-    "alias": "ltanaka",
-    "team": "Onboarding Tools",
-    "role": "TPM",
-    "aliases": [
-      "leila.tanaka"
-    ],
-    "profileUrl": "https://phonetool.example.com/users/ltanaka"
-  },
-  {
-    "id": "person:tara-kowalski",
-    "name": "Tara Kowalski",
-    "alias": "tkowalski",
-    "team": "Onboarding Tools",
-    "role": "SDE I",
-    "aliases": [
-      "tara.kowalski"
-    ],
-    "profileUrl": "https://phonetool.example.com/users/tkowalski"
-  },
-  {
-    "id": "person:niko-silva",
-    "name": "Niko Silva",
-    "alias": "nsilva",
-    "team": "Onboarding Tools",
-    "role": "SDE I",
-    "aliases": [
-      "niko.silva"
-    ],
-    "profileUrl": "https://phonetool.example.com/users/nsilva"
-  },
-  {
-    "id": "person:nina-abara",
-    "name": "Nina Abara",
-    "alias": "nabara",
-    "team": "Orbit Ground Systems",
-    "role": "SDE III",
-    "aliases": [
-      "nina.abara"
-    ],
-    "profileUrl": "https://phonetool.example.com/users/nabara"
-  },
-  {
-    "id": "person:sana-mbeki",
-    "name": "Sana Mbeki",
-    "alias": "smbeki",
-    "team": "Orbit Ground Systems",
-    "role": "SDE I",
-    "aliases": [
-      "sana.mbeki"
-    ],
-    "profileUrl": "https://phonetool.example.com/users/smbeki"
-  },
-  {
-    "id": "person:yuki-rahim",
-    "name": "Yuki Rahim",
-    "alias": "yrahim",
-    "team": "Orbit Ground Systems",
-    "role": "Senior SDE",
-    "aliases": [
-      "yuki.rahim"
-    ],
-    "profileUrl": "https://phonetool.example.com/users/yrahim"
-  },
-  {
-    "id": "person:sana-antar",
-    "name": "Sana Antar",
-    "alias": "santar",
-    "team": "Orbit Ground Systems",
-    "role": "SDM",
-    "aliases": [
-      "sana.antar"
-    ],
-    "profileUrl": "https://phonetool.example.com/users/santar"
-  },
-  {
-    "id": "person:zara-kerr",
-    "name": "Zara Kerr",
-    "alias": "zkerr",
-    "team": "Orbit Ground Systems",
-    "role": "SDE III",
-    "aliases": [
-      "zara.kerr"
-    ],
-    "profileUrl": "https://phonetool.example.com/users/zkerr"
-  },
-  {
-    "id": "person:dev-kerr",
-    "name": "Dev Kerr",
-    "alias": "dkerr",
-    "team": "Orbit Ground Systems",
-    "role": "SDE Intern",
-    "aliases": [
-      "dev.kerr"
-    ],
-    "profileUrl": "https://phonetool.example.com/users/dkerr"
-  },
-  {
-    "id": "person:jonas-brandt",
-    "name": "Jonas Brandt",
-    "alias": "jbrandt",
-    "team": "Orbit Ground Systems",
-    "role": "SDM",
-    "aliases": [
-      "jonas.brandt"
-    ],
-    "profileUrl": "https://phonetool.example.com/users/jbrandt"
-  },
-  {
-    "id": "person:fatima-okafor",
-    "name": "Fatima Okafor",
-    "alias": "fokafor",
-    "team": "Orbit Ground Systems",
-    "role": "SDE II",
-    "aliases": [
-      "fatima.okafor"
-    ],
-    "profileUrl": "https://phonetool.example.com/users/fokafor"
-  },
-  {
-    "id": "person:ezra-mensah",
-    "name": "Ezra Mensah",
-    "alias": "emensah",
-    "team": "Orbit Ground Systems",
-    "role": "Senior SDE",
-    "aliases": [
-      "ezra.mensah"
-    ],
-    "profileUrl": "https://phonetool.example.com/users/emensah"
-  },
-  {
-    "id": "person:nina-vance",
-    "name": "Nina Vance",
-    "alias": "nvance",
-    "team": "Orbit Ground Systems",
-    "role": "SDE II",
-    "aliases": [
-      "nina.vance"
-    ],
-    "profileUrl": "https://phonetool.example.com/users/nvance"
-  },
-  {
-    "id": "person:fatima-duval",
-    "name": "Fatima Duval",
-    "alias": "fduval",
-    "team": "Orbit Ground Systems",
-    "role": "SDM",
-    "aliases": [
-      "fatima.duval"
-    ],
-    "profileUrl": "https://phonetool.example.com/users/fduval"
   }
 ]
