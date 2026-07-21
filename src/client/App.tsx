@@ -12,6 +12,7 @@ import {
   Search
 } from "lucide-react";
 import {
+  type CSSProperties,
   FormEvent,
   lazy,
   Suspense,
@@ -214,14 +215,20 @@ export function App() {
         >
           {!response && !error ? (
             <div className="empty-state">
-              <span className="section-label">Start with one question</span>
-              <h1>Find the shortest path to the right answer.</h1>
-              <p>
+              <span className="section-label reveal" style={{ "--i": 0 } as CSSProperties}>
+                Start with one question
+              </span>
+              <h1 className="reveal" style={{ "--i": 1 } as CSSProperties}>
+                Find the shortest path to the right answer.
+              </h1>
+              <p className="reveal" style={{ "--i": 2 } as CSSProperties}>
                 Trace ownership, access, approvers, and deployments through
                 evidence-backed connections.
               </p>
               <button
                 type="button"
+                className="reveal"
+                style={{ "--i": 3 } as CSSProperties}
                 onClick={() => void submit(examples[0].question)}
               >
                 Run an example
@@ -240,7 +247,8 @@ export function App() {
           {response ? (
             <div className="result-layout">
               <section
-                className={`answer-summary status-${response.result.status}`}
+                className={`answer-summary reveal status-${response.result.status}`}
+                style={{ "--i": 0 } as CSSProperties}
               >
                 <div className="answer-copy">
                   <div className="answer-status">
@@ -269,7 +277,10 @@ export function App() {
                 )}
               </section>
 
-              <section className="path-section">
+              <section
+                className="path-section reveal"
+                style={{ "--i": 1 } as CSSProperties}
+              >
                 <div className="content-heading">
                   <div>
                     <span className="section-label">Verified path</span>
@@ -279,7 +290,7 @@ export function App() {
                         : "How RampPath reached this answer"}
                     </h2>
                   </div>
-                  <span className="view-label">3D view</span>
+                  <span className="view-label">Rotatable 3D map</span>
                 </div>
                 <Suspense
                   fallback={<div className="graph-loading">Loading 3D view</div>}
@@ -289,7 +300,10 @@ export function App() {
               </section>
 
               {response.result.experts?.length ? (
-                <section className="expert-results">
+                <section
+                  className="expert-results reveal"
+                  style={{ "--i": 2 } as CSSProperties}
+                >
                   <div className="content-heading">
                     <div>
                       <span className="section-label">Ranked contacts</span>
@@ -400,7 +414,10 @@ export function App() {
                 </section>
               ) : null}
 
-              <div className="support-grid">
+              <div
+                className="support-grid reveal"
+                style={{ "--i": 3 } as CSSProperties}
+              >
                 <details className="evidence-panel">
                   <summary>
                     <div>
@@ -452,7 +469,7 @@ export function App() {
                       <p>{response.result.draftRequest}</p>
                     </div>
                     <button
-                      className="icon-button"
+                      className={`icon-button ${copied ? "is-copied" : ""}`}
                       type="button"
                       onClick={() => void copyDraft()}
                       title="Copy access request"

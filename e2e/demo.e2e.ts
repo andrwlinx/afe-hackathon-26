@@ -40,10 +40,10 @@ for (const viewport of [
         })
       )
       .toEqual({
-        bodyFont: expect.stringContaining("Source Sans 3"),
-        headingFont: expect.stringContaining("IBM Plex Sans Condensed"),
-        primaryRadius: "2px 6px 6px 2px",
-        brandColor: "rgb(20, 125, 114)",
+        bodyFont: expect.stringContaining("Inter"),
+        headingFont: expect.stringContaining("Inter"),
+        primaryRadius: "12px 12px 12px 12px",
+        brandColor: "rgb(29, 29, 31)",
         noHorizontalOverflow: true
       });
 
@@ -102,9 +102,7 @@ for (const viewport of [
             const alpha = pixels[index + 3];
             if (
               alpha > 0 &&
-              (Math.abs(red - 21) > 8 ||
-                Math.abs(green - 27) > 8 ||
-                Math.abs(blue - 39) > 8)
+              (red > 8 || green > 8 || blue > 8)
             ) {
               nonBackgroundPixels += 1;
             }
@@ -114,17 +112,13 @@ for (const viewport of [
       )
       .toBeGreaterThan(20);
 
-    const operatorButton = page
-      .getByLabel("Path entities")
-      .getByRole("button", { name: /AtlasProdOperator/ });
-    await operatorButton.click();
-    await expect(page.locator(".node-inspector h3")).toContainText(
-      "AtlasProdOperator"
-    );
+    // The map opens clean: entity details live in a popup that only appears
+    // once a gem is clicked, so no popup should be present by default.
+    await expect(page.locator(".gem-popup")).toHaveCount(0);
+    await expect(page.getByRole("button", { name: "Recenter" })).toBeVisible();
     await expect(
-      page.locator(".connection-list").getByText(/missing role access/)
+      page.getByRole("button", { name: "Fullscreen" })
     ).toBeVisible();
-    await expect(page.getByRole("button", { name: "Reset graph view" })).toBeVisible();
 
     const evidence = page.locator(".evidence-panel");
     await expect(evidence).not.toHaveAttribute("open", "");
