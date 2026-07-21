@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import type { GraphPath, NodeType } from "../shared/graph.js";
 
 const nodeColors: Record<NodeType, string> = {
-  person: "#16756b",
+  person: "#147d72",
   team: "#0d5f92",
   package: "#6d4cc4",
   pipeline: "#b34f28",
@@ -62,7 +62,7 @@ export function GraphView({ path }: { path: GraphPath }) {
             "background-color": "data(color)",
             label: "data(label)",
             color: "#172033",
-            "font-family": "Inter, ui-sans-serif, system-ui",
+            "font-family": "Source Sans 3, ui-sans-serif, system-ui",
             "font-size": compact ? 10 : 11,
             "font-weight": 650,
             "text-wrap": "wrap",

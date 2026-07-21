@@ -10,6 +10,41 @@ for (const viewport of [
     await page.setViewportSize(viewport);
     await page.goto("/");
     await expect(page.getByText("RampPath", { exact: true })).toBeVisible();
+    await expect
+      .poll(() =>
+        page.locator("body").evaluate((element) => {
+          const bodyFont = getComputedStyle(element).fontFamily;
+          const headingFont = getComputedStyle(
+            document.querySelector(".brand strong")!
+          ).fontFamily;
+          const primary = getComputedStyle(
+            document.querySelector(".primary-button")!
+          );
+          const brand = getComputedStyle(
+            document.querySelector(".brand-mark")!
+          );
+          return {
+            bodyFont,
+            headingFont,
+            primaryRadius: [
+              primary.borderTopLeftRadius,
+              primary.borderTopRightRadius,
+              primary.borderBottomRightRadius,
+              primary.borderBottomLeftRadius
+            ].join(" "),
+            brandColor: brand.backgroundColor,
+            noHorizontalOverflow:
+              document.documentElement.scrollWidth <= window.innerWidth
+          };
+        })
+      )
+      .toEqual({
+        bodyFont: expect.stringContaining("Source Sans 3"),
+        headingFont: expect.stringContaining("IBM Plex Sans Condensed"),
+        primaryRadius: "2px 6px 6px 2px",
+        brandColor: "rgb(20, 125, 114)",
+        noHorizontalOverflow: true
+      });
 
     await page.getByRole("button", { name: /Check my access/ }).click();
     await expect(

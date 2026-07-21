@@ -1,7 +1,7 @@
 :root {
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
   color: #172033;
-  background: #eef1f4;
+  background: #f2f4f7;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   letter-spacing: 0;
@@ -27,20 +27,35 @@ button {
   cursor: pointer;
 }
 
+h1,
+h2,
+h3,
+.brand strong,
+.sidebar-heading,
+.section-label,
+.answer-status,
+.next-action span,
+.expert-rank,
+.expert-score strong,
+.reason-heading {
+  font-family: "IBM Plex Sans Condensed", ui-sans-serif, system-ui, sans-serif;
+}
+
 button:focus-visible,
-textarea:focus-visible {
+textarea:focus-visible,
+a:focus-visible {
   outline: 3px solid rgba(24, 117, 107, 0.24);
   outline-offset: 2px;
 }
 
 .app-shell {
   min-height: 100vh;
-  background: #eef1f4;
+  background: #f2f4f7;
 }
 
 .topbar {
-  height: 68px;
-  padding: 0 28px;
+  height: 64px;
+  padding: 0 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,7 +67,7 @@ textarea:focus-visible {
 .brand {
   display: flex;
   align-items: center;
-  gap: 11px;
+  gap: 8px;
 }
 
 .brand-mark {
@@ -60,8 +75,8 @@ textarea:focus-visible {
   height: 36px;
   display: grid;
   place-items: center;
-  background: #e06e3b;
-  border-radius: 7px;
+  background: #147d72;
+  border-radius: 4px;
 }
 
 .brand strong,
@@ -95,19 +110,19 @@ textarea:focus-visible {
 }
 
 .status-dot.online {
-  background: #42c59c;
-  box-shadow: 0 0 0 3px rgba(66, 197, 156, 0.15);
+  background: #55c7a9;
+  border: 1px solid #b9eadf;
 }
 
 .workspace {
-  min-height: calc(100vh - 68px);
+  min-height: calc(100vh - 64px);
   display: grid;
-  grid-template-columns: 310px minmax(0, 1fr);
+  grid-template-columns: 300px minmax(0, 1fr);
 }
 
 .query-sidebar {
-  min-height: calc(100vh - 68px);
-  padding: 24px 20px;
+  min-height: calc(100vh - 64px);
+  padding: 24px;
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -129,7 +144,7 @@ textarea:focus-visible {
 }
 
 .query-form {
-  margin-top: 18px;
+  margin-top: 16px;
 }
 
 .query-form label {
@@ -148,7 +163,7 @@ textarea:focus-visible {
   color: #172033;
   background: #fafbfc;
   border: 1px solid #cbd3de;
-  border-radius: 6px;
+  border-radius: 4px;
   line-height: 1.5;
 }
 
@@ -158,23 +173,23 @@ textarea:focus-visible {
 
 .primary-button {
   width: 100%;
-  height: 42px;
-  margin-top: 10px;
-  padding: 0 14px;
+  height: 44px;
+  margin-top: 8px;
+  padding: 0 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   color: #fff;
-  background: #16756b;
+  background: #147d72;
   border: 0;
-  border-radius: 6px;
+  border-radius: 2px 6px 6px 2px;
   font-size: 13px;
-  font-weight: 750;
+  font-weight: 700;
 }
 
 .primary-button:hover {
-  background: #105f57;
+  background: #0f665d;
 }
 
 .primary-button:disabled {
@@ -183,21 +198,21 @@ textarea:focus-visible {
 }
 
 .example-group {
-  margin-top: 28px;
+  margin-top: 24px;
 }
 
 .section-label {
   display: block;
   color: #7b8798;
   font-size: 10px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .example-button {
   width: 100%;
   min-height: 58px;
-  padding: 10px 5px;
+  padding: 8px;
   display: grid;
   grid-template-columns: 22px minmax(0, 1fr) 16px;
   align-items: center;
@@ -241,10 +256,10 @@ textarea:focus-visible {
 
 .source-summary {
   margin-top: auto;
-  padding-top: 18px;
+  padding-top: 16px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   color: #748092;
   border-top: 1px solid #e8ebef;
 }
@@ -266,7 +281,7 @@ textarea:focus-visible {
 
 .answer-workspace {
   min-width: 0;
-  padding: 28px;
+  padding: 24px;
 }
 
 .empty-state {
@@ -293,13 +308,13 @@ textarea:focus-visible {
   display: grid;
   place-items: center;
   color: #fff;
-  border: 5px solid #eef1f4;
+  border: 5px solid #f2f4f7;
   border-radius: 50%;
 }
 
 .node-one {
   left: 16px;
-  background: #16756b;
+  background: #147d72;
 }
 
 .node-two {
@@ -342,17 +357,18 @@ textarea:focus-visible {
 }
 
 .empty-state button {
-  margin-top: 20px;
-  padding: 9px 13px;
+  min-height: 44px;
+  margin-top: 24px;
+  padding: 8px 16px;
   display: flex;
   align-items: center;
   gap: 7px;
-  color: #11685f;
+  color: #0f665d;
   background: #fff;
   border: 1px solid #bac4cf;
-  border-radius: 6px;
+  border-radius: 2px 6px 6px 2px;
   font-size: 12px;
-  font-weight: 750;
+  font-weight: 700;
 }
 
 .result-layout {
@@ -362,18 +378,18 @@ textarea:focus-visible {
 }
 
 .answer-summary {
-  padding: 22px 24px;
+  padding: 24px;
   background: #fff;
+  border: 1px solid #d9dfe7;
   border-top: 4px solid #9aa6b6;
-  border-bottom: 1px solid #d9dfe7;
 }
 
 .answer-summary.status-confirmed {
-  border-top-color: #16756b;
+  border-top-color: #147d72;
 }
 
 .answer-summary.status-action-needed {
-  border-top-color: #d0771f;
+  border-top-color: #c86112;
 }
 
 .answer-summary.status-unknown {
@@ -384,14 +400,14 @@ textarea:focus-visible {
   display: flex;
   align-items: center;
   gap: 7px;
-  color: #16756b;
+  color: #147d72;
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .status-action-needed .answer-status {
-  color: #ad5c10;
+  color: #a84d09;
 }
 
 .status-unknown .answer-status {
@@ -413,19 +429,19 @@ textarea:focus-visible {
 }
 
 .next-action {
-  margin-top: 18px;
-  padding: 11px 13px;
+  margin-top: 16px;
+  padding: 16px;
   display: flex;
   align-items: center;
   gap: 11px;
   color: #334155;
   background: #f0f7f5;
-  border-left: 3px solid #16756b;
+  border-left: 3px solid #147d72;
 }
 
 .status-action-needed .next-action {
   background: #fff7eb;
-  border-left-color: #d0771f;
+  border-left-color: #c86112;
 }
 
 .next-action span,
@@ -436,7 +452,7 @@ textarea:focus-visible {
 .next-action span {
   color: #718095;
   font-size: 9px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -450,10 +466,11 @@ textarea:focus-visible {
 .draft-panel,
 .confidence-panel {
   background: #fff;
+  border: 1px solid #d9dfe7;
 }
 
 .expert-results {
-  margin-top: 18px;
+  margin-top: 16px;
 }
 
 .expert-results-heading {
@@ -477,7 +494,7 @@ textarea:focus-visible {
 .expert-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  gap: 16px;
 }
 
 .expert-card {
@@ -485,12 +502,12 @@ textarea:focus-visible {
   padding: 16px;
   background: #fff;
   border: 1px solid #d9dfe7;
-  border-top: 3px solid #16756b;
-  border-radius: 6px;
+  border-top: 3px solid #147d72;
+  border-radius: 4px;
 }
 
 .expert-card:first-child {
-  border-top-color: #e06e3b;
+  border-top-color: #151b27;
 }
 
 .expert-card-top {
@@ -509,7 +526,7 @@ textarea:focus-visible {
   background: #f1f4f6;
   border-radius: 50%;
   font-size: 10px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .expert-identity {
@@ -544,9 +561,9 @@ textarea:focus-visible {
   display: grid;
   align-content: center;
   text-align: center;
-  color: #12675e;
+  color: #0f665d;
   background: #eaf6f3;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .expert-score strong,
@@ -562,7 +579,7 @@ textarea:focus-visible {
 .expert-score span {
   margin-top: 3px;
   font-size: 8px;
-  font-weight: 750;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -577,14 +594,14 @@ textarea:focus-visible {
 .score-track i {
   height: 100%;
   display: block;
-  background: #16756b;
+  background: #147d72;
 }
 
 .reason-heading {
   margin-top: 14px;
   color: #7b8798;
   font-size: 9px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -631,9 +648,9 @@ textarea:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  color: #12675e;
+  color: #0f665d;
   font-size: 10px;
-  font-weight: 750;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -642,12 +659,12 @@ textarea:focus-visible {
 }
 
 .path-panel {
-  margin-top: 18px;
+  margin-top: 16px;
 }
 
 .panel-heading {
   min-height: 64px;
-  padding: 14px 18px;
+  padding: 16px;
   border-bottom: 1px solid #e1e6eb;
 }
 
@@ -688,7 +705,7 @@ textarea:focus-visible {
 .graph-canvas,
 .graph-empty {
   width: 100%;
-  height: 350px;
+  height: 400px;
 }
 
 .graph-canvas {
@@ -704,10 +721,10 @@ textarea:focus-visible {
 }
 
 .lower-grid {
-  margin-top: 18px;
+  margin-top: 16px;
   display: grid;
   grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
-  gap: 18px;
+  gap: 16px;
   align-items: stretch;
 }
 
@@ -716,11 +733,11 @@ textarea:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  color: #16695f;
+  color: #0f665d;
   background: #e9f5f2;
   border-radius: 4px;
   font-size: 9px;
-  font-weight: 750;
+  font-weight: 700;
 }
 
 .evidence-list {
@@ -747,7 +764,7 @@ textarea:focus-visible {
   place-items: center;
   color: #fff;
   background: #506176;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .source-bindle {
@@ -793,18 +810,18 @@ textarea:focus-visible {
 }
 
 .icon-button {
-  width: 34px;
-  height: 34px;
+  width: 44px;
+  height: 44px;
   display: grid;
   place-items: center;
   color: #4f5d70;
   background: #f4f6f8;
   border: 1px solid #d8dee6;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .icon-button:hover {
-  color: #16695f;
+  color: #0f665d;
   border-color: #9fbab5;
 }
 
@@ -814,7 +831,7 @@ textarea:focus-visible {
   display: flex;
   align-items: center;
   gap: 13px;
-  color: #16756b;
+  color: #147d72;
 }
 
 .confidence-panel span,
@@ -865,7 +882,7 @@ textarea:focus-visible {
 
 @media (max-width: 680px) {
   .topbar {
-    height: 60px;
+    height: 64px;
     padding: 0 16px;
   }
 
@@ -880,7 +897,7 @@ textarea:focus-visible {
 
   .query-sidebar {
     min-height: auto;
-    padding: 18px 16px;
+    padding: 16px;
     border-right: 0;
     border-bottom: 1px solid #d9dfe7;
   }
@@ -890,10 +907,10 @@ textarea:focus-visible {
   }
 
   .example-group {
-    margin-top: 18px;
+    margin-top: 16px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6px;
+    gap: 8px;
   }
 
   .example-group > .section-label {
@@ -904,7 +921,7 @@ textarea:focus-visible {
     min-height: 56px;
     grid-template-columns: 20px minmax(0, 1fr);
     border: 1px solid #e1e6eb;
-    border-radius: 5px;
+    border-radius: 2px 6px 6px 2px;
   }
 
   .example-button small,
@@ -913,11 +930,11 @@ textarea:focus-visible {
   }
 
   .source-summary {
-    margin-top: 18px;
+    margin-top: 16px;
   }
 
   .answer-workspace {
-    padding: 14px;
+    padding: 16px;
   }
 
   .empty-state {
@@ -942,7 +959,7 @@ textarea:focus-visible {
   }
 
   .answer-summary {
-    padding: 18px;
+    padding: 16px;
   }
 
   .answer-summary h1 {
@@ -959,7 +976,7 @@ textarea:focus-visible {
   }
 
   .expert-card {
-    padding: 14px;
+    padding: 16px;
   }
 
   .reason-row {
@@ -972,12 +989,12 @@ textarea:focus-visible {
 
   .panel-heading {
     align-items: flex-start;
-    gap: 12px;
+    gap: 16px;
   }
 
   .legend {
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
   }
 
   .graph-canvas,

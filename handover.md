@@ -16,7 +16,7 @@ This document tracks all work done on the project. **Update it every time you pu
 | Ava Martoma     | `ava`     | UI lead + slide deck                 |
 | Daniel Lee      | `daniel`  | JSON data + backend, UI help         |
 | Jacob Ryabinky  | `jacob`   | Demo video (script, record, edit)    |
-| Andrew Lin      | `andrew`  | Core dev (graph + search), UI help   |
+| Andrew Lin      | `andrew-ui` | Responsive UI system + graph polish |
 
 ---
 
@@ -26,6 +26,7 @@ Add newest entries at the top.
 
 | Date (PST) | Person | Branch | Files / Area Changed | Summary |
 |------------|--------|--------|----------------------|---------|
+| 2026-07-21 | Andrew Lin | `andrew-ui` | React UI, graph visualization, responsive E2E coverage | Reworked RampPath into a dense engineering-tool layout with IBM Plex Sans Condensed and Source Sans 3, the ink/teal visual system, full-width evidence panels, a larger accessible Cytoscape graph, and verified 1440px/390px behavior without horizontal overflow. |
 | 2026-07-21 | Andrew Lin | `andrew` | Expertise search, JSON contract, UI | Added explainable ranked people search, person cards, optional three-file synthetic data ingestion, tests, and MCP support. |
 | 2026-07-21 | Andrew Lin | `andrew` | handover.md | Merged the latest `main`, preserving the Compass project spec and RampPath implementation notes. |
 | 2026-07-20 | Andrew Lin | `andrew` | Full application | Added RampPath graph contracts, deterministic query engine, HTTP/MCP interfaces, React/Cytoscape UI, synthetic fixtures, tests, and demo documentation. |
@@ -58,6 +59,7 @@ Use this section to record any team decisions, blockers, or things future contri
 - The public repository contains synthetic graph data only. Real internal snapshots must remain under the gitignored `data/private/` directory.
 - The MVP supports five deterministic intents, including ranked expertise search; arbitrary LLM-generated graph queries and continuous synchronization are future work.
 - Synthetic expertise data uses `people.json`, `resources.json`, and `relationships.json` under `data/public/expertise/`; see that directory's README for the contract.
+- The UI uses local Fontsource Latin assets for IBM Plex Sans Condensed headings and Source Sans 3 body copy. `npm run test:e2e` verifies both the 1440px desktop and 390px mobile workflows.
 
 ---
 
