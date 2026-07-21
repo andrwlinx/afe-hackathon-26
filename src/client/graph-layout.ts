@@ -84,14 +84,19 @@ export function buildGraph3DData(path: GraphPath): GraphData3D {
     const depth = depths.get(node.id) ?? 0;
     const peers = levels.get(depth) ?? [node];
     const peerIndex = peers.findIndex((peer) => peer.id === node.id);
-    const y = (peerIndex - (peers.length - 1) / 2) * 92;
-    const peerDepthOffset = peers.length > 1 ? (peerIndex % 2 === 0 ? -18 : 18) : 0;
+    const count = peers.length;
+    // Distribute peers around a ring in the y/z plane so the layout is
+    // volumetric rather than flat; ring phase shifts per depth so
+    // neighboring levels interleave when the camera orbits.
+    const angle = (peerIndex / count) * Math.PI * 2 + depth * 0.9 + 0.35;
+    const radius = count > 1 ? 62 + count * 20 : 0;
+    const depthWave = Math.sin(depth * 1.15) * 58;
 
     return {
       ...node,
       fx: (depth - maxDepth / 2) * 138,
-      fy: y,
-      fz: Math.sin(depth * 1.15) * 42 + peerDepthOffset,
+      fy: radius * Math.cos(angle),
+      fz: depthWave + radius * Math.sin(angle) * 0.85,
       status: missingTargets.has(node.id) ? "missing" : "verified"
     };
   });
