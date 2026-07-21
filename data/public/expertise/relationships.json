@@ -1,0 +1,1530 @@
+[
+  {
+    "id": "relationship:r0001",
+    "personId": "person:suki-petrov",
+    "resourceId": "service:payments-ledger",
+    "relation": "owns",
+    "lastActive": "2026-06-15",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0002",
+    "personId": "person:cole-lindqvist",
+    "resourceId": "service:payments-ledger",
+    "relation": "maintains",
+    "lastActive": "2026-04-22",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0003",
+    "personId": "person:cole-castillo",
+    "resourceId": "service:payments-ledger",
+    "relation": "contributes-to",
+    "lastActive": "2026-02-21",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0004",
+    "personId": "person:sana-tanaka",
+    "resourceId": "pipeline:payments-refund",
+    "relation": "owns",
+    "lastActive": "2026-07-03",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0005",
+    "personId": "person:suki-petrov",
+    "resourceId": "pipeline:payments-refund",
+    "relation": "maintains",
+    "lastActive": "2026-04-09",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0006",
+    "personId": "person:cole-lindqvist",
+    "resourceId": "pipeline:payments-refund",
+    "relation": "maintains",
+    "lastActive": "2026-07-11",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0007",
+    "personId": "person:maya-vidal",
+    "resourceId": "pipeline:payments-refund",
+    "relation": "contributes-to",
+    "lastActive": "2026-03-18",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0008",
+    "personId": "person:cato-sokolov",
+    "resourceId": "package:payments-invoice",
+    "relation": "owns",
+    "lastActive": "2026-06-06",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0009",
+    "personId": "person:lucas-iyer",
+    "resourceId": "package:payments-invoice",
+    "relation": "maintains",
+    "lastActive": "2026-07-07",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0010",
+    "personId": "person:sofia-iyer",
+    "resourceId": "pipeline:payments-settlement",
+    "relation": "owns",
+    "lastActive": "2026-06-08",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0011",
+    "personId": "person:cole-lindqvist",
+    "resourceId": "pipeline:payments-settlement",
+    "relation": "maintains",
+    "lastActive": "2026-06-03",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0012",
+    "personId": "person:suki-petrov",
+    "resourceId": "pipeline:payments-settlement",
+    "relation": "maintains",
+    "lastActive": "2026-07-13",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0013",
+    "personId": "person:idris-varga",
+    "resourceId": "bindle:payments-checkout",
+    "relation": "owns",
+    "lastActive": "2026-06-19",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0014",
+    "personId": "person:cato-sokolov",
+    "resourceId": "bindle:payments-checkout",
+    "relation": "maintains",
+    "lastActive": "2026-06-17",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0015",
+    "personId": "person:sana-tanaka",
+    "resourceId": "bindle:payments-checkout",
+    "relation": "maintains",
+    "lastActive": "2026-06-16",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0016",
+    "personId": "person:cole-sorensen",
+    "resourceId": "bindle:payments-checkout",
+    "relation": "contributes-to",
+    "lastActive": "2026-06-30",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0017",
+    "personId": "person:sofia-delgado",
+    "resourceId": "bindle:payments-checkout",
+    "relation": "contributes-to",
+    "lastActive": "2026-03-21",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0018",
+    "personId": "person:cole-sorensen",
+    "resourceId": "pipeline:payments-chargeback",
+    "relation": "owns",
+    "lastActive": "2026-05-26",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0019",
+    "personId": "person:lucas-castillo",
+    "resourceId": "pipeline:payments-chargeback",
+    "relation": "maintains",
+    "lastActive": "2026-07-17",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0020",
+    "personId": "person:cole-lindqvist",
+    "resourceId": "pipeline:payments-chargeback",
+    "relation": "contributes-to",
+    "lastActive": "2026-05-17",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0021",
+    "personId": "person:kai-holm",
+    "resourceId": "service:search-indexer",
+    "relation": "owns",
+    "lastActive": "2026-05-26",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0022",
+    "personId": "person:sofia-delgado",
+    "resourceId": "service:search-indexer",
+    "relation": "maintains",
+    "lastActive": "2026-04-02",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0023",
+    "personId": "person:niko-okafor",
+    "resourceId": "service:search-indexer",
+    "relation": "contributes-to",
+    "lastActive": "2026-02-22",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0024",
+    "personId": "person:maya-antar",
+    "resourceId": "service:search-indexer",
+    "relation": "contributes-to",
+    "lastActive": "2026-07-21",
+    "observedAt": "2026-07-21T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0025",
+    "personId": "person:kai-holm",
+    "resourceId": "bindle:search-query-parser",
+    "relation": "owns",
+    "lastActive": "2026-06-26",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0026",
+    "personId": "person:niko-okafor",
+    "resourceId": "bindle:search-query-parser",
+    "relation": "maintains",
+    "lastActive": "2026-03-26",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0027",
+    "personId": "person:marco-tanaka",
+    "resourceId": "bindle:search-query-parser",
+    "relation": "maintains",
+    "lastActive": "2026-06-01",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0028",
+    "personId": "person:maya-antar",
+    "resourceId": "package:search-ranker",
+    "relation": "owns",
+    "lastActive": "2026-07-17",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0029",
+    "personId": "person:sana-takeda",
+    "resourceId": "package:search-ranker",
+    "relation": "maintains",
+    "lastActive": "2026-04-29",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0030",
+    "personId": "person:kai-mensah",
+    "resourceId": "package:search-ranker",
+    "relation": "contributes-to",
+    "lastActive": "2026-02-15",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0031",
+    "personId": "person:niko-okafor",
+    "resourceId": "pipeline:search-autocomplete",
+    "relation": "owns",
+    "lastActive": "2026-06-27",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0032",
+    "personId": "person:sofia-delgado",
+    "resourceId": "pipeline:search-autocomplete",
+    "relation": "maintains",
+    "lastActive": "2026-07-17",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0033",
+    "personId": "person:kai-holm",
+    "resourceId": "pipeline:search-autocomplete",
+    "relation": "maintains",
+    "lastActive": "2026-05-30",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0034",
+    "personId": "person:fatima-mensah",
+    "resourceId": "pipeline:search-autocomplete",
+    "relation": "contributes-to",
+    "lastActive": "2026-03-21",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0035",
+    "personId": "person:rosa-oduya",
+    "resourceId": "package:search-spellcheck",
+    "relation": "owns",
+    "lastActive": "2026-07-07",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0036",
+    "personId": "person:cato-okafor",
+    "resourceId": "package:search-spellcheck",
+    "relation": "maintains",
+    "lastActive": "2026-06-10",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0037",
+    "personId": "person:sana-takeda",
+    "resourceId": "package:search-spellcheck",
+    "relation": "contributes-to",
+    "lastActive": "2026-03-10",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0038",
+    "personId": "person:marco-tanaka",
+    "resourceId": "package:search-spellcheck",
+    "relation": "contributes-to",
+    "lastActive": "2026-07-04",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0039",
+    "personId": "person:marco-tanaka",
+    "resourceId": "bindle:search-synonyms",
+    "relation": "owns",
+    "lastActive": "2026-06-06",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0040",
+    "personId": "person:maya-antar",
+    "resourceId": "bindle:search-synonyms",
+    "relation": "maintains",
+    "lastActive": "2026-03-24",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0041",
+    "personId": "person:kai-holm",
+    "resourceId": "bindle:search-synonyms",
+    "relation": "maintains",
+    "lastActive": "2026-05-02",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0042",
+    "personId": "person:ravi-steiner",
+    "resourceId": "bindle:catalog-item-master",
+    "relation": "owns",
+    "lastActive": "2026-07-09",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0043",
+    "personId": "person:jonas-rahim",
+    "resourceId": "bindle:catalog-item-master",
+    "relation": "maintains",
+    "lastActive": "2026-03-29",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0044",
+    "personId": "person:ravi-steiner",
+    "resourceId": "package:catalog-taxonomy",
+    "relation": "owns",
+    "lastActive": "2026-06-20",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0045",
+    "personId": "person:leila-sokolov",
+    "resourceId": "package:catalog-taxonomy",
+    "relation": "maintains",
+    "lastActive": "2026-07-08",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0046",
+    "personId": "person:rosa-varga",
+    "resourceId": "bindle:catalog-attributes",
+    "relation": "owns",
+    "lastActive": "2026-05-25",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0047",
+    "personId": "person:noah-iyer",
+    "resourceId": "bindle:catalog-attributes",
+    "relation": "maintains",
+    "lastActive": "2026-04-22",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0048",
+    "personId": "person:ravi-steiner",
+    "resourceId": "pipeline:catalog-images",
+    "relation": "owns",
+    "lastActive": "2026-07-16",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0049",
+    "personId": "person:noah-iyer",
+    "resourceId": "pipeline:catalog-images",
+    "relation": "maintains",
+    "lastActive": "2026-06-24",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0050",
+    "personId": "person:alma-tanaka",
+    "resourceId": "pipeline:catalog-images",
+    "relation": "contributes-to",
+    "lastActive": "2026-03-28",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0051",
+    "personId": "person:ezra-larsen",
+    "resourceId": "pipeline:catalog-images",
+    "relation": "contributes-to",
+    "lastActive": "2026-05-20",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0052",
+    "personId": "person:leila-sokolov",
+    "resourceId": "bindle:catalog-variations",
+    "relation": "owns",
+    "lastActive": "2026-07-01",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0053",
+    "personId": "person:jonas-rahim",
+    "resourceId": "bindle:catalog-variations",
+    "relation": "maintains",
+    "lastActive": "2026-04-23",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0054",
+    "personId": "person:maya-rahim",
+    "resourceId": "bindle:catalog-variations",
+    "relation": "maintains",
+    "lastActive": "2026-07-01",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0055",
+    "personId": "person:fatima-silva",
+    "resourceId": "bindle:catalog-variations",
+    "relation": "contributes-to",
+    "lastActive": "2026-06-17",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0056",
+    "personId": "person:alma-tanaka",
+    "resourceId": "service:catalog-dedupe",
+    "relation": "owns",
+    "lastActive": "2026-06-15",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0057",
+    "personId": "person:nadia-moreau",
+    "resourceId": "service:catalog-dedupe",
+    "relation": "maintains",
+    "lastActive": "2026-07-13",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0058",
+    "personId": "person:jonas-rahim",
+    "resourceId": "service:catalog-dedupe",
+    "relation": "contributes-to",
+    "lastActive": "2026-06-23",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0059",
+    "personId": "person:ravi-steiner",
+    "resourceId": "service:catalog-dedupe",
+    "relation": "contributes-to",
+    "lastActive": "2026-05-18",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0060",
+    "personId": "person:bruno-silva",
+    "resourceId": "package:fulfillment-pick-route",
+    "relation": "owns",
+    "lastActive": "2026-07-13",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0061",
+    "personId": "person:vera-nakamura",
+    "resourceId": "package:fulfillment-pick-route",
+    "relation": "maintains",
+    "lastActive": "2026-05-13",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0062",
+    "personId": "person:kai-mensah",
+    "resourceId": "package:fulfillment-pick-route",
+    "relation": "contributes-to",
+    "lastActive": "2026-04-05",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0063",
+    "personId": "person:elsa-iyer",
+    "resourceId": "package:fulfillment-pick-route",
+    "relation": "contributes-to",
+    "lastActive": "2026-07-21",
+    "observedAt": "2026-07-21T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0064",
+    "personId": "person:owen-kowalski",
+    "resourceId": "package:fulfillment-inventory",
+    "relation": "owns",
+    "lastActive": "2026-05-25",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0065",
+    "personId": "person:diego-abara",
+    "resourceId": "package:fulfillment-inventory",
+    "relation": "maintains",
+    "lastActive": "2026-07-13",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0066",
+    "personId": "person:ivy-steiner",
+    "resourceId": "package:fulfillment-inventory",
+    "relation": "maintains",
+    "lastActive": "2026-04-08",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0067",
+    "personId": "person:owen-kowalski",
+    "resourceId": "package:fulfillment-slotting",
+    "relation": "owns",
+    "lastActive": "2026-06-15",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0068",
+    "personId": "person:marco-brandt",
+    "resourceId": "package:fulfillment-slotting",
+    "relation": "maintains",
+    "lastActive": "2026-04-18",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0069",
+    "personId": "person:diego-abara",
+    "resourceId": "package:fulfillment-slotting",
+    "relation": "maintains",
+    "lastActive": "2026-03-29",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0070",
+    "personId": "person:elsa-iyer",
+    "resourceId": "package:fulfillment-slotting",
+    "relation": "contributes-to",
+    "lastActive": "2026-04-05",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0071",
+    "personId": "person:bruno-silva",
+    "resourceId": "bindle:fulfillment-wave-planner",
+    "relation": "owns",
+    "lastActive": "2026-07-13",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0072",
+    "personId": "person:vera-nakamura",
+    "resourceId": "bindle:fulfillment-wave-planner",
+    "relation": "maintains",
+    "lastActive": "2026-07-08",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0073",
+    "personId": "person:ezra-vidal",
+    "resourceId": "bindle:fulfillment-wave-planner",
+    "relation": "contributes-to",
+    "lastActive": "2026-04-18",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0074",
+    "personId": "person:diego-abara",
+    "resourceId": "service:fulfillment-packing",
+    "relation": "owns",
+    "lastActive": "2026-07-01",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0075",
+    "personId": "person:kai-mensah",
+    "resourceId": "service:fulfillment-packing",
+    "relation": "maintains",
+    "lastActive": "2026-06-23",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0076",
+    "personId": "person:elsa-iyer",
+    "resourceId": "package:fulfillment-manifest",
+    "relation": "owns",
+    "lastActive": "2026-06-22",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0077",
+    "personId": "person:marco-brandt",
+    "resourceId": "package:fulfillment-manifest",
+    "relation": "maintains",
+    "lastActive": "2026-07-02",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0078",
+    "personId": "person:diego-abara",
+    "resourceId": "package:fulfillment-manifest",
+    "relation": "contributes-to",
+    "lastActive": "2026-01-24",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0079",
+    "personId": "person:ben-abara",
+    "resourceId": "pipeline:identity-signin",
+    "relation": "owns",
+    "lastActive": "2026-06-02",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0080",
+    "personId": "person:sam-brandt",
+    "resourceId": "pipeline:identity-signin",
+    "relation": "maintains",
+    "lastActive": "2026-07-04",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0081",
+    "personId": "person:rosa-novak",
+    "resourceId": "pipeline:identity-signin",
+    "relation": "contributes-to",
+    "lastActive": "2026-04-05",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0082",
+    "personId": "person:tara-castillo",
+    "resourceId": "package:identity-tokens",
+    "relation": "owns",
+    "lastActive": "2026-07-06",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0083",
+    "personId": "person:aldo-antar",
+    "resourceId": "package:identity-tokens",
+    "relation": "maintains",
+    "lastActive": "2026-05-29",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0084",
+    "personId": "person:sam-brandt",
+    "resourceId": "package:identity-tokens",
+    "relation": "maintains",
+    "lastActive": "2026-04-30",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0085",
+    "personId": "person:sofia-delgado",
+    "resourceId": "package:identity-tokens",
+    "relation": "contributes-to",
+    "lastActive": "2026-06-25",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0086",
+    "personId": "person:tara-castillo",
+    "resourceId": "package:identity-sessions",
+    "relation": "owns",
+    "lastActive": "2026-06-26",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0087",
+    "personId": "person:ben-abara",
+    "resourceId": "package:identity-sessions",
+    "relation": "maintains",
+    "lastActive": "2026-06-05",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0088",
+    "personId": "person:fatima-tanaka",
+    "resourceId": "package:identity-sessions",
+    "relation": "contributes-to",
+    "lastActive": "2026-05-29",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0089",
+    "personId": "person:rosa-novak",
+    "resourceId": "package:identity-sessions",
+    "relation": "contributes-to",
+    "lastActive": "2026-04-09",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0090",
+    "personId": "person:aldo-antar",
+    "resourceId": "service:identity-mfa",
+    "relation": "owns",
+    "lastActive": "2026-05-26",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0091",
+    "personId": "person:jonas-petrov",
+    "resourceId": "service:identity-mfa",
+    "relation": "maintains",
+    "lastActive": "2026-04-11",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0092",
+    "personId": "person:wren-sorensen",
+    "resourceId": "service:identity-mfa",
+    "relation": "maintains",
+    "lastActive": "2026-06-22",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0093",
+    "personId": "person:chloe-silva",
+    "resourceId": "service:identity-mfa",
+    "relation": "contributes-to",
+    "lastActive": "2026-05-06",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0094",
+    "personId": "person:rosa-novak",
+    "resourceId": "pipeline:identity-permissions",
+    "relation": "owns",
+    "lastActive": "2026-06-01",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0095",
+    "personId": "person:jonas-petrov",
+    "resourceId": "pipeline:identity-permissions",
+    "relation": "maintains",
+    "lastActive": "2026-05-26",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0096",
+    "personId": "person:aldo-antar",
+    "resourceId": "pipeline:identity-permissions",
+    "relation": "maintains",
+    "lastActive": "2026-07-08",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0097",
+    "personId": "person:wren-sorensen",
+    "resourceId": "pipeline:identity-permissions",
+    "relation": "contributes-to",
+    "lastActive": "2026-05-02",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0098",
+    "personId": "person:sam-brandt",
+    "resourceId": "package:identity-audit-log",
+    "relation": "owns",
+    "lastActive": "2026-07-21",
+    "observedAt": "2026-07-21T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0099",
+    "personId": "person:tara-castillo",
+    "resourceId": "package:identity-audit-log",
+    "relation": "maintains",
+    "lastActive": "2026-05-21",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0100",
+    "personId": "person:ivy-vance",
+    "resourceId": "bindle:notifications-dispatcher",
+    "relation": "owns",
+    "lastActive": "2026-05-25",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0101",
+    "personId": "person:kai-kimura",
+    "resourceId": "bindle:notifications-dispatcher",
+    "relation": "maintains",
+    "lastActive": "2026-03-27",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0102",
+    "personId": "person:maya-haddad",
+    "resourceId": "pipeline:notifications-templates",
+    "relation": "owns",
+    "lastActive": "2026-05-31",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0103",
+    "personId": "person:bruno-steiner",
+    "resourceId": "pipeline:notifications-templates",
+    "relation": "maintains",
+    "lastActive": "2026-05-08",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0104",
+    "personId": "person:ben-brandt",
+    "resourceId": "pipeline:notifications-templates",
+    "relation": "maintains",
+    "lastActive": "2026-06-09",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0105",
+    "personId": "person:ivy-vance",
+    "resourceId": "pipeline:notifications-templates",
+    "relation": "contributes-to",
+    "lastActive": "2026-06-12",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0106",
+    "personId": "person:rosa-novak",
+    "resourceId": "pipeline:notifications-templates",
+    "relation": "contributes-to",
+    "lastActive": "2026-06-27",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0107",
+    "personId": "person:maya-haddad",
+    "resourceId": "package:notifications-preferences",
+    "relation": "owns",
+    "lastActive": "2026-06-18",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0108",
+    "personId": "person:ben-brandt",
+    "resourceId": "package:notifications-preferences",
+    "relation": "maintains",
+    "lastActive": "2026-04-18",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0109",
+    "personId": "person:cole-castillo",
+    "resourceId": "package:notifications-preferences",
+    "relation": "maintains",
+    "lastActive": "2026-06-13",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0110",
+    "personId": "person:sam-novak",
+    "resourceId": "package:notifications-preferences",
+    "relation": "contributes-to",
+    "lastActive": "2026-05-18",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0111",
+    "personId": "person:kai-kimura",
+    "resourceId": "package:notifications-digest",
+    "relation": "owns",
+    "lastActive": "2026-07-06",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0112",
+    "personId": "person:cole-brandt",
+    "resourceId": "package:notifications-digest",
+    "relation": "maintains",
+    "lastActive": "2026-04-21",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0113",
+    "personId": "person:maya-haddad",
+    "resourceId": "package:notifications-push-relay",
+    "relation": "owns",
+    "lastActive": "2026-07-06",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0114",
+    "personId": "person:sam-novak",
+    "resourceId": "package:notifications-push-relay",
+    "relation": "maintains",
+    "lastActive": "2026-05-02",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0115",
+    "personId": "person:bruno-steiner",
+    "resourceId": "package:notifications-push-relay",
+    "relation": "maintains",
+    "lastActive": "2026-04-11",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0116",
+    "personId": "person:kai-kimura",
+    "resourceId": "pipeline:notifications-bounce-handler",
+    "relation": "owns",
+    "lastActive": "2026-05-29",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0117",
+    "personId": "person:maya-haddad",
+    "resourceId": "pipeline:notifications-bounce-handler",
+    "relation": "maintains",
+    "lastActive": "2026-06-30",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0118",
+    "personId": "person:ivy-vance",
+    "resourceId": "pipeline:notifications-bounce-handler",
+    "relation": "maintains",
+    "lastActive": "2026-04-03",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0119",
+    "personId": "person:elsa-fontaine",
+    "resourceId": "service:analytics-event-stream",
+    "relation": "owns",
+    "lastActive": "2026-07-13",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0120",
+    "personId": "person:lucas-takeda",
+    "resourceId": "service:analytics-event-stream",
+    "relation": "maintains",
+    "lastActive": "2026-04-23",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0121",
+    "personId": "person:yuki-kowalski",
+    "resourceId": "service:analytics-event-stream",
+    "relation": "contributes-to",
+    "lastActive": "2026-04-23",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0122",
+    "personId": "person:niko-egede",
+    "resourceId": "bindle:analytics-aggregator",
+    "relation": "owns",
+    "lastActive": "2026-07-05",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0123",
+    "personId": "person:maya-vidal",
+    "resourceId": "bindle:analytics-aggregator",
+    "relation": "maintains",
+    "lastActive": "2026-04-29",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0124",
+    "personId": "person:yuki-kowalski",
+    "resourceId": "bindle:analytics-aggregator",
+    "relation": "maintains",
+    "lastActive": "2026-06-28",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0125",
+    "personId": "person:lucas-takeda",
+    "resourceId": "bindle:analytics-dashboards",
+    "relation": "owns",
+    "lastActive": "2026-06-06",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0126",
+    "personId": "person:elsa-fontaine",
+    "resourceId": "bindle:analytics-dashboards",
+    "relation": "maintains",
+    "lastActive": "2026-05-06",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0127",
+    "personId": "person:idris-fontaine",
+    "resourceId": "bindle:analytics-dashboards",
+    "relation": "contributes-to",
+    "lastActive": "2026-03-06",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0128",
+    "personId": "person:maya-vidal",
+    "resourceId": "bindle:analytics-funnels",
+    "relation": "owns",
+    "lastActive": "2026-06-03",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0129",
+    "personId": "person:yuki-kowalski",
+    "resourceId": "bindle:analytics-funnels",
+    "relation": "maintains",
+    "lastActive": "2026-03-29",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0130",
+    "personId": "person:elsa-fontaine",
+    "resourceId": "bindle:analytics-funnels",
+    "relation": "maintains",
+    "lastActive": "2026-07-03",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0131",
+    "personId": "person:lucas-takeda",
+    "resourceId": "bindle:analytics-funnels",
+    "relation": "contributes-to",
+    "lastActive": "2026-03-03",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0132",
+    "personId": "person:sofia-kimura",
+    "resourceId": "service:analytics-cohorts",
+    "relation": "owns",
+    "lastActive": "2026-07-03",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0133",
+    "personId": "person:dina-castillo",
+    "resourceId": "service:analytics-cohorts",
+    "relation": "maintains",
+    "lastActive": "2026-06-16",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0134",
+    "personId": "person:maya-vidal",
+    "resourceId": "service:analytics-cohorts",
+    "relation": "maintains",
+    "lastActive": "2026-04-06",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0135",
+    "personId": "person:idris-fontaine",
+    "resourceId": "service:analytics-cohorts",
+    "relation": "contributes-to",
+    "lastActive": "2026-05-04",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0136",
+    "personId": "person:yuki-kowalski",
+    "resourceId": "service:analytics-exports",
+    "relation": "owns",
+    "lastActive": "2026-06-13",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0137",
+    "personId": "person:elsa-fontaine",
+    "resourceId": "service:analytics-exports",
+    "relation": "maintains",
+    "lastActive": "2026-05-10",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0138",
+    "personId": "person:amara-duval",
+    "resourceId": "bindle:delivery-promise-engine",
+    "relation": "owns",
+    "lastActive": "2026-07-15",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0139",
+    "personId": "person:rosa-marino",
+    "resourceId": "bindle:delivery-promise-engine",
+    "relation": "maintains",
+    "lastActive": "2026-04-25",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0140",
+    "personId": "person:ben-iyer",
+    "resourceId": "bindle:delivery-promise-engine",
+    "relation": "maintains",
+    "lastActive": "2026-04-12",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0141",
+    "personId": "person:ravi-okafor",
+    "resourceId": "pipeline:delivery-carrier-feed",
+    "relation": "owns",
+    "lastActive": "2026-07-15",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0142",
+    "personId": "person:ben-iyer",
+    "resourceId": "pipeline:delivery-carrier-feed",
+    "relation": "maintains",
+    "lastActive": "2026-06-03",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0143",
+    "personId": "person:petra-varga",
+    "resourceId": "pipeline:delivery-carrier-feed",
+    "relation": "contributes-to",
+    "lastActive": "2026-06-17",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0144",
+    "personId": "person:petra-steiner",
+    "resourceId": "pipeline:delivery-carrier-feed",
+    "relation": "contributes-to",
+    "lastActive": "2026-03-29",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0145",
+    "personId": "person:cole-brandt",
+    "resourceId": "pipeline:delivery-carrier-feed",
+    "relation": "contributes-to",
+    "lastActive": "2026-02-01",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0146",
+    "personId": "person:petra-varga",
+    "resourceId": "package:delivery-zones",
+    "relation": "owns",
+    "lastActive": "2026-06-14",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0147",
+    "personId": "person:ben-iyer",
+    "resourceId": "package:delivery-zones",
+    "relation": "maintains",
+    "lastActive": "2026-05-16",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0148",
+    "personId": "person:sam-egede",
+    "resourceId": "bindle:delivery-cutoffs",
+    "relation": "owns",
+    "lastActive": "2026-06-02",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0149",
+    "personId": "person:dina-vidal",
+    "resourceId": "bindle:delivery-cutoffs",
+    "relation": "maintains",
+    "lastActive": "2026-04-15",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0150",
+    "personId": "person:nadia-oduya",
+    "resourceId": "bindle:delivery-cutoffs",
+    "relation": "contributes-to",
+    "lastActive": "2026-04-06",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0151",
+    "personId": "person:theo-mbeki",
+    "resourceId": "package:delivery-tracking",
+    "relation": "owns",
+    "lastActive": "2026-06-03",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0152",
+    "personId": "person:ben-iyer",
+    "resourceId": "package:delivery-tracking",
+    "relation": "maintains",
+    "lastActive": "2026-05-22",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0153",
+    "personId": "person:leila-sorensen",
+    "resourceId": "package:delivery-eta-model",
+    "relation": "owns",
+    "lastActive": "2026-06-14",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0154",
+    "personId": "person:rosa-moreau",
+    "resourceId": "package:delivery-eta-model",
+    "relation": "maintains",
+    "lastActive": "2026-05-27",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0155",
+    "personId": "person:petra-varga",
+    "resourceId": "package:delivery-eta-model",
+    "relation": "contributes-to",
+    "lastActive": "2026-06-13",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0156",
+    "personId": "person:ben-iyer",
+    "resourceId": "package:delivery-eta-model",
+    "relation": "contributes-to",
+    "lastActive": "2026-06-01",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0157",
+    "personId": "person:leila-egede",
+    "resourceId": "service:ads-click-tracker",
+    "relation": "owns",
+    "lastActive": "2026-05-29",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0158",
+    "personId": "person:yuki-bishop",
+    "resourceId": "service:ads-click-tracker",
+    "relation": "maintains",
+    "lastActive": "2026-06-05",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0159",
+    "personId": "person:fatima-mensah",
+    "resourceId": "service:ads-click-tracker",
+    "relation": "contributes-to",
+    "lastActive": "2026-06-02",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0160",
+    "personId": "person:leila-petrov",
+    "resourceId": "service:ads-click-tracker",
+    "relation": "contributes-to",
+    "lastActive": "2026-03-31",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0161",
+    "personId": "person:leila-egede",
+    "resourceId": "bindle:ads-attribution",
+    "relation": "owns",
+    "lastActive": "2026-06-06",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0162",
+    "personId": "person:nadia-oduya",
+    "resourceId": "bindle:ads-attribution",
+    "relation": "maintains",
+    "lastActive": "2026-06-02",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0163",
+    "personId": "person:leila-petrov",
+    "resourceId": "bindle:ads-attribution",
+    "relation": "maintains",
+    "lastActive": "2026-05-05",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0164",
+    "personId": "person:noah-alvarez",
+    "resourceId": "package:ads-budget-pacer",
+    "relation": "owns",
+    "lastActive": "2026-05-24",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0165",
+    "personId": "person:leila-egede",
+    "resourceId": "package:ads-budget-pacer",
+    "relation": "maintains",
+    "lastActive": "2026-06-15",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0166",
+    "personId": "person:aisha-vance",
+    "resourceId": "package:ads-auctions",
+    "relation": "owns",
+    "lastActive": "2026-06-04",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0167",
+    "personId": "person:fatima-mensah",
+    "resourceId": "package:ads-auctions",
+    "relation": "maintains",
+    "lastActive": "2026-05-22",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0168",
+    "personId": "person:leila-sokolov",
+    "resourceId": "package:ads-auctions",
+    "relation": "contributes-to",
+    "lastActive": "2026-03-20",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0169",
+    "personId": "person:leila-egede",
+    "resourceId": "service:ads-reporting-api",
+    "relation": "owns",
+    "lastActive": "2026-06-07",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0170",
+    "personId": "person:leila-petrov",
+    "resourceId": "service:ads-reporting-api",
+    "relation": "maintains",
+    "lastActive": "2026-06-27",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0171",
+    "personId": "person:amara-varga",
+    "resourceId": "service:ads-reporting-api",
+    "relation": "contributes-to",
+    "lastActive": "2026-03-03",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0172",
+    "personId": "person:yuki-bishop",
+    "resourceId": "service:ads-reporting-api",
+    "relation": "contributes-to",
+    "lastActive": "2026-07-01",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0173",
+    "personId": "person:yuki-bishop",
+    "resourceId": "package:ads-fraud-filter",
+    "relation": "owns",
+    "lastActive": "2026-07-18",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0174",
+    "personId": "person:ezra-bishop",
+    "resourceId": "package:ads-fraud-filter",
+    "relation": "maintains",
+    "lastActive": "2026-06-23",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0175",
+    "personId": "person:noah-alvarez",
+    "resourceId": "package:ads-fraud-filter",
+    "relation": "contributes-to",
+    "lastActive": "2026-06-27",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0176",
+    "personId": "person:fatima-silva",
+    "resourceId": "package:onboarding-ramp-tracker",
+    "relation": "owns",
+    "lastActive": "2026-07-16",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0177",
+    "personId": "person:omar-iyer",
+    "resourceId": "package:onboarding-ramp-tracker",
+    "relation": "maintains",
+    "lastActive": "2026-06-20",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0178",
+    "personId": "person:marco-kowalski",
+    "resourceId": "package:onboarding-ramp-tracker",
+    "relation": "maintains",
+    "lastActive": "2026-07-21",
+    "observedAt": "2026-07-21T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0179",
+    "personId": "person:tara-kowalski",
+    "resourceId": "service:onboarding-mentor-match",
+    "relation": "owns",
+    "lastActive": "2026-06-06",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0180",
+    "personId": "person:marco-kowalski",
+    "resourceId": "service:onboarding-mentor-match",
+    "relation": "maintains",
+    "lastActive": "2026-05-22",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0181",
+    "personId": "person:wren-vance",
+    "resourceId": "pipeline:onboarding-starter-tasks",
+    "relation": "owns",
+    "lastActive": "2026-06-20",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0182",
+    "personId": "person:chloe-silva",
+    "resourceId": "pipeline:onboarding-starter-tasks",
+    "relation": "maintains",
+    "lastActive": "2026-07-12",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0183",
+    "personId": "person:ezra-steiner",
+    "resourceId": "pipeline:onboarding-starter-tasks",
+    "relation": "maintains",
+    "lastActive": "2026-07-04",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0184",
+    "personId": "person:ezra-steiner",
+    "resourceId": "package:onboarding-wiki-sync",
+    "relation": "owns",
+    "lastActive": "2026-07-07",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0185",
+    "personId": "person:tara-kowalski",
+    "resourceId": "package:onboarding-wiki-sync",
+    "relation": "maintains",
+    "lastActive": "2026-05-27",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0186",
+    "personId": "person:chloe-silva",
+    "resourceId": "package:onboarding-checklists",
+    "relation": "owns",
+    "lastActive": "2026-07-10",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0187",
+    "personId": "person:omar-iyer",
+    "resourceId": "package:onboarding-checklists",
+    "relation": "maintains",
+    "lastActive": "2026-04-23",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0188",
+    "personId": "person:ezra-steiner",
+    "resourceId": "package:onboarding-checklists",
+    "relation": "contributes-to",
+    "lastActive": "2026-05-08",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0189",
+    "personId": "person:tara-kowalski",
+    "resourceId": "package:onboarding-checklists",
+    "relation": "contributes-to",
+    "lastActive": "2026-03-25",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0190",
+    "personId": "person:wren-vance",
+    "resourceId": "package:onboarding-badges",
+    "relation": "owns",
+    "lastActive": "2026-06-20",
+    "observedAt": "2026-07-18T12:00:00Z"
+  },
+  {
+    "id": "relationship:r0191",
+    "personId": "person:chloe-silva",
+    "resourceId": "package:onboarding-badges",
+    "relation": "maintains",
+    "lastActive": "2026-03-26",
+    "observedAt": "2026-07-18T12:00:00Z"
+  }
+]

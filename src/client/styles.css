@@ -52,7 +52,7 @@ input:focus-visible,
 select:focus-visible,
 a:focus-visible,
 summary:focus-visible {
-  outline: 3px solid rgba(20, 125, 114, 0.3);
+  outline: 3px solid rgba(228, 121, 17, 0.4);
   outline-offset: 2px;
 }
 
@@ -78,9 +78,9 @@ summary:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #151b27;
+  background: #232f3e;
   color: #fff;
-  border-bottom: 1px solid #303847;
+  border-bottom: 3px solid #ff9900;
 }
 
 .brand {
@@ -94,7 +94,8 @@ summary:focus-visible {
   height: 32px;
   display: grid;
   place-items: center;
-  background: #147d72;
+  color: #232f3e;
+  background: #ff9900;
   border-radius: 4px;
 }
 
@@ -131,8 +132,8 @@ summary:focus-visible {
 }
 
 .status-dot.online {
-  background: #55c7a9;
-  border: 1px solid #b9eadf;
+  background: #ff9900;
+  border: 1px solid #ffd9a1;
 }
 
 .workspace {
@@ -172,9 +173,9 @@ summary:focus-visible {
 }
 
 .query-input:focus-within {
-  color: #147d72;
+  color: #c45500;
   background: #fff;
-  border-color: #147d72;
+  border-color: #e47911;
 }
 
 .query-input input {
@@ -211,8 +212,8 @@ summary:focus-visible {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  color: #fff;
-  background: #147d72;
+  color: #0f1111;
+  background: #ff9900;
   border: 0;
   border-radius: 2px 6px 6px 2px;
   font-size: 13px;
@@ -221,7 +222,7 @@ summary:focus-visible {
 }
 
 .primary-button:hover {
-  background: #0f665d;
+  background: #e47911;
 }
 
 .primary-button:disabled {
@@ -294,7 +295,7 @@ summary:focus-visible {
   display: flex;
   align-items: center;
   gap: 7px;
-  color: #0f665d;
+  color: #c45500;
   background: #fff;
   border: 1px solid #bac4cf;
   border-radius: 2px 6px 6px 2px;
@@ -321,7 +322,7 @@ summary:focus-visible {
 }
 
 .answer-summary.status-confirmed {
-  border-top-color: #147d72;
+  border-top-color: #e47911;
 }
 
 .answer-summary.status-action-needed {
@@ -340,7 +341,7 @@ summary:focus-visible {
   display: flex;
   align-items: center;
   gap: 7px;
-  color: #147d72;
+  color: #e47911;
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
@@ -378,7 +379,7 @@ summary:focus-visible {
   gap: 11px;
   color: #334155;
   background: #f0f7f5;
-  border-left: 3px solid #147d72;
+  border-left: 3px solid #e47911;
 }
 
 .status-action-needed .next-action {
@@ -406,7 +407,7 @@ summary:focus-visible {
 
 .answer-confidence {
   min-height: 56px;
-  color: #147d72;
+  color: #e47911;
   font-size: 12px;
   font-weight: 700;
 }
@@ -691,8 +692,8 @@ summary:focus-visible {
 
 .path-navigator button.selected > span {
   color: #fff;
-  background: #147d72;
-  border-color: #147d72;
+  background: #e47911;
+  border-color: #e47911;
 }
 
 .expert-list {
@@ -712,7 +713,7 @@ summary:focus-visible {
 
 .expert-summary {
   display: grid;
-  grid-template-columns: 32px minmax(180px, 0.75fr) minmax(220px, 1.25fr) 58px;
+  grid-template-columns: 28px 40px minmax(160px, 0.75fr) minmax(220px, 1.25fr) 58px;
   align-items: center;
   gap: 12px;
 }
@@ -729,6 +730,21 @@ summary:focus-visible {
   font-weight: 700;
 }
 
+.expert-badge {
+  width: 40px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: #232f3e;
+  border-radius: 4px;
+  border-bottom: 3px solid #ff9900;
+  font-family: "IBM Plex Sans Condensed", ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
 .expert-identity,
 .matched-resources {
   min-width: 0;
@@ -743,10 +759,15 @@ summary:focus-visible {
 
 .expert-identity strong {
   overflow: hidden;
-  color: #263247;
+  color: #0066c0;
   font-size: 13px;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.expert-alias {
+  color: #718095;
+  font-weight: 400;
 }
 
 .expert-identity span {
@@ -780,8 +801,8 @@ summary:focus-visible {
   display: grid;
   align-content: center;
   text-align: center;
-  color: #0f665d;
-  background: #eaf6f3;
+  color: #c45500;
+  background: #fdf0e2;
   border-radius: 4px;
 }
 
@@ -881,7 +902,7 @@ summary:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  color: #0f665d;
+  color: #c45500;
   font-size: 10px;
   font-weight: 700;
   text-decoration: none;
@@ -934,7 +955,7 @@ summary:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  color: #0f665d;
+  color: #c45500;
   background: #e9f5f2;
   border-radius: 4px;
   font-size: 9px;
@@ -1014,7 +1035,7 @@ summary:focus-visible {
 }
 
 .icon-button:hover {
-  color: #0f665d;
+  color: #c45500;
   border-color: #9fbab5;
 }
 
@@ -1024,7 +1045,7 @@ summary:focus-visible {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #147d72;
+  color: #e47911;
 }
 
 .confidence-panel span,
@@ -1209,12 +1230,18 @@ summary:focus-visible {
   }
 
   .expert-summary {
-    grid-template-columns: 32px minmax(0, 1fr) 56px;
+    grid-template-columns: 24px 36px minmax(0, 1fr) 56px;
     gap: 9px;
   }
 
+  .expert-badge {
+    width: 36px;
+    height: 42px;
+    font-size: 12px;
+  }
+
   .matched-resources {
-    grid-column: 2 / 4;
+    grid-column: 2 / 5;
   }
 
   .matched-resources strong {

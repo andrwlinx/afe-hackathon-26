@@ -8,10 +8,9 @@ export default defineConfig({
   reporter: "line",
   use: {
     baseURL: "http://127.0.0.1:5173",
-    launchOptions: {
-      executablePath:
-        "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-    }
+    ...(process.env.CHROME_PATH
+      ? { launchOptions: { executablePath: process.env.CHROME_PATH } }
+      : {})
   },
   webServer: {
     command: "npm run dev",

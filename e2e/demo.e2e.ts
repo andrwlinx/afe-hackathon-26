@@ -43,7 +43,7 @@ for (const viewport of [
         bodyFont: expect.stringContaining("Source Sans 3"),
         headingFont: expect.stringContaining("IBM Plex Sans Condensed"),
         primaryRadius: "2px 6px 6px 2px",
-        brandColor: "rgb(20, 125, 114)",
+        brandColor: "rgb(255, 153, 0)",
         noHorizontalOverflow: true
       });
 

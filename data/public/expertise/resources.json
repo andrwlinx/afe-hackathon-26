@@ -1,0 +1,902 @@
+[
+  {
+    "id": "service:payments-ledger",
+    "type": "service",
+    "name": "PaymentLedger",
+    "description": "Payment ledger service owned by Payments Platform.",
+    "tags": [
+      "payments",
+      "transactions",
+      "billing",
+      "ledger"
+    ],
+    "aliases": [
+      "payments-ledger"
+    ]
+  },
+  {
+    "id": "pipeline:payments-refund",
+    "type": "pipeline",
+    "name": "PaymentsRefundPipeline",
+    "description": "Payment refund deployment pipeline owned by Payments Platform.",
+    "tags": [
+      "payments",
+      "transactions",
+      "billing",
+      "refund"
+    ],
+    "aliases": [
+      "payments-refund"
+    ]
+  },
+  {
+    "id": "package:payments-invoice",
+    "type": "package",
+    "name": "PaymentInvoice",
+    "description": "Payment invoice package owned by Payments Platform.",
+    "tags": [
+      "payments",
+      "transactions",
+      "billing",
+      "invoice"
+    ],
+    "aliases": [
+      "payments-invoice"
+    ]
+  },
+  {
+    "id": "pipeline:payments-settlement",
+    "type": "pipeline",
+    "name": "PaymentsSettlementPipeline",
+    "description": "Payment settlement deployment pipeline owned by Payments Platform.",
+    "tags": [
+      "payments",
+      "transactions",
+      "billing",
+      "settlement"
+    ],
+    "aliases": [
+      "payments-settlement"
+    ]
+  },
+  {
+    "id": "bindle:payments-checkout",
+    "type": "bindle",
+    "name": "PaymentsCheckoutBindle",
+    "description": "Payment checkout ownership bindle owned by Payments Platform.",
+    "tags": [
+      "payments",
+      "transactions",
+      "billing",
+      "checkout"
+    ],
+    "aliases": [
+      "payments-checkout"
+    ]
+  },
+  {
+    "id": "pipeline:payments-chargeback",
+    "type": "pipeline",
+    "name": "PaymentsChargebackPipeline",
+    "description": "Payment chargeback deployment pipeline owned by Payments Platform.",
+    "tags": [
+      "payments",
+      "transactions",
+      "billing",
+      "chargeback"
+    ],
+    "aliases": [
+      "payments-chargeback"
+    ]
+  },
+  {
+    "id": "service:search-indexer",
+    "type": "service",
+    "name": "SearchIndexer",
+    "description": "Search indexer service owned by Search Experience.",
+    "tags": [
+      "search",
+      "ranking",
+      "relevance",
+      "indexer"
+    ],
+    "aliases": [
+      "search-indexer"
+    ]
+  },
+  {
+    "id": "bindle:search-query-parser",
+    "type": "bindle",
+    "name": "SearchQueryParserBindle",
+    "description": "Search query parser ownership bindle owned by Search Experience.",
+    "tags": [
+      "search",
+      "ranking",
+      "relevance",
+      "query parser"
+    ],
+    "aliases": [
+      "search-query-parser"
+    ]
+  },
+  {
+    "id": "package:search-ranker",
+    "type": "package",
+    "name": "SearchRanker",
+    "description": "Search ranker package owned by Search Experience.",
+    "tags": [
+      "search",
+      "ranking",
+      "relevance",
+      "ranker"
+    ],
+    "aliases": [
+      "search-ranker"
+    ]
+  },
+  {
+    "id": "pipeline:search-autocomplete",
+    "type": "pipeline",
+    "name": "SearchAutocompletePipeline",
+    "description": "Search autocomplete deployment pipeline owned by Search Experience.",
+    "tags": [
+      "search",
+      "ranking",
+      "relevance",
+      "autocomplete"
+    ],
+    "aliases": [
+      "search-autocomplete"
+    ]
+  },
+  {
+    "id": "package:search-spellcheck",
+    "type": "package",
+    "name": "SearchSpellcheck",
+    "description": "Search spellcheck package owned by Search Experience.",
+    "tags": [
+      "search",
+      "ranking",
+      "relevance",
+      "spellcheck"
+    ],
+    "aliases": [
+      "search-spellcheck"
+    ]
+  },
+  {
+    "id": "bindle:search-synonyms",
+    "type": "bindle",
+    "name": "SearchSynonymsBindle",
+    "description": "Search synonyms ownership bindle owned by Search Experience.",
+    "tags": [
+      "search",
+      "ranking",
+      "relevance",
+      "synonyms"
+    ],
+    "aliases": [
+      "search-synonyms"
+    ]
+  },
+  {
+    "id": "bindle:catalog-item-master",
+    "type": "bindle",
+    "name": "CatalogItemMasterBindle",
+    "description": "Catalog item master ownership bindle owned by Catalog Services.",
+    "tags": [
+      "catalog",
+      "listings",
+      "products",
+      "item master"
+    ],
+    "aliases": [
+      "catalog-item-master"
+    ]
+  },
+  {
+    "id": "package:catalog-taxonomy",
+    "type": "package",
+    "name": "CatalogTaxonomy",
+    "description": "Catalog taxonomy package owned by Catalog Services.",
+    "tags": [
+      "catalog",
+      "listings",
+      "products",
+      "taxonomy"
+    ],
+    "aliases": [
+      "catalog-taxonomy"
+    ]
+  },
+  {
+    "id": "bindle:catalog-attributes",
+    "type": "bindle",
+    "name": "CatalogAttributesBindle",
+    "description": "Catalog attributes ownership bindle owned by Catalog Services.",
+    "tags": [
+      "catalog",
+      "listings",
+      "products",
+      "attributes"
+    ],
+    "aliases": [
+      "catalog-attributes"
+    ]
+  },
+  {
+    "id": "pipeline:catalog-images",
+    "type": "pipeline",
+    "name": "CatalogImagesPipeline",
+    "description": "Catalog images deployment pipeline owned by Catalog Services.",
+    "tags": [
+      "catalog",
+      "listings",
+      "products",
+      "images"
+    ],
+    "aliases": [
+      "catalog-images"
+    ]
+  },
+  {
+    "id": "bindle:catalog-variations",
+    "type": "bindle",
+    "name": "CatalogVariationsBindle",
+    "description": "Catalog variations ownership bindle owned by Catalog Services.",
+    "tags": [
+      "catalog",
+      "listings",
+      "products",
+      "variations"
+    ],
+    "aliases": [
+      "catalog-variations"
+    ]
+  },
+  {
+    "id": "service:catalog-dedupe",
+    "type": "service",
+    "name": "CatalogDedupe",
+    "description": "Catalog dedupe service owned by Catalog Services.",
+    "tags": [
+      "catalog",
+      "listings",
+      "products",
+      "dedupe"
+    ],
+    "aliases": [
+      "catalog-dedupe"
+    ]
+  },
+  {
+    "id": "package:fulfillment-pick-route",
+    "type": "package",
+    "name": "FulfillmentPickRoute",
+    "description": "Fulfillment pick route package owned by Fulfillment Tech.",
+    "tags": [
+      "fulfillment",
+      "warehouse",
+      "logistics",
+      "pick route"
+    ],
+    "aliases": [
+      "fulfillment-pick-route"
+    ]
+  },
+  {
+    "id": "package:fulfillment-inventory",
+    "type": "package",
+    "name": "FulfillmentInventory",
+    "description": "Fulfillment inventory package owned by Fulfillment Tech.",
+    "tags": [
+      "fulfillment",
+      "warehouse",
+      "logistics",
+      "inventory"
+    ],
+    "aliases": [
+      "fulfillment-inventory"
+    ]
+  },
+  {
+    "id": "package:fulfillment-slotting",
+    "type": "package",
+    "name": "FulfillmentSlotting",
+    "description": "Fulfillment slotting package owned by Fulfillment Tech.",
+    "tags": [
+      "fulfillment",
+      "warehouse",
+      "logistics",
+      "slotting"
+    ],
+    "aliases": [
+      "fulfillment-slotting"
+    ]
+  },
+  {
+    "id": "bindle:fulfillment-wave-planner",
+    "type": "bindle",
+    "name": "FulfillmentWavePlannerBindle",
+    "description": "Fulfillment wave planner ownership bindle owned by Fulfillment Tech.",
+    "tags": [
+      "fulfillment",
+      "warehouse",
+      "logistics",
+      "wave planner"
+    ],
+    "aliases": [
+      "fulfillment-wave-planner"
+    ]
+  },
+  {
+    "id": "service:fulfillment-packing",
+    "type": "service",
+    "name": "FulfillmentPacking",
+    "description": "Fulfillment packing service owned by Fulfillment Tech.",
+    "tags": [
+      "fulfillment",
+      "warehouse",
+      "logistics",
+      "packing"
+    ],
+    "aliases": [
+      "fulfillment-packing"
+    ]
+  },
+  {
+    "id": "package:fulfillment-manifest",
+    "type": "package",
+    "name": "FulfillmentManifest",
+    "description": "Fulfillment manifest package owned by Fulfillment Tech.",
+    "tags": [
+      "fulfillment",
+      "warehouse",
+      "logistics",
+      "manifest"
+    ],
+    "aliases": [
+      "fulfillment-manifest"
+    ]
+  },
+  {
+    "id": "pipeline:identity-signin",
+    "type": "pipeline",
+    "name": "IdentitySigninPipeline",
+    "description": "Identity signin deployment pipeline owned by Identity & Access.",
+    "tags": [
+      "identity",
+      "auth",
+      "security",
+      "signin"
+    ],
+    "aliases": [
+      "identity-signin"
+    ]
+  },
+  {
+    "id": "package:identity-tokens",
+    "type": "package",
+    "name": "IdentityTokens",
+    "description": "Identity tokens package owned by Identity & Access.",
+    "tags": [
+      "identity",
+      "auth",
+      "security",
+      "tokens"
+    ],
+    "aliases": [
+      "identity-tokens"
+    ]
+  },
+  {
+    "id": "package:identity-sessions",
+    "type": "package",
+    "name": "IdentitySessions",
+    "description": "Identity sessions package owned by Identity & Access.",
+    "tags": [
+      "identity",
+      "auth",
+      "security",
+      "sessions"
+    ],
+    "aliases": [
+      "identity-sessions"
+    ]
+  },
+  {
+    "id": "service:identity-mfa",
+    "type": "service",
+    "name": "IdentityMfa",
+    "description": "Identity mfa service owned by Identity & Access.",
+    "tags": [
+      "identity",
+      "auth",
+      "security",
+      "mfa"
+    ],
+    "aliases": [
+      "identity-mfa"
+    ]
+  },
+  {
+    "id": "pipeline:identity-permissions",
+    "type": "pipeline",
+    "name": "IdentityPermissionsPipeline",
+    "description": "Identity permissions deployment pipeline owned by Identity & Access.",
+    "tags": [
+      "identity",
+      "auth",
+      "security",
+      "permissions"
+    ],
+    "aliases": [
+      "identity-permissions"
+    ]
+  },
+  {
+    "id": "package:identity-audit-log",
+    "type": "package",
+    "name": "IdentityAuditLog",
+    "description": "Identity audit log package owned by Identity & Access.",
+    "tags": [
+      "identity",
+      "auth",
+      "security",
+      "audit log"
+    ],
+    "aliases": [
+      "identity-audit-log"
+    ]
+  },
+  {
+    "id": "bindle:notifications-dispatcher",
+    "type": "bindle",
+    "name": "NotificationsDispatcherBindle",
+    "description": "Notification dispatcher ownership bindle owned by Notifications Hub.",
+    "tags": [
+      "notifications",
+      "messaging",
+      "email",
+      "dispatcher"
+    ],
+    "aliases": [
+      "notifications-dispatcher"
+    ]
+  },
+  {
+    "id": "pipeline:notifications-templates",
+    "type": "pipeline",
+    "name": "NotificationsTemplatesPipeline",
+    "description": "Notification templates deployment pipeline owned by Notifications Hub.",
+    "tags": [
+      "notifications",
+      "messaging",
+      "email",
+      "templates"
+    ],
+    "aliases": [
+      "notifications-templates"
+    ]
+  },
+  {
+    "id": "package:notifications-preferences",
+    "type": "package",
+    "name": "NotificationPreferences",
+    "description": "Notification preferences package owned by Notifications Hub.",
+    "tags": [
+      "notifications",
+      "messaging",
+      "email",
+      "preferences"
+    ],
+    "aliases": [
+      "notifications-preferences"
+    ]
+  },
+  {
+    "id": "package:notifications-digest",
+    "type": "package",
+    "name": "NotificationDigest",
+    "description": "Notification digest package owned by Notifications Hub.",
+    "tags": [
+      "notifications",
+      "messaging",
+      "email",
+      "digest"
+    ],
+    "aliases": [
+      "notifications-digest"
+    ]
+  },
+  {
+    "id": "package:notifications-push-relay",
+    "type": "package",
+    "name": "NotificationPushRelay",
+    "description": "Notification push relay package owned by Notifications Hub.",
+    "tags": [
+      "notifications",
+      "messaging",
+      "email",
+      "push relay"
+    ],
+    "aliases": [
+      "notifications-push-relay"
+    ]
+  },
+  {
+    "id": "pipeline:notifications-bounce-handler",
+    "type": "pipeline",
+    "name": "NotificationsBounceHandlerPipeline",
+    "description": "Notification bounce handler deployment pipeline owned by Notifications Hub.",
+    "tags": [
+      "notifications",
+      "messaging",
+      "email",
+      "bounce handler"
+    ],
+    "aliases": [
+      "notifications-bounce-handler"
+    ]
+  },
+  {
+    "id": "service:analytics-event-stream",
+    "type": "service",
+    "name": "AnalyticsEventStream",
+    "description": "Analytics event stream service owned by Analytics Insights.",
+    "tags": [
+      "analytics",
+      "metrics",
+      "reporting",
+      "event stream"
+    ],
+    "aliases": [
+      "analytics-event-stream"
+    ]
+  },
+  {
+    "id": "bindle:analytics-aggregator",
+    "type": "bindle",
+    "name": "AnalyticsAggregatorBindle",
+    "description": "Analytics aggregator ownership bindle owned by Analytics Insights.",
+    "tags": [
+      "analytics",
+      "metrics",
+      "reporting",
+      "aggregator"
+    ],
+    "aliases": [
+      "analytics-aggregator"
+    ]
+  },
+  {
+    "id": "bindle:analytics-dashboards",
+    "type": "bindle",
+    "name": "AnalyticsDashboardsBindle",
+    "description": "Analytics dashboards ownership bindle owned by Analytics Insights.",
+    "tags": [
+      "analytics",
+      "metrics",
+      "reporting",
+      "dashboards"
+    ],
+    "aliases": [
+      "analytics-dashboards"
+    ]
+  },
+  {
+    "id": "bindle:analytics-funnels",
+    "type": "bindle",
+    "name": "AnalyticsFunnelsBindle",
+    "description": "Analytics funnels ownership bindle owned by Analytics Insights.",
+    "tags": [
+      "analytics",
+      "metrics",
+      "reporting",
+      "funnels"
+    ],
+    "aliases": [
+      "analytics-funnels"
+    ]
+  },
+  {
+    "id": "service:analytics-cohorts",
+    "type": "service",
+    "name": "AnalyticsCohorts",
+    "description": "Analytics cohorts service owned by Analytics Insights.",
+    "tags": [
+      "analytics",
+      "metrics",
+      "reporting",
+      "cohorts"
+    ],
+    "aliases": [
+      "analytics-cohorts"
+    ]
+  },
+  {
+    "id": "service:analytics-exports",
+    "type": "service",
+    "name": "AnalyticsExports",
+    "description": "Analytics exports service owned by Analytics Insights.",
+    "tags": [
+      "analytics",
+      "metrics",
+      "reporting",
+      "exports"
+    ],
+    "aliases": [
+      "analytics-exports"
+    ]
+  },
+  {
+    "id": "bindle:delivery-promise-engine",
+    "type": "bindle",
+    "name": "DeliveryPromiseEngineBindle",
+    "description": "Delivery promise engine ownership bindle owned by Delivery Estimates.",
+    "tags": [
+      "delivery",
+      "promise",
+      "shipping",
+      "promise engine"
+    ],
+    "aliases": [
+      "delivery-promise-engine"
+    ]
+  },
+  {
+    "id": "pipeline:delivery-carrier-feed",
+    "type": "pipeline",
+    "name": "DeliveryCarrierFeedPipeline",
+    "description": "Delivery carrier feed deployment pipeline owned by Delivery Estimates.",
+    "tags": [
+      "delivery",
+      "promise",
+      "shipping",
+      "carrier feed"
+    ],
+    "aliases": [
+      "delivery-carrier-feed"
+    ]
+  },
+  {
+    "id": "package:delivery-zones",
+    "type": "package",
+    "name": "DeliveryZones",
+    "description": "Delivery zones package owned by Delivery Estimates.",
+    "tags": [
+      "delivery",
+      "promise",
+      "shipping",
+      "zones"
+    ],
+    "aliases": [
+      "delivery-zones"
+    ]
+  },
+  {
+    "id": "bindle:delivery-cutoffs",
+    "type": "bindle",
+    "name": "DeliveryCutoffsBindle",
+    "description": "Delivery cutoffs ownership bindle owned by Delivery Estimates.",
+    "tags": [
+      "delivery",
+      "promise",
+      "shipping",
+      "cutoffs"
+    ],
+    "aliases": [
+      "delivery-cutoffs"
+    ]
+  },
+  {
+    "id": "package:delivery-tracking",
+    "type": "package",
+    "name": "DeliveryTracking",
+    "description": "Delivery tracking package owned by Delivery Estimates.",
+    "tags": [
+      "delivery",
+      "promise",
+      "shipping",
+      "tracking"
+    ],
+    "aliases": [
+      "delivery-tracking"
+    ]
+  },
+  {
+    "id": "package:delivery-eta-model",
+    "type": "package",
+    "name": "DeliveryEtaModel",
+    "description": "Delivery eta model package owned by Delivery Estimates.",
+    "tags": [
+      "delivery",
+      "promise",
+      "shipping",
+      "eta model"
+    ],
+    "aliases": [
+      "delivery-eta-model"
+    ]
+  },
+  {
+    "id": "service:ads-click-tracker",
+    "type": "service",
+    "name": "AdsClickTracker",
+    "description": "Ads click tracker service owned by Ads Measurement.",
+    "tags": [
+      "ads",
+      "attribution",
+      "campaigns",
+      "click tracker"
+    ],
+    "aliases": [
+      "ads-click-tracker"
+    ]
+  },
+  {
+    "id": "bindle:ads-attribution",
+    "type": "bindle",
+    "name": "AdsAttributionBindle",
+    "description": "Ads attribution ownership bindle owned by Ads Measurement.",
+    "tags": [
+      "ads",
+      "attribution",
+      "campaigns",
+      "attribution"
+    ],
+    "aliases": [
+      "ads-attribution"
+    ]
+  },
+  {
+    "id": "package:ads-budget-pacer",
+    "type": "package",
+    "name": "AdsBudgetPacer",
+    "description": "Ads budget pacer package owned by Ads Measurement.",
+    "tags": [
+      "ads",
+      "attribution",
+      "campaigns",
+      "budget pacer"
+    ],
+    "aliases": [
+      "ads-budget-pacer"
+    ]
+  },
+  {
+    "id": "package:ads-auctions",
+    "type": "package",
+    "name": "AdsAuctions",
+    "description": "Ads auctions package owned by Ads Measurement.",
+    "tags": [
+      "ads",
+      "attribution",
+      "campaigns",
+      "auctions"
+    ],
+    "aliases": [
+      "ads-auctions"
+    ]
+  },
+  {
+    "id": "service:ads-reporting-api",
+    "type": "service",
+    "name": "AdsReportingApi",
+    "description": "Ads reporting api service owned by Ads Measurement.",
+    "tags": [
+      "ads",
+      "attribution",
+      "campaigns",
+      "reporting api"
+    ],
+    "aliases": [
+      "ads-reporting-api"
+    ]
+  },
+  {
+    "id": "package:ads-fraud-filter",
+    "type": "package",
+    "name": "AdsFraudFilter",
+    "description": "Ads fraud filter package owned by Ads Measurement.",
+    "tags": [
+      "ads",
+      "attribution",
+      "campaigns",
+      "fraud filter"
+    ],
+    "aliases": [
+      "ads-fraud-filter"
+    ]
+  },
+  {
+    "id": "package:onboarding-ramp-tracker",
+    "type": "package",
+    "name": "OnboardingRampTracker",
+    "description": "Onboarding ramp tracker package owned by Onboarding Tools.",
+    "tags": [
+      "onboarding",
+      "interns",
+      "devtools",
+      "ramp tracker"
+    ],
+    "aliases": [
+      "onboarding-ramp-tracker"
+    ]
+  },
+  {
+    "id": "service:onboarding-mentor-match",
+    "type": "service",
+    "name": "OnboardingMentorMatch",
+    "description": "Onboarding mentor match service owned by Onboarding Tools.",
+    "tags": [
+      "onboarding",
+      "interns",
+      "devtools",
+      "mentor match"
+    ],
+    "aliases": [
+      "onboarding-mentor-match"
+    ]
+  },
+  {
+    "id": "pipeline:onboarding-starter-tasks",
+    "type": "pipeline",
+    "name": "OnboardingStarterTasksPipeline",
+    "description": "Onboarding starter tasks deployment pipeline owned by Onboarding Tools.",
+    "tags": [
+      "onboarding",
+      "interns",
+      "devtools",
+      "starter tasks"
+    ],
+    "aliases": [
+      "onboarding-starter-tasks"
+    ]
+  },
+  {
+    "id": "package:onboarding-wiki-sync",
+    "type": "package",
+    "name": "OnboardingWikiSync",
+    "description": "Onboarding wiki sync package owned by Onboarding Tools.",
+    "tags": [
+      "onboarding",
+      "interns",
+      "devtools",
+      "wiki sync"
+    ],
+    "aliases": [
+      "onboarding-wiki-sync"
+    ]
+  },
+  {
+    "id": "package:onboarding-checklists",
+    "type": "package",
+    "name": "OnboardingChecklists",
+    "description": "Onboarding checklists package owned by Onboarding Tools.",
+    "tags": [
+      "onboarding",
+      "interns",
+      "devtools",
+      "checklists"
+    ],
+    "aliases": [
+      "onboarding-checklists"
+    ]
+  },
+  {
+    "id": "package:onboarding-badges",
+    "type": "package",
+    "name": "OnboardingBadges",
+    "description": "Onboarding badges package owned by Onboarding Tools.",
+    "tags": [
+      "onboarding",
+      "interns",
+      "devtools",
+      "badges"
+    ],
+    "aliases": [
+      "onboarding-badges"
+    ]
+  }
+]

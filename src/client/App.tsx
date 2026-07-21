@@ -148,7 +148,7 @@ export function App() {
           </div>
           <div>
             <strong>RampPath</strong>
-            <span>Engineering knowledge graph</span>
+            <span>Who owns what · Phone Tool companion</span>
           </div>
         </div>
         <div className="system-status" title="Loaded graph status">
@@ -320,19 +320,32 @@ export function App() {
                         .filter((value, reasonIndex, values) =>
                           values.indexOf(value) === reasonIndex
                         );
+                      const initials = expert.person.label
+                        .split(/\s+/)
+                        .map((part) => part[0])
+                        .slice(0, 2)
+                        .join("")
+                        .toUpperCase();
 
                       return (
                         <article className="expert-row" key={expert.person.id}>
                           <div className="expert-summary">
                             <span className="expert-rank">#{index + 1}</span>
+                            <div className="expert-badge" aria-hidden="true">
+                              {initials}
+                            </div>
                             <div className="expert-identity">
-                              <strong>{expert.person.label}</strong>
+                              <strong>
+                                {expert.person.label}
+                                {alias ? (
+                                  <span className="expert-alias">
+                                    {" "}
+                                    ({alias})
+                                  </span>
+                                ) : null}
+                              </strong>
                               <span>
-                                {[
-                                  alias ? `@${alias}` : null,
-                                  role ?? expert.person.description,
-                                  team
-                                ]
+                                {[role ?? expert.person.description, team]
                                   .filter(Boolean)
                                   .join(" · ")}
                               </span>
@@ -389,7 +402,7 @@ export function App() {
                               target="_blank"
                               rel="noreferrer"
                             >
-                              Open profile
+                              Open in Phone Tool
                               <ExternalLink size={14} />
                             </a>
                           ) : null}

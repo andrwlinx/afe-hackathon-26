@@ -1,0 +1,1113 @@
+[
+  {
+    "id": "person:lucas-iyer",
+    "name": "Lucas Iyer",
+    "alias": "liyer",
+    "team": "Payments Platform",
+    "role": "SDE I",
+    "aliases": [
+      "lucas.iyer"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/liyer"
+  },
+  {
+    "id": "person:suki-petrov",
+    "name": "Suki Petrov",
+    "alias": "spetrov",
+    "team": "Payments Platform",
+    "role": "SDE II",
+    "aliases": [
+      "suki.petrov"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/spetrov"
+  },
+  {
+    "id": "person:cole-sorensen",
+    "name": "Cole Sorensen",
+    "alias": "csorensen",
+    "team": "Payments Platform",
+    "role": "SDE I",
+    "aliases": [
+      "cole.sorensen"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/csorensen"
+  },
+  {
+    "id": "person:cato-sokolov",
+    "name": "Cato Sokolov",
+    "alias": "csokolov",
+    "team": "Payments Platform",
+    "role": "SDE I",
+    "aliases": [
+      "cato.sokolov"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/csokolov"
+  },
+  {
+    "id": "person:idris-varga",
+    "name": "Idris Varga",
+    "alias": "ivarga",
+    "team": "Payments Platform",
+    "role": "SDE II",
+    "aliases": [
+      "idris.varga"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/ivarga"
+  },
+  {
+    "id": "person:lucas-castillo",
+    "name": "Lucas Castillo",
+    "alias": "lcastillo",
+    "team": "Payments Platform",
+    "role": "TPM",
+    "aliases": [
+      "lucas.castillo"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/lcastillo"
+  },
+  {
+    "id": "person:cole-lindqvist",
+    "name": "Cole Lindqvist",
+    "alias": "clindqvist",
+    "team": "Payments Platform",
+    "role": "SDE I",
+    "aliases": [
+      "cole.lindqvist"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/clindqvist"
+  },
+  {
+    "id": "person:sana-tanaka",
+    "name": "Sana Tanaka",
+    "alias": "stanaka",
+    "team": "Payments Platform",
+    "role": "Senior SDE",
+    "aliases": [
+      "sana.tanaka"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/stanaka"
+  },
+  {
+    "id": "person:aisha-brandt",
+    "name": "Aisha Brandt",
+    "alias": "abrandt",
+    "team": "Payments Platform",
+    "role": "SDE II",
+    "aliases": [
+      "aisha.brandt"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/abrandt"
+  },
+  {
+    "id": "person:sofia-iyer",
+    "name": "Sofia Iyer",
+    "alias": "siyer",
+    "team": "Payments Platform",
+    "role": "Senior SDE",
+    "aliases": [
+      "sofia.iyer"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/siyer"
+  },
+  {
+    "id": "person:sana-takeda",
+    "name": "Sana Takeda",
+    "alias": "stakeda",
+    "team": "Search Experience",
+    "role": "SDE II",
+    "aliases": [
+      "sana.takeda"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/stakeda"
+  },
+  {
+    "id": "person:maya-antar",
+    "name": "Maya Antar",
+    "alias": "mantar",
+    "team": "Search Experience",
+    "role": "Senior SDE",
+    "aliases": [
+      "maya.antar"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/mantar"
+  },
+  {
+    "id": "person:marco-tanaka",
+    "name": "Marco Tanaka",
+    "alias": "mtanaka",
+    "team": "Search Experience",
+    "role": "SDE I",
+    "aliases": [
+      "marco.tanaka"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/mtanaka"
+  },
+  {
+    "id": "person:cato-okafor",
+    "name": "Cato Okafor",
+    "alias": "cokafor",
+    "team": "Search Experience",
+    "role": "TPM",
+    "aliases": [
+      "cato.okafor"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/cokafor"
+  },
+  {
+    "id": "person:kai-holm",
+    "name": "Kai Holm",
+    "alias": "kholm",
+    "team": "Search Experience",
+    "role": "SDE I",
+    "aliases": [
+      "kai.holm"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/kholm"
+  },
+  {
+    "id": "person:niko-okafor",
+    "name": "Niko Okafor",
+    "alias": "nokafor",
+    "team": "Search Experience",
+    "role": "SDE II",
+    "aliases": [
+      "niko.okafor"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/nokafor"
+  },
+  {
+    "id": "person:sofia-delgado",
+    "name": "Sofia Delgado",
+    "alias": "sdelgado",
+    "team": "Search Experience",
+    "role": "SDE I",
+    "aliases": [
+      "sofia.delgado"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/sdelgado"
+  },
+  {
+    "id": "person:idris-alvarez",
+    "name": "Idris Alvarez",
+    "alias": "ialvarez",
+    "team": "Search Experience",
+    "role": "SDE I",
+    "aliases": [
+      "idris.alvarez"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/ialvarez"
+  },
+  {
+    "id": "person:rosa-oduya",
+    "name": "Rosa Oduya",
+    "alias": "roduya",
+    "team": "Search Experience",
+    "role": "SDE II",
+    "aliases": [
+      "rosa.oduya"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/roduya"
+  },
+  {
+    "id": "person:noah-iyer",
+    "name": "Noah Iyer",
+    "alias": "niyer",
+    "team": "Catalog Services",
+    "role": "SDE III",
+    "aliases": [
+      "noah.iyer"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/niyer"
+  },
+  {
+    "id": "person:alma-tanaka",
+    "name": "Alma Tanaka",
+    "alias": "atanaka",
+    "team": "Catalog Services",
+    "role": "SDE II",
+    "aliases": [
+      "alma.tanaka"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/atanaka"
+  },
+  {
+    "id": "person:maya-rahim",
+    "name": "Maya Rahim",
+    "alias": "mrahim",
+    "team": "Catalog Services",
+    "role": "SDE I",
+    "aliases": [
+      "maya.rahim"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/mrahim"
+  },
+  {
+    "id": "person:jonas-rahim",
+    "name": "Jonas Rahim",
+    "alias": "jrahim",
+    "team": "Catalog Services",
+    "role": "SDM",
+    "aliases": [
+      "jonas.rahim"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/jrahim"
+  },
+  {
+    "id": "person:wren-kimura",
+    "name": "Wren Kimura",
+    "alias": "wkimura",
+    "team": "Catalog Services",
+    "role": "SDE I",
+    "aliases": [
+      "wren.kimura"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/wkimura"
+  },
+  {
+    "id": "person:nadia-moreau",
+    "name": "Nadia Moreau",
+    "alias": "nmoreau",
+    "team": "Catalog Services",
+    "role": "SDE III",
+    "aliases": [
+      "nadia.moreau"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/nmoreau"
+  },
+  {
+    "id": "person:leila-sokolov",
+    "name": "Leila Sokolov",
+    "alias": "lsokolov",
+    "team": "Catalog Services",
+    "role": "SDE II",
+    "aliases": [
+      "leila.sokolov"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/lsokolov"
+  },
+  {
+    "id": "person:rosa-varga",
+    "name": "Rosa Varga",
+    "alias": "rvarga",
+    "team": "Catalog Services",
+    "role": "Senior SDE",
+    "aliases": [
+      "rosa.varga"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/rvarga"
+  },
+  {
+    "id": "person:ezra-larsen",
+    "name": "Ezra Larsen",
+    "alias": "elarsen",
+    "team": "Catalog Services",
+    "role": "SDE I",
+    "aliases": [
+      "ezra.larsen"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/elarsen"
+  },
+  {
+    "id": "person:ravi-steiner",
+    "name": "Ravi Steiner",
+    "alias": "rsteiner",
+    "team": "Catalog Services",
+    "role": "TPM",
+    "aliases": [
+      "ravi.steiner"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/rsteiner"
+  },
+  {
+    "id": "person:vera-nakamura",
+    "name": "Vera Nakamura",
+    "alias": "vnakamura",
+    "team": "Fulfillment Tech",
+    "role": "SDE I",
+    "aliases": [
+      "vera.nakamura"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/vnakamura"
+  },
+  {
+    "id": "person:bruno-silva",
+    "name": "Bruno Silva",
+    "alias": "bsilva",
+    "team": "Fulfillment Tech",
+    "role": "TPM",
+    "aliases": [
+      "bruno.silva"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/bsilva"
+  },
+  {
+    "id": "person:aldo-novak",
+    "name": "Aldo Novak",
+    "alias": "anovak",
+    "team": "Fulfillment Tech",
+    "role": "SDE I",
+    "aliases": [
+      "aldo.novak"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/anovak"
+  },
+  {
+    "id": "person:diego-abara",
+    "name": "Diego Abara",
+    "alias": "dabara",
+    "team": "Fulfillment Tech",
+    "role": "SDE II",
+    "aliases": [
+      "diego.abara"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/dabara"
+  },
+  {
+    "id": "person:ethan-castillo",
+    "name": "Ethan Castillo",
+    "alias": "ecastillo",
+    "team": "Fulfillment Tech",
+    "role": "SDE II",
+    "aliases": [
+      "ethan.castillo"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/ecastillo"
+  },
+  {
+    "id": "person:omar-egede",
+    "name": "Omar Egede",
+    "alias": "oegede",
+    "team": "Fulfillment Tech",
+    "role": "SDE Intern",
+    "aliases": [
+      "omar.egede"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/oegede"
+  },
+  {
+    "id": "person:kai-mensah",
+    "name": "Kai Mensah",
+    "alias": "kmensah",
+    "team": "Fulfillment Tech",
+    "role": "Senior SDE",
+    "aliases": [
+      "kai.mensah"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/kmensah"
+  },
+  {
+    "id": "person:owen-kowalski",
+    "name": "Owen Kowalski",
+    "alias": "okowalski",
+    "team": "Fulfillment Tech",
+    "role": "Senior SDE",
+    "aliases": [
+      "owen.kowalski"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/okowalski"
+  },
+  {
+    "id": "person:marco-brandt",
+    "name": "Marco Brandt",
+    "alias": "mbrandt",
+    "team": "Fulfillment Tech",
+    "role": "Senior SDE",
+    "aliases": [
+      "marco.brandt"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/mbrandt"
+  },
+  {
+    "id": "person:ivy-steiner",
+    "name": "Ivy Steiner",
+    "alias": "isteiner",
+    "team": "Fulfillment Tech",
+    "role": "SDE I",
+    "aliases": [
+      "ivy.steiner"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/isteiner"
+  },
+  {
+    "id": "person:elsa-iyer",
+    "name": "Elsa Iyer",
+    "alias": "eiyer",
+    "team": "Fulfillment Tech",
+    "role": "SDE I",
+    "aliases": [
+      "elsa.iyer"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/eiyer"
+  },
+  {
+    "id": "person:ezra-vidal",
+    "name": "Ezra Vidal",
+    "alias": "evidal",
+    "team": "Identity & Access",
+    "role": "SDE III",
+    "aliases": [
+      "ezra.vidal"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/evidal"
+  },
+  {
+    "id": "person:aldo-antar",
+    "name": "Aldo Antar",
+    "alias": "aantar",
+    "team": "Identity & Access",
+    "role": "SDE II",
+    "aliases": [
+      "aldo.antar"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/aantar"
+  },
+  {
+    "id": "person:jonas-petrov",
+    "name": "Jonas Petrov",
+    "alias": "jpetrov",
+    "team": "Identity & Access",
+    "role": "SDE III",
+    "aliases": [
+      "jonas.petrov"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/jpetrov"
+  },
+  {
+    "id": "person:yuki-nakamura",
+    "name": "Yuki Nakamura",
+    "alias": "ynakamura",
+    "team": "Identity & Access",
+    "role": "Senior SDE",
+    "aliases": [
+      "yuki.nakamura"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/ynakamura"
+  },
+  {
+    "id": "person:sam-brandt",
+    "name": "Sam Brandt",
+    "alias": "sbrandt",
+    "team": "Identity & Access",
+    "role": "SDE II",
+    "aliases": [
+      "sam.brandt"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/sbrandt"
+  },
+  {
+    "id": "person:wren-sorensen",
+    "name": "Wren Sorensen",
+    "alias": "wsorensen",
+    "team": "Identity & Access",
+    "role": "SDE II",
+    "aliases": [
+      "wren.sorensen"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/wsorensen"
+  },
+  {
+    "id": "person:tara-castillo",
+    "name": "Tara Castillo",
+    "alias": "tcastillo",
+    "team": "Identity & Access",
+    "role": "Senior SDE",
+    "aliases": [
+      "tara.castillo"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/tcastillo"
+  },
+  {
+    "id": "person:rosa-novak",
+    "name": "Rosa Novak",
+    "alias": "rnovak",
+    "team": "Identity & Access",
+    "role": "SDE I",
+    "aliases": [
+      "rosa.novak"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/rnovak"
+  },
+  {
+    "id": "person:fatima-tanaka",
+    "name": "Fatima Tanaka",
+    "alias": "ftanaka",
+    "team": "Identity & Access",
+    "role": "SDE II",
+    "aliases": [
+      "fatima.tanaka"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/ftanaka"
+  },
+  {
+    "id": "person:lena-oduya",
+    "name": "Lena Oduya",
+    "alias": "loduya",
+    "team": "Identity & Access",
+    "role": "SDE Intern",
+    "aliases": [
+      "lena.oduya"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/loduya"
+  },
+  {
+    "id": "person:ben-abara",
+    "name": "Ben Abara",
+    "alias": "babara",
+    "team": "Identity & Access",
+    "role": "SDE Intern",
+    "aliases": [
+      "ben.abara"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/babara"
+  },
+  {
+    "id": "person:ben-brandt",
+    "name": "Ben Brandt",
+    "alias": "bbrandt",
+    "team": "Notifications Hub",
+    "role": "SDE I",
+    "aliases": [
+      "ben.brandt"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/bbrandt"
+  },
+  {
+    "id": "person:cole-castillo",
+    "name": "Cole Castillo",
+    "alias": "ccastillo",
+    "team": "Notifications Hub",
+    "role": "SDE I",
+    "aliases": [
+      "cole.castillo"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/ccastillo"
+  },
+  {
+    "id": "person:cole-brandt",
+    "name": "Cole Brandt",
+    "alias": "cbrandt",
+    "team": "Notifications Hub",
+    "role": "SDE II",
+    "aliases": [
+      "cole.brandt"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/cbrandt"
+  },
+  {
+    "id": "person:bruno-steiner",
+    "name": "Bruno Steiner",
+    "alias": "bsteiner",
+    "team": "Notifications Hub",
+    "role": "Senior SDE",
+    "aliases": [
+      "bruno.steiner"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/bsteiner"
+  },
+  {
+    "id": "person:ivy-vance",
+    "name": "Ivy Vance",
+    "alias": "ivance",
+    "team": "Notifications Hub",
+    "role": "SDE II",
+    "aliases": [
+      "ivy.vance"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/ivance"
+  },
+  {
+    "id": "person:maya-haddad",
+    "name": "Maya Haddad",
+    "alias": "mhaddad",
+    "team": "Notifications Hub",
+    "role": "SDE I",
+    "aliases": [
+      "maya.haddad"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/mhaddad"
+  },
+  {
+    "id": "person:sam-novak",
+    "name": "Sam Novak",
+    "alias": "snovak",
+    "team": "Notifications Hub",
+    "role": "SDE II",
+    "aliases": [
+      "sam.novak"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/snovak"
+  },
+  {
+    "id": "person:felix-steiner",
+    "name": "Felix Steiner",
+    "alias": "fsteiner",
+    "team": "Notifications Hub",
+    "role": "SDE Intern",
+    "aliases": [
+      "felix.steiner"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/fsteiner"
+  },
+  {
+    "id": "person:kai-kimura",
+    "name": "Kai Kimura",
+    "alias": "kkimura",
+    "team": "Notifications Hub",
+    "role": "SDE II",
+    "aliases": [
+      "kai.kimura"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/kkimura"
+  },
+  {
+    "id": "person:yuki-kowalski",
+    "name": "Yuki Kowalski",
+    "alias": "ykowalski",
+    "team": "Analytics Insights",
+    "role": "Senior SDE",
+    "aliases": [
+      "yuki.kowalski"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/ykowalski"
+  },
+  {
+    "id": "person:dina-castillo",
+    "name": "Dina Castillo",
+    "alias": "dcastillo",
+    "team": "Analytics Insights",
+    "role": "SDE III",
+    "aliases": [
+      "dina.castillo"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/dcastillo"
+  },
+  {
+    "id": "person:chloe-egede",
+    "name": "Chloe Egede",
+    "alias": "cegede",
+    "team": "Analytics Insights",
+    "role": "SDE II",
+    "aliases": [
+      "chloe.egede"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/cegede"
+  },
+  {
+    "id": "person:maya-vidal",
+    "name": "Maya Vidal",
+    "alias": "mvidal",
+    "team": "Analytics Insights",
+    "role": "Senior SDE",
+    "aliases": [
+      "maya.vidal"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/mvidal"
+  },
+  {
+    "id": "person:sofia-kimura",
+    "name": "Sofia Kimura",
+    "alias": "skimura",
+    "team": "Analytics Insights",
+    "role": "SDE I",
+    "aliases": [
+      "sofia.kimura"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/skimura"
+  },
+  {
+    "id": "person:idris-fontaine",
+    "name": "Idris Fontaine",
+    "alias": "ifontaine",
+    "team": "Analytics Insights",
+    "role": "SDE II",
+    "aliases": [
+      "idris.fontaine"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/ifontaine"
+  },
+  {
+    "id": "person:elsa-fontaine",
+    "name": "Elsa Fontaine",
+    "alias": "efontaine",
+    "team": "Analytics Insights",
+    "role": "SDE III",
+    "aliases": [
+      "elsa.fontaine"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/efontaine"
+  },
+  {
+    "id": "person:niko-egede",
+    "name": "Niko Egede",
+    "alias": "negede",
+    "team": "Analytics Insights",
+    "role": "TPM",
+    "aliases": [
+      "niko.egede"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/negede"
+  },
+  {
+    "id": "person:lucas-takeda",
+    "name": "Lucas Takeda",
+    "alias": "ltakeda",
+    "team": "Analytics Insights",
+    "role": "TPM",
+    "aliases": [
+      "lucas.takeda"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/ltakeda"
+  },
+  {
+    "id": "person:dina-vidal",
+    "name": "Dina Vidal",
+    "alias": "dvidal",
+    "team": "Delivery Estimates",
+    "role": "SDE I",
+    "aliases": [
+      "dina.vidal"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/dvidal"
+  },
+  {
+    "id": "person:petra-steiner",
+    "name": "Petra Steiner",
+    "alias": "psteiner",
+    "team": "Delivery Estimates",
+    "role": "SDE I",
+    "aliases": [
+      "petra.steiner"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/psteiner"
+  },
+  {
+    "id": "person:ravi-okafor",
+    "name": "Ravi Okafor",
+    "alias": "rokafor",
+    "team": "Delivery Estimates",
+    "role": "SDE Intern",
+    "aliases": [
+      "ravi.okafor"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/rokafor"
+  },
+  {
+    "id": "person:theo-mbeki",
+    "name": "Theo Mbeki",
+    "alias": "tmbeki",
+    "team": "Delivery Estimates",
+    "role": "SDE I",
+    "aliases": [
+      "theo.mbeki"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/tmbeki"
+  },
+  {
+    "id": "person:sam-egede",
+    "name": "Sam Egede",
+    "alias": "segede",
+    "team": "Delivery Estimates",
+    "role": "SDE III",
+    "aliases": [
+      "sam.egede"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/segede"
+  },
+  {
+    "id": "person:rosa-moreau",
+    "name": "Rosa Moreau",
+    "alias": "rmoreau",
+    "team": "Delivery Estimates",
+    "role": "SDE I",
+    "aliases": [
+      "rosa.moreau"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/rmoreau"
+  },
+  {
+    "id": "person:rosa-marino",
+    "name": "Rosa Marino",
+    "alias": "rmarino",
+    "team": "Delivery Estimates",
+    "role": "TPM",
+    "aliases": [
+      "rosa.marino"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/rmarino"
+  },
+  {
+    "id": "person:leila-sorensen",
+    "name": "Leila Sorensen",
+    "alias": "lsorensen",
+    "team": "Delivery Estimates",
+    "role": "SDE I",
+    "aliases": [
+      "leila.sorensen"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/lsorensen"
+  },
+  {
+    "id": "person:amara-duval",
+    "name": "Amara Duval",
+    "alias": "aduval",
+    "team": "Delivery Estimates",
+    "role": "Principal Engineer",
+    "aliases": [
+      "amara.duval"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/aduval"
+  },
+  {
+    "id": "person:ben-iyer",
+    "name": "Ben Iyer",
+    "alias": "biyer",
+    "team": "Delivery Estimates",
+    "role": "SDE II",
+    "aliases": [
+      "ben.iyer"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/biyer"
+  },
+  {
+    "id": "person:petra-varga",
+    "name": "Petra Varga",
+    "alias": "pvarga",
+    "team": "Delivery Estimates",
+    "role": "SDM",
+    "aliases": [
+      "petra.varga"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/pvarga"
+  },
+  {
+    "id": "person:yuki-bishop",
+    "name": "Yuki Bishop",
+    "alias": "ybishop",
+    "team": "Ads Measurement",
+    "role": "Senior SDE",
+    "aliases": [
+      "yuki.bishop"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/ybishop"
+  },
+  {
+    "id": "person:jonas-silva",
+    "name": "Jonas Silva",
+    "alias": "jsilva",
+    "team": "Ads Measurement",
+    "role": "SDE III",
+    "aliases": [
+      "jonas.silva"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/jsilva"
+  },
+  {
+    "id": "person:fatima-mensah",
+    "name": "Fatima Mensah",
+    "alias": "fmensah",
+    "team": "Ads Measurement",
+    "role": "SDE I",
+    "aliases": [
+      "fatima.mensah"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/fmensah"
+  },
+  {
+    "id": "person:leila-egede",
+    "name": "Leila Egede",
+    "alias": "legede",
+    "team": "Ads Measurement",
+    "role": "SDE II",
+    "aliases": [
+      "leila.egede"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/legede"
+  },
+  {
+    "id": "person:leila-petrov",
+    "name": "Leila Petrov",
+    "alias": "lpetrov",
+    "team": "Ads Measurement",
+    "role": "Senior SDE",
+    "aliases": [
+      "leila.petrov"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/lpetrov"
+  },
+  {
+    "id": "person:aisha-vance",
+    "name": "Aisha Vance",
+    "alias": "avance",
+    "team": "Ads Measurement",
+    "role": "SDE II",
+    "aliases": [
+      "aisha.vance"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/avance"
+  },
+  {
+    "id": "person:amara-varga",
+    "name": "Amara Varga",
+    "alias": "avarga",
+    "team": "Ads Measurement",
+    "role": "SDM",
+    "aliases": [
+      "amara.varga"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/avarga"
+  },
+  {
+    "id": "person:ezra-bishop",
+    "name": "Ezra Bishop",
+    "alias": "ebishop",
+    "team": "Ads Measurement",
+    "role": "SDE III",
+    "aliases": [
+      "ezra.bishop"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/ebishop"
+  },
+  {
+    "id": "person:noah-alvarez",
+    "name": "Noah Alvarez",
+    "alias": "nalvarez",
+    "team": "Ads Measurement",
+    "role": "SDE I",
+    "aliases": [
+      "noah.alvarez"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/nalvarez"
+  },
+  {
+    "id": "person:nadia-oduya",
+    "name": "Nadia Oduya",
+    "alias": "noduya",
+    "team": "Ads Measurement",
+    "role": "SDE II",
+    "aliases": [
+      "nadia.oduya"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/noduya"
+  },
+  {
+    "id": "person:cole-moreau",
+    "name": "Cole Moreau",
+    "alias": "cmoreau",
+    "team": "Ads Measurement",
+    "role": "SDE I",
+    "aliases": [
+      "cole.moreau"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/cmoreau"
+  },
+  {
+    "id": "person:marco-kowalski",
+    "name": "Marco Kowalski",
+    "alias": "mkowalski",
+    "team": "Onboarding Tools",
+    "role": "SDE III",
+    "aliases": [
+      "marco.kowalski"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/mkowalski"
+  },
+  {
+    "id": "person:wren-vance",
+    "name": "Wren Vance",
+    "alias": "wvance",
+    "team": "Onboarding Tools",
+    "role": "SDE Intern",
+    "aliases": [
+      "wren.vance"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/wvance"
+  },
+  {
+    "id": "person:chloe-silva",
+    "name": "Chloe Silva",
+    "alias": "csilva",
+    "team": "Onboarding Tools",
+    "role": "SDE Intern",
+    "aliases": [
+      "chloe.silva"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/csilva"
+  },
+  {
+    "id": "person:maya-holm",
+    "name": "Maya Holm",
+    "alias": "mholm",
+    "team": "Onboarding Tools",
+    "role": "SDE I",
+    "aliases": [
+      "maya.holm"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/mholm"
+  },
+  {
+    "id": "person:ezra-steiner",
+    "name": "Ezra Steiner",
+    "alias": "esteiner",
+    "team": "Onboarding Tools",
+    "role": "SDE III",
+    "aliases": [
+      "ezra.steiner"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/esteiner"
+  },
+  {
+    "id": "person:fatima-silva",
+    "name": "Fatima Silva",
+    "alias": "fsilva",
+    "team": "Onboarding Tools",
+    "role": "SDE II",
+    "aliases": [
+      "fatima.silva"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/fsilva"
+  },
+  {
+    "id": "person:omar-iyer",
+    "name": "Omar Iyer",
+    "alias": "oiyer",
+    "team": "Onboarding Tools",
+    "role": "SDE I",
+    "aliases": [
+      "omar.iyer"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/oiyer"
+  },
+  {
+    "id": "person:leila-tanaka",
+    "name": "Leila Tanaka",
+    "alias": "ltanaka",
+    "team": "Onboarding Tools",
+    "role": "TPM",
+    "aliases": [
+      "leila.tanaka"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/ltanaka"
+  },
+  {
+    "id": "person:tara-kowalski",
+    "name": "Tara Kowalski",
+    "alias": "tkowalski",
+    "team": "Onboarding Tools",
+    "role": "SDE I",
+    "aliases": [
+      "tara.kowalski"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/tkowalski"
+  },
+  {
+    "id": "person:niko-silva",
+    "name": "Niko Silva",
+    "alias": "nsilva",
+    "team": "Onboarding Tools",
+    "role": "SDE I",
+    "aliases": [
+      "niko.silva"
+    ],
+    "profileUrl": "https://phonetool.example.com/users/nsilva"
+  }
+]
