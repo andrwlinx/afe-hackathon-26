@@ -1855,17 +1855,23 @@ summary:focus-visible {
 }
 
 .az-banner {
+  margin: 14px 24px 0;
+  padding: 14px 22px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  border-left: 4px solid #2e70e8;
+  color: #16191f;
+  background: #e7f2fc;
+  border-left: 0;
+  border-radius: 8px;
 }
 
 .az-banner-copy {
   font-size: 13.5px;
 }
 
+.pt-banner.az-banner a.az-aza-button,
 .az-aza-button {
   min-height: 40px;
   padding: 0 20px;
@@ -1882,7 +1888,9 @@ summary:focus-visible {
   white-space: nowrap;
 }
 
+.pt-banner.az-banner a.az-aza-button:hover,
 .az-aza-button:hover {
+  color: #fff;
   background: #4930bd;
 }
 
