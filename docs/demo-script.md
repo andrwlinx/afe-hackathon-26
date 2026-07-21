@@ -7,14 +7,14 @@ Phone Tool page, 1440px window, hard-refresh first).
 
 Start on the **Phone Tool page** (Jane Doe's profile).
 
-"You're Jane — three days into your internship on Atlas Experience. Something
+"You're Jane, three days into your internship on Atlas Experience. Something
 in the pipeline broke. Phone Tool tells you who people ARE, but not who owns
 what. A simple access question can span package ownership, a pipeline, an AWS
-account, a Bindle, and an approver — five systems you've never heard of."
+account, a Bindle, and an approver, five systems you've never heard of."
 
 ## 0:20 - RampPath lives inside Phone Tool
 
-Point out that RampPath is a **native A-to-Z tab** — same header, same design
+Point out that RampPath is a **native A-to-Z tab**, same header, same design
 language. Click **Find a resource** on the RampPath card (or the RampPath tab).
 
 "So we built RampPath where interns already are: one click from your Phone
@@ -28,12 +28,12 @@ Show the ranked people with normalized scores. Expand **"Why this person"**
 on Jordan Rivera: keyword relevance x relationship strength x recency, with
 the math visible.
 
-"No hallucination — every score is explainable."
+"No hallucination, every score is explainable."
 
 ## 1:05 - The knowledge web + contact them
 
 In the 3D graph, click a person node (e.g. Sofia Iyer). The inspector shows
-her **alias and an "Open in Phone Tool" link** — straight back to the
+her **alias and an "Open in Phone Tool" link**, straight back to the
 directory to actually contact her. Zoom/orbit briefly; note people, packages,
 pipelines, and the owning team in one connected web.
 
@@ -42,7 +42,7 @@ pipelines, and the owning team in one connected web.
 Run `Who owns metrics?`
 
 RampPath doesn't guess: it offers **clickable options** (AtlasMetricsSDK,
-the ingest pipeline...). Click `Who owns AtlasMetricsSDK?` — owner, their
+the ingest pipeline...). Click `Who owns AtlasMetricsSDK?`, owner, their
 team, and everyone who maintains or contributes to it, as a web.
 
 "You don't need to know the exact package name. Ask like a human."
@@ -72,10 +72,10 @@ Show the package-to-pipeline-to-stage-to-account paths for Alpha and Prod.
 
 End on the path view with the source-records evidence panel open.
 
-"Today this runs on synthetic data — 237 entities across a fictional AWS org.
+"Today this runs on synthetic data, 237 entities across a fictional AWS org.
 The schema maps one-to-one to real sources: Bindles, Pipelines, Brazil, Phone
 Tool. Every solved blocker becomes a reusable, source-linked path. The next
-intern starts from an answer and an action — not six disconnected systems."
+intern starts from an answer and an action, not six disconnected systems."
 
 ---
 

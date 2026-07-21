@@ -88,14 +88,6 @@ export function App() {
       .catch(() => setHealth(null));
   }, []);
 
-  const freshness = useMemo(() => {
-    const values = response?.result.evidence.map((item) =>
-      new Date(item.observedAt).getTime()
-    );
-    if (!values?.length) return null;
-    return new Date(Math.max(...values));
-  }, [response]);
-
   async function submit(nextQuestion = question) {
     const cleanQuestion = nextQuestion.trim();
     if (cleanQuestion.length < 3) return;
@@ -420,81 +412,26 @@ export function App() {
                 </section>
               ) : null}
 
-              <div className="support-grid">
-                <details className="evidence-panel">
-                  <summary>
-                    <div>
-                      <span className="section-label">Evidence</span>
-                      <h2>Source records</h2>
-                    </div>
-                    <div className="evidence-summary-meta">
-                      {freshness ? (
-                        <span className="freshness">
-                          <Check size={13} />
-                          {freshness.toLocaleDateString()}
-                        </span>
-                      ) : null}
-                      <ChevronDown size={17} />
-                    </div>
-                  </summary>
-                  {response.result.evidence.length ? (
-                    <div className="evidence-list">
-                      {response.result.evidence.map((item, index) => (
-                        <div
-                          className="evidence-row"
-                          key={`${item.source}-${index}`}
-                        >
-                          <Database size={15} />
-                          <div>
-                            <strong>{item.source.replace("-", " ")}</strong>
-                            <span>
-                              {item.confidence} · {item.mode}
-                            </span>
-                          </div>
-                          <time dateTime={item.observedAt}>
-                            {new Date(item.observedAt).toLocaleDateString()}
-                          </time>
-                        </div>
-                      ))}
-                    </div>
-                  ) : (
-                    <div className="no-evidence">
-                      No supporting records loaded.
-                    </div>
-                  )}
-                </details>
-
-                {response.result.draftRequest ? (
+              {response.result.draftRequest ? (
+                <div className="support-grid">
                   <section className="draft-panel">
                     <div>
-                      <span className="section-label">Ready to send</span>
-                      <h2>Access request</h2>
+                      <span className="section-label">AI suggested response</span>
+                      <h2>Ready to send</h2>
                       <p>{response.result.draftRequest}</p>
                     </div>
                     <button
                       className="icon-button"
                       type="button"
                       onClick={() => void copyDraft()}
-                      title="Copy access request"
-                      aria-label="Copy access request"
+                      title="Copy suggested response"
+                      aria-label="Copy suggested response"
                     >
                       {copied ? <Check size={17} /> : <Clipboard size={17} />}
                     </button>
                   </section>
-                ) : (
-                  <section className="confidence-panel">
-                    <CheckCircle2 size={19} />
-                    <div>
-                      <span>Evidence-backed answer</span>
-                      <strong>
-                        {response.result.evidence.length} source record
-                        {response.result.evidence.length === 1 ? "" : "s"} in
-                        this path
-                      </strong>
-                    </div>
-                  </section>
-                )}
-              </div>
+                </div>
+              ) : null}
             </div>
           ) : null}
         </section>

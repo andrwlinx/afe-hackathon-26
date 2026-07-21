@@ -183,7 +183,8 @@ export class QueryEngine {
       },
       evidence: uniqueEvidence(pathEdges),
       experts,
-      nextAction: `Start with ${top.person.label}; review the score breakdown before reaching out.`
+      nextAction: `Start with ${top.person.label}; review the score breakdown before reaching out.`,
+      draftRequest: `Hi ${top.person.label}, I am ramping up and trying to learn about ${top.reasons[0]?.resource.label ?? topic}. RampPath matched you as the strongest contact based on your relationship to it. Could I ask you a few questions when you have 15 minutes?`
     };
   }
 
@@ -281,7 +282,8 @@ export class QueryEngine {
       evidence: uniqueEvidence(pathEdges),
       nextAction: contact?.person
         ? `Contact ${contact.person.label} with the package name and the task you are trying to complete.`
-        : `Contact ${owner.label}.`
+        : `Contact ${owner.label}.`,
+      draftRequest: `Hi ${contact?.person?.label ?? owner.label}, RampPath shows that ${target.label} is owned by ${owner.label}. I have a question about it as part of my current task. Could you point me to the right person or docs?`
     };
   }
 
@@ -421,7 +423,12 @@ export class QueryEngine {
         edges: pathEdges
       },
       evidence: uniqueEvidence(pathEdges),
-      nextAction: "Select a stage in the path to identify its target account."
+      nextAction: "Select a stage in the path to identify its target account.",
+      draftRequest: `Hi ${
+        this.graph.getNode(
+          this.graph.edgesTo(pipeline.id, "OWNS")[0]?.from ?? ""
+        )?.label ?? "team"
+      }, I am looking at where ${target.label} deploys. Before I test a change, could you confirm which stage I should validate against first?`
     };
   }
 
@@ -502,7 +509,7 @@ export class QueryEngine {
     const status = hasAccess ? "confirmed" : "action-needed";
     const approverName = approver?.label ?? bindle?.label ?? "the resource owner";
     const draft = hasAccess
-      ? undefined
+      ? `Hi ${approverName}, flagging that I plan to make ${action} changes to ${resource.label} using ${role.label}. Please let me know if there is a preferred review process before I start.`
       : `Hi ${approverName}, I am working on ${resource.label} and need ${action} access. Could you grant me access to ${role.label}? The graph shows that this role grants the required permission.`;
 
     return {
@@ -522,7 +529,7 @@ export class QueryEngine {
       nextAction: hasAccess
         ? `Assume ${role.label} before working with ${resource.label}.`
         : `Ask ${approverName} for ${role.label}.`,
-      draftRequest: includeDraft || !hasAccess ? draft : undefined
+      draftRequest: draft
     };
   }
 

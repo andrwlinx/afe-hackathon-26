@@ -920,7 +920,7 @@ summary:focus-visible {
 .support-grid {
   margin-top: 24px;
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+  grid-template-columns: 1fr;
   gap: 16px;
   align-items: start;
 }

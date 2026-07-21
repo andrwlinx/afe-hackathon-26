@@ -126,11 +126,11 @@ for (const viewport of [
     ).toBeVisible();
     await expect(page.getByRole("button", { name: "Reset graph view" })).toBeVisible();
 
-    const evidence = page.locator(".evidence-panel");
-    await expect(evidence).not.toHaveAttribute("open", "");
-    await evidence.locator("summary").click();
+    const draftPanel = page.locator(".draft-panel");
+    await expect(draftPanel).toBeVisible();
+    await expect(page.getByText("AI suggested response")).toBeVisible();
     await expect(
-      evidence.getByText("bindle", { exact: true }).first()
+      page.getByRole("button", { name: "Copy suggested response" })
     ).toBeVisible();
 
     await page
