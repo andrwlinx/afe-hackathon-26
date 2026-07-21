@@ -55,3 +55,6 @@ target/
 
 # ---- Local screenshots ----
 Screenshot*.png
+
+# ---- Local reference material (never committed) ----
+local-refs/
