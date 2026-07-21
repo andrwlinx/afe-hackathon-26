@@ -190,7 +190,7 @@ export function GraphView({ path }: { path: GraphPath }) {
       const verticalDistance =
         Math.max(spanY, 120) / 2 / halfFovTangent;
       const distance =
-        Math.max(horizontalDistance, verticalDistance, spanZ * 2.5, 480) * 1.08;
+        Math.max(horizontalDistance, verticalDistance, spanZ * 2.5, 430) * 0.72;
 
       graphRef.current?.cameraPosition(
         {

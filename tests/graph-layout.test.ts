@@ -40,7 +40,7 @@ describe("buildGraph3DData", () => {
     const second = buildGraph3DData(path);
 
     expect(second).toEqual(first);
-    expect(first.nodes.map((item) => item.fx)).toEqual([-138, 0, 138]);
+    expect(first.nodes.map((item) => item.fx)).toEqual([-175, 0, 175]);
     expect(first.nodes.every((item) => Number.isFinite(item.fz))).toBe(true);
   });
 

@@ -89,12 +89,15 @@ export function buildGraph3DData(path: GraphPath): GraphData3D {
     // volumetric rather than flat; ring phase shifts per depth so
     // neighboring levels interleave when the camera orbits.
     const angle = (peerIndex / count) * Math.PI * 2 + depth * 0.9 + 0.35;
-    const radius = count > 1 ? 62 + count * 20 : 0;
+    const radius = count > 1 ? 120 + count * 34 : 0;
     const depthWave = Math.sin(depth * 1.15) * 58;
+    // Stagger crowded levels along the depth axis so their labels
+    // do not sit in one screen column.
+    const stagger = count > 2 ? (peerIndex % 2 === 0 ? -30 : 30) : 0;
 
     return {
       ...node,
-      fx: (depth - maxDepth / 2) * 138,
+      fx: (depth - maxDepth / 2) * 175 + stagger,
       fy: radius * Math.cos(angle),
       fz: depthWave + radius * Math.sin(angle) * 0.85,
       status: missingTargets.has(node.id) ? "missing" : "verified"

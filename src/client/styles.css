@@ -547,8 +547,8 @@ summary:focus-visible {
 }
 
 .graph-label-layer span {
-  max-width: 180px;
-  padding: 3px 5px;
+  max-width: 150px;
+  padding: 2px 5px;
   position: absolute;
   top: 0;
   left: 0;
