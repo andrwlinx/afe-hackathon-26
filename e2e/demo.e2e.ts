@@ -174,7 +174,7 @@ test("Phone Tool page links into RampPath", async ({ page }) => {
   await expect(page.getByText("Phone Tool", { exact: true })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Jane Doe" })).toBeVisible();
 
-  await page.locator(".pt-ramppath-card").click();
+  await page.getByRole("link", { name: /Find a resource/ }).click();
   await expect(page).toHaveURL(/\/ramppath$/);
   await expect(page.getByText("RampPath", { exact: true })).toBeVisible();
 });

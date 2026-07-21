@@ -1,10 +1,4 @@
-import {
-  ArrowRight,
-  Network,
-  Pencil,
-  User,
-  Volume2
-} from "lucide-react";
+import { ArrowRight, Pencil, User, Volume2 } from "lucide-react";
 import { AtoZHeader, AzBanner } from "./AtoZHeader.js";
 
 /**
@@ -130,31 +124,22 @@ export function PhoneToolPage() {
             </ul>
           </section>
 
-          <a className="pt-card pt-ramppath-card" href="/ramppath">
-            <div className="pt-ramppath-head">
-              <span className="pt-ramppath-mark">
-                <Network size={20} />
-              </span>
-              <h3>RampPath</h3>
-            </div>
-            <p>
-              Who owns what? Ask in plain English — "who owns
-              AtlasRegionContext?" — and trace verified ownership, access,
-              and deployment paths across packages, pipelines, bindles, and
-              AWS accounts.
-            </p>
-            <span className="pt-ramppath-cta">
-              Open RampPath
-              <ArrowRight size={15} />
-            </span>
-          </a>
+          <div className="pt-col">
+            <section className="pt-card">
+              <h3>Work bio</h3>
+              <p className="pt-muted">
+                Add your work bio to share more about what you do.
+              </p>
+            </section>
 
-          <section className="pt-card">
-            <h3>Work bio</h3>
-            <p className="pt-muted">
-              Add your work bio to share more about what you do.
-            </p>
-          </section>
+            <section className="pt-card pt-ramppath-card">
+              <h3>RampPath</h3>
+              <a className="pt-button-primary pt-find-resource" href="/ramppath">
+                Find a resource
+                <ArrowRight size={15} />
+              </a>
+            </section>
+          </div>
         </div>
       </main>
     </div>

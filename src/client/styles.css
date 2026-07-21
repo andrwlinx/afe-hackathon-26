@@ -1533,9 +1533,14 @@ summary:focus-visible {
 .pt-grid {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
   gap: 16px;
   align-items: start;
+}
+
+.pt-col {
+  display: grid;
+  gap: 16px;
 }
 
 .pt-card {
@@ -1609,49 +1614,12 @@ summary:focus-visible {
   font-size: 11px;
 }
 
-.pt-ramppath-card {
-  color: inherit;
-  border: 1px solid #bcd7f7;
-  background: linear-gradient(180deg, #f6faff 0%, #fff 70%);
+.pt-button-primary {
   text-decoration: none;
-  transition: box-shadow 140ms ease, border-color 140ms ease;
 }
 
-.pt-ramppath-card:hover {
-  border-color: #2e70e8;
-  box-shadow: 0 4px 14px rgba(46, 112, 232, 0.16);
-}
-
-.pt-ramppath-head {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.pt-ramppath-mark {
-  width: 36px;
-  height: 36px;
-  display: grid;
-  place-items: center;
-  color: #fff;
-  background: #1768c9;
-  border-radius: 8px;
-}
-
-.pt-ramppath-card p {
-  margin: 12px 0 14px;
-  color: #3f4750;
-  font-size: 13px;
-  line-height: 1.55;
-}
-
-.pt-ramppath-cta {
+.pt-find-resource {
   display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  color: #1768c9;
-  font-size: 13px;
-  font-weight: 700;
 }
 
 @media (max-width: 900px) {
